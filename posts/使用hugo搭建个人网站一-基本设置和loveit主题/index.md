@@ -89,10 +89,15 @@ hugo new posts/my-first-post.md
 ## 本地预览
 运行命令：
 ```
-hugo server -D
+hugo server
 ```
 在浏览器输入<http://localhost:1313>来预览。
 
+`hugo serve`的默认运行环境是 `development`, 由于本地 `development` 环境的限制, 评论系统, CDN 和 fingerprint 不会在 `development` 环境下启用。
+如果想开启这些特性，使用下面的命令来开启：
+```
+hugo serve -e production
+```
 至此，一个基本的Hugo网站就搭建起来了。
 
 
