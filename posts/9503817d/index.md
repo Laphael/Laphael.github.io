@@ -20,7 +20,7 @@ chmod 0600 /swapfile
 ```
 sudo swapon /swapfile
 ```
-
+## 启用交换分区文件
 开机自动挂载:
 
 编辑`/etc/fstab`文件
@@ -36,7 +36,7 @@ sudo vi /etc/fstab
 ```
 free -m
 ```
-## 移除 swap 分区文件
+## 移除交换分区文件
 执行下面的命令：
 
 ```
