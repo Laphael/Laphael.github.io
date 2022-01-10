@@ -12,7 +12,7 @@
 
 看下图
 
-![](organization.png)
+![](orgazination.png)
 
 如果使用vscode管理编辑Hugo网站，还有插件能很简单的实现`Page Bundles`的组织形式。下篇再讲。
 
