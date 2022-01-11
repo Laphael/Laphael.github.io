@@ -11,7 +11,7 @@
 - Markdown All in One  此插件主要提供了新建/提升/降级标题的等级的快捷键.
 - Markdown Shotcuts    此插件主要是提供了粗体、斜体、行内代码、代码块的快捷键。
 - Markdown Paste       此插件主要是提供了直接向`md`文章里贴图的功能.
-- Hugofy(荒野無燈版)     此插件主要是提供了新建文章时直接使用![`Hugo Page Bundles`](https://dnwzlx.com/posts/b085eb84/)的方式.
+- Hugofy(荒野無燈版)     此插件主要是提供了新建文章时直接使用[Hugo Page Bundles](https://dnwzlx.com/posts/b085eb84/)的方式.
   
 有了以上四个插件,编辑Hugo网站直接起飞。
 
