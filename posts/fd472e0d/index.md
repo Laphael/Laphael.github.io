@@ -16,7 +16,9 @@
 有了以上四个插件,编辑Hugo网站直接起飞。
 
 ### workspace
-`vscode`有个模仿是`workspace`。在某个目录下添加一个名为`workspace.code-workspace`的文件，就可以把整个目录当成一个工作区。
+`vscode`有个功能是`workspace`。它的最大的作用是为不同的环境启用或者禁用不同的插件。
+
+在某个目录下添加一个名为`workspace.code-workspace`的文件，就可以把整个目录当成一个工作区。
 
 而且这个`workspace.code-workspace`文件是自动创建的。
 
@@ -40,7 +42,7 @@
 - Github之外，又多了一份备份
 - 省去了在不同电脑间编辑时，`git pull`等git的同步操作。
 
-通过上面这些设置，可以在一个环境里进行Hugo编辑、管理的全部操作，而且步骤简单。
+通过上面这些设置，可以在`vscode`里进行Hugo编辑、管理、上传的全部操作，而且步骤简单。
 
 让我们把精力全部放在网站内容上。
 
