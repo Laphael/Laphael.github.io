@@ -5,10 +5,13 @@
 
 ## 生成favicon
 打开[realfavicongenerator](https://realfavicongenerator.net/),点击右上角`Select your Favicon image`链接。
-![](点击链接.png)
+
+![](点击链接.png)  
+
 这时会打开对话框，让你选择一张图片，然后就是等待。
 
 完成后，会出现下载链接，点击下载即可。
+
 ![](点击下载.png)
 
 ## 启用favicon
