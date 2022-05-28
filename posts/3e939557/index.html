@@ -17,7 +17,7 @@
 <meta name=application-name content="寂静·流年">
 <meta name=apple-mobile-web-app-title content="寂静·流年"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://example.com/posts/3e939557/><link rel=prev href=https://example.com/posts/c0dac05c/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"我的跨平台笔记方案-坚果云+Joplin","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/example.com\/posts\/3e939557\/"},"image":["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre":"posts","keywords":"坚果云, Joplin, linux","wordcount":777,"url":"https:\/\/example.com\/posts\/3e939557\/","datePublished":"2022-05-28T07:56:24+08:00","dateModified":"2022-05-28T07:56:24+08:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"Laphael","logo":"https:\/\/example.com\/images\/avatar.png"},"author":{"@type":"Person","name":"Laphael"},"description":""}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://example.com/posts/3e939557/><link rel=prev href=https://example.com/posts/c0dac05c/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"我的跨平台笔记方案-坚果云+Joplin","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/example.com\/posts\/3e939557\/"},"image":["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre":"posts","keywords":"坚果云, Joplin, linux","wordcount":774,"url":"https:\/\/example.com\/posts\/3e939557\/","datePublished":"2022-05-28T07:56:24+08:00","dateModified":"2022-05-28T07:56:24+08:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"Laphael","logo":"https:\/\/example.com\/images\/avatar.png"},"author":{"@type":"Person","name":"Laphael"},"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'light'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'light'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -85,7 +85,7 @@
 <div class=toc-content id=toc-content-auto></div>
 </div><article class="page single"><h1 class="single-title animated flipInX">我的跨平台笔记方案-坚果云+Joplin</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>Laphael</a></span>&nbsp;<span class=post-category>收录于 <a href=/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/><i class="far fa-folder fa-fw"></i>软件应用</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2022-05-28>2022-05-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 777 字&nbsp;
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2022-05-28>2022-05-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 774 字&nbsp;
 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
 </div><div class="details toc" id=toc-static kept>
 <div class="details-summary toc-title">
@@ -100,7 +100,7 @@
 <li><a href=#问题和解决>问题和解决</a>
 <ul>
 <li><a href=#kde下坚果云登录界面太小的问题>KDE下坚果云登录界面太小的问题</a></li>
-<li><a href=#joplin同步到joplin的正确方法>Joplin同步到Joplin的正确方法</a></li>
+<li><a href=#joplin同步到坚果云的正确方法>Joplin同步到坚果云的正确方法</a></li>
 </ul>
 </li>
 </ul>
@@ -125,15 +125,15 @@
 <h3 id=kde下坚果云登录界面太小的问题>KDE下坚果云登录界面太小的问题</h3>
 <p>主要体现在登录界面太小，以至于无法显示登录框的问题。</p>
 <p>解决方法：</p>
-<p>1、右键点击登录界面的标题栏&ndash;更多操作&ndash;配置特殊窗口设置
-<img class=lazyload src=/svg/loading.min.svg data-src=kde-nutstore1.png data-srcset="/posts/3e939557/kde-nutstore1.png, kde-nutstore1.png 1.5x, /posts/3e939557/kde-nutstore1.png 2x" data-sizes=auto alt=/posts/3e939557/kde-nutstore1.png title=/posts/3e939557/kde-nutstore1.png><br>
-2、点击左下角<code>添加属性</code>
-<img class=lazyload src=/svg/loading.min.svg data-src=kde-nutstore2.png data-srcset="/posts/3e939557/kde-nutstore2.png, kde-nutstore2.png 1.5x, /posts/3e939557/kde-nutstore2.png 2x" data-sizes=auto alt=/posts/3e939557/kde-nutstore2.png title=/posts/3e939557/kde-nutstore2.png><br>
-3、在弹出的<code>添加属性到规则</code>中，选择<code>最小尺寸</code>
-<img class=lazyload src=/svg/loading.min.svg data-src=kde-nutsotre3.png data-srcset="/posts/3e939557/kde-nutsotre3.png, kde-nutsotre3.png 1.5x, /posts/3e939557/kde-nutsotre3.png 2x" data-sizes=auto alt=/posts/3e939557/kde-nutsotre3.png title=/posts/3e939557/kde-nutsotre3.png><br>
-4、选择强制，然后设置想要的大小，建设设置500以上，我这里是1008x1061
-<img class=lazyload src=/svg/loading.min.svg data-src=kde-nutsotre4.png data-srcset="/posts/3e939557/kde-nutsotre4.png, kde-nutsotre4.png 1.5x, /posts/3e939557/kde-nutsotre4.png 2x" data-sizes=auto alt=/posts/3e939557/kde-nutsotre4.png title=/posts/3e939557/kde-nutsotre4.png></p>
-<h3 id=joplin同步到joplin的正确方法>Joplin同步到Joplin的正确方法</h3>
+<p>1、右键点击登录界面的标题栏&ndash;更多操作&ndash;配置特殊窗口设置</p>
+<p><img class=lazyload src=/svg/loading.min.svg data-src=kde-nutstore1.png data-srcset="/posts/3e939557/kde-nutstore1.png, kde-nutstore1.png 1.5x, /posts/3e939557/kde-nutstore1.png 2x" data-sizes=auto alt=/posts/3e939557/kde-nutstore1.png title=/posts/3e939557/kde-nutstore1.png></p>
+<p>2、点击左下角<code>添加属性</code></p>
+<p><img class=lazyload src=/svg/loading.min.svg data-src=kde-nutstore2.png data-srcset="/posts/3e939557/kde-nutstore2.png, kde-nutstore2.png 1.5x, /posts/3e939557/kde-nutstore2.png 2x" data-sizes=auto alt=/posts/3e939557/kde-nutstore2.png title=/posts/3e939557/kde-nutstore2.png></p>
+<p>3、在弹出的<code>添加属性到规则</code>中，选择<code>最小尺寸</code></p>
+<p><img class=lazyload src=/svg/loading.min.svg data-src=kde-nutsotre3.png data-srcset="/posts/3e939557/kde-nutsotre3.png, kde-nutsotre3.png 1.5x, /posts/3e939557/kde-nutsotre3.png 2x" data-sizes=auto alt=/posts/3e939557/kde-nutsotre3.png title=/posts/3e939557/kde-nutsotre3.png></p>
+<p>4、选择强制，然后设置想要的大小，建设设置500以上，我这里是1008x1061</p>
+<p><img class=lazyload src=/svg/loading.min.svg data-src=kde-nutsotre4.png data-srcset="/posts/3e939557/kde-nutsotre4.png, kde-nutsotre4.png 1.5x, /posts/3e939557/kde-nutsotre4.png 2x" data-sizes=auto alt=/posts/3e939557/kde-nutsotre4.png title=/posts/3e939557/kde-nutsotre4.png></p>
+<h3 id=joplin同步到坚果云的正确方法>Joplin同步到坚果云的正确方法</h3>
 <p>默认的话，Joplin通过WebDAV同步到坚果云会报错，大体意思是<code>太多的连接</code>这个错误。</p>
 <p>解决方法：</p>
 <p>首先在坚果云里新建一个个人同步文件夹，命名为“Joplin"，然后在软件设置的webdav地址里填入：</p>
