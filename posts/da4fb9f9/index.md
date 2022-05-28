@@ -46,7 +46,7 @@ LoveIt主题使用的图片加载技术叫`lazysizes` ，它的官方解释说�
 
 `libFiles: https://gcore.jsdelivr.net/npm/`
 
-问题解决
+问题解决。
 
 
 
