@@ -1,7 +1,7 @@
 # 使用Hugo搭建个人网站(三)-LoveIt主题启用网站图标
 
 
-网站图标，即favicon,虽然对于网站不是必须的，但是有这个东西能显著增加网站的正规性和美观性。
+网站图标`favicon`,虽然对于网站不是必须的，但是有这个东西能显著增加网站的正规性和美观性。
 
 ## 生成favicon
 打开[realfavicongenerator](https://realfavicongenerator.net/),点击右上角`Select your Favicon image`链接。
