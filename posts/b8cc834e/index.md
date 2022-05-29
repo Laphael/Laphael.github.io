@@ -15,6 +15,6 @@
 ![](点击下载.png)
 
 ## 启用favicon
-把下载的文件，全部解压到网站根目录的`static`中，即可生效。
+把下载的文件，全部解压到网站根目录的`static`中。
 
 因为LoveIt主题自带了对realfavicongenerator生成的favicon格式支持，所以不用再做其它设置，直接就生效。
