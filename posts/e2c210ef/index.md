@@ -27,7 +27,7 @@
 对于 `TrueColor`的支持情况，三款终端如下：
 
 - `MobaXterm`：支持
-- SecureCRT：8.7版本之后支持
+- `SecureCRT`：8.7版本之后支持
 - `Xshell  `：支持
 
 ### （一）打开Xshell 7的TrueColor支持
@@ -44,7 +44,7 @@
 
 同样的.`vimrc`配置文件，在 `SecureCRT`和 `MobaXterm`里，都没有办法打开斜体显示，而 `Xshell`显示正常：
 
-![1657249539360](1657249539360.png)
+![1657250206574](1657250206574.png)
 
 三、Zmodem支持
 
