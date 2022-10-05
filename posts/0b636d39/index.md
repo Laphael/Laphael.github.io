@@ -23,6 +23,8 @@ sudo python2 get-pip.py
 
 这样，在使用的时候，只需要输入`python2`、`pip2`和`python3`、`pip3`即可。
 
+## 后记
+
 如果想输入`python`的时候，默认调用`python3`,可以安装`python-is-python3`这个软件包
 ```
 sudo apt install python-python3

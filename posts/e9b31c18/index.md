@@ -22,6 +22,10 @@
 - 自动实例插件`zsh-autosuggestions`、
 - 跳转插件`autojump`
 
+在`debian`或者`kali`下，这3个插件都有对应的软件包，直接安装即可。
+
+其它linux，如果没有对应的软件包，可以用下面手动安装的方式。
+
 ### zsh-syntax-highlighting
 ````shell
 cd $ZSH/custom/plugins
