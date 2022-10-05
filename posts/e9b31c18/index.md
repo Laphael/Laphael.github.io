@@ -44,8 +44,10 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git
 
 然后在文件的末尾添加下面的内容
 ```
-[[ -s /usr/local/share/autojump/autojump.zsh ]] && . /usr/local/share/autojump/autojump.zsh
+[[ -s /usr/share/autojump/autojump.zsh ]] && . /usr/share/autojump/autojump.zsh
+
 source $ZSH/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ```
 ## 配置文件生效
