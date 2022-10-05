@@ -23,6 +23,6 @@
 
 打开`CMD`，输入下面命令：
 
-`C：\Program Files\Microsoft OneDrive\onedrive.exe /rese`
+`C：\Program Files\Microsoft OneDrive\onedrive.exe /reset`
 
 重启之后，看到熟悉的`始终(A)保留在此设备上`就回来了。
