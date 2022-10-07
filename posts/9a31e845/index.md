@@ -1,6 +1,8 @@
 # SELinux相关问题的解决
 
-为了服务器的安全性考虑,rhel系列默认会启用的SELinux最好不要关闭,这也导致了一些坑的出现,下面记录一下解决方法。
+为了服务器的安全性考虑,rhel系列默认会启用的SELinux最好不要关闭。
+
+这也导致了一些坑的出现,下面记录一下解决方法。
 
 ## 更改SSH端口号后,ssh服务无法启动
 
@@ -8,11 +10,11 @@
 
 ### 解决方法
 
-在selinux里开放对应的端口号,这里以2394为例：
+在selinux里开放对应的端口号,这里以`2394`为例：
 ```shell
-semanage port -a -t ssh_port_t -p tcp
+semanage port -a -t ssh_port_t -p tcp 2394
 ```
-详细改端口的教程看这里.
+详细改端口的教程看[这里](https://dnwzlx.com/posts/583558fa/).
 
 ## ValueError: 没有管理SELinux 策略或者无法访问存储
 
