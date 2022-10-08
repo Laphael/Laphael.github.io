@@ -8,7 +8,7 @@ wsl安装了多个linux发行版后，主机名统一都是windows的主机名�
 
 ```
  [network]
- generateHosts = false
+# generateHosts = false
  hostname = kali
 ```
 上面的文件里,把`kali`换成你想要的主机名即可。
