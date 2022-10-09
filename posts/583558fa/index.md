@@ -54,3 +54,33 @@ firewall-cmd --permanent --zone=public --remove-port=22/tcp
 ## 重启服务器
 
 连接即可。
+
+## 几个问题的解决
+
+### 第一次可以连接ssh，但以后再连接则不行
+问题描述：初次安装完系统后，启动sshd服务，不用修改任何配置，第一次的时候可以直接连接到服务器，以后就不行了。
+
+解决：这个问题出现的根本原因还未深究，但是解决方法很简单：
+
+修改`/etc/ssh/sshd_config`,把`#Port 22`前面的`#`去掉,即改成`Port 22`即可。
+
+### 已经在firewall-cmd里放行了端口，但还是无法连接
+问题描述：一直显示 `Connection timed out`
+
+解决:这个问题,是由于在放行端口之后,没有执行`firewall-cmd --reload`造成的。
+
+如果不执行`firewall-cmd --reload`命令，即使添加端口后显示success,并且重启了服务器,但是`firewalld`的规则依旧不生效。
+
+所以，切记在添加需要放行的端口后，要执行一次`firewall-cmd --reload`命令。
+
+### semanage命令找不到
+
+安装下面软件包即可
+```
+dnf in policycoreutils-python-utils
+```
+
+### almalinux最小化安装默认的几个软件
+
+最小化安装的almalinux,默认安装了`openssh`、`openssh-server`、`firewall-cmd`、`firewalld`，对于管理来说，只需要再安装上述的`semanage`即可。很是贴心和方便。
+
