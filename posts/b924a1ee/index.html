@@ -1,0 +1,213 @@
+<!doctype html><html lang=zh-cn><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><title>手动安装Nextcloud - 寂静·流年</title><meta name=Description content="记录我的生活、兴趣和研究"><meta property="og:title" content="手动安装Nextcloud"><meta property="og:description" content="试过docker、snpa等方式部署nextcloud，但是存在系统匹配、资源占用大等各种问题。而且配置都是写死的，看似安装部署简单，其实折"><meta property="og:type" content="article"><meta property="og:url" content="https://example.com/posts/b924a1ee/"><meta property="og:image" content="https://example.com/logo.png"><meta property="article:section" content="posts"><meta property="article:published_time" content="2022-10-12T05:51:34+08:00"><meta property="article:modified_time" content="2022-10-12T05:51:34+08:00"><meta property="og:site_name" content="My cool site"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://example.com/logo.png"><meta name=twitter:title content="手动安装Nextcloud"><meta name=twitter:description content="试过docker、snpa等方式部署nextcloud，但是存在系统匹配、资源占用大等各种问题。而且配置都是写死的，看似安装部署简单，其实折"><meta name=application-name content="寂静·流年"><meta name=apple-mobile-web-app-title content="寂静·流年"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://example.com/posts/b924a1ee/><link rel=prev href=https://example.com/posts/f68b8b61/><link rel=stylesheet href=/css/style.min.css><link rel=preload href=https://gcore.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://gcore.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css></noscript><link rel=preload href=https://gcore.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://gcore.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"手动安装Nextcloud","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/example.com\/posts\/b924a1ee\/"},"image":["https:\/\/example.com\/images\/Apple-Devices-Preview.png"],"genre":"posts","keywords":"nextcloud, debian","wordcount":1188,"url":"https:\/\/example.com\/posts\/b924a1ee\/","datePublished":"2022-10-12T05:51:34+08:00","dateModified":"2022-10-12T05:51:34+08:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"Laphael","logo":"https:\/\/example.com\/images\/avatar.png"},"author":{"@type":"Person","name":"Laphael"},"description":""}</script></head><body data-header-desktop=fixed data-header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":"light"==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:"light"==="dark")&&document.body.setAttribute("theme","dark")</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title=寂静·流年>寂静·流年</a></div><div class=menu><div class=menu-inner><a class=menu-item href=/posts/>文章 </a><a class=menu-item href=/categories/>分类 </a><a class=menu-item href=/tags/>标签 </a><a class=menu-item href=/about/>关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<input type=text placeholder=搜索文章标题或内容... id=search-input-desktop>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=搜索><i class="fas fa-search fa-fw" aria-hidden=true></i></a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=清空><i class="fas fa-times-circle fa-fw" aria-hidden=true></i></a>
+<span class="search-button search-loading" id=search-loading-desktop><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span>
+</span><a href=javascript:void(0); class="menu-item theme-switch" title=切换主题><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title=寂静·流年>寂静·流年</a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><div class=search-wrapper><div class="search mobile" id=search-mobile><input type=text placeholder=搜索文章标题或内容... id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=搜索><i class="fas fa-search fa-fw" aria-hidden=true></i></a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=清空><i class="fas fa-times-circle fa-fw" aria-hidden=true></i></a>
+<span class="search-button search-loading" id=search-loading-mobile><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span></div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>取消</a></div><a class=menu-item href=/posts/ title>文章</a><a class=menu-item href=/categories/ title>分类</a><a class=menu-item href=/tags/ title>标签</a><a class=menu-item href=/about/ title>关于</a><a href=javascript:void(0); class="menu-item theme-switch" title=切换主题>
+<i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=main><div class=container><div class=toc id=toc-auto><h2 class=toc-title>目录</h2><div class=toc-content id=toc-content-auto></div></div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">手动安装Nextcloud</h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>Laphael</a></span>&nbsp;<span class=post-category>收录于 <a href=/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/><i class="far fa-folder fa-fw" aria-hidden=true></i>软件应用</a></span></div><div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2022-10-12>2022-10-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;约 1188 字&nbsp;
+<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;预计阅读 3 分钟&nbsp;</div></div><div class="details toc" id=toc-static data-kept><div class="details-summary toc-title"><span>目录</span>
+<span><i class="details-icon fas fa-angle-right" aria-hidden=true></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><a href=#安装各种依赖软件>安装各种依赖软件</a><ul><li><a href=#mariadb>Mariadb</a></li><li><a href=#安装php和apache2>安装php和Apache2</a></li></ul></li><li><a href=#安装nextcloud>安装nextcloud</a><ul><li><a href=#重启apache2>重启apache2</a></li></ul></li><li><a href=#启用全站https>启用全站https</a></li></ul></nav></div></div><div class=content id=content><p>试过docker、snpa等方式部署nextcloud，但是存在系统匹配、资源占用大等各种问题。而且配置都是写死的，看似安装部署简单，其实折腾起来更痛苦。</p><p>尤其是在内网环境里,不涉及升级的问题,手动安装是更好的选择，而且超级简单。</p><p>本文假设nextcloud的服务器地址是<strong>192.168.8.14</strong></p><h2 id=安装各种依赖软件>安装各种依赖软件</h2><h3 id=mariadb>Mariadb</h3><ol><li>安装</li></ol><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>sudo apt update
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>sudo apt -y install mariadb-server mariadb-client
+</span></span></code></pre></td></tr></table></div></div><ol start=2><li>配置</li></ol><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>sudo mysql_secure_installation 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>sudo mysql -u root -p
+</span></span></code></pre></td></tr></table></div></div><p>输入密码以登录</p><ol start=3><li>创建nextcloud的用户和数据库</li></ol><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>CREATE USER &#39;nextcloud&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;密码&#39;;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>CREATE DATABASE nextcloud;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>GRANT ALL PRIVILEGES ON nextcloud.* TO &#39;nextcloud&#39;@&#39;localhost&#39;;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>FLUSH PRIVILEGES;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>QUIT
+</span></span></code></pre></td></tr></table></div></div><p>以上，创建了用户名为<code>nextcloud</code>、密码是自定义的密码、数据库为<code>nextcloud</code>，且用户<code>nextcloud</code>拥有数据库<code>nextcloud</code>所有权限。</p><h3 id=安装php和apache2>安装php和Apache2</h3><ol><li>安装</li></ol><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>sudo apt -y install php php-{cli,xml,zip,curl,gd,cgi,mysql,mbstring,intl}
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>sudo apt -y install apache2 libapache2-mod-php
+</span></span></code></pre></td></tr></table></div></div><ol start=2><li>修改php配置</li></ol><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>sudo vim /etc/php/*/apache2/php.ini
+</span></span></code></pre></td></tr></table></div></div><p>下面是修改后的内容：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>date.timezone = Asia/Shanghai
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>memory_limit = 1000M
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>upload_max_filesize = 16000M
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>post_max_size = 16000M
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>max_execution_time = 300
+</span></span></code></pre></td></tr></table></div></div><h2 id=安装nextcloud>安装nextcloud</h2><ol><li>下载</li></ol><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>wget https://download.nextcloud.com/server/releases/latest.zip
+</span></span></code></pre></td></tr></table></div></div><ol start=2><li>解压</li></ol><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>unzip latest.zip
+</span></span></code></pre></td></tr></table></div></div><ol start=3><li>下面的操作，是把<code>/var/www/html</code>目录改名，把解压出来的<code>nextcloud</code>改名为<code>html</code>,并把它放在<code>/var/www/</code>下面</li></ol><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>cd /var/www
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>sudo mv html html_origin
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>cd ~
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>mv nextcloud html
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>sudo mv html /var/www/
+</span></span></code></pre></td></tr></table></div></div><ol start=4><li>更改权限</li></ol><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>sudo chown -R www-data:www-data /var/www/html/
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>sudo sudo chmod -R 755 /var/www/html/
+</span></span></code></pre></td></tr></table></div></div><h3 id=重启apache2>重启apache2</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>sudo systemctl restart apache2
+</span></span></code></pre></td></tr></table></div></div><p>输入http://ip，就可以访问页面来安装了</p><h2 id=启用全站https>启用全站https</h2><p>有些插件，像是<code>Passwords</code>等，要求必须使用https来连接，而且https连接也更安全，下面使用<code>nginx</code>的反向代理功能来启用nextcloud的全站https</p><ol><li>生成自签名证书</li></ol><blockquote><p>内网环境，无法使用Let&rsquo;s Crypt等证书，这里使用自签名证书
+当前用户目录下新建一个sslcert目录</p></blockquote><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>cd ~
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>mkdir sslcert
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>cd sslcert
+</span></span></code></pre></td></tr></table></div></div><p>生成证书的命令：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>openssl req -newkey rsa:4096 \
+</span></span><span class=line><span class=cl>            -x509 \
+</span></span><span class=line><span class=cl>            -sha256 \
+</span></span><span class=line><span class=cl>            -days 36500 \
+</span></span><span class=line><span class=cl>            -nodes \
+</span></span><span class=line><span class=cl>            -out nc.crt \
+</span></span><span class=line><span class=cl>            -keyout nc.key
+</span></span></code></pre></td></tr></table></div></div><p>根据提示输入内容，最后生成名为<code>nc.crt</code>和<code>nc.key</code>2个证书。</p><ol start=2><li>更改apache2的端口号
+由于需要使用<code>nginx</code>，为避免端口冲突导致apache2无法启动，这里先把<code>apache2</code>的端口由<code>80</code>改成<code>81</code></li></ol><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>sudo systemctl stop apache2   ##先关闭apache2服务
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>sudo vi  /etc/apache2/ports.conf
+</span></span></code></pre></td></tr></table></div></div><p>将<code>Listen 80</code>改成<code>Listen 81</code></p><ol start=3><li>安装nginx</li></ol><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>sudo apt install nginx
+</span></span></code></pre></td></tr></table></div></div><ol start=4><li>新建nginx配置文件</li></ol><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>sudo vi /etc/nginx/conf.d/nextcloud.conf
+</span></span></code></pre></td></tr></table></div></div><p>内容如下:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>server {
+</span></span><span class=line><span class=cl>        listen          443 ssl;
+</span></span><span class=line><span class=cl>        server_name     192.168.8.14;  #改成你的服务器IP或者域名
+</span></span><span class=line><span class=cl>        ssl_certificate         /home/myserver/sslcert/nc.crt; #改成你的证书路径
+</span></span><span class=line><span class=cl>        ssl_certificate_key     /home/myserver/sslcert/nc.key; #改成你的证书路径
+</span></span><span class=line><span class=cl>        ssl_session_timeout 5m;
+</span></span><span class=line><span class=cl>        ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+</span></span><span class=line><span class=cl>        ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;
+</span></span><span class=line><span class=cl>        ssl_prefer_server_ciphers on;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        location ~ {
+</span></span><span class=line><span class=cl>                client_max_body_size 16000M;
+</span></span><span class=line><span class=cl>                proxy_set_header Host $host;
+</span></span><span class=line><span class=cl>                proxy_set_header X-Real-IP $remote_addr;
+</span></span><span class=line><span class=cl>                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+</span></span><span class=line><span class=cl>                proxy_set_header X-Forwarded-Proto $scheme;
+</span></span><span class=line><span class=cl>                proxy_set_header X-Forwarded-Port $server_port;
+</span></span><span class=line><span class=cl>                proxy_set_header X-Forwarded-Host $server_name;
+</span></span><span class=line><span class=cl>                add_header Front-End-Https on;
+</span></span><span class=line><span class=cl>                proxy_set_header X-Nginx-Proxy true;
+</span></span><span class=line><span class=cl>                proxy_pass http://192.168.8.14:81; #这里要改成81,和apache2修改过的Listen 端口对应
+</span></span><span class=line><span class=cl>                proxy_buffering off;
+</span></span><span class=line><span class=cl>                proxy_max_temp_file_size 0;
+</span></span><span class=line><span class=cl>                proxy_redirect off;
+</span></span><span class=line><span class=cl>    }
+</span></span><span class=line><span class=cl>}
+</span></span></code></pre></td></tr></table></div></div><ol start=5><li>修改nextcloud配置文件</li></ol><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>sduo vi /var/www/html/config/config.php
+</span></span></code></pre></td></tr></table></div></div><p>照着下面的内容自己修改:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>  &#39;trusted_domains&#39; =&gt; 
+</span></span><span class=line><span class=cl>  array (
+</span></span><span class=line><span class=cl>    0 =&gt; &#39;127.0.0.1&#39;,
+</span></span><span class=line><span class=cl>    1 =&gt; &#39;192.168.8.14&#39;,
+</span></span><span class=line><span class=cl>  ),
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  &#39;trusted_proxies&#39;   =&gt; [&#39;127.0.0.1:443&#39;],
+</span></span><span class=line><span class=cl>  &#39;overwritehost&#39;     =&gt; &#39;192.168.8.14:443&#39;,
+</span></span><span class=line><span class=cl>  &#39;overwriteprotocol&#39; =&gt; &#39;https&#39;,
+</span></span><span class=line><span class=cl>  &#39;overwritewebroot&#39;  =&gt; &#39;/&#39;,
+</span></span><span class=line><span class=cl>  &#39;htaccess.RewriteBase&#39; =&gt; &#39;/&#39;,
+</span></span><span class=line><span class=cl>  &#39;overwrite.cli.url&#39; =&gt; &#39;https://192.168.8.14&#39;,
+</span></span></code></pre></td></tr></table></div></div><p>重启服务器,会看到nextcloud强制全站走https了。</p></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>更新于 2022-10-12</span></div></div><div class=post-info-line><div class=post-info-md></div><div class=post-info-share><span></span></div></div></div><div class=post-info-more><section class=post-tags><i class="fas fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/tags/nextcloud/>nextcloud</a>,&nbsp;<a href=/tags/debian/>debian</a></section><section><span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/>主页</a></span></section></div><div class=post-nav><a href=/posts/f68b8b61/ class=prev rel=prev title=正确安装WSL2的方法><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>正确安装WSL2的方法</a></div></div><div id=comments><div id=disqus_thread class=comment></div><noscript>Please enable JavaScript to view the comments powered by <a href=https://disqus.com/?ref_noscript>Disqus</a>.</noscript></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line itemscope itemtype=http://schema.org/CreativeWork><i class="far fa-copyright fa-fw" aria-hidden=true></i><span itemprop=copyrightYear>2022</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>Laphael</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title=回到顶部><i class="fas fa-arrow-up fa-fw" aria-hidden=true></i>
+</a><a href=# id=view-comments class=fixed-button title=查看评论><i class="fas fa-comment fa-fw" aria-hidden=true></i></a></div><script type=text/javascript src=https://dnwzlx.disqus.com/embed.js defer></script><script type=text/javascript src=https://gcore.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js></script><script type=text/javascript src=https://gcore.jsdelivr.net/npm/algoliasearch@4.13.0/dist/algoliasearch-lite.umd.min.js></script><script type=text/javascript src=https://gcore.jsdelivr.net/npm/lazysizes@5.3.1/lazysizes.min.js></script><script type=text/javascript src=https://gcore.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"复制到剪贴板",maxShownLines:40},comment:{},search:{algoliaAppID:"PASDMWALPK",algoliaIndex:"index.zh-cn",algoliaSearchKey:"b42948e51daaa93df92381c8e2ac0f93",highlightTag:"em",maxResultLength:10,noResultsFound:"没有找到结果",snippetLength:50,type:"algolia"}}</script><script type=text/javascript src=/js/theme.min.js></script></body></html>
