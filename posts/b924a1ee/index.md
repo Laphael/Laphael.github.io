@@ -118,6 +118,7 @@ sudo systemctl restart apache2
 
 1. 生成自签名证书
 > 内网环境，无法使用Let's Crypt等证书，这里使用自签名证书
+
 当前用户目录下新建一个sslcert目录
 ```
 cd ~
@@ -214,3 +215,25 @@ sduo vi /var/www/html/config/config.php
 
 重启服务器,会看到nextcloud强制全站走https了。
 
+## nextcloud的几个问题的解决
+
+### Collabora无法在线打开.docx等文档
+
+现象：一直显示“正在加载 xxxx.docx”，但是一直显示不出来。
+
+原因：这是由于系统缺少相关依赖造成的。
+
+解决：根据Collabora官方文档，至少需要下面两个软件
+`fontconfig`、`fuse`，安装即可
+
+```
+sudo apt install fontconfig fuse
+```
+
+### Collabora无法显示中文字体
+
+解决方法：把需要用到的中文字体，拷贝到`/usr/local/share/fonts/`目录下。
+
+```
+sudo cp SomeFont.ttf /usr/local/share/fonts/
+```
