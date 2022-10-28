@@ -105,9 +105,9 @@ full text开头的那几个，如下图几个：
 
 ### 生成索引
 
-进入到nextcloud的安装目录下,例如`/var/www/html/nextcloud`
+进入到nextcloud的安装目录下,例如`/var/www/nextcloud`
 ```
-cd /var/www/html/nextcloud
+cd /var/www/nextcloud
 ```
 运行命令：
 ```

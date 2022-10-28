@@ -6,19 +6,17 @@
 
 本文假设nextcloud的服务器地址是**192.168.8.14**
 
-## 安装各种依赖软件
+操作系统： ubuntu 22.04 server
 
-### Mariadb
-
-1. 安装
+## 安装apache2、mariadb、php、redis
 
 ```
-sudo apt update
+sudo apt update && sudo apt upgrade
 
-sudo apt -y install mariadb-server mariadb-client
+sudo apt install apache2 mariadb-server libapache2-mod-php php-gd php-mysql php-curl php-mbstring php-intl php-gmp php-bcmath php-xml php-imagick php-zip php-readline php-apcu redis-server php-redis
 ```
 
-2. 配置
+## 配置mysql
 
 ```
 sudo mysql_secure_installation 
@@ -27,7 +25,7 @@ sudo mysql -u root -p
 ```
 输入密码以登录
 
-3. 创建nextcloud的用户和数据库
+创建nextcloud的用户和数据库
 
 ```
 CREATE USER 'nextcloud'@'localhost' IDENTIFIED BY '密码';
@@ -42,66 +40,109 @@ QUIT
 ```
 以上，创建了用户名为`nextcloud`、密码是自定义的密码、数据库为`nextcloud`，且用户`nextcloud`拥有数据库`nextcloud`所有权限。
 
-### 安装php和Apache2
-
-1. 安装
-
+## 配置apache
+- 启用apache功能模块
 ```
-sudo apt -y install php php-{cli,xml,zip,curl,gd,cgi,mysql,mbstring,intl}
-
-sudo apt -y install apache2 libapache2-mod-php
+sudo a2enmod rewrite headers env dir mime ssl
 ```
 
-2. 修改php配置
+- 新建2个网站配置文件 
+
+1. 新建`/etc/apache2/sites-available/nextcloud.conf`,
+```
+<IfModule mod_ssl.c>
+   <VirtualHost _default_:443>
+
+     ServerName 192.168.8.14
+     DocumentRoot /var/www/nextcloud
+
+     <Directory /var/www/nextcloud/>
+       Options +FollowSymlinks
+       AllowOverride All
+
+      <IfModule mod_dav.c>
+        Dav off
+      </IfModule>
+
+       SetEnv HOME /var/www/nextcloud
+       SetEnv HTTP_HOME /var/www/nextcloud
+     </Directory>
+
+     <IfModule mod_headers.c>
+          Header always set Strict-Transport-Security "max-age=15768000; preload"
+     </IfModule>
+
+     SSLEngine on
+     SSLCertificateFile /etc/ssl/certs/ssl-cert-snakeoil.pem
+     SSLCertificateKeyFile /etc/ssl/private/ssl-cert-snakeoil.key
+
+   </VirtualHost>
+</IfModule>
+
+```
+这是网站的主配置文件,使用了apache自带的证书。
+
+2. 新建 `/etc/apache2/sites-available/nextcloud-redirect.conf`,内容如下:
+
+```
+<VirtualHost *:80>
+   ServerAdmin 192.168.8.14
+
+   RewriteEngine On
+   RewriteCond %{HTTPS} off
+   RewriteRule ^(.*)$ https://%{HTTP_HOST}$1 [R=301,L]
+</VirtualHost>
+
+```
+这是http到https的跳转配置文件
+
+3. 启用网站配置
+```
+sudo a2ensite nextcloud.conf
+sudo a2ensite nextcloud-redirect.conf
+#禁用默认的配置文件
+sudo a2dissite 000-default.conf  
+```
+
+## 修改php配置
 
 ```
 sudo vim /etc/php/*/apache2/php.ini
 
 ```
 
-下面是修改后的内容：
+找到下面的内容，对应修改。下面是修改后的内容：
 
 ```
 date.timezone = Asia/Shanghai
 
-memory_limit = 1000M
+memory_limit = 2048M
 
 upload_max_filesize = 16000M
 
-post_max_size = 16000M
+post_max_size = 16128M
 
 max_execution_time = 300
 ```
+`post_max_size`的值最好比`upload_max_filesize`大一些。
 
 ## 安装nextcloud
 
 1. 下载
 ```
-wget https://download.nextcloud.com/server/releases/latest.zip
+wget https://download.nextcloud.com/server/releases/latest-24.zip
 ```
+nextcloud 25版本刚出，app还没适配完成，这里用24版本。
 
 2. 解压
 ```
-unzip latest.zip
+unzip latest-24.zip
 ```
-3. 下面的操作，是把`/var/www/html`目录改名，把解压出来的`nextcloud`改名为`html`,并把它放在`/var/www/`下面
+3. 下面的操作，是把解压出来的`nextcloud`放在`/var/www/`下面,并且修改权限
 ```
-cd /var/www
+sudo mv nextcloud /var/www/
 
-sudo mv html html_origin
-
-cd ~
-
-mv nextcloud html
-
-sudo mv html /var/www/
-```
-
-4. 更改权限
-```
-sudo chown -R www-data:www-data /var/www/html/
-
-sudo sudo chmod -R 755 /var/www/html/
+sudo chown -R www-data:www-data /var/www/nextcloud
 ```
 
 ### 重启apache2
@@ -110,112 +151,91 @@ sudo sudo chmod -R 755 /var/www/html/
 sudo systemctl restart apache2
 ```
 
-输入http://ip，就可以访问页面来安装了
+输入http://192.168.8.14，应该会自动跳转到https://192.168.8.14 ,
 
-## 启用全站https
+根据页面提示安装即可.
 
-有些插件，像是`Passwords`等，要求必须使用https来连接，而且https连接也更安全，下面使用`nginx`的反向代理功能来启用nextcloud的全站https
+## 优化nextcloud
 
-1. 生成自签名证书
-> 内网环境，无法使用Let's Crypt等证书，这里使用自签名证书
-
-当前用户目录下新建一个sslcert目录
+###  设置redis缓存
+1. 修改redis配置文件
 ```
-cd ~
-
-mkdir sslcert
-
-cd sslcert
+sudo vim /etc/redis/redis.conf
 ```
-
-生成证书的命令： 
+打到对应位置,修改成下面的配置:
 
 ```
-openssl req -newkey rsa:4096 \
-            -x509 \
-            -sha256 \
-            -days 36500 \
-            -nodes \
-            -out nc.crt \
-            -keyout nc.key
+port 0
+unixsocket /var/run/redis/redis-server.sock
+unixsocketperm 770
 ```
-根据提示输入内容，最后生成名为`nc.crt`和`nc.key`2个证书。
-
-2. 更改apache2的端口号
-由于需要使用`nginx`，为避免端口冲突导致apache2无法启动，这里先把`apache2`的端口由`80`改成`81`
+2. 添加用户www-data使用redis的权限
 ```
-sudo systemctl stop apache2   ##先关闭apache2服务
-
-sudo vi  /etc/apache2/ports.conf
+sudo usermod -a -G redis www-data
 ```
-将`Listen 80`改成`Listen 81`
-
-3. 安装nginx
-
+3. 重启apache
 ```
-sudo apt install nginx
+sudo systemctl restart apache2
 ```
-4. 新建nginx配置文件
+4. 修改nextcloud配置文件
+在`/var/www/html/nextcloud/config/config.php`里添加如下配置:
 ```
-sudo vi /etc/nginx/conf.d/nextcloud.conf
+'memcache.local' => '\\OC\\Memcache\\Redis',
+'memcache.locking' => '\\OC\\Memcache\\Redis',
+'filelocking.enabled' => 'true',
+'redis' => 
+array (
+'host' => '/var/run/redis/redis-server.sock',
+'port' => 0,
+'timeout' => 0.0,
+),
 ```
-
-内容如下:
-
+5. 开机启动redis
 ```
-server {
-        listen          443 ssl;
-        server_name     192.168.8.14;  #改成你的服务器IP或者域名
-        ssl_certificate         /home/myserver/sslcert/nc.crt; #改成你的证书路径
-        ssl_certificate_key     /home/myserver/sslcert/nc.key; #改成你的证书路径
-        ssl_session_timeout 5m;
-        ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
-        ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;
-        ssl_prefer_server_ciphers on;
-
-        location ~ {
-                client_max_body_size 16000M;
-                proxy_set_header Host $host;
-                proxy_set_header X-Real-IP $remote_addr;
-                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-                proxy_set_header X-Forwarded-Proto $scheme;
-                proxy_set_header X-Forwarded-Port $server_port;
-                proxy_set_header X-Forwarded-Host $server_name;
-                add_header Front-End-Https on;
-                proxy_set_header X-Nginx-Proxy true;
-                proxy_pass http://192.168.8.14:81; #这里要改成81,和apache2修改过的Listen 端口对应
-                proxy_buffering off;
-                proxy_max_temp_file_size 0;
-                proxy_redirect off;
-    }
-}
-
-```
-5. 修改nextcloud配置文件
-
-```
-sduo vi /var/www/html/config/config.php
-
-```
-照着下面的内容自己修改:
-```
-  'trusted_domains' => 
-  array (
-    0 => '127.0.0.1',
-    1 => '192.168.8.14',
-  ),
-
-  'trusted_proxies'   => ['127.0.0.1:443'],
-  'overwritehost'     => '192.168.8.14:443',
-  'overwriteprotocol' => 'https',
-  'overwritewebroot'  => '/',
-  'htaccess.RewriteBase' => '/',
-  'overwrite.cli.url' => 'https://192.168.8.14',
+sudo systemctl enable redis-server
 ```
 
-重启服务器,会看到nextcloud强制全站走https了。
+### 使用Pretty Links
+即隐藏URL中的*.php的内容
 
-## nextcloud的几个问题的解决
+修改nextcloud的配置文件:
+```
+sudo vim /var/www/html/nextcloud/config/config.php
+```
+添加如下内容:
+```
+'htaccess.RewriteBase' => '/',
+```
+在nextcloud的主目录`/var/www/nextcloud`下运行命令：
+```
+sudo -u www-data php occ maintenance:update:htaccess
+```
+### PHP Opcache设置
+
+修改php配置文件
+```
+sudo vim /etc/php/*/apache2/php.ini
+```
+添加如下内容:
+```
+opcache.enable=1
+opcache.enable_cli=1
+opcache.interned_strings_buffer=8
+opcache.max_accelerated_files=10000
+opcache.memory_consumption=128
+opcache.save_comments=1
+opcache.revalidate_freq=1
+```
+### 电话区域和本地服务跳转配置
+修改nextcloud的配置文件:
+```
+sudo vim /var/www/html/nextcloud/config/config.php
+```
+添加如下内容:
+```
+'default_phone_region' => 'CN',
+'allow_local_remote_servers' => true,
+```
 
 ### Collabora无法在线打开.docx等文档
 
