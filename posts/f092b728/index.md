@@ -3,13 +3,13 @@
 >写作本文时,elasticsearch 8.3.4版本已经发布，无奈此版本与nextcloud集成的文章太少，因此还是使用elastic7。实际使用效果非常好。
 
 ## 环境相关
-CPU:2核
-内存:4G
-操作系统: ubuntu 22.04 server
-java: openjdk-11-jdk
-php: 8.1
-elasticsearch: 7.17.6
-nextcloud:24.0.6
+- CPU:2核
+- 内存:4G
+- 操作系统: ubuntu 22.04 server
+- java: openjdk-11-jdk
+- php: 8.1
+- elasticsearch: 7.17.6
+- ednextcloud:24.0.6
 
 ## 安装java
 elasticsearch依赖于java

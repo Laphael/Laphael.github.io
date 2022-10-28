@@ -104,7 +104,7 @@ sudo a2ensite nextcloud-redirect.conf
 sudo a2dissite 000-default.conf  
 ```
 
-## 修改php配置
+## PHP配置
 
 ```
 sudo vim /etc/php/*/apache2/php.ini
@@ -145,7 +145,7 @@ sudo mv nextcloud /var/www/
 sudo chown -R www-data:www-data /var/www/nextcloud
 ```
 
-### 重启apache2
+4. 重启apache2
 
 ```
 sudo systemctl restart apache2
