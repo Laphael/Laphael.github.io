@@ -5,6 +5,7 @@
 1. 虚拟机使用的是kde桌面
 2. 虚拟机已经安装了`open-vm-tolls`和`open-vm-tools-desktop`
 3. 在虚拟机的高级选项中启用了拖放和复制粘贴等功能
+
 依然不能和宿主机之间双向复制、粘贴和拖放文件。
 
 本人使用vmware安装kali Linux，使用的是KDE桌面，就出现了上面的问题。
@@ -21,7 +22,7 @@
 ```
 sudo vi /etc/xdg/startkderc
 ```
-添加以下内容：
+添加以下内容并保存：
 ```
 [General]
 systemdBoot=false
