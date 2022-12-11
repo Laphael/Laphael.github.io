@@ -8,22 +8,22 @@
 ```
 mkdir -p ~/miniconda3
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
-## 如果使用bash，则把下面命令中的zsh替换成bash
+## 如果使用bash，则把下面命令中的zsh替换成bash：
 zsh ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
 rm -rf ~/miniconda3/miniconda.sh
-##如果使用zsh
+## 如果使用zsh,则执行：
 ~/miniconda3/bin/conda init zsh
-## 如果使用bash
+## 如果使用bash，则执行：
 ~/miniconda3/bin/conda init bash
 ```
 
 ## oh-my-zsh主题配置
-默认情况下，使用双行显示的oh-my-zsh主题，会在第一行的前面显示(base)的标志:
+默认情况下，使用双行显示的oh-my-zsh主题，会在第一行的前面显示`(base)`的标志:
 ![](default-base.png)  
 这就非常的不美观，因此需要对oh-my-zsh的主题做一些修改。
 
 这里以`gnzh`主题为例。
-1. 取消掉默认的环境显示
+1. 取消掉`miniconda`默认的环境显示：
 ```
 conda config --set changeps1 False
 ```
@@ -40,19 +40,21 @@ conda_prompt_info() {
 
 ```
 注意：`$conda_prompt`一定要写成函数的形式，否则PROMPT只会在启动`zsh`的时候获取一次`conda`环境信息，后续切换环境就不会再改变了。
+
 3. 在gnzh主题配置文件的合适地方添加`${conda_prompt}`
+
 例如下面：
 ```
-PROMPT="╭─${user_host}`${conda_prompt}`${current_dir}\$(ruby_prompt_info)${git_branch}
+PROMPT="╭─${user_host}${conda_prompt}${current_dir}\$(ruby_prompt_info)${git_branch}
 ╰─$PR_PROMPT "
 RPROMPT="${return_code}"
 ```
-重新进入 zsh 即可看到效果。
+退出并重新进入`shell`，即可看到效果。
 
 ## 默认不启用conda的base环境
 安装完`miniconda`后，每次登录系统都会自动启用默认的`base`环境，这就取代了系统自带的`python2`和`python3`。
 
-如果想使用系统自带python环境，有两种方法，推荐使用方法2：
+如果想使用系统自带`python`环境，有两种方法，推荐使用方法2：
 - 方法1:
 手动退出base环境回到系统自带的环境
 ```
