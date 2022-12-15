@@ -12,6 +12,7 @@ vyos官方只有night-daily的镜像，没有稳定版的镜像。
 vyos版本和debian版本对应关系如下：
 
 VyOS 1.3(equuleus) .<---> . Debian 10 (Buster) 
+
 VyOS 1.4(sagitta, current) . <---> . Debian 11 (Bullseye)
 
 ## 安装Debian 10虚拟机
@@ -19,7 +20,7 @@ VyOS 1.4(sagitta, current) . <---> . Debian 11 (Bullseye)
 
 不会安装虚拟机的话也就不用再想着手动编译vyos了。
 
-因为要编译最新的lts 1.3.2版本，所以这里安装debian 10.
+因为要编译最新的lts 1.3.2版本，由上面的对应关系知道，需要安装debian 10.
 ## 给debian 10安装docker环境
 
 ```
