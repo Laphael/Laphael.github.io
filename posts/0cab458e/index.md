@@ -33,4 +33,9 @@ notepad $PROFILE
 ```
 如果提示不存在则新建即可。
 
+在 `Profile` 文件中增加:
+```
+conda activate py3s
+```
+
 
