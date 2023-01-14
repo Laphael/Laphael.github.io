@@ -6,7 +6,7 @@
 
 今天又想起这个长期以来的bug，搜索了一上，发现已经有解决方法了。
 
-## 修改文章模板archetypes/default.md
+## 修改网站配置文件
 
-archetypes/default.md 是博客文章的默认模板,需要添加一个参数
+在网站的配置文件 `config.toml`里添加
 
