@@ -26,7 +26,7 @@ enableGitInfo = true
 
 完整的配置文件看[这里](https://dnwzlx.com/posts/95a48970/#%E7%BD%91%E7%AB%99%E8%AE%BE%E7%BD%AE)
 
-需要注意的是下面这些：
+需要注意其中的这些配置：
 
 ```toml
       - name: Checkout
