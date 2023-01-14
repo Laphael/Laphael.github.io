@@ -8,3 +8,5 @@
 
 ## 修改文章模板archetypes/default.md
 
+archetypes/default.md 是博客文章的默认模板
+
