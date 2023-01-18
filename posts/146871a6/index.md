@@ -46,7 +46,7 @@ enableGitInfo = true
 
 ### Disable quotePath
 
-默认情况下，当文件名中包含中文的时候，git 会使用引号`" "`把文件名括起来。
+原理是这样的：默认情况下，当文件名中包含中文的时候，git 会使用引号`" "`把文件名括起来。
 
 但是这会导致 action 中无法读取 `:GitInfo` 变量，所以这里需要关闭`quotePath`功能。
 
