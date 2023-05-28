@@ -29,7 +29,7 @@ sudo vi /usr/lib/systemd/user/resilio-sync.service
 找到：
 
 ```
-WantedBy=multi-user.ta~~rget
+WantedBy=multi-user.target
 ```
 
 修改成：
