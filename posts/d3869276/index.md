@@ -23,7 +23,7 @@ ipmitool -I lanplus -H 192.168.1.11 -U username -P passwd raw  0x30 0x30 0x01 0
 ## 手动设置风扇转速
 
 ```
-ipmitool -I lanplus -H 192.168.8.244 -U ADMIN -P Dyf@idrac =985 raw 0x30 0x30 0x02 0xff 0x0f
+ipmitool -I lanplus -H 192.168.1.11 -U username -P passwd raw 0x30 0x30 0x02 0xff 0x0f
 ```
 
 上面手动设置的风扇转速为15%。
