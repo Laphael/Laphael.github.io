@@ -41,6 +41,8 @@ WantedBy=default.target
 ### 使用当前用户自动启动服务
 
 ```
-sudo systemctl --user enable resilio-sync
+systemctl --user enable resilio-sync
 ```
+
+上面的命令，**不要**使用`sudo`来执行。
 
