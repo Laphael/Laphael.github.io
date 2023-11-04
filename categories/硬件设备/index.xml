@@ -1,1 +1,67 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>硬件设备 - 分类 - 寂静·流年</title><link>https://example.com/categories/%E7%A1%AC%E4%BB%B6%E8%AE%BE%E5%A4%87/</link><description>硬件设备 - 分类 - 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 09 Jul 2023 06:58:51 +0800</lastBuildDate><atom:link href="https://example.com/categories/%E7%A1%AC%E4%BB%B6%E8%AE%BE%E5%A4%87/" rel="self" type="application/rss+xml"/><item><title>Dell R730XD风扇调速</title><link>https://example.com/posts/d3869276/</link><pubDate>Sun, 09 Jul 2023 06:58:51 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/d3869276/</guid><description>虽然Dell R730XD号称静音，但是默认的风扇转速还是让人爱不了。 但是好在，R730xd是支持风扇调速的，下面是具体方法 安装ipmitoo</description></item><item><title>27寸4K显示器的缩放比例研究</title><link>https://example.com/posts/c609f2d7/</link><pubDate>Mon, 12 Sep 2022 00:51:01 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/c609f2d7/</guid><description>一直以来，对于27寸4K的显示，都是使用windows 10默认推荐的150%的缩放。 直到今天才发现,这是错的。 显示器的尺寸、分辨率和PPI 先</description></item><item><title>罗技M720鼠标使用感受</title><link>https://example.com/posts/cf80e189/</link><pubDate>Sun, 19 Jun 2022 17:32:43 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/cf80e189/</guid><description>前段时间玩黑苹果的时候，买了一块罗技的MX KEYS的键盘。不得不说，这块键盘是真的好用，windows和Mac双系统兼容，手感超级好，比我的</description></item><item><title>解决键盘上的Windows快捷键失灵的问题</title><link>https://example.com/posts/c0dac05c/</link><pubDate>Wed, 09 Mar 2022 17:30:08 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/c0dac05c/</guid><description>键盘型号是IKBC W210无线机械键盘。 问题 最近两天,忽然发现键盘上的Windows快捷键不起作用了。 Windows 10最让我满意的地方就是它的快捷键了</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>硬件设备 on 寂静·流年</title><link>https://example.com/categories/%E7%A1%AC%E4%BB%B6%E8%AE%BE%E5%A4%87/</link><description>Recent content in 硬件设备 on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Sun, 09 Jul 2023 06:58:51 +0800</lastBuildDate><atom:link href="https://example.com/categories/%E7%A1%AC%E4%BB%B6%E8%AE%BE%E5%A4%87/index.xml" rel="self" type="application/rss+xml"/><item><title>Dell R730XD风扇调速</title><link>https://example.com/posts/d3869276/</link><pubDate>Sun, 09 Jul 2023 06:58:51 +0800</pubDate><guid>https://example.com/posts/d3869276/</guid><description>&lt;p>虽然Dell R730XD号称静音，但是默认的风扇转速还是让人爱不了。&lt;/p>
+&lt;p>但是好在，R730xd是支持风扇调速的，下面是具体方法&lt;/p>
+&lt;h2 id="安装ipmitool">安装ipmitool&lt;/h2>
+&lt;p>最简单的方法是安装一台linux的虚拟机，例如debian 12,&lt;code>impitool&lt;/code>在很多linux下都在官方的软件仓库里。&lt;/p>
+&lt;h2 id="关闭风扇自动调速">关闭风扇自动调速&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">ipmitool -I lanplus -H 192.168.1.11 -U username -P passwd raw  0x30 0x30 0x01 0x00
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>&lt;code>192.168.1.11&lt;/code>改为你的R730xd的服务器地址&lt;/li>
+&lt;li>&lt;code>username&lt;/code>改为你的iDrac的用户名&lt;/li>
+&lt;li>&lt;code>passwd&lt;/code>改为你的iDrac的密码&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>必须&lt;/strong>先做这一步，不然下面的手动设置风扇转速不起作用&lt;/p>
+&lt;h2 id="手动设置风扇转速">手动设置风扇转速&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">ipmitool -I lanplus -H 192.168.1.11 -U username -P passwd raw 0x30 0x30 0x02 0xff 0x0f
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>上面手动设置的风扇转速为15%。&lt;/p>
+&lt;p>我感觉15%是比较合适的，静音又能保障一定的散热能力。&lt;/p></description></item><item><title>27寸4K显示器的缩放比例研究</title><link>https://example.com/posts/c609f2d7/</link><pubDate>Mon, 12 Sep 2022 00:51:01 +0800</pubDate><guid>https://example.com/posts/c609f2d7/</guid><description>&lt;blockquote>
+&lt;p>一直以来，对于27寸4K的显示，都是使用windows 10默认推荐的150%的缩放。
+直到今天才发现,这是错的。&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="显示器的尺寸分辨率和ppi">显示器的尺寸、分辨率和PPI&lt;/h2>
+&lt;p>先说一个知识：在Windows中，100%缩放比例实际对应的是ppi和dpi同为96的情况。&lt;/p>
+&lt;p>对于高分屏来说，windows 10默认的那几个缩放比例，比如27寸4k默认推荐的150%，在缩放后对应的DPI其实都不是96。&lt;/p>
+&lt;p>这就导致了在缩放后出现的一个问题：一些软件的UI出现了错位或者字体过小。&lt;/p>
+&lt;h2 id="如何正确计算缩放比例">如何正确计算缩放比例&lt;/h2>
+&lt;p>这里还是以27寸4K显示器来举例，它的PPI约为163,用163除以96,得出的结果约为169%。那么这个169就是你应该设置的缩放比例。&lt;/p>
+&lt;p>也就是说，缩放比例应该以缩放后DPI仍为96为标准来设置。这样的好处是屏幕的UI尺寸以及软件内文档尺寸符合原有设计尺寸。&lt;/p>
+&lt;h2 id="对比150缩放的实际感受">对比150%缩放的实际感受&lt;/h2>
+&lt;p>设置为169%的缩放后，系统字体大小变得更合适了，一些软件的UI也不会出现菜单字体过小的问题。字体美化后也变得更加好看了。&lt;/p>
+&lt;p>比如cobalstrike,使用150%缩放经常会出现客户端登录界面空白的现象,而在使用169%缩放后,再也没有出现了。&lt;/p></description></item><item><title>罗技M720鼠标使用感受</title><link>https://example.com/posts/cf80e189/</link><pubDate>Sun, 19 Jun 2022 17:32:43 +0800</pubDate><guid>https://example.com/posts/cf80e189/</guid><description>&lt;p>前段时间玩黑苹果的时候，买了一块罗技的&lt;code>MX KEYS&lt;/code>的键盘。不得不说，这块键盘是真的好用，&lt;code>windows&lt;/code>和&lt;code>Mac&lt;/code>双系统兼容，手感超级好，比我的IKBC的红轴机械键盘用起来都要舒服。&lt;/p>
+&lt;p>因为这块键盘使用的是优联技术，因此想着再买一个同样使用优联技术的鼠标，这样可以鼠标键盘使用一个接收器就好了。&lt;/p>
+&lt;p>因此趁着618，京东157入手了一个罗技M720鼠标。&lt;/p>
+&lt;p>买回来之后才发现，还是太想当然了。&lt;/p>
+&lt;p>M720这个鼠标有几个问题：&lt;/p>
+&lt;ul>
+&lt;li>重量沉。现在用的是罗技G304，重量非常合适。M720太沉了&lt;/li>
+&lt;li>太小了。宽度还可以，长度不够。用起来后掌心的位置感觉是悬空的。&lt;/li>
+&lt;li>无法和键盘使用同一个优联接收器。买这个鼠标最主要的目的就是省一个优联接收器。结果发现键盘和鼠标还是只能使用各自优联接收器。&lt;/li>
+&lt;li>有异响。晃了一下，有明显的声音，感觉有东西没固定住一样。&lt;/li>
+&lt;/ul>
+&lt;p>因为以上问题，这个M720退货了。&lt;/p>
+&lt;p>还是罗技的G304适合我，重量、大小、手感都非常合适。&lt;/p></description></item><item><title>解决键盘上的Windows快捷键失灵的问题</title><link>https://example.com/posts/c0dac05c/</link><pubDate>Wed, 09 Mar 2022 17:30:08 +0800</pubDate><guid>https://example.com/posts/c0dac05c/</guid><description>&lt;p>键盘型号是IKBC W210无线机械键盘。&lt;/p>
+&lt;h2 id="问题">问题&lt;/h2>
+&lt;p>最近两天,忽然发现键盘上的Windows快捷键不起作用了。&lt;/p>
+&lt;p>Windows 10最让我满意的地方就是它的快捷键了，而这些快捷键大部分是以Win开头的。&lt;/p>
+&lt;p>没有了快捷键，Windows 10仿佛失去了灵魂。&lt;/p>
+&lt;h2 id="解决过程">解决过程&lt;/h2>
+&lt;p>一开始以为是Windows 10的三月更新引起的。网上搜索了一下，没有发现反映相关问题的。&lt;/p>
+&lt;p>于是以“Windows键盘不起作用”为关键字搜索，最终在短乎上一篇反映阿米洛机械键盘的帖子上找到了答案：&lt;/p>
+&lt;h2 id="解决方法">解决方法&lt;/h2>
+&lt;p>其实是我不小心把Windows快捷键给禁用了，附上解决方法&lt;/p>
+&lt;p>锁定方法 ：fn + 左win&lt;/p>
+&lt;p>解锁方法： fn + 右win&lt;/p>
+&lt;p>尽管是针对阿米洛机械键盘的，但是对IKBC W210同样起作用。&lt;/p></description></item></channel></rss>

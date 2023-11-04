@@ -1,1 +1,533 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>debian - 标签 - 寂静·流年</title><link>https://example.com/tags/debian/</link><description>debian - 标签 - 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 12 Oct 2023 17:58:21 +0800</lastBuildDate><atom:link href="https://example.com/tags/debian/" rel="self" type="application/rss+xml"/><item><title>Debian常用软件清单</title><link>https://example.com/posts/f59f4dff/</link><pubDate>Thu, 12 Oct 2023 17:58:21 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/f59f4dff/</guid><description>最近在把debian12（LMDE6）当成主力操作系统使用，记录一下必备的软件： xmind 23.08.02122 字体漂亮、演讲模式非常好用 davinci resolve 18.6.2 UI缩放正确 wps 2019 好用 LX Music</description></item><item><title>手动编译vyos最新稳定版</title><link>https://example.com/posts/c5ea52a2/</link><pubDate>Wed, 14 Dec 2022 11:25:00 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/c5ea52a2/</guid><description>vyos官方只有night-daily的镜像，没有稳定版的镜像。 自己手动编译的话，vyos的官方文档又写的不明不白的，感觉有故意的成份。 于是</description></item><item><title>手动安装Nextcloud</title><link>https://example.com/posts/b924a1ee/</link><pubDate>Wed, 12 Oct 2022 05:51:34 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/b924a1ee/</guid><description>这篇文章在office预览方面依然有些问题，需要解决 试过docker、snpa等方式部署nextcloud，但是存在系统匹配、资源占用大等各</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>debian on 寂静·流年</title><link>https://example.com/tags/debian/</link><description>Recent content in debian on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Thu, 12 Oct 2023 17:58:21 +0800</lastBuildDate><atom:link href="https://example.com/tags/debian/index.xml" rel="self" type="application/rss+xml"/><item><title>Debian常用软件清单</title><link>https://example.com/posts/f59f4dff/</link><pubDate>Thu, 12 Oct 2023 17:58:21 +0800</pubDate><guid>https://example.com/posts/f59f4dff/</guid><description>&lt;p>最近在把debian12（LMDE6）当成主力操作系统使用，记录一下必备的软件：&lt;/p>
+&lt;ul>
+&lt;li>xmind 23.08.02122 字体漂亮、演讲模式非常好用&lt;/li>
+&lt;li>davinci resolve 18.6.2 UI缩放正确&lt;/li>
+&lt;li>wps 2019 好用&lt;/li>
+&lt;li>LX Music 界面漂亮&lt;/li>
+&lt;li>typora 0.11.12(beta) 免费&lt;/li>
+&lt;li>Koodo Reader 书库管理软件&lt;/li>
+&lt;li>Meld 文件比对软件&lt;/li>
+&lt;li>visual studio code 主要用它写hugo博客&lt;/li>
+&lt;li>dbeaver 还可以吧，比navicat还有差距&lt;/li>
+&lt;li>Chrome 对b站弹幕的支持比firefox强&lt;/li>
+&lt;li>motrix 下载工具，支持迅雷、bt、磁力&lt;/li>
+&lt;li>Obstudio 和win下没区别&lt;/li>
+&lt;li>vmware 在debian12下表现非常好，睡眠唤醒后虚拟机没有黑屏、卡死现象&lt;/li>
+&lt;/ul>
+&lt;p>这些软件能够满足我日常应用场景了&lt;/p></description></item><item><title>手动编译vyos最新稳定版</title><link>https://example.com/posts/c5ea52a2/</link><pubDate>Wed, 14 Dec 2022 11:25:00 +0800</pubDate><guid>https://example.com/posts/c5ea52a2/</guid><description>&lt;p>vyos官方只有night-daily的镜像，没有稳定版的镜像。&lt;/p>
+&lt;p>自己手动编译的话，vyos的官方文档又写的不明不白的，感觉有故意的成份。&lt;/p>
+&lt;p>于是网上找了篇文章，简单明了的介绍了如何编译安装最新稳定LTS版本。&lt;/p>
+&lt;h2 id="vyos不同版本对应的编译环境">vyos不同版本对应的编译环境&lt;/h2>
+&lt;p>官方推荐是使用&lt;code>debian&lt;/code>来搭建编译环境.&lt;/p>
+&lt;p>vyos版本和debian版本对应关系如下：&lt;/p>
+&lt;p>VyOS 1.3(equuleus) .&amp;lt;&amp;mdash;&amp;gt; . Debian 10 (Buster)&lt;/p>
+&lt;p>VyOS 1.4(sagitta, current) . &amp;lt;&amp;mdash;&amp;gt; . Debian 11 (Bullseye)&lt;/p>
+&lt;h2 id="安装debian-10虚拟机">安装Debian 10虚拟机&lt;/h2>
+&lt;p>使用vmware，详情不再赘述。&lt;/p>
+&lt;p>不会安装虚拟机的话也就不用再想着手动编译vyos了。&lt;/p>
+&lt;p>因为要编译最新的lts 1.3.2版本，由上面的对应关系知道，需要安装debian 10.&lt;/p>
+&lt;h2 id="给debian-10安装docker环境">给debian 10安装docker环境&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ sudo apt-get update
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ sudo apt-get install -y apt-transport-https ca-certificates curl gnupg2 software-properties-common
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ sudo add-apt-repository &amp;#34;deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ sudo apt-get update
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ sudo apt-get install -y docker-ce
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">## 添加当前用户到docker组
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ sudo usermod -aG docker &amp;lt;Your username&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="编译iso镜像">编译ISO镜像&lt;/h2>
+&lt;p>目前，最新的稳定版是&lt;code>1.3.2 LTS&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">git clone -b 1.3.2 --single-branch https://github.com/vyos/vyos-build
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">cd vyos-build
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">docker run --rm -it --privileged -v $(pwd):/vyos -w /vyos vyos/vyos-build:current bash
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">./configure --architecture amd64 --build-by &amp;#34;j.randomhacker@vyos.io&amp;#34; --build-type &amp;#34;release&amp;#34; --version &amp;#34;LTS 1.3.2&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo make iso
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="编译好的iso镜像下载">编译好的ISO镜像下载&lt;/h2>
+&lt;p>在github上找到了个repo，专门发布编译好的lts镜像，地址在&lt;a class="link" href="https://github.com/naa0yama/vyos-build-lts" target="_blank" rel="noopener"
+>这里&lt;/a>。&lt;/p></description></item><item><title>手动安装Nextcloud</title><link>https://example.com/posts/b924a1ee/</link><pubDate>Wed, 12 Oct 2022 05:51:34 +0800</pubDate><guid>https://example.com/posts/b924a1ee/</guid><description>&lt;h2 id="这篇文章在office预览方面依然有些问题需要解决">这篇文章在office预览方面依然有些问题，需要解决&lt;/h2>
+&lt;p>试过docker、snpa等方式部署nextcloud，但是存在系统匹配、资源占用大等各种问题。而且配置都是写死的，看似安装部署简单，其实折腾起来更痛苦。&lt;/p>
+&lt;p>尤其是在内网环境里,不涉及升级的问题,手动安装是更好的选择，而且超级简单。&lt;/p>
+&lt;p>本文假设nextcloud的服务器地址是&lt;strong>192.168.8.14&lt;/strong>&lt;/p>
+&lt;p>操作系统： ubuntu 22.04 server&lt;/p>
+&lt;h2 id="安装apache2mariadbphpredis">安装apache2、mariadb、php、redis&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo apt update &amp;amp;&amp;amp; sudo apt upgrade
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt install apache2 mariadb-server libapache2-mod-php php-gd php-mysql php-curl php-mbstring php-intl php-gmp php-bcmath php-xml php-imagick php-zip php-readline php-apcu redis-server php-redis
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="配置mysql">配置mysql&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo mysql_secure_installation
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo mysql -u root -p
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>输入密码以登录&lt;/p>
+&lt;p>创建nextcloud的用户和数据库&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">CREATE USER &amp;#39;nextcloud&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;密码&amp;#39;;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">CREATE DATABASE nextcloud;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">GRANT ALL PRIVILEGES ON nextcloud.* TO &amp;#39;nextcloud&amp;#39;@&amp;#39;localhost&amp;#39;;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">FLUSH PRIVILEGES;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">QUIT
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>以上，创建了用户名为&lt;code>nextcloud&lt;/code>、密码是自定义的密码、数据库为&lt;code>nextcloud&lt;/code>，且用户&lt;code>nextcloud&lt;/code>拥有数据库&lt;code>nextcloud&lt;/code>所有权限。&lt;/p>
+&lt;h2 id="配置apache">配置apache&lt;/h2>
+&lt;ul>
+&lt;li>启用apache功能模块&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo a2enmod rewrite headers env dir mime ssl
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>新建2个网站配置文件&lt;/li>
+&lt;/ul>
+&lt;ol>
+&lt;li>新建&lt;code>/etc/apache2/sites-available/nextcloud.conf&lt;/code>,&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;lt;IfModule mod_ssl.c&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;VirtualHost _default_:443&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ServerName 192.168.8.14
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> DocumentRoot /var/www/nextcloud
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;Directory /var/www/nextcloud/&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Options +FollowSymlinks
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> AllowOverride All
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;IfModule mod_dav.c&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Dav off
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;/IfModule&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> SetEnv HOME /var/www/nextcloud
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> SetEnv HTTP_HOME /var/www/nextcloud
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;/Directory&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;IfModule mod_headers.c&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Header always set Strict-Transport-Security &amp;#34;max-age=15768000; preload&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;/IfModule&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> SSLEngine on
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> SSLCertificateFile /etc/ssl/certs/ssl-cert-snakeoil.pem
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> SSLCertificateKeyFile /etc/ssl/private/ssl-cert-snakeoil.key
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;/VirtualHost&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;/IfModule&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这是网站的主配置文件,使用了apache自带的证书。&lt;/p>
+&lt;ol start="2">
+&lt;li>新建 &lt;code>/etc/apache2/sites-available/nextcloud-redirect.conf&lt;/code>,内容如下:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;lt;VirtualHost *:80&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ServerAdmin 192.168.8.14
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> RewriteEngine On
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> RewriteCond %{HTTPS} off
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> RewriteRule ^(.*)$ https://%{HTTP_HOST}$1 [R=301,L]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;/VirtualHost&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这是http到https的跳转配置文件&lt;/p>
+&lt;ol start="3">
+&lt;li>启用网站配置&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo a2ensite nextcloud.conf
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo a2ensite nextcloud-redirect.conf
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#禁用默认的配置文件
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo a2dissite 000-default.conf
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="php配置">PHP配置&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo vim /etc/php/*/apache2/php.ini
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>找到下面的内容，对应修改。下面是修改后的内容：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">date.timezone = Asia/Shanghai
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">memory_limit = 2048M
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">upload_max_filesize = 16000M
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">post_max_size = 16128M
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">max_execution_time = 300
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;code>post_max_size&lt;/code>的值最好比&lt;code>upload_max_filesize&lt;/code>大一些。&lt;/p>
+&lt;h2 id="安装nextcloud">安装nextcloud&lt;/h2>
+&lt;ol>
+&lt;li>下载&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">wget https://download.nextcloud.com/server/releases/latest-24.zip
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>nextcloud 25版本刚出，app还没适配完成，这里用24版本。&lt;/p>
+&lt;ol start="2">
+&lt;li>解压&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">unzip latest-24.zip
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="3">
+&lt;li>下面的操作，是把解压出来的&lt;code>nextcloud&lt;/code>放在&lt;code>/var/www/&lt;/code>下面,并且修改权限&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo mv nextcloud /var/www/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo chown -R www-data:www-data /var/www/nextcloud
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="4">
+&lt;li>重启apache2&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo systemctl restart apache2
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>输入&lt;a class="link" href="http://192.168.8.14%ef%bc%8c%e5%ba%94%e8%af%a5%e4%bc%9a%e8%87%aa%e5%8a%a8%e8%b7%b3%e8%bd%ac%e5%88%b0https://192.168.8.14" target="_blank" rel="noopener"
+>http://192.168.8.14，应该会自动跳转到https://192.168.8.14&lt;/a> ,&lt;/p>
+&lt;p>根据页面提示安装即可.&lt;/p>
+&lt;h2 id="优化nextcloud">优化nextcloud&lt;/h2>
+&lt;h3 id="设置redis缓存">设置redis缓存&lt;/h3>
+&lt;ol>
+&lt;li>修改redis配置文件&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo vim /etc/redis/redis.conf
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>打到对应位置,修改成下面的配置:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">port 0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">unixsocket /var/run/redis/redis-server.sock
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">unixsocketperm 770
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="2">
+&lt;li>添加用户www-data使用redis的权限&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo usermod -a -G redis www-data
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="3">
+&lt;li>重启apache&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo systemctl restart apache2
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="4">
+&lt;li>修改nextcloud配置文件
+在&lt;code>/var/www/html/nextcloud/config/config.php&lt;/code>里添加如下配置:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;#39;memcache.local&amp;#39; =&amp;gt; &amp;#39;\\OC\\Memcache\\Redis&amp;#39;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#39;memcache.locking&amp;#39; =&amp;gt; &amp;#39;\\OC\\Memcache\\Redis&amp;#39;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#39;filelocking.enabled&amp;#39; =&amp;gt; &amp;#39;true&amp;#39;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#39;redis&amp;#39; =&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">array (
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#39;host&amp;#39; =&amp;gt; &amp;#39;/var/run/redis/redis-server.sock&amp;#39;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#39;port&amp;#39; =&amp;gt; 0,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#39;timeout&amp;#39; =&amp;gt; 0.0,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">),
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="5">
+&lt;li>开机启动redis&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo systemctl enable redis-server
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="使用pretty-links">使用Pretty Links&lt;/h3>
+&lt;p>即隐藏URL中的*.php的内容&lt;/p>
+&lt;p>修改nextcloud的配置文件:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo vim /var/www/html/nextcloud/config/config.php
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>添加如下内容:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;#39;htaccess.RewriteBase&amp;#39; =&amp;gt; &amp;#39;/&amp;#39;,
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>在nextcloud的主目录&lt;code>/var/www/nextcloud&lt;/code>下运行命令：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo -u www-data php occ maintenance:update:htaccess
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="php-opcache设置">PHP Opcache设置&lt;/h3>
+&lt;p>修改php配置文件&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo vim /etc/php/*/apache2/php.ini
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>添加如下内容:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">opcache.enable=1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">opcache.enable_cli=1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">opcache.interned_strings_buffer=8
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">opcache.max_accelerated_files=10000
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">opcache.memory_consumption=128
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">opcache.save_comments=1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">opcache.revalidate_freq=1
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="电话区域和本地服务跳转配置">电话区域和本地服务跳转配置&lt;/h3>
+&lt;p>修改nextcloud的配置文件:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo vim /var/www/html/nextcloud/config/config.php
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>添加如下内容:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;#39;default_phone_region&amp;#39; =&amp;gt; &amp;#39;CN&amp;#39;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#39;allow_local_remote_servers&amp;#39; =&amp;gt; true,
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="collabora无法在线打开docx等文档">Collabora无法在线打开.docx等文档&lt;/h3>
+&lt;p>现象：一直显示“正在加载 xxxx.docx”，但是一直显示不出来。&lt;/p>
+&lt;p>原因：这是由于系统缺少相关依赖造成的。&lt;/p>
+&lt;p>解决：根据Collabora官方文档，至少需要下面两个软件
+&lt;code>fontconfig&lt;/code>、&lt;code>fuse&lt;/code>，安装即可&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo apt install fontconfig fuse
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="collabora无法显示中文字体">Collabora无法显示中文字体&lt;/h3>
+&lt;p>解决方法：把需要用到的中文字体，拷贝到&lt;code>/usr/local/share/fonts/&lt;/code>目录下。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo cp SomeFont.ttf /usr/local/share/fonts/
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item></channel></rss>

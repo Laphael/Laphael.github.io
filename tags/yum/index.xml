@@ -1,1 +1,62 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>yum - 标签 - 寂静·流年</title><link>https://example.com/tags/yum/</link><description>yum - 标签 - 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 27 Aug 2023 11:22:15 +0800</lastBuildDate><atom:link href="https://example.com/tags/yum/" rel="self" type="application/rss+xml"/><item><title>CentOS7设置本地yum源</title><link>https://example.com/posts/30c5c884/</link><pubDate>Sun, 27 Aug 2023 11:22:15 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/30c5c884/</guid><description>有时会遇到生产环境部署在内网上，无法使用在线yum的情况。 这时候就需要使用centos的安装镜像，挂载到本地后建立本地yum来安装软件了。 下</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>yum on 寂静·流年</title><link>https://example.com/tags/yum/</link><description>Recent content in yum on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Sun, 27 Aug 2023 11:22:15 +0800</lastBuildDate><atom:link href="https://example.com/tags/yum/index.xml" rel="self" type="application/rss+xml"/><item><title>CentOS7设置本地yum源</title><link>https://example.com/posts/30c5c884/</link><pubDate>Sun, 27 Aug 2023 11:22:15 +0800</pubDate><guid>https://example.com/posts/30c5c884/</guid><description>&lt;p>有时会遇到生产环境部署在内网上，无法使用在线yum的情况。&lt;/p>
+&lt;p>这时候就需要使用centos的安装镜像，挂载到本地后建立本地yum来安装软件了。&lt;/p>
+&lt;p>下面介绍具体方法&lt;/p>
+&lt;h2 id="挂载iso镜像文件">挂载ISO镜像文件&lt;/h2>
+&lt;ol>
+&lt;li>如果使用的是虚拟化平台，已经把ISO镜像文件挂载到虚拟光驱了，则：
+&lt;code>mount /dev/cdrom /mnt&lt;/code>&lt;/li>
+&lt;li>如果是把ISO文件上传到主机上，比如&lt;code>/home&lt;/code>目录下，则：
+&lt;code>mount -o loop /home/CentOS-7-x86_64-DVD-2009.iso /mnt&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;h2 id="设置本地yum源">设置本地yum源&lt;/h2>
+&lt;h3 id="备份系统的repo文件">备份系统的repo文件&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">cd /etc/yum.repos.d
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">mkdir bak
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">mv *.repo ./bak
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="新建本地yum源的repo文件">新建本地yum源的repo文件&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">vi /etc/yum.repos.d/local.repo
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>内容如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">[base]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">name=CentOS
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">baseurl=file:///mnt
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">enabled=1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">gpgcheck=0
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="清除和建立缓存">清除和建立缓存&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">yum clean all
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">yum makecache
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item></channel></rss>

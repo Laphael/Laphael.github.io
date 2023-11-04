@@ -1,1 +1,51 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>utools - 标签 - 寂静·流年</title><link>https://example.com/tags/utools/</link><description>utools - 标签 - 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 29 Dec 2022 08:03:18 +0800</lastBuildDate><atom:link href="https://example.com/tags/utools/" rel="self" type="application/rss+xml"/><item><title>Linux下安装utools</title><link>https://example.com/posts/e1bbdf98/</link><pubDate>Thu, 29 Dec 2022 08:03:18 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/e1bbdf98/</guid><description>utools是个快速启动工具，支持mac、win、linux三大平台，自带丰富的插件。 本人安装utools主要是为了它的词典插件，用来查词非</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>utools on 寂静·流年</title><link>https://example.com/tags/utools/</link><description>Recent content in utools on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Thu, 29 Dec 2022 08:03:18 +0800</lastBuildDate><atom:link href="https://example.com/tags/utools/index.xml" rel="self" type="application/rss+xml"/><item><title>Linux下安装utools</title><link>https://example.com/posts/e1bbdf98/</link><pubDate>Thu, 29 Dec 2022 08:03:18 +0800</pubDate><guid>https://example.com/posts/e1bbdf98/</guid><description>&lt;p>&lt;code>utools&lt;/code>是个快速启动工具，支持mac、win、linux三大平台，自带丰富的插件。&lt;/p>
+&lt;p>本人安装utools主要是为了它的词典插件，用来查词非常方便。&lt;/p>
+&lt;p>最新的3.3版本，在kali linux下可以正常安装，但是启动时却报错：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Uncaught Exception:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Error: libcrypto.so.1.1:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">...
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>可以看出来，是&lt;code>libcrypto.so.1.1&lt;/code>的问题。&lt;/p>
+&lt;p>在网上找了个最简单的解决方法，就是使用其它软件自带的&lt;code>libcrypto.so.1.1&lt;/code>，比如&lt;code>wps&lt;/code>的。&lt;/p>
+&lt;p>首先安装wps，然后查看&lt;code>libcrypto.so&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">dpkg -S libcrypto.so
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>输出如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sublime-text: /opt/sublime_text/libcrypto.so.1.1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">wps-office: /opt/kingsoft/wps-office/office6/libcrypto.so
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">wps-office: /opt/kingsoft/wps-office/office6/libcrypto.so.1.1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">libssl3:amd64: /usr/lib/x86_64-linux-gnu/libcrypto.so.3
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>可以看到，我安装的&lt;code>sublime-text&lt;/code>和&lt;code>wps&lt;/code>都带有&lt;code>libcrypto.so.1.1&lt;/code>，这里使用&lt;code>wps&lt;/code>的。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo cp /opt/kingsoft/wps-office/office6/libcrypto.so.1.1 /opt/uTools/
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>即可正常运行&lt;code>utools&lt;/code>了。&lt;/p></description></item></channel></rss>

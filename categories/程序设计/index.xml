@@ -1,1 +1,29 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>程序设计 - 分类 - 寂静·流年</title><link>https://example.com/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/</link><description>程序设计 - 分类 - 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 24 Dec 2022 08:09:17 +0800</lastBuildDate><atom:link href="https://example.com/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" rel="self" type="application/rss+xml"/><item><title>Pycharm的基本设置</title><link>https://example.com/posts/05159db4/</link><pubDate>Sat, 24 Dec 2022 08:09:17 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/05159db4/</guid><description>设置自动换行/折行 按ctrl+alt+s,打开设置 在左上角搜索框中输入soft-wraps，打到editor-General,勾选soft-</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>程序设计 on 寂静·流年</title><link>https://example.com/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/</link><description>Recent content in 程序设计 on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Sat, 24 Dec 2022 08:09:17 +0800</lastBuildDate><atom:link href="https://example.com/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/index.xml" rel="self" type="application/rss+xml"/><item><title>Pycharm的基本设置</title><link>https://example.com/posts/05159db4/</link><pubDate>Sat, 24 Dec 2022 08:09:17 +0800</pubDate><guid>https://example.com/posts/05159db4/</guid><description>&lt;h2 id="设置自动换行折行">设置自动换行/折行&lt;/h2>
+&lt;p>按&lt;code>ctrl&lt;/code>+&lt;code>alt&lt;/code>+&lt;code>s&lt;/code>,打开设置&lt;/p>
+&lt;p>在左上角搜索框中输入&lt;code>soft-wraps&lt;/code>，打到editor-General,勾选&lt;code>soft-wrap these files&lt;/code>,然后在最后添加&lt;code>; *.py&lt;/code>。
+&lt;img src="https://example.com/posts/05159db4/pycharm-softwrap.png"
+width="1229"
+height="505"
+srcset="https://example.com/posts/05159db4/pycharm-softwrap_hu8c353ee3e59eabe961f3994ccc17fcd6_50155_480x0_resize_box_3.png 480w, https://example.com/posts/05159db4/pycharm-softwrap_hu8c353ee3e59eabe961f3994ccc17fcd6_50155_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="243"
+data-flex-basis="584px"
+>&lt;/p>
+&lt;p>找到editor-General-Console,勾选&lt;code>Use soft wraps in console&lt;/code>,启用控制台的自动折行功能
+&lt;img src="https://example.com/posts/05159db4/pycharm-softwrap2.png"
+width="742"
+height="372"
+srcset="https://example.com/posts/05159db4/pycharm-softwrap2_hu09c09b42a52a5d7ec573683f6308f4fd_33999_480x0_resize_box_3.png 480w, https://example.com/posts/05159db4/pycharm-softwrap2_hu09c09b42a52a5d7ec573683f6308f4fd_33999_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="199"
+data-flex-basis="478px"
+>&lt;/p>
+&lt;h2 id="行号栏过宽">行号栏过宽&lt;/h2>
+&lt;p>按&lt;code>ctrl&lt;/code>+&lt;code>alt&lt;/code>+&lt;code>s&lt;/code>,打开设置&lt;/p>
+&lt;p>在左上角搜索框中输入&lt;code>show gutter icons&lt;/code>，然后&lt;strong>取消勾选&lt;/strong>&lt;code>show gutter icons&lt;/code>即可。&lt;/p>
+&lt;h2 id="跳出成对的括号">跳出成对的括号&lt;/h2>
+&lt;p>在输入&lt;code>' '&lt;/code>、&lt;code>&amp;quot; &amp;quot;&lt;/code>、&lt;code>()&lt;/code>等成对的括号后，如果想跳出当前括号，可以再按一下当前的括号即可跳出括号。&lt;/p>
+&lt;p>例如输入&lt;code>''&lt;/code>后，再输入&lt;code>abcde&lt;/code>,此时光标是处于&lt;code>e&lt;/code>的后面、&lt;code>'&lt;/code>的前面。&lt;/p>
+&lt;p>此时再按一下&lt;code>'&lt;/code>，即可跳到&lt;code>'&lt;/code>的后面了。&lt;/p></description></item></channel></rss>

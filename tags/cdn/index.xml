@@ -1,1 +1,29 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>cdn - 标签 - 寂静·流年</title><link>https://example.com/tags/cdn/</link><description>cdn - 标签 - 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 28 May 2022 11:19:35 +0800</lastBuildDate><atom:link href="https://example.com/tags/cdn/" rel="self" type="application/rss+xml"/><item><title>解决Hugo网站使用LoveIt主题后图片刷新不出来的问题</title><link>https://example.com/posts/da4fb9f9/</link><pubDate>Sat, 28 May 2022 11:19:35 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/da4fb9f9/</guid><description>hugo博客部署在github page上。 最近几天发现，博客的文章和disqus评论都是正常的，唯独涉及图片的部分，一直显示Loading加</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>cdn on 寂静·流年</title><link>https://example.com/tags/cdn/</link><description>Recent content in cdn on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Sat, 28 May 2022 11:19:35 +0800</lastBuildDate><atom:link href="https://example.com/tags/cdn/index.xml" rel="self" type="application/rss+xml"/><item><title>解决Hugo网站使用LoveIt主题后图片刷新不出来的问题</title><link>https://example.com/posts/da4fb9f9/</link><pubDate>Sat, 28 May 2022 11:19:35 +0800</pubDate><guid>https://example.com/posts/da4fb9f9/</guid><description>&lt;p>hugo博客部署在github page上。&lt;/p>
+&lt;p>最近几天发现，博客的文章和disqus评论都是正常的，唯独涉及图片的部分，一直显示Loading加载不出来。&lt;/p>
+&lt;p>一番查找后，发现锅在LoveIt主题上，确切的说，是在LoveIt主题使用的cdn&amp;ndash;&lt;code>https://cdn.jsdelivr.net&lt;/code>上。&lt;/p>
+&lt;h2 id="问题的根源">问题的根源&lt;/h2>
+&lt;p>LoveIt主题使用的图片加载技术叫&lt;code>lazysizes&lt;/code> ，它的官方解释说明是这样的：&lt;/p>
+&lt;ul>
+&lt;li>基于&lt;code>lazysizes&lt;/code>自动转换图片为懒加载&lt;/li>
+&lt;/ul>
+&lt;p>我的理解是，&lt;code>lazysizes&lt;/code>可以自动把图片压缩成设置好的大小，并且按需加载。这样就能够加快网页的打开速度了。&lt;/p>
+&lt;p>&lt;code>lazysizes&lt;/code>依赖的核心js是&lt;code> lazysizes.min.js&lt;/code>。&lt;/p>
+&lt;p>而&lt;code> lazysizes.min.js&lt;/code>存放于&lt;code>https://cdn.jsdelivr.net&lt;/code>上。如果&lt;code>https://cdn.jsdelivr.net&lt;/code>出现访问问题，图片自然也就加载不出来。&lt;/p>
+&lt;p>公共CDN属于基础网络设施，全球有大量的项目依赖于它，一般不会出现问题。&lt;/p>
+&lt;p>很不幸的是，这次恰恰就是&lt;code>https://cdn.jsdelivr.net&lt;/code>出现了问题，而且好像只有在中国大陆出现了问题。&lt;/p>
+&lt;blockquote>
+&lt;p>更进一步，是只有移动、电信的网络出现了问题，联通访问还是正常的（我为什么会知道？因为我有电信、联通、移动三网的环境:stuck_out_tongue:）。&lt;/p>
+&lt;/blockquote>
+&lt;p>这就是此次Hugo网站加载不出来图片的根本原因。&lt;/p>
+&lt;h2 id="解决方法">解决方法&lt;/h2>
+&lt;p>知道问题根源了,解决方法也很简单&amp;ndash;换一个cdn就可以了。&lt;/p>
+&lt;p>最简单的方法是：&lt;/p>
+&lt;p>还是使用&lt;code>jsdelivr.net&lt;/code>的cdn，但是换一个域名，目前&lt;code>gcore.jsdelivr.net&lt;/code>这个域名是可以使用的。&lt;/p>
+&lt;p>具体步骤：&lt;/p>
+&lt;p>编辑文件&lt;/p>
+&lt;p>&lt;code>themes\LoveIt\assets\data\cdn\jsdelivr.yml&lt;/code>&lt;/p>
+&lt;p>修改第二行,原来是:&lt;/p>
+&lt;p>&lt;code>libFiles: https://cdn.jsdelivr.net/npm/&lt;/code>&lt;/p>
+&lt;p>修改为:&lt;/p>
+&lt;p>&lt;code>libFiles: https://gcore.jsdelivr.net/npm/&lt;/code>&lt;/p>
+&lt;p>问题解决。&lt;/p></description></item></channel></rss>

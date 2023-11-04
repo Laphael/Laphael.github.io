@@ -1,1 +1,70 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>resiliosync - 标签 - 寂静·流年</title><link>https://example.com/tags/resiliosync/</link><description>resiliosync - 标签 - 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 24 Aug 2023 17:50:56 +0800</lastBuildDate><atom:link href="https://example.com/tags/resiliosync/" rel="self" type="application/rss+xml"/><item><title>在群晖DSM7上安装ResilioSync</title><link>https://example.com/posts/2761c3a7/</link><pubDate>Thu, 24 Aug 2023 17:50:56 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/2761c3a7/</guid><description>安装 在DSM 7的套件中心里，有官方的resilio sync套件，直接安装即可。 权限设置 这里应该是DSM 7上设置resilio sync的难点了</description></item><item><title>Linux下设置ResilioSync</title><link>https://example.com/posts/821e7658/</link><pubDate>Sun, 28 May 2023 23:39:06 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/821e7658/</guid><description>Resilio Sync在linux下的安装方式就不讲了，官方提供了大量发行版的安装包，根据自己的linux发行版下载安装即可。 管理界面 linux下，Re</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>resiliosync on 寂静·流年</title><link>https://example.com/tags/resiliosync/</link><description>Recent content in resiliosync on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Thu, 24 Aug 2023 17:50:56 +0800</lastBuildDate><atom:link href="https://example.com/tags/resiliosync/index.xml" rel="self" type="application/rss+xml"/><item><title>在群晖DSM7上安装ResilioSync</title><link>https://example.com/posts/2761c3a7/</link><pubDate>Thu, 24 Aug 2023 17:50:56 +0800</pubDate><guid>https://example.com/posts/2761c3a7/</guid><description>&lt;h2 id="安装">安装&lt;/h2>
+&lt;p>在DSM 7的&lt;code>套件中心&lt;/code>里，有官方的resilio sync套件，直接安装即可。&lt;/p>
+&lt;h2 id="权限设置">权限设置&lt;/h2>
+&lt;p>这里应该是DSM 7上设置resilio sync的难点了。&lt;/p>
+&lt;p>如果直接在resilio sync的&lt;code>Web UI&lt;/code>里设置&lt;code>默认文件夹位置&lt;/code>和&lt;code>文件下载位置&lt;/code>,会发现无论选择哪个文件夹，都会提示没有权限。&lt;/p>
+&lt;p>这个问题是由于resilio sync的用户权限造成的。&lt;/p>
+&lt;p>在DSM 7里，resilio sync创建并使用&lt;code>rslsync&lt;/code>这个用户。因此&lt;code>rslsync&lt;/code>这个用户必须对同步文件夹有读写权限。&lt;/p>
+&lt;p>正确的方法是：&lt;/p>
+&lt;ol>
+&lt;li>打开&lt;code>控制面板&lt;/code>&amp;ndash;&lt;code>共享文件夹&lt;/code>，点击左上角&lt;code>新增&lt;/code>&lt;/li>
+&lt;li>新建一个文件夹，假设名字是&lt;code>resiliosync&lt;/code>，根据向导一步步来。&lt;/li>
+&lt;li>在&lt;code>配置用户权限&lt;/code>这一步，点击左上角，选择&lt;code>系统内部用户账号&lt;/code>，找到&lt;code>rslsync&lt;/code>，选中&lt;code>可读写&lt;/code>。&lt;/li>
+&lt;li>在resilio sync的Web UI里，&lt;code>默认文件夹位置&lt;/code>和&lt;code>文件下载位置&lt;/code>设置为&lt;code>resiliosync&lt;/code>即可。&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://example.com/posts/2761c3a7/resilio-permission.png"
+width="1624"
+height="1191"
+srcset="https://example.com/posts/2761c3a7/resilio-permission_huf966b190293ef16df99abaec0efd0385_126999_480x0_resize_box_3.png 480w, https://example.com/posts/2761c3a7/resilio-permission_huf966b190293ef16df99abaec0efd0385_126999_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="136"
+data-flex-basis="327px"
+>&lt;/p></description></item><item><title>Linux下设置ResilioSync</title><link>https://example.com/posts/821e7658/</link><pubDate>Sun, 28 May 2023 23:39:06 +0800</pubDate><guid>https://example.com/posts/821e7658/</guid><description>&lt;p>Resilio Sync在linux下的安装方式就不讲了，官方提供了大量发行版的安装包，根据自己的linux发行版下载安装即可。&lt;/p>
+&lt;h2 id="管理界面">管理界面&lt;/h2>
+&lt;p>linux下，Resilio Sync必须使用web界面来进行管理，地址是: &lt;a class="link" href="https://localhost:8888/gui/" target="_blank" rel="noopener"
+>https://localhost:8888/gui/&lt;/a>&lt;/p>
+&lt;p>首次登录时，会要求你进行注册。&lt;strong>注意&lt;/strong>：在注册时，只需要填写用户名即可，&lt;strong>不必&lt;/strong>填写密码。&lt;/p>
+&lt;h2 id="用户和权限问题">用户和权限问题&lt;/h2>
+&lt;p>默认情况下，Resilio Sync会新建一个名为&lt;code>rslsync&lt;/code>的用户，来进行相关的同步和管理。&lt;/p>
+&lt;p>这种方式很不友好，因为在同步的时候，只能同步到&lt;code>rslsync&lt;/code>这个用户权限的文件夹里。&lt;/p>
+&lt;p>虽然官方提供了方法来使用当前用户进行同步，但是在实际操作过程中还是有问题。&lt;/p>
+&lt;p>因此，还是推荐使用另一种官方提供的方法&lt;/p>
+&lt;h2 id="使用当前用户来启动和管理resilio-sync">使用当前用户来启动和管理Resilio Sync&lt;/h2>
+&lt;h3 id="修改resilio服务">修改resilio服务&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo vi /usr/lib/systemd/user/resilio-sync.service
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>找到：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">WantedBy=multi-user.target
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>修改成：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">WantedBy=default.target
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="使用当前用户自动启动服务">使用当前用户自动启动服务&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">systemctl --user enable resilio-sync
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>上面的命令，&lt;strong>不要&lt;/strong>使用&lt;code>sudo&lt;/code>来执行。&lt;/p></description></item></channel></rss>

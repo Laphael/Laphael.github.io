@@ -1,1 +1,62 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>cpu - 标签 - 寂静·流年</title><link>https://example.com/tags/cpu/</link><description>cpu - 标签 - 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 15 Sep 2023 21:25:53 +0800</lastBuildDate><atom:link href="https://example.com/tags/cpu/" rel="self" type="application/rss+xml"/><item><title>让windows 10完美支持Intel处理器的大小核调度</title><link>https://example.com/posts/7e5ceabf/</link><pubDate>Fri, 15 Sep 2023 21:25:53 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/7e5ceabf/</guid><description>实在是不喜欢windows 11的各种设计，但是新买的13700K据说只能在windows 11下才能完美发挥性能。 有没有让windows 10支</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>cpu on 寂静·流年</title><link>https://example.com/tags/cpu/</link><description>Recent content in cpu on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Fri, 15 Sep 2023 21:25:53 +0800</lastBuildDate><atom:link href="https://example.com/tags/cpu/index.xml" rel="self" type="application/rss+xml"/><item><title>让windows 10完美支持Intel处理器的大小核调度</title><link>https://example.com/posts/7e5ceabf/</link><pubDate>Fri, 15 Sep 2023 21:25:53 +0800</pubDate><guid>https://example.com/posts/7e5ceabf/</guid><description>&lt;p>实在是不喜欢windows 11的各种设计，但是新买的13700K据说只能在windows 11下才能完美发挥性能。&lt;/p>
+&lt;p>有没有让windows 10支持intel 13代cpu大小核调度的方法呢？&lt;/p>
+&lt;p>一番搜索，找到了完美的解决方案。&lt;/p>
+&lt;p>原文在&lt;a class="link" href="https://www.bilibili.com/video/BV1LK411B7ZS/?spm_id_from=333.1007.top_right_bar_window_default_collection.content.click&amp;amp;vd_source=f58c6359690424b3ca690f7d63a18318" target="_blank" rel="noopener"
+>这里&lt;/a>&lt;/p>
+&lt;h2 id="打开windows-10电源管理的隐藏功能">打开windows 10电源管理的隐藏功能&lt;/h2>
+&lt;p>使用管理员打开&lt;code>powershell&lt;/code>,输入以下命令：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"># 处理器性能核心放置最小核心数量 （小核或全部睡眠数量，取决于异类策略）
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">powercfg -attributes SUB_PROCESSOR 0cc5b647-c1df-4637-891a-dec35c318583 -ATTRIB_HIDE
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#针对第1类处理器电源效率的处理器性能核心放置最小核心数量（大核+超线程睡眠数量百分比）
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">powercfg -attributes SUB_PROCESSOR 0cc5b647-c1df-4637-891a-dec35c318584 -ATTRIB_HIDE
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#在电源选项中查看：生效的异类策略
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">powercfg -attributes SUB_PROCESSOR 7f2f5cfa-f10c-4823-b5e1-e93ae85f46b5 -ATTRIB_HIDE
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#在电源选项中查看：异类线程调度策略
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">powercfg -attributes SUB_PROCESSOR 93b8b6dc-0698-4d1c-9ee4-0644e900c85d -ATTRIB_HIDE
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#在电源选项中查看：异类短运行线程调度策略
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">powercfg -attributes SUB_PROCESSOR bae08b81-2d5e-4688-ad6a-13243356654b -ATTRIB_HIDE
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="调整windows-10电源计划设置">调整windows 10电源计划设置&lt;/h2>
+&lt;p>做如下设置：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"># 台式机推荐的策略（游戏推荐）
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">处理器性能放置最小核心数量：100%
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">针对第1类处理器电源效率的处理器性能核心放置最小核心数量：50%（休眠超线程）
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">生效的异类策略：使用异类策略1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">异类线程调度策略：首选高性能处理器
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">异类短线程调度策略：首选高性能处理器
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>以上设置是针对台式机的，笔记本电脑另有设置，可查看原文&lt;/p></description></item></channel></rss>

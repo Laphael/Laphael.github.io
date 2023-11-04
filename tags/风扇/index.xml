@@ -1,1 +1,30 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>风扇 - 标签 - 寂静·流年</title><link>https://example.com/tags/%E9%A3%8E%E6%89%87/</link><description>风扇 - 标签 - 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 09 Jul 2023 06:58:51 +0800</lastBuildDate><atom:link href="https://example.com/tags/%E9%A3%8E%E6%89%87/" rel="self" type="application/rss+xml"/><item><title>Dell R730XD风扇调速</title><link>https://example.com/posts/d3869276/</link><pubDate>Sun, 09 Jul 2023 06:58:51 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/d3869276/</guid><description>虽然Dell R730XD号称静音，但是默认的风扇转速还是让人爱不了。 但是好在，R730xd是支持风扇调速的，下面是具体方法 安装ipmitoo</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>风扇 on 寂静·流年</title><link>https://example.com/tags/%E9%A3%8E%E6%89%87/</link><description>Recent content in 风扇 on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Sun, 09 Jul 2023 06:58:51 +0800</lastBuildDate><atom:link href="https://example.com/tags/%E9%A3%8E%E6%89%87/index.xml" rel="self" type="application/rss+xml"/><item><title>Dell R730XD风扇调速</title><link>https://example.com/posts/d3869276/</link><pubDate>Sun, 09 Jul 2023 06:58:51 +0800</pubDate><guid>https://example.com/posts/d3869276/</guid><description>&lt;p>虽然Dell R730XD号称静音，但是默认的风扇转速还是让人爱不了。&lt;/p>
+&lt;p>但是好在，R730xd是支持风扇调速的，下面是具体方法&lt;/p>
+&lt;h2 id="安装ipmitool">安装ipmitool&lt;/h2>
+&lt;p>最简单的方法是安装一台linux的虚拟机，例如debian 12,&lt;code>impitool&lt;/code>在很多linux下都在官方的软件仓库里。&lt;/p>
+&lt;h2 id="关闭风扇自动调速">关闭风扇自动调速&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">ipmitool -I lanplus -H 192.168.1.11 -U username -P passwd raw  0x30 0x30 0x01 0x00
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>&lt;code>192.168.1.11&lt;/code>改为你的R730xd的服务器地址&lt;/li>
+&lt;li>&lt;code>username&lt;/code>改为你的iDrac的用户名&lt;/li>
+&lt;li>&lt;code>passwd&lt;/code>改为你的iDrac的密码&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>必须&lt;/strong>先做这一步，不然下面的手动设置风扇转速不起作用&lt;/p>
+&lt;h2 id="手动设置风扇转速">手动设置风扇转速&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">ipmitool -I lanplus -H 192.168.1.11 -U username -P passwd raw 0x30 0x30 0x02 0xff 0x0f
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>上面手动设置的风扇转速为15%。&lt;/p>
+&lt;p>我感觉15%是比较合适的，静音又能保障一定的散热能力。&lt;/p></description></item></channel></rss>

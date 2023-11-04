@@ -1,1 +1,140 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>wsl - 标签 - 寂静·流年</title><link>https://example.com/tags/wsl/</link><description>wsl - 标签 - 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 04 Jan 2023 11:32:30 +0800</lastBuildDate><atom:link href="https://example.com/tags/wsl/" rel="self" type="application/rss+xml"/><item><title>Wsl和vmware共存的问题</title><link>https://example.com/posts/9c090dd7/</link><pubDate>Wed, 04 Jan 2023 11:32:30 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/9c090dd7/</guid><description>、 问题描述 近期在使用wsl2和vmware时遇到了一些问题 如果要使用wsl2，则必须要在windows功能里开启虚拟机平台。 但是开启虚拟机平</description></item><item><title>Windows Terminal打开wsl报错的解决方法</title><link>https://example.com/posts/35265d36/</link><pubDate>Mon, 02 Jan 2023 10:02:58 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/35265d36/</guid><description>问题描述 使用wsl安装完kali-linux后，从windows terminal下启动，报如下错误： 解决方法 打开windows termina</description></item><item><title>正确安装WSL2的方法</title><link>https://example.com/posts/f68b8b61/</link><pubDate>Sat, 08 Oct 2022 17:58:41 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/f68b8b61/</guid><description>近期重装系统,在安装wsl的时候,由于方法不正确,导致安装的linux运行在wsl1版本,而不是我想要的wsl2。 下面介绍一下正确安装wsl</description></item><item><title>WSL修改linux发行版的主机名</title><link>https://example.com/posts/6b07178d/</link><pubDate>Sat, 08 Oct 2022 17:50:48 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/6b07178d/</guid><description>wsl安装了多个linux发行版后，主机名统一都是windows的主机名，这导致各个发行版之间不是很好区分。 下面提供一个方法，能够单独修改w</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>wsl on 寂静·流年</title><link>https://example.com/tags/wsl/</link><description>Recent content in wsl on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Wed, 04 Jan 2023 11:32:30 +0800</lastBuildDate><atom:link href="https://example.com/tags/wsl/index.xml" rel="self" type="application/rss+xml"/><item><title>Wsl和vmware共存的问题</title><link>https://example.com/posts/9c090dd7/</link><pubDate>Wed, 04 Jan 2023 11:32:30 +0800</pubDate><guid>https://example.com/posts/9c090dd7/</guid><description>&lt;p>、&lt;/p>
+&lt;h2 id="问题描述">问题描述&lt;/h2>
+&lt;p>近期在使用wsl2和vmware时遇到了一些问题&lt;/p>
+&lt;p>如果要使用wsl2，则必须要在&lt;code>windows功能&lt;/code>里开启&lt;code>虚拟机平台&lt;/code>。&lt;/p>
+&lt;p>但是开启&lt;code>虚拟机平台&lt;/code>后，打开vmware、virtualBox等虚拟机时会提示&lt;/p>
+&lt;ul>
+&lt;li>VMware Workstation与Device/Credential Guard不兼容&lt;/li>
+&lt;li>VT不支持、&lt;/li>
+&lt;li>该主机cpu类型不支持虚拟化性能计数器，开启模块VPMC的操作失败，未能启动虚拟机&lt;/li>
+&lt;/ul>
+&lt;p>等等错误。&lt;/p>
+&lt;h2 id="解决方法">解决方法&lt;/h2>
+&lt;p>解决方案很简单，就是把&lt;code>wsl2&lt;/code>降为&lt;code>wsl1&lt;/code>。&lt;/p>
+&lt;p>具体方法如下：&lt;/p>
+&lt;h3 id="1转换已经有的虚拟机">1.转换已经有的虚拟机&lt;/h3>
+&lt;p>比如我现在的&lt;code>kali-linux&lt;/code>虚拟机使用的是&lt;code>wsl2&lt;/code>，想降为&lt;code>wsl1&lt;/code>，则：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">wsl --set-version kali-linux 1
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="2删除虚拟机平台">2.删除&lt;code>虚拟机平台&lt;/code>&lt;/h3>
+&lt;p>管理员权限打开&lt;code>powershell&lt;/code>，输入：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Disable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>重启电脑。&lt;/p></description></item><item><title>Windows Terminal打开wsl报错的解决方法</title><link>https://example.com/posts/35265d36/</link><pubDate>Mon, 02 Jan 2023 10:02:58 +0800</pubDate><guid>https://example.com/posts/35265d36/</guid><description>&lt;h2 id="问题描述">问题描述&lt;/h2>
+&lt;p>使用wsl安装完kali-linux后，从windows terminal下启动，报如下错误：
+&lt;img src="https://example.com/posts/35265d36/wsl-error.png"
+width="674"
+height="229"
+srcset="https://example.com/posts/35265d36/wsl-error_hub5ae49d2a552c7df07f2cf0a6ee3b2c3_9916_480x0_resize_box_3.png 480w, https://example.com/posts/35265d36/wsl-error_hub5ae49d2a552c7df07f2cf0a6ee3b2c3_9916_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="294"
+data-flex-basis="706px"
+>&lt;/p>
+&lt;h2 id="解决方法">解决方法&lt;/h2>
+&lt;p>打开windows terminal的kali-linux配置,修改启动的命令为&lt;code>wsl.exe ~ -d kali-linux&lt;/code>，即中间添加一个&lt;code>~&lt;/code>即可。
+&lt;img src="https://example.com/posts/35265d36/setting.png"
+width="754"
+height="534"
+srcset="https://example.com/posts/35265d36/setting_huf19382c2b8499f6e92dc96abd6dda0e4_30897_480x0_resize_box_3.png 480w, https://example.com/posts/35265d36/setting_huf19382c2b8499f6e92dc96abd6dda0e4_30897_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="141"
+data-flex-basis="338px"
+>&lt;/p></description></item><item><title>正确安装WSL2的方法</title><link>https://example.com/posts/f68b8b61/</link><pubDate>Sat, 08 Oct 2022 17:58:41 +0800</pubDate><guid>https://example.com/posts/f68b8b61/</guid><description>&lt;p>近期重装系统,在安装wsl的时候,由于方法不正确,导致安装的linux运行在wsl1版本,而不是我想要的wsl2。&lt;/p>
+&lt;p>下面介绍一下正确安装wsl2，并设置wsl2为默认版本的方法，抄自&lt;a class="link" href="https://www.kali.org/docs/wsl/win-kex/" target="_blank" rel="noopener"
+>kali官方文档&lt;/a>。&lt;/p>
+&lt;p>&lt;code>win&lt;/code>+&lt;code>x&lt;/code> &lt;code>a&lt;/code>，打开管理员的powershell&lt;/p>
+&lt;p>依次运行下面命令：
+1.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="2">
+&lt;li>
+&lt;p>重启windows&lt;/p>
+&lt;/li>
+&lt;li>&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="4">
+&lt;li>
+&lt;p>重启windows&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>设置默认版本为wsl2&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">wsl --set-default-version 2
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="6">
+&lt;li>更新wsl&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">wsl --update
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>完工。&lt;/p></description></item><item><title>WSL修改linux发行版的主机名</title><link>https://example.com/posts/6b07178d/</link><pubDate>Sat, 08 Oct 2022 17:50:48 +0800</pubDate><guid>https://example.com/posts/6b07178d/</guid><description>&lt;p>wsl安装了多个linux发行版后，主机名统一都是windows的主机名，这导致各个发行版之间不是很好区分。&lt;/p>
+&lt;p>下面提供一个方法，能够单独修改wsl里的各个linux发行版的主机名，而不必修改windows的主机名。&lt;/p>
+&lt;p>在&lt;code>/etc&lt;/code>目录下新建一个文件&lt;code>wsl.conf&lt;/code>，即&lt;code>/etc/wsl.conf&lt;/code>,内容如下:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> [network]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"># generateHosts = false
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> hostname = kali
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>上面的文件里,把&lt;code>kali&lt;/code>换成你想要的主机名即可。&lt;/p>
+&lt;p>修改完成后，需要重启wsl方可生效。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">wsl --shutdown
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>再打开wsl里的linux，就能看到效果了。&lt;/p></description></item></channel></rss>

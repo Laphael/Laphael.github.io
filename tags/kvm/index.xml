@@ -1,1 +1,135 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>kvm - 标签 - 寂静·流年</title><link>https://example.com/tags/kvm/</link><description>kvm - 标签 - 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 25 Feb 2023 08:52:31 +0800</lastBuildDate><atom:link href="https://example.com/tags/kvm/" rel="self" type="application/rss+xml"/><item><title>在Ubuntu22.04上安装KVM虚拟化软件</title><link>https://example.com/posts/f949f020/</link><pubDate>Sat, 25 Feb 2023 08:52:31 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/f949f020/</guid><description>网上文章千千万，最后还得自己实践一遍 本文是亲自验证过可行的，系统是Ubuntu 22.04.1。 在行文时特意针对第一次接触kvm的人做了一些解</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>kvm on 寂静·流年</title><link>https://example.com/tags/kvm/</link><description>Recent content in kvm on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Sat, 25 Feb 2023 08:52:31 +0800</lastBuildDate><atom:link href="https://example.com/tags/kvm/index.xml" rel="self" type="application/rss+xml"/><item><title>在Ubuntu22.04上安装KVM虚拟化软件</title><link>https://example.com/posts/f949f020/</link><pubDate>Sat, 25 Feb 2023 08:52:31 +0800</pubDate><guid>https://example.com/posts/f949f020/</guid><description>&lt;blockquote>
+&lt;p>网上文章千千万，最后还得自己实践一遍&lt;/p>
+&lt;/blockquote>
+&lt;p>本文是亲自验证过可行的，系统是Ubuntu 22.04.1。&lt;/p>
+&lt;p>在行文时特意针对第一次接触kvm的人做了一些解释（其实也是写给自己看的，相当于注释了）。&lt;/p>
+&lt;h2 id="更新系统">更新系统&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">sudo apt update &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> sudo apt upgrade
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="检查主机是否支持kvm虚拟化">检查主机是否支持KVM虚拟化&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">egrep -c &lt;span class="s1">&amp;#39;(vmx|svm)&amp;#39;&lt;/span> /proc/cpuinfo
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>上面命令的意思是，统计&lt;code>/proc/cpuinfo&lt;/code>输出中出现&lt;code>vmx&lt;/code>或者&lt;code>svm&lt;/code>的次数。&lt;/p>
+&lt;p>如果不为0,则表示主机支持KVM虚拟化。&lt;/p>
+&lt;p>所以说，只要数字不为0就可以了。如果是0的话，说明你的电脑不支持KVM虚拟化功能，下面的内容也不用再看了。&lt;/p>
+&lt;h2 id="安装kvm虚拟化软件">安装KVM虚拟化软件&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">sudo apt install qemu-kvm virt-manager libvirt-daemon-system virtinst libvirt-clients bridge-utils
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>上面&lt;code>virt-manager&lt;/code>软件是一个kvm前端图形界面，用来创建和管理虚拟机很方便。当然也有别的选择。&lt;/p>
+&lt;h2 id="启动libvirtd服务">启动libvirtd服务&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">sudo systemctl start libvirtd
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo systemctl start libvirtd
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="把当前用户加入到kvm和libvirt组">把当前用户加入到kvm和libvirt组&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">sudo usermod -aG kvm &lt;span class="nv">$USER&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo usermod -aG libvirt &lt;span class="nv">$USER&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="创建一个网桥">创建一个网桥&lt;/h2>
+&lt;p>用于kvm虚拟机进行网络连接
+新建一个配置文件&lt;code>01-netcfg.yaml&lt;/code>：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo vi /etc/netplan/01-netcfg.yaml
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>内容如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl">network:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ethernets:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> eno1:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> dhcp4: false
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> dhcp6: false
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> bridges:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> br0:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> interfaces: [eno1]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> dhcp4: false
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> addresses: [192.168.8.33/24]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> macaddress: 18:c0:4d:2c:0d:09
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> routes:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - to: default
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> via: 192.168.8.252
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> metric: 100
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> nameservers:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> addresses: [192.168.8.252]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> parameters:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> stp: false
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> dhcp6: false
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> version: 2
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>应用配置文件：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">sudo netplan apply
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>上面的配置文件有几点注意事项：&lt;/p>
+&lt;ol>
+&lt;li>格式必须完全一样，连缩进的空格也不能错。&lt;/li>
+&lt;li>&lt;code>eno1&lt;/code>是我的网卡的名称，这里需要改成你自己的网卡的名字
+可以用&lt;code>ip a&lt;/code>查看你自己的网卡的名称。&lt;/li>
+&lt;li>&lt;code>addresses&lt;/code>、&lt;code>macaddress&lt;/code>、&lt;code>nameservers&lt;/code>和&lt;code>routers&lt;/code>里的路由要根据实际情况改成你自己的。&lt;/li>
+&lt;li>执行成功后，使用&lt;code>ip a&lt;/code>查看会多出一个&lt;code>br0&lt;/code>设备，同时原来的网卡，比如&lt;code>eno1&lt;/code>会失去IP地址。这都是正常的，牵涉到一些网络知识，这里不再多说。&lt;/li>
+&lt;/ol></description></item></channel></rss>

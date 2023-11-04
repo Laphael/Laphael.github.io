@@ -1,1 +1,59 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>vim - 标签 - 寂静·流年</title><link>https://example.com/tags/vim/</link><description>vim - 标签 - 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 09 Jul 2022 09:23:45 +0800</lastBuildDate><atom:link href="https://example.com/tags/vim/" rel="self" type="application/rss+xml"/><item><title>让tmux和vim支持TrueColor</title><link>https://example.com/posts/4d263cb0/</link><pubDate>Sat, 09 Jul 2022 09:23:45 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/4d263cb0/</guid><description>TrueColor就是24位的真彩色 软件版本： tmux：3.2 vim ：8.2 修改终端的类型 终端的类型可以用 echo $TERM来确认。 默认情况下，lin</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>vim on 寂静·流年</title><link>https://example.com/tags/vim/</link><description>Recent content in vim on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Sat, 09 Jul 2022 09:23:45 +0800</lastBuildDate><atom:link href="https://example.com/tags/vim/index.xml" rel="self" type="application/rss+xml"/><item><title>让tmux和vim支持TrueColor</title><link>https://example.com/posts/4d263cb0/</link><pubDate>Sat, 09 Jul 2022 09:23:45 +0800</pubDate><guid>https://example.com/posts/4d263cb0/</guid><description>&lt;blockquote>
+&lt;p>&lt;code>TrueColor&lt;/code>就是24位的真彩色&lt;/p>
+&lt;/blockquote>
+&lt;p>软件版本：&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>tmux&lt;/code>：3.2&lt;/li>
+&lt;li>&lt;code>vim&lt;/code> ：8.2&lt;/li>
+&lt;/ul>
+&lt;h2 id="修改终端的类型">修改终端的类型&lt;/h2>
+&lt;blockquote>
+&lt;p>终端的类型可以用 &lt;code>echo $TERM&lt;/code>来确认。&lt;/p>
+&lt;/blockquote>
+&lt;p>默认情况下，&lt;code>linux&lt;/code>系统的shell用的终端类型是 &lt;code>xterm&lt;/code>，&lt;code>tmux&lt;/code>用的终端类型是 &lt;code>screen-256color&lt;/code>。&lt;/p>
+&lt;p>我们需要全部修改成 &lt;code>xterm-256color&lt;/code>才能使&lt;code>TrueColor&lt;/code>生效。&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;code>secreen-256&lt;/code>最大的缺点是不支持斜体字。&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="修改系统shell的终端类型">修改系统shell的终端类型&lt;/h3>
+&lt;p>假设用的是 &lt;code>zsh&lt;/code>，则修改 &lt;code>.zshrc&lt;/code>，在最后添加一行：&lt;/p>
+&lt;p>&lt;code>export TERM=&amp;quot;xterm-256color&amp;quot;&lt;/code>&lt;/p>
+&lt;p>然后 &lt;code>source .zshrc&lt;/code>生效。&lt;/p>
+&lt;h3 id="修改tmux的终端类型">修改&lt;code>tmux&lt;/code>的终端类型&lt;/h3>
+&lt;p>打开&lt;code>tmux&lt;/code>的配置文件 &lt;code>~/.tmux.conf&lt;/code>&lt;/p>
+&lt;p>添加下面两行：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"># 设置 tmux 的终端为xterm-256color
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">set -g default-terminal &amp;#34;xterm-256color&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"># 开启 tmux 的终端的ture color支持
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">set-option -ga terminal-overrides &amp;#34;,xterm-256color:Tc&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="vim支持truecolor设置">vim支持TrueColor设置&lt;/h2>
+&lt;p>在&lt;code>~/.vimrc&lt;/code>里添加下面一行&lt;/p>
+&lt;p>&lt;code>set termguicolors &amp;quot; 开启ture color,无需再设置set t_Co=256&lt;/code>&lt;/p>
+&lt;p>这样就可以了。&lt;/p>
+&lt;h2 id="truecolor设置生效">TrueColor设置生效&lt;/h2>
+&lt;p>以上修改操作做完后，需要&lt;/p>
+&lt;ol>
+&lt;li>退全部的&lt;code>tmux&lt;/code>的&lt;code>session&lt;/code>&lt;/li>
+&lt;li>断开远程连接，重新登录&lt;/li>
+&lt;/ol>
+&lt;p>这样才能生效。&lt;/p>
+&lt;p>下面是在&lt;code>tmux&lt;/code>里使用&lt;code>vim&lt;/code>的截图，&lt;code>vim&lt;/code>主题使用的是&lt;code>gruvbox&lt;/code>:&lt;/p>
+&lt;p>&lt;img src="https://example.com/posts/4d263cb0/tmux&amp;#43;vim.png"
+width="1049"
+height="1235"
+srcset="https://example.com/posts/4d263cb0/tmux&amp;#43;vim_hubdd1da61e67c101a3864bf527c968bab_195378_480x0_resize_box_3.png 480w, https://example.com/posts/4d263cb0/tmux&amp;#43;vim_hubdd1da61e67c101a3864bf527c968bab_195378_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="84"
+data-flex-basis="203px"
+>&lt;/p></description></item></channel></rss>

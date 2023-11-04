@@ -1,1 +1,61 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>davinci - 标签 - 寂静·流年</title><link>https://example.com/tags/davinci/</link><description>davinci - 标签 - 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 03 Nov 2022 20:06:17 +0800</lastBuildDate><atom:link href="https://example.com/tags/davinci/" rel="self" type="application/rss+xml"/><item><title>Davinci在linux下的HiDPI分辨率的问题</title><link>https://example.com/posts/3d3eb7db/</link><pubDate>Thu, 03 Nov 2022 20:06:17 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/3d3eb7db/</guid><description>我的显示器是27寸4K的分辨率。 在ubuntu下安装完davinci resolve 18后，发现启动后界面字体变得非常小，除了鹰眼我相信没人能看得清。 很明</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>davinci on 寂静·流年</title><link>https://example.com/tags/davinci/</link><description>Recent content in davinci on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Thu, 03 Nov 2022 20:06:17 +0800</lastBuildDate><atom:link href="https://example.com/tags/davinci/index.xml" rel="self" type="application/rss+xml"/><item><title>Davinci在linux下的HiDPI分辨率的问题</title><link>https://example.com/posts/3d3eb7db/</link><pubDate>Thu, 03 Nov 2022 20:06:17 +0800</pubDate><guid>https://example.com/posts/3d3eb7db/</guid><description>&lt;p>我的显示器是27寸4K的分辨率。&lt;/p>
+&lt;p>在ubuntu下安装完davinci resolve 18后，发现启动后界面字体变得非常小，除了&lt;code>鹰眼&lt;/code>我相信没人能看得清。&lt;/p>
+&lt;p>很明显，这是个Linux下的UI缩放的问题。&lt;/p>
+&lt;h2 id="解决方法">解决方法&lt;/h2>
+&lt;p>网上一番搜索，找到了问题的&lt;a class="link" href="https://www.reallinuxuser.com/how-to-set-up-davinci-resolve-for-high-resolution-displays-in-linux/" target="_blank" rel="noopener"
+>解决方法&lt;/a>：&lt;/p>
+&lt;p>原理很简单，就是给davinci的启动程序添加几个参数，如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">QT_DEVICE_PIXEL_RATIO=3 QT_AUTO_SCREEN_SCALE_FACTOR=true ./resolve
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>解释一下：
+QT_DEVICE_PIXEL_RATIO=&lt;code>3&lt;/code>，最后这个&lt;code>3&lt;/code>是放大的倍数，即放大&lt;code>300%&lt;/code>。&lt;/p>
+&lt;p>如果是原始分辨率的话，这里设置为&lt;code>2&lt;/code>就可以了。&lt;/p>
+&lt;p>但是如果已经调整过缩放了，比如我在ubuntu下已经设置为&lt;code>150%&lt;/code>的缩放，这里设置为&lt;code>3&lt;/code>比较合适。&lt;/p>
+&lt;h2 id="添加到启动器">添加到启动器&lt;/h2>
+&lt;p>ubuntu可以使用&lt;code>alacarte&lt;/code>这个软件编辑启动菜单。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo apt install alacarte
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>在davinci的安装目录&lt;code>/opt/resolve/bin&lt;/code>下的新建一个文件&lt;code>davinci.sh&lt;/code>，内容如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#!/bin/sh
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> /opt/resolve/bin &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="nv">QT_DEVICE_PIXEL_RATIO&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="m">3&lt;/span> &lt;span class="nv">QT_AUTO_SCREEN_SCALE_FACTOR&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="nb">true&lt;/span> ./resolve
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>添加可执行权限：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo chmod +x davinci.sh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>运行&lt;code>alacarte&lt;/code>，找到&lt;code>davinci&lt;/code>的菜单项，点击&lt;code>属性&lt;/code>&amp;ndash;&lt;code>Browser&lt;/code>，选中&lt;code>davinci.sh&lt;/code>，保存即可。
+&lt;img src="https://example.com/posts/3d3eb7db/alacarte-davinci.png"
+width="1334"
+height="1126"
+srcset="https://example.com/posts/3d3eb7db/alacarte-davinci_hub65d449f9756d25fddec17428214d090_285529_480x0_resize_box_3.png 480w, https://example.com/posts/3d3eb7db/alacarte-davinci_hub65d449f9756d25fddec17428214d090_285529_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="118"
+data-flex-basis="284px"
+>&lt;/p></description></item></channel></rss>

@@ -1,1 +1,20 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>powershell - 标签 - 寂静·流年</title><link>https://example.com/tags/powershell/</link><description>powershell - 标签 - 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 16 Mar 2023 07:13:48 +0800</lastBuildDate><atom:link href="https://example.com/tags/powershell/" rel="self" type="application/rss+xml"/><item><title>使用命令行删除windows Defender</title><link>https://example.com/posts/dfbed6b5/</link><pubDate>Thu, 16 Mar 2023 07:13:48 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/dfbed6b5/</guid><description>在使用windows server的时候，可以使用命令行来删除windows defender. 卸载 Windows Server 2016 或 Windows Server 2019 上的 Microsoft Defender 防病毒 1 Uninstall-WindowsFeature -Name Windows-Defender 关闭 Microsoft Defender 防病毒 GUI 1 Uninstall-WindowsFeature -Name Windows-Defender-GUI</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>powershell on 寂静·流年</title><link>https://example.com/tags/powershell/</link><description>Recent content in powershell on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Thu, 16 Mar 2023 07:13:48 +0800</lastBuildDate><atom:link href="https://example.com/tags/powershell/index.xml" rel="self" type="application/rss+xml"/><item><title>使用命令行删除windows Defender</title><link>https://example.com/posts/dfbed6b5/</link><pubDate>Thu, 16 Mar 2023 07:13:48 +0800</pubDate><guid>https://example.com/posts/dfbed6b5/</guid><description>&lt;p>在使用windows server的时候，可以使用命令行来删除windows defender.&lt;/p>
+&lt;h2 id="卸载-windows-server-2016-或-windows-server-2019-上的-microsoft-defender-防病毒">卸载 Windows Server 2016 或 Windows Server 2019 上的 Microsoft Defender 防病毒&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Uninstall-WindowsFeature -Name Windows-Defender
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="关闭-microsoft-defender-防病毒-gui">关闭 Microsoft Defender 防病毒 GUI&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Uninstall-WindowsFeature -Name Windows-Defender-GUI
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>注意，上面这条关闭GUI的命令，在windows server 2022下无效。&lt;/p></description></item></channel></rss>

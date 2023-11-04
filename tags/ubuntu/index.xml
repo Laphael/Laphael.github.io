@@ -1,1 +1,294 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>ubuntu - 标签 - 寂静·流年</title><link>https://example.com/tags/ubuntu/</link><description>ubuntu - 标签 - 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 05 Mar 2023 08:28:49 +0800</lastBuildDate><atom:link href="https://example.com/tags/ubuntu/" rel="self" type="application/rss+xml"/><item><title>Ubuntu禁用错误报告</title><link>https://example.com/posts/4ba43e1c/</link><pubDate>Sun, 05 Mar 2023 08:28:49 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/4ba43e1c/</guid><description>Ubuntu在日常使用时，经常会弹出一个错误报告窗口，提示你“XXX已经崩溃，是否发送错误信息”之类的内容。 这个挺烦人的，毕竟在window</description></item><item><title>为nextcloud安装elasticsearch全文搜索</title><link>https://example.com/posts/f092b728/</link><pubDate>Fri, 28 Oct 2022 10:56:09 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/f092b728/</guid><description>写作本文时,elasticsearch 8.3.4版本已经发布，无奈此版本与nextcloud集成的文章太少，因此还是使用elastic7。实</description></item><item><title>Kubuntu 22.04设置sddm使用HiDPI</title><link>https://example.com/posts/48990398/</link><pubDate>Sat, 16 Jul 2022 19:23:30 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/48990398/</guid><description>作为kde默认的登录管理器，SDDM居然不能在kde控制中心里设置HiDPI。 一番搜索后，找到了下面的解决方法： 新建一个文件 /etc/sdd</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ubuntu on 寂静·流年</title><link>https://example.com/tags/ubuntu/</link><description>Recent content in ubuntu on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Sun, 05 Mar 2023 08:28:49 +0800</lastBuildDate><atom:link href="https://example.com/tags/ubuntu/index.xml" rel="self" type="application/rss+xml"/><item><title>Ubuntu禁用错误报告</title><link>https://example.com/posts/4ba43e1c/</link><pubDate>Sun, 05 Mar 2023 08:28:49 +0800</pubDate><guid>https://example.com/posts/4ba43e1c/</guid><description>&lt;p>Ubuntu在日常使用时，经常会弹出一个错误报告窗口，提示你“XXX已经崩溃，是否发送错误信息”之类的内容。&lt;/p>
+&lt;p>这个挺烦人的，毕竟在windows下我也从来没发送过系统错误报告。&lt;/p>
+&lt;p>出现这个弹窗，是因为ubuntu默认安装并启用了&lt;code>Appport&lt;/code>这个服务。如果不想提示错误汇报，禁用这个软件就可以解决了。&lt;/p>
+&lt;ol>
+&lt;li>编辑Apport配置文件&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">sudo vi /etc/default/apport
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="2">
+&lt;li>修改配置&lt;/li>
+&lt;/ol>
+&lt;p>把&lt;code>enabled=1&lt;/code>改成&lt;code>enabled=0&lt;/code>&lt;/p>
+&lt;p>重启生效。&lt;/p></description></item><item><title>为nextcloud安装elasticsearch全文搜索</title><link>https://example.com/posts/f092b728/</link><pubDate>Fri, 28 Oct 2022 10:56:09 +0800</pubDate><guid>https://example.com/posts/f092b728/</guid><description>&lt;blockquote>
+&lt;p>写作本文时,elasticsearch 8.3.4版本已经发布，无奈此版本与nextcloud集成的文章太少，因此还是使用elastic7。实际使用效果非常好。&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="环境相关">环境相关&lt;/h2>
+&lt;ul>
+&lt;li>CPU:2核&lt;/li>
+&lt;li>内存:4G&lt;/li>
+&lt;li>操作系统: ubuntu 22.04 server&lt;/li>
+&lt;li>java: openjdk-11-jdk&lt;/li>
+&lt;li>php: 8.1&lt;/li>
+&lt;li>elasticsearch: 7.17.6&lt;/li>
+&lt;li>ednextcloud:24.0.6&lt;/li>
+&lt;/ul>
+&lt;h2 id="安装java">安装java&lt;/h2>
+&lt;p>elasticsearch依赖于java&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo apt install openjdk-11-jdk
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="安装elasticsearch">安装elasticsearch&lt;/h2>
+&lt;p>这里采用直接下载安装包来本地安装的方式。&lt;/p>
+&lt;p>原因是elasticsearch的中文分词插件&lt;code>elasticsearch-analysis-ik&lt;/code>只有7.17.6版本。如果使用apt的方式安装会直接安装7.17.7版本，从而不匹配而无法使用。&lt;/p>
+&lt;p>这也是为什么会安装&lt;code>elasticsearch&lt;/code> &lt;code>7.17.6&lt;/code>版本的原因。&lt;/p>
+&lt;h3 id="下载">下载&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.17.6-amd64.deb
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="安装">安装&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo dpkg -i elasticsearch-7.17.6-amd64.deb
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="配置">配置&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> vi /etc/elasticsearch/elasticsearch.yml
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>在56行左右，修改成下面的形式：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">network.host: localhost
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="设置开机启动">设置开机启动&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo systemctl start elasticsearch
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo systemctl enable elasticsearch
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="测试">测试&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">curl -X GET &amp;#34;localhost:9200&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>输出类似于下面：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">{
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;name&amp;#34; : &amp;#34;myhostname&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;cluster_name&amp;#34; : &amp;#34;elasticsearch&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;cluster_uuid&amp;#34; : &amp;#34;T6xlz9vrRe7qE9D8U4We6Q&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;version&amp;#34; : {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;number&amp;#34; : &amp;#34;7.17.6&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;build_flavor&amp;#34; : &amp;#34;default&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;build_type&amp;#34; : &amp;#34;deb&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;build_hash&amp;#34; : &amp;#34;f65e1yt67dc1d07b642e14a27f338990148ee5b6&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;build_date&amp;#34; : &amp;#34;2022-08-23T11:08:48.893373482Z&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;build_snapshot&amp;#34; : false,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;lucene_version&amp;#34; : &amp;#34;8.11.1&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;minimum_wire_compatibility_version&amp;#34; : &amp;#34;6.8.0&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;minimum_index_compatibility_version&amp;#34; : &amp;#34;6.0.0-beta1&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> },
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;tagline&amp;#34; : &amp;#34;You Know, for Search&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>并不需要网上说的用户名和密码什么的。&lt;/p>
+&lt;h3 id="安装中文插件">安装中文插件&lt;/h3>
+&lt;ol>
+&lt;li>ingest-attachment&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">/usr/share/elasticsearch/bin/elasticsearch-plugin install ingest-attachment
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="2">
+&lt;li>ik分词插件&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">/usr/share/elasticsearch/bin/elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v7.17.6/elasticsearch-analysis-ik-7.17.6.zip
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="nextcloud设置">nextcloud设置&lt;/h2>
+&lt;h3 id="安装搜索相关插件">安装搜索相关插件&lt;/h3>
+&lt;p>full text开头的那几个，如下图几个：
+&lt;img src="https://example.com/posts/f092b728/full-text-plugin.png"
+width="656"
+height="488"
+srcset="https://example.com/posts/f092b728/full-text-plugin_hu4fcabdb0f6fa28282198c600c974c6bc_29164_480x0_resize_box_3.png 480w, https://example.com/posts/f092b728/full-text-plugin_hu4fcabdb0f6fa28282198c600c974c6bc_29164_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="134"
+data-flex-basis="322px"
+>&lt;/p>
+&lt;h3 id="设置插件">设置插件&lt;/h3>
+&lt;p>打开设置-全文搜索,如下图配置
+&lt;img src="https://example.com/posts/f092b728/search-config-1.png"
+width="1413"
+height="1753"
+srcset="https://example.com/posts/f092b728/search-config-1_hu1f1f053f78b41425a04c81a129758c6d_131388_480x0_resize_box_3.png 480w, https://example.com/posts/f092b728/search-config-1_hu1f1f053f78b41425a04c81a129758c6d_131388_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="80"
+data-flex-basis="193px"
+>&lt;/p>
+&lt;p>&lt;img src="https://example.com/posts/f092b728/search-config-2.png"
+width="1241"
+height="1421"
+srcset="https://example.com/posts/f092b728/search-config-2_hub7feb5fdc19ec56ac79a2f0f1319ba04_90610_480x0_resize_box_3.png 480w, https://example.com/posts/f092b728/search-config-2_hub7feb5fdc19ec56ac79a2f0f1319ba04_90610_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="87"
+data-flex-basis="209px"
+>&lt;/p>
+&lt;h3 id="生成索引">生成索引&lt;/h3>
+&lt;p>进入到nextcloud的安装目录下,例如&lt;code>/var/www/nextcloud&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">cd /var/www/nextcloud
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>运行命令：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo -u www-data php ./occ fulltextsearch:index
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这时，可以去nextcloud里试试全文搜索了。&lt;/p>
+&lt;h2 id="额外的工作">额外的工作&lt;/h2>
+&lt;p>创建elasticsearch的索引服务，并开机自动启动&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo vi /etc/systemd/system/nextcloud-fulltext-elasticsearch-worker.service
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>输入如下内容：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">[Unit]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Description=Elasticsearch Worker for Nextcloud Fulltext Search
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">After=network.target
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[Service]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">User=www-data
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Group=www-data
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">WorkingDirectory=/var/www/nextcloud
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ExecStart=/usr/bin/php /var/www/nextcloud/occ fulltextsearch:live -q
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ExecStop=/usr/bin/php /var/www/nextcloud/occ fulltextsearch:stop
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Nice=19
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Restart=always
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[Install]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">WantedBy=multi-user.target
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>开机自启动设置：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">systemctl enable nextcloud-fulltext-elasticsearch-worker.service
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">systemctl start nextcloud-fulltext-elasticsearch-worker.service
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>全部安装配置完成。&lt;/p></description></item><item><title>Kubuntu 22.04设置sddm使用HiDPI</title><link>https://example.com/posts/48990398/</link><pubDate>Sat, 16 Jul 2022 19:23:30 +0800</pubDate><guid>https://example.com/posts/48990398/</guid><description>&lt;p>作为kde默认的登录管理器，&lt;code>SDDM&lt;/code>居然不能在kde控制中心里设置HiDPI。&lt;/p>
+&lt;p>一番搜索后，找到了下面的解决方法：&lt;/p>
+&lt;p>新建一个文件 &lt;code>/etc/sddm.conf&lt;/code>,添加下面内容：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">[X11]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ServerArguments=-nolisten tcp -dpi 144
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这里的144对应着150%的缩放,重启即可生效。&lt;/p></description></item></channel></rss>

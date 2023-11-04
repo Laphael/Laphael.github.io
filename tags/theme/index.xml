@@ -1,1 +1,558 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>theme - 标签 - 寂静·流年</title><link>https://example.com/tags/theme/</link><description>theme - 标签 - 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 09 Jul 2022 09:23:45 +0800</lastBuildDate><atom:link href="https://example.com/tags/theme/" rel="self" type="application/rss+xml"/><item><title>让tmux和vim支持TrueColor</title><link>https://example.com/posts/4d263cb0/</link><pubDate>Sat, 09 Jul 2022 09:23:45 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/4d263cb0/</guid><description>TrueColor就是24位的真彩色 软件版本： tmux：3.2 vim ：8.2 修改终端的类型 终端的类型可以用 echo $TERM来确认。 默认情况下，lin</description></item><item><title>解决Hugo网站使用LoveIt主题后图片刷新不出来的问题</title><link>https://example.com/posts/da4fb9f9/</link><pubDate>Sat, 28 May 2022 11:19:35 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/da4fb9f9/</guid><description>hugo博客部署在github page上。 最近几天发现，博客的文章和disqus评论都是正常的，唯独涉及图片的部分，一直显示Loading加</description></item><item><title>使用Hugo搭建个人网站(三)-LoveIt主题启用网站图标</title><link>https://example.com/posts/b8cc834e/</link><pubDate>Wed, 05 Jan 2022 18:07:38 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/b8cc834e/</guid><description>网站图标favicon,虽然对于网站不是必须的，但是有这个东西能显著增加网站的正规性和美观性。 生成favicon 1、打开realfavico</description></item><item><title>使用Hugo搭建个人网站(二)-LoveIt主题自定义搜索</title><link>https://example.com/posts/98850c88/</link><pubDate>Wed, 05 Jan 2022 10:51:44 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/98850c88/</guid><description>LoveIt主题自带的搜索插件是lunr和algolia，这两个都不太好用。 在此，我们使用Hugo专用的搜索插件hugo-search-fu</description></item><item><title>使用Hugo搭建个人网站(一)-基本设置和LoveIt主题</title><link>https://example.com/posts/bf651441/</link><pubDate>Tue, 04 Jan 2022 17:27:10 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/bf651441/</guid><description>本文使用的软件的版本如下： hugo: 0.91.2-extended loveit主题: 0.2.10 特别注意:hugo必须使用extended版本 关于Hugo的安装和网站的生成，本文不再详述</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>theme on 寂静·流年</title><link>https://example.com/tags/theme/</link><description>Recent content in theme on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Sat, 09 Jul 2022 09:23:45 +0800</lastBuildDate><atom:link href="https://example.com/tags/theme/index.xml" rel="self" type="application/rss+xml"/><item><title>让tmux和vim支持TrueColor</title><link>https://example.com/posts/4d263cb0/</link><pubDate>Sat, 09 Jul 2022 09:23:45 +0800</pubDate><guid>https://example.com/posts/4d263cb0/</guid><description>&lt;blockquote>
+&lt;p>&lt;code>TrueColor&lt;/code>就是24位的真彩色&lt;/p>
+&lt;/blockquote>
+&lt;p>软件版本：&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>tmux&lt;/code>：3.2&lt;/li>
+&lt;li>&lt;code>vim&lt;/code> ：8.2&lt;/li>
+&lt;/ul>
+&lt;h2 id="修改终端的类型">修改终端的类型&lt;/h2>
+&lt;blockquote>
+&lt;p>终端的类型可以用 &lt;code>echo $TERM&lt;/code>来确认。&lt;/p>
+&lt;/blockquote>
+&lt;p>默认情况下，&lt;code>linux&lt;/code>系统的shell用的终端类型是 &lt;code>xterm&lt;/code>，&lt;code>tmux&lt;/code>用的终端类型是 &lt;code>screen-256color&lt;/code>。&lt;/p>
+&lt;p>我们需要全部修改成 &lt;code>xterm-256color&lt;/code>才能使&lt;code>TrueColor&lt;/code>生效。&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;code>secreen-256&lt;/code>最大的缺点是不支持斜体字。&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="修改系统shell的终端类型">修改系统shell的终端类型&lt;/h3>
+&lt;p>假设用的是 &lt;code>zsh&lt;/code>，则修改 &lt;code>.zshrc&lt;/code>，在最后添加一行：&lt;/p>
+&lt;p>&lt;code>export TERM=&amp;quot;xterm-256color&amp;quot;&lt;/code>&lt;/p>
+&lt;p>然后 &lt;code>source .zshrc&lt;/code>生效。&lt;/p>
+&lt;h3 id="修改tmux的终端类型">修改&lt;code>tmux&lt;/code>的终端类型&lt;/h3>
+&lt;p>打开&lt;code>tmux&lt;/code>的配置文件 &lt;code>~/.tmux.conf&lt;/code>&lt;/p>
+&lt;p>添加下面两行：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"># 设置 tmux 的终端为xterm-256color
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">set -g default-terminal &amp;#34;xterm-256color&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"># 开启 tmux 的终端的ture color支持
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">set-option -ga terminal-overrides &amp;#34;,xterm-256color:Tc&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="vim支持truecolor设置">vim支持TrueColor设置&lt;/h2>
+&lt;p>在&lt;code>~/.vimrc&lt;/code>里添加下面一行&lt;/p>
+&lt;p>&lt;code>set termguicolors &amp;quot; 开启ture color,无需再设置set t_Co=256&lt;/code>&lt;/p>
+&lt;p>这样就可以了。&lt;/p>
+&lt;h2 id="truecolor设置生效">TrueColor设置生效&lt;/h2>
+&lt;p>以上修改操作做完后，需要&lt;/p>
+&lt;ol>
+&lt;li>退全部的&lt;code>tmux&lt;/code>的&lt;code>session&lt;/code>&lt;/li>
+&lt;li>断开远程连接，重新登录&lt;/li>
+&lt;/ol>
+&lt;p>这样才能生效。&lt;/p>
+&lt;p>下面是在&lt;code>tmux&lt;/code>里使用&lt;code>vim&lt;/code>的截图，&lt;code>vim&lt;/code>主题使用的是&lt;code>gruvbox&lt;/code>:&lt;/p>
+&lt;p>&lt;img src="https://example.com/posts/4d263cb0/tmux&amp;#43;vim.png"
+width="1049"
+height="1235"
+srcset="https://example.com/posts/4d263cb0/tmux&amp;#43;vim_hubdd1da61e67c101a3864bf527c968bab_195378_480x0_resize_box_3.png 480w, https://example.com/posts/4d263cb0/tmux&amp;#43;vim_hubdd1da61e67c101a3864bf527c968bab_195378_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="84"
+data-flex-basis="203px"
+>&lt;/p></description></item><item><title>解决Hugo网站使用LoveIt主题后图片刷新不出来的问题</title><link>https://example.com/posts/da4fb9f9/</link><pubDate>Sat, 28 May 2022 11:19:35 +0800</pubDate><guid>https://example.com/posts/da4fb9f9/</guid><description>&lt;p>hugo博客部署在github page上。&lt;/p>
+&lt;p>最近几天发现，博客的文章和disqus评论都是正常的，唯独涉及图片的部分，一直显示Loading加载不出来。&lt;/p>
+&lt;p>一番查找后，发现锅在LoveIt主题上，确切的说，是在LoveIt主题使用的cdn&amp;ndash;&lt;code>https://cdn.jsdelivr.net&lt;/code>上。&lt;/p>
+&lt;h2 id="问题的根源">问题的根源&lt;/h2>
+&lt;p>LoveIt主题使用的图片加载技术叫&lt;code>lazysizes&lt;/code> ，它的官方解释说明是这样的：&lt;/p>
+&lt;ul>
+&lt;li>基于&lt;code>lazysizes&lt;/code>自动转换图片为懒加载&lt;/li>
+&lt;/ul>
+&lt;p>我的理解是，&lt;code>lazysizes&lt;/code>可以自动把图片压缩成设置好的大小，并且按需加载。这样就能够加快网页的打开速度了。&lt;/p>
+&lt;p>&lt;code>lazysizes&lt;/code>依赖的核心js是&lt;code> lazysizes.min.js&lt;/code>。&lt;/p>
+&lt;p>而&lt;code> lazysizes.min.js&lt;/code>存放于&lt;code>https://cdn.jsdelivr.net&lt;/code>上。如果&lt;code>https://cdn.jsdelivr.net&lt;/code>出现访问问题，图片自然也就加载不出来。&lt;/p>
+&lt;p>公共CDN属于基础网络设施，全球有大量的项目依赖于它，一般不会出现问题。&lt;/p>
+&lt;p>很不幸的是，这次恰恰就是&lt;code>https://cdn.jsdelivr.net&lt;/code>出现了问题，而且好像只有在中国大陆出现了问题。&lt;/p>
+&lt;blockquote>
+&lt;p>更进一步，是只有移动、电信的网络出现了问题，联通访问还是正常的（我为什么会知道？因为我有电信、联通、移动三网的环境:stuck_out_tongue:）。&lt;/p>
+&lt;/blockquote>
+&lt;p>这就是此次Hugo网站加载不出来图片的根本原因。&lt;/p>
+&lt;h2 id="解决方法">解决方法&lt;/h2>
+&lt;p>知道问题根源了,解决方法也很简单&amp;ndash;换一个cdn就可以了。&lt;/p>
+&lt;p>最简单的方法是：&lt;/p>
+&lt;p>还是使用&lt;code>jsdelivr.net&lt;/code>的cdn，但是换一个域名，目前&lt;code>gcore.jsdelivr.net&lt;/code>这个域名是可以使用的。&lt;/p>
+&lt;p>具体步骤：&lt;/p>
+&lt;p>编辑文件&lt;/p>
+&lt;p>&lt;code>themes\LoveIt\assets\data\cdn\jsdelivr.yml&lt;/code>&lt;/p>
+&lt;p>修改第二行,原来是:&lt;/p>
+&lt;p>&lt;code>libFiles: https://cdn.jsdelivr.net/npm/&lt;/code>&lt;/p>
+&lt;p>修改为:&lt;/p>
+&lt;p>&lt;code>libFiles: https://gcore.jsdelivr.net/npm/&lt;/code>&lt;/p>
+&lt;p>问题解决。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(三)-LoveIt主题启用网站图标</title><link>https://example.com/posts/b8cc834e/</link><pubDate>Wed, 05 Jan 2022 18:07:38 +0800</pubDate><guid>https://example.com/posts/b8cc834e/</guid><description>&lt;p>网站图标&lt;code>favicon&lt;/code>,虽然对于网站不是必须的，但是有这个东西能显著增加网站的正规性和美观性。&lt;/p>
+&lt;h2 id="生成favicon">生成favicon&lt;/h2>
+&lt;p>1、打开&lt;a class="link" href="https://realfavicongenerator.net/" target="_blank" rel="noopener"
+>realfavicongenerator&lt;/a>,点击右上角&lt;code>Select your Favicon image&lt;/code>链接。
+&lt;img src="https://example.com/posts/b8cc834e/clicklink1.png"
+width="992"
+height="504"
+srcset="https://example.com/posts/b8cc834e/clicklink1_hu9d1a6e0b570176a2b2aa9adabd9f9e29_107314_480x0_resize_box_3.png 480w, https://example.com/posts/b8cc834e/clicklink1_hu9d1a6e0b570176a2b2aa9adabd9f9e29_107314_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="196"
+data-flex-basis="472px"
+>&lt;br>
+这时会打开对话框，让你选择一张图片，等待完成即可。&lt;/p>
+&lt;p>2、完成后，会出现下载链接，点击下载即可。
+&lt;img src="https://example.com/posts/b8cc834e/download1.png"
+width="975"
+height="483"
+srcset="https://example.com/posts/b8cc834e/download1_hu52d8e90aabca1b5a7da4f832306d25ac_213382_480x0_resize_box_3.png 480w, https://example.com/posts/b8cc834e/download1_hu52d8e90aabca1b5a7da4f832306d25ac_213382_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="484px"
+>&lt;/p>
+&lt;h2 id="启用favicon">启用favicon&lt;/h2>
+&lt;p>把下载的文件，全部解压到网站根目录的&lt;code>static&lt;/code>中。&lt;/p>
+&lt;p>因为LoveIt主题自带了对realfavicongenerator生成的favicon格式支持，所以不用再做其它设置，直接就生效。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(二)-LoveIt主题自定义搜索</title><link>https://example.com/posts/98850c88/</link><pubDate>Wed, 05 Jan 2022 10:51:44 +0800</pubDate><guid>https://example.com/posts/98850c88/</guid><description>&lt;p>LoveIt主题自带的搜索插件是lunr和algolia，这两个都不太好用。&lt;/p>
+&lt;p>在此，我们使用Hugo专用的搜索插件&lt;a class="link" href="https://github.com/kaushalmodi/hugo-search-fuse-js" target="_blank" rel="noopener"
+>hugo-search-fuse-js&lt;/a>来替代LoveIt主题自带的搜索。&lt;/p>
+&lt;h2 id="安装hugo-search-fuse-js">安装hugo-search-fuse-js&lt;/h2>
+&lt;p>1、网站根目录下，使用下面命令来安装：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">git submodule add https://github.com/kaushalmodi/hugo-search-fuse-js themes/hugo-search-fuse-js
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>2、把&lt;code>hugo-search-fuse-js&lt;/code>添加到站点配置文件&lt;code>config.toml&lt;/code>里，如下所示：&lt;/p>
+&lt;p>&lt;code>theme = [&amp;quot;hugo-search-fuse-js&amp;quot;, &amp;quot;LoveIt&amp;quot;]&lt;/code>&lt;/p>
+&lt;p>hugo-search-fuse-js要在最前面，后面跟着的是主题的名字。&lt;/p>
+&lt;p>3、新建一个&lt;code>content/search.md&lt;/code>文件&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">hugo new search.md
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>内容如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">+++
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">title = &amp;#34;Search&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">layout = &amp;#34;search&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">outputs = [&amp;#34;html&amp;#34;, &amp;#34;json&amp;#34;]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[sitemap]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> priority = 0.1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">+++
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>4、修改页面模板文件&lt;code>baseof.html&lt;/code>
+把主题目录下的\themes\LoveIt\layouts_default\baseof.html拷贝到站点根目录下的&lt;code>layouts\_default\baseof.html&lt;/code>。&lt;/p>
+&lt;p>在拷贝后的&lt;code>baseof.html&lt;/code>里插入两段代码：&lt;code>{{ block &amp;quot;main&amp;quot; . }}{{ end }}&lt;/code>和&lt;code>{{ block &amp;quot;footer&amp;quot; . }}{{ end }}&lt;/code>&lt;/p>
+&lt;p>如下所示：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;lt;div class=&amp;#34;wrapper&amp;#34;&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{- partial &amp;#34;header.html&amp;#34; . -}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;main class=&amp;#34;main&amp;#34;&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;div class=&amp;#34;container&amp;#34;&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ block &amp;#34;main&amp;#34; . }}{{ end }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{- block &amp;#34;content&amp;#34; . }}{{ end -}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;/main&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{- partial &amp;#34;footer.html&amp;#34; . -}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ block &amp;#34;footer&amp;#34; . }}{{ end }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="添加搜索按钮">添加搜索按钮&lt;/h2>
+&lt;p>在站点配置文件里添加一个新的按钮给搜索功能使用，如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> [[languages.zh-cn.menu.main]]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> identifier = &amp;#34;search&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> pre = &amp;#34;&amp;lt;i class=&amp;#39;fas fa-fw fa-search&amp;#39;&amp;gt;&amp;lt;/i&amp;gt;&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> name = &amp;#34;搜索&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> url = &amp;#34;/search/&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> weight = 6
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="关闭loveit主题默认的搜索插件">关闭LoveIt主题默认的搜索插件&lt;/h2>
+&lt;p>在站点配置文件里把默认的搜索插件关闭，如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">[params]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> [params.app]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> [params.search]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> enable = false
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="修改搜索页面的样式">修改搜索页面的样式&lt;/h2>
+&lt;p>如果对该插件生成的搜索页面样式不满意，可以自行修改。&lt;/p>
+&lt;p>在网站&lt;code>assets\css\_custom.scss&lt;/code>文件里添加下面内容：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;span class="lnt">42
+&lt;/span>&lt;span class="lnt">43
+&lt;/span>&lt;span class="lnt">44
+&lt;/span>&lt;span class="lnt">45
+&lt;/span>&lt;span class="lnt">46
+&lt;/span>&lt;span class="lnt">47
+&lt;/span>&lt;span class="lnt">48
+&lt;/span>&lt;span class="lnt">49
+&lt;/span>&lt;span class="lnt">50
+&lt;/span>&lt;span class="lnt">51
+&lt;/span>&lt;span class="lnt">52
+&lt;/span>&lt;span class="lnt">53
+&lt;/span>&lt;span class="lnt">54
+&lt;/span>&lt;span class="lnt">55
+&lt;/span>&lt;span class="lnt">56
+&lt;/span>&lt;span class="lnt">57
+&lt;/span>&lt;span class="lnt">58
+&lt;/span>&lt;span class="lnt">59
+&lt;/span>&lt;span class="lnt">60
+&lt;/span>&lt;span class="lnt">61
+&lt;/span>&lt;span class="lnt">62
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">/* 搜索页面 */
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">.search {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> position: relative;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> padding-top: 3.5rem;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> padding-bottom: 1rem;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> width: 57.5%;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> margin: 0 auto;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> background: white;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> opacity: .95;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[theme=dark] .search {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> background: #3a3535;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[theme=dark] .search header,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">.search header {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> background-color: #f8f8f8;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[theme=dark] .search header:hover,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">.search header:hover {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -webkit-box-shadow: none;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> box-shadow: none;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">.search header h1 {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> padding-left: 1rem;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> background: white;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[theme=dark] .search header h1 {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> background: #3a3535;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[theme=dark] .search input,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">.search input {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> height: initial;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> width: initial;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> color: initial;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> background-color: white;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> margin: 0 0 0 1rem;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> border-width: 2px;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> border-style: inset;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> border-color: initial;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> border-image: initial;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -webkit-border-radius: 0;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -moz-border-radius: 0;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> border-radius: 0;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">.search #search-results {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> padding-left: 1rem;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> padding-right: 1rem;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[theme=dark] a:active, [theme=dark] a:hover {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> color: #2d96bd;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">.search hr {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> margin-left: 1rem;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> margin-right: 1rem;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="优化中文搜索效果">优化中文搜索效果&lt;/h2>
+&lt;p>这个搜索功能借助了Fuse.js模糊搜索引擎，针对中文搜索需要做一些优化。&lt;/p>
+&lt;p>编辑&lt;code>themes\hugo-search-fuse-js\static\js\search.js&lt;/code>，下面的示例已经添加了部分中文注释：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">// Options for fuse.js
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">let fuseOptions = {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> shouldSort: true, // 是否按分数对结果列表排序
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> includeMatches: true, // 是否应将分数包含在结果集中。0分表示完全匹配，1分表示完全不匹配。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> tokenize: true,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> matchAllTokens: true,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> threshold: 0.2, // 匹配算法阈值。阈值为0.0需要完全匹配（字母和位置），阈值为1.0将匹配任何内容。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> location: 0, // 确定文本中预期找到的模式的大致位置。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> /**
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> * 确定匹配与模糊位置（由位置指定）的距离。一个精确的字母匹配，即距离模糊位置很远的字符将被视为完全不匹配。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> * 距离为0要求匹配位于指定的准确位置，距离为100则要求完全匹配位于使用阈值0.2找到的位置的20个字符以内。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> */
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> distance: 100,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> maxPatternLength: 64, // 模式的最大长度
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> minMatchCharLength: 2, // 模式的最小字符长度
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> keys: [
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {name:&amp;#34;title&amp;#34;,weight:0.8},
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {name:&amp;#34;tags&amp;#34;,weight:0.5},
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {name:&amp;#34;categories&amp;#34;,weight:0.5},
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {name:&amp;#34;contents&amp;#34;,weight:0.4}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">};
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这里和中文搜索有关的主要就3个选项：&lt;/p>
+&lt;ol>
+&lt;li>threshold&lt;/li>
+&lt;li>location&lt;/li>
+&lt;li>distance&lt;/li>
+&lt;/ol>
+&lt;p>threshold是阈值，这个参数搭配distance使用。如果阈值填了0.0，相当于distance没有意义。&lt;/p>
+&lt;p>location填0就行，distance填100就足够了，太大了会导致搜索到过多的结果。&lt;/p>
+&lt;p>最张参数如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> threshold: 0.2,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> location: 0,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> distance: 100
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>可以根据个人情况来修改这几个参数的值。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(一)-基本设置和LoveIt主题</title><link>https://example.com/posts/bf651441/</link><pubDate>Tue, 04 Jan 2022 17:27:10 +0800</pubDate><guid>https://example.com/posts/bf651441/</guid><description>&lt;blockquote>
+&lt;p>本文使用的软件的版本如下：&lt;/p>
+&lt;p>hugo: 0.91.2-extended&lt;/p>
+&lt;p>loveit主题: 0.2.10&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>特别注意&lt;/strong>:hugo必须使用&lt;strong>extended&lt;/strong>版本&lt;/p>
+&lt;p>关于Hugo的安装和网站的生成，本文不再详述,网上教程一大堆。&lt;/p>
+&lt;p>本文主要介绍在安装过程中遇到一些问题及解决方法。&lt;/p>
+&lt;h2 id="设置自定义css文件">设置自定义CSS文件&lt;/h2>
+&lt;p>生成网站后,需要在网站根目录下创建一个自定义的文件：&lt;code>assets\css\_custom.scss&lt;/code>。&lt;/p>
+&lt;p>以后一些主题没提供的页面，所需要的css都保存在这个文件里，最典型的就是自定义搜索的页面。&lt;/p>
+&lt;h2 id="安装loveit主题">安装LoveIt主题&lt;/h2>
+&lt;p>我喜欢用&lt;a class="link" href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener"
+>LoveIt&lt;/a>主题，安装方式有：&lt;/p>
+&lt;ol>
+&lt;li>去官网下载zip文件，解压到&lt;code>themes&lt;/code>目录下&lt;/li>
+&lt;li>用&lt;code>git clone&lt;/code>的方式&lt;/li>
+&lt;li>用&lt;code>git submodule&lt;/code>的方法&lt;/li>
+&lt;/ol>
+&lt;p>在这里采用&lt;code>git submodule&lt;/code>的方法。&lt;/p>
+&lt;p>进入网站根目录后，运行命令：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">git init
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git submodule add https://github.com/dillonzq/LoveIt themes/LoveIt
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="修改configtoml">修改config.toml&lt;/h2>
+&lt;p>&lt;code>config.toml&lt;/code>是整个网站的配置文件，位于网站的根目录下。&lt;/p>
+&lt;p>生成网站后，自带的&lt;code>config.toml&lt;/code>太简单了，基本没啥用,我们需要用LoveIt主题目录下的&lt;code>config.toml&lt;/code>来替代。&lt;/p>
+&lt;p>把网站根目录下的&lt;code>themes\LoveIt\exampleSite\config.toml&lt;/code>文件，拷贝到网站的根目录下。&lt;/p>
+&lt;p>网站首次运行前，需要对&lt;code>config.toml&lt;/code>进行一些修改，确保首次运行网站时不会报错。&lt;/p>
+&lt;p>&lt;strong>错误1&lt;/strong>：关于module&lt;/p>
+&lt;p>&lt;strong>现象&lt;/strong>: &lt;code>Error: module &amp;quot;LoveIt&amp;quot; not found; either add it as a Hugo Module or store it in xxx&lt;/code>&lt;/p>
+&lt;p>&lt;strong>原因&lt;/strong>：&lt;code>config.toml&lt;/code>的第10行设置了主题路径。&lt;/p>
+&lt;p>&lt;strong>解决&lt;/strong>: 把第10行注释掉就可以了。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"># 主题目录
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#themesDir = &amp;#34;../..&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>错误2&lt;/strong>：关于git&lt;/p>
+&lt;p>&lt;strong>现象&lt;/strong>:在运行&lt;code>hugo server&lt;/code>的时候，有和git有关的错误提示&lt;/p>
+&lt;p>&lt;strong>原因&lt;/strong>：这是因为在&lt;code>config.toml&lt;/code>中，启用了&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"># 是否使用 git 信息
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">enableGitInfo = true
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>解决&lt;/strong>：两种方法：&lt;/p>
+&lt;ol>
+&lt;li>在网站根目录下运行&lt;code>git init&lt;/code>。&lt;/li>
+&lt;li>把&lt;code>enableGitInfo&lt;/code>属性改成&lt;code>false&lt;/code>:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"># 是否使用 git 信息
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">enableGitInfo = false
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="新建页面">新建页面&lt;/h2>
+&lt;p>有一些页面需要自己创建,比如说网站常见的&lt;code>关于&lt;/code>(about)页面。&lt;/p>
+&lt;p>方法很简单，运行&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">hugo new about.md
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>生成的文件存放于&lt;code>conten/posts&lt;/code>下。&lt;/p>
+&lt;h2 id="新建文章">新建文章&lt;/h2>
+&lt;p>使用下面命令:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">hugo new posts/my-first-post.md
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这样就创建了一篇名字为&lt;code>my-first-post&lt;/code>的文章，存放在网站根目录的&lt;code>content\posts&lt;/code>下。&lt;br>
+这种新建文章的方式不推荐，有更好的方式，看这里。&lt;/p>
+&lt;h2 id="本地预览">本地预览&lt;/h2>
+&lt;p>运行命令：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">hugo server
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>在浏览器输入&lt;a class="link" href="http://localhost:1313" target="_blank" rel="noopener"
+>http://localhost:1313&lt;/a>来预览。&lt;/p>
+&lt;p>&lt;code>hugo serve&lt;/code>的默认运行环境是 &lt;code>development&lt;/code>, 由于本地 &lt;code>development&lt;/code> 环境的限制, 评论系统, CDN 和 fingerprint 不会在 &lt;code>development&lt;/code> 环境下启用。
+如果想开启这些特性，使用下面的命令来开启：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">hugo serve -e production
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>至此，一个基本的Hugo网站就搭建起来了。&lt;/p></description></item></channel></rss>

@@ -1,1 +1,25 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>openwrt - 标签 - 寂静·流年</title><link>https://example.com/tags/openwrt/</link><description>openwrt - 标签 - 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 17 Feb 2023 19:30:32 +0800</lastBuildDate><atom:link href="https://example.com/tags/openwrt/" rel="self" type="application/rss+xml"/><item><title>解决openwrt软路由下两个客户端不通的问题</title><link>https://example.com/posts/cc8c44d2/</link><pubDate>Fri, 17 Feb 2023 19:30:32 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/cc8c44d2/</guid><description>前段时间把家庭网络改造了一下: 自己编译了openwrt软路由 一直以来的ikuai+openwrt旁路由模式，改成了只使用1个openwrt主</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>openwrt on 寂静·流年</title><link>https://example.com/tags/openwrt/</link><description>Recent content in openwrt on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Fri, 17 Feb 2023 19:30:32 +0800</lastBuildDate><atom:link href="https://example.com/tags/openwrt/index.xml" rel="self" type="application/rss+xml"/><item><title>解决openwrt软路由下两个客户端不通的问题</title><link>https://example.com/posts/cc8c44d2/</link><pubDate>Fri, 17 Feb 2023 19:30:32 +0800</pubDate><guid>https://example.com/posts/cc8c44d2/</guid><description>&lt;blockquote>
+&lt;p>前段时间把家庭网络改造了一下:&lt;/p>
+&lt;/blockquote>
+&lt;ol>
+&lt;li>自己编译了openwrt软路由&lt;/li>
+&lt;li>一直以来的&lt;code>ikuai&lt;/code>+&lt;code>openwrt旁路由&lt;/code>模式，改成了只使用1个openwrt主路由，&lt;/li>
+&lt;/ol>
+&lt;h2 id="问题">问题&lt;/h2>
+&lt;p>改造完后,所有功能一切正常,唯独本地的两个主机:电脑和NAS之间不能使用&lt;code>zerotier&lt;/code>互通了，而本地电脑连接到外网的moon服务器和连接到zerotier账户一切正常。&lt;/p>
+&lt;h2 id="过程">过程&lt;/h2>
+&lt;p>在网上找解决方案，发现都是在&lt;code>openwrt&lt;/code>上安装&lt;code>zerotier&lt;/code>的互通解决方案。&lt;/p>
+&lt;p>而我的需求不同。我没有在&lt;code>openwrt&lt;/code>上安装&lt;code>zerotier&lt;/code>，只是希望&lt;code>openwrt&lt;/code>下的客户端能够互通。&lt;/p>
+&lt;p>所有网上的解决方案对我来说都没有用。&lt;/p>
+&lt;h2 id="解决方法">解决方法&lt;/h2>
+&lt;p>解决方法非常简单，在&lt;code>openwrt&lt;/code>-防火墙下，把&lt;code>启用FullCone-NAT&lt;/code>从&lt;code>高性能模式&lt;/code>改成&lt;code>兼容模式&lt;/code>就可以了。
+&lt;img src="https://example.com/posts/cc8c44d2/openwrt-firewall-set.png"
+width="1555"
+height="544"
+srcset="https://example.com/posts/cc8c44d2/openwrt-firewall-set_hu9dd040f9ab7836b96791aa046546d2c7_768923_480x0_resize_box_3.png 480w, https://example.com/posts/cc8c44d2/openwrt-firewall-set_hu9dd040f9ab7836b96791aa046546d2c7_768923_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="285"
+data-flex-basis="686px"
+>&lt;/p>
+&lt;p>原理我不清楚，怀疑是&lt;code>FullCone-NA&lt;/code>兼容性的问题。&lt;/p></description></item></channel></rss>

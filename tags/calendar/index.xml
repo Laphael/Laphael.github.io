@@ -1,1 +1,50 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>calendar - 标签 - 寂静·流年</title><link>https://example.com/tags/calendar/</link><description>calendar - 标签 - 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 27 Dec 2022 05:25:49 +0800</lastBuildDate><atom:link href="https://example.com/tags/calendar/" rel="self" type="application/rss+xml"/><item><title>导出微软日历的方法</title><link>https://example.com/posts/3553344e/</link><pubDate>Tue, 27 Dec 2022 05:25:49 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/3553344e/</guid><description>导出为ics格式 1、打开outlook，选中需要导出的日历 2、点击左上角文件&amp;ndash;保存日历 3、弹出的对话框中，点击其它选项 4、按照下</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>calendar on 寂静·流年</title><link>https://example.com/tags/calendar/</link><description>Recent content in calendar on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Tue, 27 Dec 2022 05:25:49 +0800</lastBuildDate><atom:link href="https://example.com/tags/calendar/index.xml" rel="self" type="application/rss+xml"/><item><title>导出微软日历的方法</title><link>https://example.com/posts/3553344e/</link><pubDate>Tue, 27 Dec 2022 05:25:49 +0800</pubDate><guid>https://example.com/posts/3553344e/</guid><description>&lt;blockquote>
+&lt;blockquote>
+&lt;blockquote>
+&lt;p>导出为ics格式&lt;/p>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;p>1、打开outlook，选中需要导出的日历&lt;/p>
+&lt;p>&lt;img src="https://example.com/posts/3553344e/%E9%80%89%E6%8B%A9%E6%97%A5%E5%8E%86.png"
+width="330"
+height="338"
+srcset="https://example.com/posts/3553344e/%E9%80%89%E6%8B%A9%E6%97%A5%E5%8E%86_huaf428dfaf1dbaea30f779e9029ad2178_9358_480x0_resize_box_3.png 480w, https://example.com/posts/3553344e/%E9%80%89%E6%8B%A9%E6%97%A5%E5%8E%86_huaf428dfaf1dbaea30f779e9029ad2178_9358_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="97"
+data-flex-basis="234px"
+>&lt;/p>
+&lt;p>2、点击左上角文件&amp;ndash;保存日历&lt;/p>
+&lt;p>&lt;img src="https://example.com/posts/3553344e/%E4%BF%9D%E5%AD%98%E6%97%A5%E5%8E%86.png"
+width="341"
+height="547"
+srcset="https://example.com/posts/3553344e/%E4%BF%9D%E5%AD%98%E6%97%A5%E5%8E%86_hud1ca1759b2adf90a89c2167d10b69d2f_14457_480x0_resize_box_3.png 480w, https://example.com/posts/3553344e/%E4%BF%9D%E5%AD%98%E6%97%A5%E5%8E%86_hud1ca1759b2adf90a89c2167d10b69d2f_14457_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="62"
+data-flex-basis="149px"
+>&lt;/p>
+&lt;p>3、弹出的对话框中，点击&lt;code>其它选项&lt;/code>&lt;/p>
+&lt;p>&lt;img src="https://example.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE1.png"
+width="989"
+height="323"
+srcset="https://example.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE1_hu360c93cf0e355d0fcca25d9c3abd5b4f_13051_480x0_resize_box_3.png 480w, https://example.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE1_hu360c93cf0e355d0fcca25d9c3abd5b4f_13051_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="306"
+data-flex-basis="734px"
+>&lt;/p>
+&lt;p>4、按照下图中的选项来选择，然后点击&lt;code>确定&lt;/code>&lt;/p>
+&lt;p>&lt;img src="https://example.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE2.png"
+width="891"
+height="551"
+srcset="https://example.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE2_hu97b1248a99bc1be4fe4cc1a72b15fb19_29748_480x0_resize_box_3.png 480w, https://example.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE2_hu97b1248a99bc1be4fe4cc1a72b15fb19_29748_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="161"
+data-flex-basis="388px"
+>&lt;/p>
+&lt;p>5、点击保存，即可导出为ics格式的日历&lt;/p>
+&lt;p>6、重复第一项，导出其他的日历&lt;/p>
+&lt;p>注意，每一次只能导出一个日历&lt;/p></description></item></channel></rss>

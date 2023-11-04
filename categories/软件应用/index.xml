@@ -1,1 +1,2148 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>软件应用 - 分类 - 寂静·流年</title><link>https://example.com/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/</link><description>软件应用 - 分类 - 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 12 Oct 2023 17:58:21 +0800</lastBuildDate><atom:link href="https://example.com/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/" rel="self" type="application/rss+xml"/><item><title>Debian常用软件清单</title><link>https://example.com/posts/f59f4dff/</link><pubDate>Thu, 12 Oct 2023 17:58:21 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/f59f4dff/</guid><description>最近在把debian12（LMDE6）当成主力操作系统使用，记录一下必备的软件： xmind 23.08.02122 字体漂亮、演讲模式非常好用 davinci resolve 18.6.2 UI缩放正确 wps 2019 好用 LX Music</description></item><item><title>Centos7安装mysql 5.7</title><link>https://example.com/posts/7770af61/</link><pubDate>Sun, 17 Sep 2023 09:34:53 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/7770af61/</guid><description>开放3306端口 1 2 3 firewall-cmd --state firewall-cmd --zone=public --add-port=3306/tcp --permanent firewall-cmd --reload 下载mysql官方repo源并安装 1 2 3 wget http://dev.mysql.com/get/mysql57-community-release-el7-8.noarch.rpm yum localinstall mysql57-community-release-el7-8.noarch.rpm -y 导入mysql repo源的GPG-KEY 1 rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2022 安</description></item><item><title>在群晖DSM7上安装ResilioSync</title><link>https://example.com/posts/2761c3a7/</link><pubDate>Thu, 24 Aug 2023 17:50:56 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/2761c3a7/</guid><description>安装 在DSM 7的套件中心里，有官方的resilio sync套件，直接安装即可。 权限设置 这里应该是DSM 7上设置resilio sync的难点了</description></item><item><title>Windows下调整GIMP的字体和图标的大小</title><link>https://example.com/posts/9251a95c/</link><pubDate>Mon, 12 Jun 2023 20:18:37 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/9251a95c/</guid><description>在windows下，4K屏幕上,gimp默认显示的图标和字体太小了,字体也不好看,下面介绍如何调整字体类型和大小,以及图标的大小. 这里以gi</description></item><item><title>Opensuse安装vmware Workstation Pro</title><link>https://example.com/posts/d4ead7a4/</link><pubDate>Wed, 31 May 2023 09:45:23 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/d4ead7a4/</guid><description>安装相关的系统依赖 1 sudo zypper install kernel-source kernel-devel gcc 开始安装 添加可执行权限 1 chmod +x VMware-Workstation-Full-17.0.2-21581411.x86_64.bundle 安装 1 sudo ./VMware-Workstation-Full-17.0.2-21581411.x86_64.bundle</description></item><item><title>Linux下设置ResilioSync</title><link>https://example.com/posts/821e7658/</link><pubDate>Sun, 28 May 2023 23:39:06 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/821e7658/</guid><description>Resilio Sync在linux下的安装方式就不讲了，官方提供了大量发行版的安装包，根据自己的linux发行版下载安装即可。 管理界面 linux下，Re</description></item><item><title>Git日常使用总结</title><link>https://example.com/posts/8d738bf7/</link><pubDate>Sat, 25 Feb 2023 09:24:18 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/8d738bf7/</guid><description>本文用来记录在日常使用 Git 中学到的一些知识点，不定时更新。 常规设置 设置 Git 账号的邮箱和用户名 这是使用 Git 的第一步，如果没有设置，根本用不了 Git。</description></item><item><title>在Ubuntu22.04上安装KVM虚拟化软件</title><link>https://example.com/posts/f949f020/</link><pubDate>Sat, 25 Feb 2023 08:52:31 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/f949f020/</guid><description>网上文章千千万，最后还得自己实践一遍 本文是亲自验证过可行的，系统是Ubuntu 22.04.1。 在行文时特意针对第一次接触kvm的人做了一些解</description></item><item><title>Wsl和vmware共存的问题</title><link>https://example.com/posts/9c090dd7/</link><pubDate>Wed, 04 Jan 2023 11:32:30 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/9c090dd7/</guid><description>、 问题描述 近期在使用wsl2和vmware时遇到了一些问题 如果要使用wsl2，则必须要在windows功能里开启虚拟机平台。 但是开启虚拟机平</description></item><item><title>Windows Terminal打开wsl报错的解决方法</title><link>https://example.com/posts/35265d36/</link><pubDate>Mon, 02 Jan 2023 10:02:58 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/35265d36/</guid><description>问题描述 使用wsl安装完kali-linux后，从windows terminal下启动，报如下错误： 解决方法 打开windows termina</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>软件应用 on 寂静·流年</title><link>https://example.com/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/</link><description>Recent content in 软件应用 on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Thu, 12 Oct 2023 17:58:21 +0800</lastBuildDate><atom:link href="https://example.com/categories/%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8/index.xml" rel="self" type="application/rss+xml"/><item><title>Debian常用软件清单</title><link>https://example.com/posts/f59f4dff/</link><pubDate>Thu, 12 Oct 2023 17:58:21 +0800</pubDate><guid>https://example.com/posts/f59f4dff/</guid><description>&lt;p>最近在把debian12（LMDE6）当成主力操作系统使用，记录一下必备的软件：&lt;/p>
+&lt;ul>
+&lt;li>xmind 23.08.02122 字体漂亮、演讲模式非常好用&lt;/li>
+&lt;li>davinci resolve 18.6.2 UI缩放正确&lt;/li>
+&lt;li>wps 2019 好用&lt;/li>
+&lt;li>LX Music 界面漂亮&lt;/li>
+&lt;li>typora 0.11.12(beta) 免费&lt;/li>
+&lt;li>Koodo Reader 书库管理软件&lt;/li>
+&lt;li>Meld 文件比对软件&lt;/li>
+&lt;li>visual studio code 主要用它写hugo博客&lt;/li>
+&lt;li>dbeaver 还可以吧，比navicat还有差距&lt;/li>
+&lt;li>Chrome 对b站弹幕的支持比firefox强&lt;/li>
+&lt;li>motrix 下载工具，支持迅雷、bt、磁力&lt;/li>
+&lt;li>Obstudio 和win下没区别&lt;/li>
+&lt;li>vmware 在debian12下表现非常好，睡眠唤醒后虚拟机没有黑屏、卡死现象&lt;/li>
+&lt;/ul>
+&lt;p>这些软件能够满足我日常应用场景了&lt;/p></description></item><item><title>Centos7安装mysql 5.7</title><link>https://example.com/posts/7770af61/</link><pubDate>Sun, 17 Sep 2023 09:34:53 +0800</pubDate><guid>https://example.com/posts/7770af61/</guid><description>&lt;h2 id="开放3306端口">开放3306端口&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">firewall-cmd --state
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">firewall-cmd --zone=public --add-port=3306/tcp --permanent
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">firewall-cmd --reload
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="下载mysql官方repo源并安装">下载mysql官方repo源并安装&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">wget http://dev.mysql.com/get/mysql57-community-release-el7-8.noarch.rpm
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">yum localinstall mysql57-community-release-el7-8.noarch.rpm -y
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="导入mysql-repo源的gpg-key">导入mysql repo源的GPG-KEY&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2022
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="安装mysql">安装mysql&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">yum install mysql-community-server -y
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="修改etcmycnf">修改&lt;code>/etc/my.cnf&lt;/code>&lt;/h2>
+&lt;p>修改默认字符编码、数据库引擎并禁用密码复杂度验证&lt;/p>
+&lt;p>添加下面内容：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">[mysql]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">default-character-set=utf8
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[mysqld]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">default-storage-engine=INNODB
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">character_set_server=utf8
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">validate_password = off
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>重启mysql&lt;/p>
+&lt;h2 id="获取root临时密码">获取root临时密码&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> grep &amp;#39;temporary password&amp;#39; /var/log/mysqld.log
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="登录mysql">登录mysql&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">mysql -uroot -p
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>使用临时密码登录后，不能进行其他的操作，否则会报错&lt;/p>
+&lt;h2 id="修改root密码">修改root密码&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">ALTER USER &amp;#39;root&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;yourpassword&amp;#39;;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>退出mysql并使用新密码重新登录&lt;/p>
+&lt;h2 id="授权其它机器远程登录">授权其它机器远程登录&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">GRANT ALL PRIVILEGES ON *.* TO &amp;#39;root&amp;#39;@&amp;#39;%&amp;#39; IDENTIFIED BY &amp;#39;yourpassword&amp;#39; WITH GRANT OPTION;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">FLUSH PRIVILEGES;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="开机自启动">开机自启动&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">systemctl enable mysqld
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">systemctl daemon-reload
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="其它设置">其它设置&lt;/h2>
+&lt;h3 id="忽略大小写">忽略大小写&lt;/h3>
+&lt;p>mysql在Windows上lower_case_table_names默认值为1（不敏感），在macOS上默认值为2（不敏感）。在Linux上不支持值2，服务器强制该值为0（敏感）。&lt;/p>
+&lt;p>MySQL官方也提示说：如果在数据目录驻留在不区分大小写的文件系统（例如Windows或macOS）上，则不应将lower_case_table_names设置为0，否则将出现MySQL服务无法启动的问题。&lt;/p>
+&lt;p>由于操作系统不同导致大小写敏感的默认设置不一致，因此在开发时一定要养成严格的意识，SQL语句&lt;strong>一律采用小写字母&lt;/strong>，避免无意义的踩坑。&lt;/p>
+&lt;p>登陆mysql查看：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">mysql&amp;gt; show variables like &amp;#34;%case%&amp;#34;;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">+------------------------+-------+
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| Variable_name | Value |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">+------------------------+-------+
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| lower_case_file_system | OFF |
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">| lower_case_table_names | 0 | ##0区分 1 不区分
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">+------------------------+-------+
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">2 rows in set (0.00 sec)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>修改配置文件 /etc/my.cnf 添加：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"># 0：区分大小写，1：不区分大小写
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">lower_case_table_names =1
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>重启后生效：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">systemctl restart mysqld
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>在群晖DSM7上安装ResilioSync</title><link>https://example.com/posts/2761c3a7/</link><pubDate>Thu, 24 Aug 2023 17:50:56 +0800</pubDate><guid>https://example.com/posts/2761c3a7/</guid><description>&lt;h2 id="安装">安装&lt;/h2>
+&lt;p>在DSM 7的&lt;code>套件中心&lt;/code>里，有官方的resilio sync套件，直接安装即可。&lt;/p>
+&lt;h2 id="权限设置">权限设置&lt;/h2>
+&lt;p>这里应该是DSM 7上设置resilio sync的难点了。&lt;/p>
+&lt;p>如果直接在resilio sync的&lt;code>Web UI&lt;/code>里设置&lt;code>默认文件夹位置&lt;/code>和&lt;code>文件下载位置&lt;/code>,会发现无论选择哪个文件夹，都会提示没有权限。&lt;/p>
+&lt;p>这个问题是由于resilio sync的用户权限造成的。&lt;/p>
+&lt;p>在DSM 7里，resilio sync创建并使用&lt;code>rslsync&lt;/code>这个用户。因此&lt;code>rslsync&lt;/code>这个用户必须对同步文件夹有读写权限。&lt;/p>
+&lt;p>正确的方法是：&lt;/p>
+&lt;ol>
+&lt;li>打开&lt;code>控制面板&lt;/code>&amp;ndash;&lt;code>共享文件夹&lt;/code>，点击左上角&lt;code>新增&lt;/code>&lt;/li>
+&lt;li>新建一个文件夹，假设名字是&lt;code>resiliosync&lt;/code>，根据向导一步步来。&lt;/li>
+&lt;li>在&lt;code>配置用户权限&lt;/code>这一步，点击左上角，选择&lt;code>系统内部用户账号&lt;/code>，找到&lt;code>rslsync&lt;/code>，选中&lt;code>可读写&lt;/code>。&lt;/li>
+&lt;li>在resilio sync的Web UI里，&lt;code>默认文件夹位置&lt;/code>和&lt;code>文件下载位置&lt;/code>设置为&lt;code>resiliosync&lt;/code>即可。&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://example.com/posts/2761c3a7/resilio-permission.png"
+width="1624"
+height="1191"
+srcset="https://example.com/posts/2761c3a7/resilio-permission_huf966b190293ef16df99abaec0efd0385_126999_480x0_resize_box_3.png 480w, https://example.com/posts/2761c3a7/resilio-permission_huf966b190293ef16df99abaec0efd0385_126999_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="136"
+data-flex-basis="327px"
+>&lt;/p></description></item><item><title>Windows下调整GIMP的字体和图标的大小</title><link>https://example.com/posts/9251a95c/</link><pubDate>Mon, 12 Jun 2023 20:18:37 +0800</pubDate><guid>https://example.com/posts/9251a95c/</guid><description>&lt;p>在windows下，4K屏幕上,gimp默认显示的图标和字体太小了,字体也不好看,下面介绍如何调整字体类型和大小,以及图标的大小.&lt;/p>
+&lt;p>这里以gimp默认的Dark主题为例,其它主题类似&lt;/p>
+&lt;h2 id="调整字体类型和大小">调整字体类型和大小&lt;/h2>
+&lt;p>打开&lt;code>C:\Program Files\GIMP 2\share\gimp\2.0\themes\Dark&lt;/code>文件夹,编辑&lt;code>gtkrc&lt;/code>这个文件&lt;/p>
+&lt;ol>
+&lt;li>找到61行&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">#gtk-font-name = &amp;#34;Sans 11&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>修改成下面的样子:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">gtk-font-name = &amp;#34;Microsoft YaHei UI 12&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="2">
+&lt;li>找到68行&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"># font_name = &amp;#34;Sans 11&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>修改成下面的样子&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">font_name = &amp;#34;Microsoft YaHei UI 12&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>其中,&lt;code>Microsoft YaHei UI&lt;/code>是字体类型,&lt;code>12&lt;/code>是字体大小
+3. 找到115行&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> #GimpDock::font-scale = 0.8333
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>修改成下面的样子&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> GimpDock::font-scale = 1.1111
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>其中&lt;code>1.1111&lt;/code>是缩放的比例,根据自己的屏幕实际情况来调整.&lt;/p>
+&lt;h2 id="调整图标大小">调整图标大小&lt;/h2>
+&lt;p>打开gimp,找到&lt;code>编辑&lt;/code>-&lt;code>首选项&lt;/code>-&lt;code>界面&lt;/code>-&lt;code>图标主题&lt;/code>&lt;/p>
+&lt;p>找到下方的&lt;code>通过分辨率猜测图标大小&lt;/code>,修改成&lt;code>自定义图标大小&lt;/code>,然后把下方的滑块拉到最右边&lt;code>巨大&lt;/code>。&lt;/p>
+&lt;p>这样图标大小就调整好了。&lt;/p>
+&lt;p>以上这些参数都可以根据自己的屏幕大小和个人喜好，随意自己调整。&lt;/p>
+&lt;h2 id="实际效果">实际效果&lt;/h2>
+&lt;p>下面放一张27寸4K分辨率168%缩放下，使用文中提到的参数的显示效果：
+&lt;img src="https://example.com/posts/9251a95c/image.png"
+width="2014"
+height="1278"
+srcset="https://example.com/posts/9251a95c/image_hu4d310c3495e8f9c1e950b11f8dfcee95_241438_480x0_resize_box_3.png 480w, https://example.com/posts/9251a95c/image_hu4d310c3495e8f9c1e950b11f8dfcee95_241438_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="Alt text"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+>&lt;/p></description></item><item><title>Opensuse安装vmware Workstation Pro</title><link>https://example.com/posts/d4ead7a4/</link><pubDate>Wed, 31 May 2023 09:45:23 +0800</pubDate><guid>https://example.com/posts/d4ead7a4/</guid><description>&lt;h2 id="安装相关的系统依赖">安装相关的系统依赖&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo zypper install kernel-source kernel-devel gcc
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="开始安装">开始安装&lt;/h2>
+&lt;h3 id="添加可执行权限">添加可执行权限&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">chmod +x VMware-Workstation-Full-17.0.2-21581411.x86_64.bundle
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="安装">安装&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo ./VMware-Workstation-Full-17.0.2-21581411.x86_64.bundle
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Linux下设置ResilioSync</title><link>https://example.com/posts/821e7658/</link><pubDate>Sun, 28 May 2023 23:39:06 +0800</pubDate><guid>https://example.com/posts/821e7658/</guid><description>&lt;p>Resilio Sync在linux下的安装方式就不讲了，官方提供了大量发行版的安装包，根据自己的linux发行版下载安装即可。&lt;/p>
+&lt;h2 id="管理界面">管理界面&lt;/h2>
+&lt;p>linux下，Resilio Sync必须使用web界面来进行管理，地址是: &lt;a class="link" href="https://localhost:8888/gui/" target="_blank" rel="noopener"
+>https://localhost:8888/gui/&lt;/a>&lt;/p>
+&lt;p>首次登录时，会要求你进行注册。&lt;strong>注意&lt;/strong>：在注册时，只需要填写用户名即可，&lt;strong>不必&lt;/strong>填写密码。&lt;/p>
+&lt;h2 id="用户和权限问题">用户和权限问题&lt;/h2>
+&lt;p>默认情况下，Resilio Sync会新建一个名为&lt;code>rslsync&lt;/code>的用户，来进行相关的同步和管理。&lt;/p>
+&lt;p>这种方式很不友好，因为在同步的时候，只能同步到&lt;code>rslsync&lt;/code>这个用户权限的文件夹里。&lt;/p>
+&lt;p>虽然官方提供了方法来使用当前用户进行同步，但是在实际操作过程中还是有问题。&lt;/p>
+&lt;p>因此，还是推荐使用另一种官方提供的方法&lt;/p>
+&lt;h2 id="使用当前用户来启动和管理resilio-sync">使用当前用户来启动和管理Resilio Sync&lt;/h2>
+&lt;h3 id="修改resilio服务">修改resilio服务&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo vi /usr/lib/systemd/user/resilio-sync.service
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>找到：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">WantedBy=multi-user.target
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>修改成：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">WantedBy=default.target
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="使用当前用户自动启动服务">使用当前用户自动启动服务&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">systemctl --user enable resilio-sync
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>上面的命令，&lt;strong>不要&lt;/strong>使用&lt;code>sudo&lt;/code>来执行。&lt;/p></description></item><item><title>Git日常使用总结</title><link>https://example.com/posts/8d738bf7/</link><pubDate>Sat, 25 Feb 2023 09:24:18 +0800</pubDate><guid>https://example.com/posts/8d738bf7/</guid><description>&lt;p>本文用来记录在日常使用 Git 中学到的一些知识点，不定时更新。&lt;/p>
+&lt;h2 id="常规设置">常规设置&lt;/h2>
+&lt;h3 id="设置-git-账号的邮箱和用户名">设置 Git 账号的邮箱和用户名&lt;/h3>
+&lt;p>这是使用 Git 的第一步，如果没有设置，根本用不了 Git。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">git config --global user.email &amp;#34;you@example.com&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config --global user.name &amp;#34;Your Name&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="生成-ssh-密钥">生成 SSH 密钥&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">ssh-keygen -t rsa -b 4096 -C &amp;#34;your_email@example.com&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="git-子模块操作">Git 子模块操作&lt;/h2>
+&lt;h3 id="git-克隆含有子模块的仓库">Git 克隆含有子模块的仓库&lt;/h3>
+&lt;p>如果一个 Git 仓库含有子模块（submodule），现在想要在克隆主仓库的时候，想要一并克隆子模块，则在&lt;code>git clone&lt;/code>命令加上&lt;code>--recursive&lt;/code>参数即可。例如：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">git clone --recursive https://github.com/chaconinc/MainProject
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="子模块更新之后同步操作">子模块更新之后同步操作&lt;/h3>
+&lt;p>如果更新了 &lt;code>submodule&lt;/code>，然后更新了父项目中依赖的版本号,则在同步的时候,需要在 &lt;code>git pull&lt;/code>之后，调用&lt;code>git submodule update&lt;/code>来更新&lt;code>submodule&lt;/code>信息。&lt;/p>
+&lt;p>如果在&lt;code>git pull&lt;/code>之后，忘记了调用&lt;code>git submodule update&lt;/code>，那么极有可能再次把旧的 &lt;code>submodule&lt;/code> 依赖信息提交上去。&lt;/p>
+&lt;p>因此,正确的同步子模块的步骤是:&lt;/p>
+&lt;ol>
+&lt;li>在父目录执行&lt;code>git pull&lt;/code>&lt;/li>
+&lt;li>执行&lt;code>git status&lt;/code>，查看子模块是否有修改&lt;/li>
+&lt;li>执行&lt;code>git submodule update&lt;/code>，来更新子模块。&lt;/li>
+&lt;/ol>
+&lt;h3 id="子模块修改和提交">子模块修改和提交&lt;/h3>
+&lt;p>默认情况下，&lt;code>git submodule update&lt;/code> 并不会将 &lt;code>submodule&lt;/code> 切到任何 &lt;code>branch&lt;/code>，因此 &lt;code>submodule&lt;/code> 的 &lt;code>HEAD&lt;/code> 是处于游离状态的 (‘detached HEAD’ state)。&lt;/p>
+&lt;p>所以在修改前，记得一定要用 &lt;code>git checkout master&lt;/code> 将当前的&lt;code>submodule&lt;/code>分支切换到 &lt;code>master&lt;/code>，然后才能做修改和提交。&lt;/p>
+&lt;p>因此，正确的修改和提交流程是：&lt;/p>
+&lt;ol>
+&lt;li>对 submodule 做一些修改&lt;/li>
+&lt;li>切到 submodule 的目录&lt;/li>
+&lt;li>执行git checkout master&lt;/li>
+&lt;li>执行 commit 和 push 命令。&lt;/li>
+&lt;/ol></description></item><item><title>在Ubuntu22.04上安装KVM虚拟化软件</title><link>https://example.com/posts/f949f020/</link><pubDate>Sat, 25 Feb 2023 08:52:31 +0800</pubDate><guid>https://example.com/posts/f949f020/</guid><description>&lt;blockquote>
+&lt;p>网上文章千千万，最后还得自己实践一遍&lt;/p>
+&lt;/blockquote>
+&lt;p>本文是亲自验证过可行的，系统是Ubuntu 22.04.1。&lt;/p>
+&lt;p>在行文时特意针对第一次接触kvm的人做了一些解释（其实也是写给自己看的，相当于注释了）。&lt;/p>
+&lt;h2 id="更新系统">更新系统&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">sudo apt update &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> sudo apt upgrade
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="检查主机是否支持kvm虚拟化">检查主机是否支持KVM虚拟化&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">egrep -c &lt;span class="s1">&amp;#39;(vmx|svm)&amp;#39;&lt;/span> /proc/cpuinfo
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>上面命令的意思是，统计&lt;code>/proc/cpuinfo&lt;/code>输出中出现&lt;code>vmx&lt;/code>或者&lt;code>svm&lt;/code>的次数。&lt;/p>
+&lt;p>如果不为0,则表示主机支持KVM虚拟化。&lt;/p>
+&lt;p>所以说，只要数字不为0就可以了。如果是0的话，说明你的电脑不支持KVM虚拟化功能，下面的内容也不用再看了。&lt;/p>
+&lt;h2 id="安装kvm虚拟化软件">安装KVM虚拟化软件&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">sudo apt install qemu-kvm virt-manager libvirt-daemon-system virtinst libvirt-clients bridge-utils
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>上面&lt;code>virt-manager&lt;/code>软件是一个kvm前端图形界面，用来创建和管理虚拟机很方便。当然也有别的选择。&lt;/p>
+&lt;h2 id="启动libvirtd服务">启动libvirtd服务&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">sudo systemctl start libvirtd
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo systemctl start libvirtd
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="把当前用户加入到kvm和libvirt组">把当前用户加入到kvm和libvirt组&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">sudo usermod -aG kvm &lt;span class="nv">$USER&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo usermod -aG libvirt &lt;span class="nv">$USER&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="创建一个网桥">创建一个网桥&lt;/h2>
+&lt;p>用于kvm虚拟机进行网络连接
+新建一个配置文件&lt;code>01-netcfg.yaml&lt;/code>：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo vi /etc/netplan/01-netcfg.yaml
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>内容如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl">network:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ethernets:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> eno1:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> dhcp4: false
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> dhcp6: false
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> bridges:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> br0:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> interfaces: [eno1]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> dhcp4: false
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> addresses: [192.168.8.33/24]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> macaddress: 18:c0:4d:2c:0d:09
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> routes:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - to: default
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> via: 192.168.8.252
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> metric: 100
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> nameservers:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> addresses: [192.168.8.252]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> parameters:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> stp: false
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> dhcp6: false
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> version: 2
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>应用配置文件：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">sudo netplan apply
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>上面的配置文件有几点注意事项：&lt;/p>
+&lt;ol>
+&lt;li>格式必须完全一样，连缩进的空格也不能错。&lt;/li>
+&lt;li>&lt;code>eno1&lt;/code>是我的网卡的名称，这里需要改成你自己的网卡的名字
+可以用&lt;code>ip a&lt;/code>查看你自己的网卡的名称。&lt;/li>
+&lt;li>&lt;code>addresses&lt;/code>、&lt;code>macaddress&lt;/code>、&lt;code>nameservers&lt;/code>和&lt;code>routers&lt;/code>里的路由要根据实际情况改成你自己的。&lt;/li>
+&lt;li>执行成功后，使用&lt;code>ip a&lt;/code>查看会多出一个&lt;code>br0&lt;/code>设备，同时原来的网卡，比如&lt;code>eno1&lt;/code>会失去IP地址。这都是正常的，牵涉到一些网络知识，这里不再多说。&lt;/li>
+&lt;/ol></description></item><item><title>Wsl和vmware共存的问题</title><link>https://example.com/posts/9c090dd7/</link><pubDate>Wed, 04 Jan 2023 11:32:30 +0800</pubDate><guid>https://example.com/posts/9c090dd7/</guid><description>&lt;p>、&lt;/p>
+&lt;h2 id="问题描述">问题描述&lt;/h2>
+&lt;p>近期在使用wsl2和vmware时遇到了一些问题&lt;/p>
+&lt;p>如果要使用wsl2，则必须要在&lt;code>windows功能&lt;/code>里开启&lt;code>虚拟机平台&lt;/code>。&lt;/p>
+&lt;p>但是开启&lt;code>虚拟机平台&lt;/code>后，打开vmware、virtualBox等虚拟机时会提示&lt;/p>
+&lt;ul>
+&lt;li>VMware Workstation与Device/Credential Guard不兼容&lt;/li>
+&lt;li>VT不支持、&lt;/li>
+&lt;li>该主机cpu类型不支持虚拟化性能计数器，开启模块VPMC的操作失败，未能启动虚拟机&lt;/li>
+&lt;/ul>
+&lt;p>等等错误。&lt;/p>
+&lt;h2 id="解决方法">解决方法&lt;/h2>
+&lt;p>解决方案很简单，就是把&lt;code>wsl2&lt;/code>降为&lt;code>wsl1&lt;/code>。&lt;/p>
+&lt;p>具体方法如下：&lt;/p>
+&lt;h3 id="1转换已经有的虚拟机">1.转换已经有的虚拟机&lt;/h3>
+&lt;p>比如我现在的&lt;code>kali-linux&lt;/code>虚拟机使用的是&lt;code>wsl2&lt;/code>，想降为&lt;code>wsl1&lt;/code>，则：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">wsl --set-version kali-linux 1
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="2删除虚拟机平台">2.删除&lt;code>虚拟机平台&lt;/code>&lt;/h3>
+&lt;p>管理员权限打开&lt;code>powershell&lt;/code>，输入：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Disable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>重启电脑。&lt;/p></description></item><item><title>Windows Terminal打开wsl报错的解决方法</title><link>https://example.com/posts/35265d36/</link><pubDate>Mon, 02 Jan 2023 10:02:58 +0800</pubDate><guid>https://example.com/posts/35265d36/</guid><description>&lt;h2 id="问题描述">问题描述&lt;/h2>
+&lt;p>使用wsl安装完kali-linux后，从windows terminal下启动，报如下错误：
+&lt;img src="https://example.com/posts/35265d36/wsl-error.png"
+width="674"
+height="229"
+srcset="https://example.com/posts/35265d36/wsl-error_hub5ae49d2a552c7df07f2cf0a6ee3b2c3_9916_480x0_resize_box_3.png 480w, https://example.com/posts/35265d36/wsl-error_hub5ae49d2a552c7df07f2cf0a6ee3b2c3_9916_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="294"
+data-flex-basis="706px"
+>&lt;/p>
+&lt;h2 id="解决方法">解决方法&lt;/h2>
+&lt;p>打开windows terminal的kali-linux配置,修改启动的命令为&lt;code>wsl.exe ~ -d kali-linux&lt;/code>，即中间添加一个&lt;code>~&lt;/code>即可。
+&lt;img src="https://example.com/posts/35265d36/setting.png"
+width="754"
+height="534"
+srcset="https://example.com/posts/35265d36/setting_huf19382c2b8499f6e92dc96abd6dda0e4_30897_480x0_resize_box_3.png 480w, https://example.com/posts/35265d36/setting_huf19382c2b8499f6e92dc96abd6dda0e4_30897_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="141"
+data-flex-basis="338px"
+>&lt;/p></description></item><item><title>Windows Terminal添加到右键菜单</title><link>https://example.com/posts/6ef25004/</link><pubDate>Sun, 01 Jan 2023 09:10:24 +0800</pubDate><guid>https://example.com/posts/6ef25004/</guid><description>&lt;h2 id="下载windows-terminal的图标">下载&lt;code>windows terminal&lt;/code>的图标&lt;/h2>
+&lt;p>在&lt;a class="link" href="https://github.com/microsoft/terminal/tree/main/res" target="_blank" rel="noopener"
+>这里&lt;/a>下载。&lt;/p>
+&lt;h2 id="创建文件夹">创建文件夹&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">mkdir &amp;#34;%USERPROFILE%\AppData\Local\terminal&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>把下载的图标放到新创建的&lt;code>terminal&lt;/code>文件夹里。&lt;/p>
+&lt;h2 id="写入注册表">写入注册表&lt;/h2>
+&lt;p>新建一个注册表文件，内容如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Windows Registry Editor Version 5.00
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[HKEY_CLASSES_ROOT\Directory\background\shell\在此处打开Windows Terminal]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#34;Icon&amp;#34;=&amp;#34;%USERPROFILE%\\AppData\\Local\\terminal\\terminal.ico&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[HKEY_CLASSES_ROOT\Directory\background\shell\在此处打开Windows Terminal\command]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">@=&amp;#34;wt -d \&amp;#34;%V\&amp;#34;&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>双击导入注册表即可。&lt;/p>
+&lt;h2 id="修改启动文件夹">修改启动文件夹&lt;/h2>
+&lt;p>打开&lt;code>windows terminal&lt;/code>的&lt;code>.json&lt;/code>配置文件，找到如下位置并修改：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;#34;profiles&amp;#34;:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;defaults&amp;#34;: {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;startingDirectory&amp;#34;: null
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> },
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;code>&amp;quot;startingDirectory&amp;quot;: null&lt;/code>这一行是新添加的。&lt;/p>
+&lt;p>完工。&lt;/p></description></item><item><title>修改Conda默认启动的Python环境</title><link>https://example.com/posts/0cab458e/</link><pubDate>Sun, 01 Jan 2023 06:59:55 +0800</pubDate><guid>https://example.com/posts/0cab458e/</guid><description>&lt;h2 id="问题描述">问题描述&lt;/h2>
+&lt;p>安装完 Conda 之后，开启终端将默认进入 &lt;code>base&lt;/code> 环境。&lt;/p>
+&lt;p>但是，&lt;code>base&lt;/code> 经常不是我们所需要的环境。因此，每次进入终端都得 &lt;code>conda activate&lt;/code> 到想要的环境，很麻烦。&lt;/p>
+&lt;h2 id="解决方法">解决方法&lt;/h2>
+&lt;p>假如想让&lt;code>conda&lt;/code>默认启动&lt;code>py3s&lt;/code>这个python环境&lt;/p>
+&lt;h3 id="linux">Linux&lt;/h3>
+&lt;p>在&lt;code>shell&lt;/code>的配置文件最后，添加&lt;code>source activate py3s&lt;/code>&lt;/p>
+&lt;p>例如&lt;code>zsh&lt;/code>，则&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">cd
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">vi .zshrc
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>在最后添加&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">source activate py3s
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="windows">windows&lt;/h3>
+&lt;p>打开&lt;code>powershell&lt;/code>
+运行命令：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">notepad $PROFILE
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>如果提示不存在则新建即可。&lt;/p>
+&lt;p>在 &lt;code>Profile&lt;/code> 文件中增加:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">conda activate py3s
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Linux下安装utools</title><link>https://example.com/posts/e1bbdf98/</link><pubDate>Thu, 29 Dec 2022 08:03:18 +0800</pubDate><guid>https://example.com/posts/e1bbdf98/</guid><description>&lt;p>&lt;code>utools&lt;/code>是个快速启动工具，支持mac、win、linux三大平台，自带丰富的插件。&lt;/p>
+&lt;p>本人安装utools主要是为了它的词典插件，用来查词非常方便。&lt;/p>
+&lt;p>最新的3.3版本，在kali linux下可以正常安装，但是启动时却报错：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Uncaught Exception:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Error: libcrypto.so.1.1:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">...
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>可以看出来，是&lt;code>libcrypto.so.1.1&lt;/code>的问题。&lt;/p>
+&lt;p>在网上找了个最简单的解决方法，就是使用其它软件自带的&lt;code>libcrypto.so.1.1&lt;/code>，比如&lt;code>wps&lt;/code>的。&lt;/p>
+&lt;p>首先安装wps，然后查看&lt;code>libcrypto.so&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">dpkg -S libcrypto.so
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>输出如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sublime-text: /opt/sublime_text/libcrypto.so.1.1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">wps-office: /opt/kingsoft/wps-office/office6/libcrypto.so
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">wps-office: /opt/kingsoft/wps-office/office6/libcrypto.so.1.1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">libssl3:amd64: /usr/lib/x86_64-linux-gnu/libcrypto.so.3
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>可以看到，我安装的&lt;code>sublime-text&lt;/code>和&lt;code>wps&lt;/code>都带有&lt;code>libcrypto.so.1.1&lt;/code>，这里使用&lt;code>wps&lt;/code>的。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo cp /opt/kingsoft/wps-office/office6/libcrypto.so.1.1 /opt/uTools/
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>即可正常运行&lt;code>utools&lt;/code>了。&lt;/p></description></item><item><title>导出微软日历的方法</title><link>https://example.com/posts/3553344e/</link><pubDate>Tue, 27 Dec 2022 05:25:49 +0800</pubDate><guid>https://example.com/posts/3553344e/</guid><description>&lt;blockquote>
+&lt;blockquote>
+&lt;blockquote>
+&lt;p>导出为ics格式&lt;/p>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;p>1、打开outlook，选中需要导出的日历&lt;/p>
+&lt;p>&lt;img src="https://example.com/posts/3553344e/%E9%80%89%E6%8B%A9%E6%97%A5%E5%8E%86.png"
+width="330"
+height="338"
+srcset="https://example.com/posts/3553344e/%E9%80%89%E6%8B%A9%E6%97%A5%E5%8E%86_huaf428dfaf1dbaea30f779e9029ad2178_9358_480x0_resize_box_3.png 480w, https://example.com/posts/3553344e/%E9%80%89%E6%8B%A9%E6%97%A5%E5%8E%86_huaf428dfaf1dbaea30f779e9029ad2178_9358_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="97"
+data-flex-basis="234px"
+>&lt;/p>
+&lt;p>2、点击左上角文件&amp;ndash;保存日历&lt;/p>
+&lt;p>&lt;img src="https://example.com/posts/3553344e/%E4%BF%9D%E5%AD%98%E6%97%A5%E5%8E%86.png"
+width="341"
+height="547"
+srcset="https://example.com/posts/3553344e/%E4%BF%9D%E5%AD%98%E6%97%A5%E5%8E%86_hud1ca1759b2adf90a89c2167d10b69d2f_14457_480x0_resize_box_3.png 480w, https://example.com/posts/3553344e/%E4%BF%9D%E5%AD%98%E6%97%A5%E5%8E%86_hud1ca1759b2adf90a89c2167d10b69d2f_14457_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="62"
+data-flex-basis="149px"
+>&lt;/p>
+&lt;p>3、弹出的对话框中，点击&lt;code>其它选项&lt;/code>&lt;/p>
+&lt;p>&lt;img src="https://example.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE1.png"
+width="989"
+height="323"
+srcset="https://example.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE1_hu360c93cf0e355d0fcca25d9c3abd5b4f_13051_480x0_resize_box_3.png 480w, https://example.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE1_hu360c93cf0e355d0fcca25d9c3abd5b4f_13051_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="306"
+data-flex-basis="734px"
+>&lt;/p>
+&lt;p>4、按照下图中的选项来选择，然后点击&lt;code>确定&lt;/code>&lt;/p>
+&lt;p>&lt;img src="https://example.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE2.png"
+width="891"
+height="551"
+srcset="https://example.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE2_hu97b1248a99bc1be4fe4cc1a72b15fb19_29748_480x0_resize_box_3.png 480w, https://example.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE2_hu97b1248a99bc1be4fe4cc1a72b15fb19_29748_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="161"
+data-flex-basis="388px"
+>&lt;/p>
+&lt;p>5、点击保存，即可导出为ics格式的日历&lt;/p>
+&lt;p>6、重复第一项，导出其他的日历&lt;/p>
+&lt;p>注意，每一次只能导出一个日历&lt;/p></description></item><item><title>Linux下使用miniconda的一些设置</title><link>https://example.com/posts/d96c6166/</link><pubDate>Mon, 12 Dec 2022 02:04:54 +0800</pubDate><guid>https://example.com/posts/d96c6166/</guid><description>&lt;p>在&lt;code>kali&lt;/code>的&lt;code>zsh&lt;/code>环境中使用&lt;code>miniconda&lt;/code>，遇到一些问题，这里记录一下解决的过程。&lt;/p>
+&lt;p>对于其它的linux来说，应该是通用的。&lt;/p>
+&lt;h2 id="使用命令行安装miniconda">使用命令行安装miniconda&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">mkdir -p ~/miniconda3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">## 如果使用bash，则把下面命令中的zsh替换成bash：
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">zsh ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">rm -rf ~/miniconda3/miniconda.sh
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">## 如果使用zsh,则执行：
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">~/miniconda3/bin/conda init zsh
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">## 如果使用bash，则执行：
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">~/miniconda3/bin/conda init bash
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="oh-my-zsh主题配置">oh-my-zsh主题配置&lt;/h2>
+&lt;p>默认情况下，使用双行显示的oh-my-zsh主题，会在第一行的前面显示&lt;code>(base)&lt;/code>的标志:
+&lt;img src="https://example.com/posts/d96c6166/default-base.png"
+width="352"
+height="78"
+srcset="https://example.com/posts/d96c6166/default-base_hue7a70516c9bcb22154f0dd10772c86d9_4091_480x0_resize_box_3.png 480w, https://example.com/posts/d96c6166/default-base_hue7a70516c9bcb22154f0dd10772c86d9_4091_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="451"
+data-flex-basis="1083px"
+>&lt;br>
+这就非常的不美观，因此需要对oh-my-zsh的主题做一些修改。&lt;/p>
+&lt;p>这里以&lt;code>gnzh&lt;/code>主题为例。&lt;/p>
+&lt;ol>
+&lt;li>取消掉&lt;code>miniconda&lt;/code>默认的环境显示：&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">conda config --set changeps1 False
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="2">
+&lt;li>添加下面代码到gnzh主题的配置文件中&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">local conda_prompt=&amp;#39;$(conda_prompt_info)&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">conda_prompt_info() {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> if [ -n &amp;#34;$CONDA_DEFAULT_ENV&amp;#34; ]; then
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> echo -n &amp;#34;%{$terminfo[bold]$fg[yellow]%}($CONDA_DEFAULT_ENV) %{$reset_color%}&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> else
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> echo -n &amp;#39;&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> fi
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>注意：&lt;code>$conda_prompt&lt;/code>一定要写成函数的形式，否则PROMPT只会在启动&lt;code>zsh&lt;/code>的时候获取一次&lt;code>conda&lt;/code>环境信息，后续切换环境就不会再改变了。&lt;/p>
+&lt;ol start="3">
+&lt;li>在gnzh主题配置文件的合适地方添加&lt;code>${conda_prompt}&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;p>例如下面：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">PROMPT=&amp;#34;╭─${user_host}${conda_prompt}${current_dir}\$(ruby_prompt_info)${git_branch}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">╰─$PR_PROMPT &amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">RPROMPT=&amp;#34;${return_code}&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>退出并重新进入&lt;code>shell&lt;/code>，即可看到效果。&lt;/p>
+&lt;h2 id="默认不启用conda的base环境">默认不启用conda的base环境&lt;/h2>
+&lt;p>安装完&lt;code>miniconda&lt;/code>后，每次登录系统都会自动启用默认的&lt;code>base&lt;/code>环境，这就取代了系统自带的&lt;code>python2&lt;/code>和&lt;code>python3&lt;/code>。&lt;/p>
+&lt;p>如果想使用系统自带&lt;code>python&lt;/code>环境，有两种方法，推荐使用方法2：&lt;/p>
+&lt;ul>
+&lt;li>方法1:
+手动退出base环境回到系统自带的环境&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">conda deactivate
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>方法2:
+取消&lt;code>miniconda&lt;/code>的&lt;code>base&lt;/code>环境自启动设置：&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">conda config --set auto_activate_base false
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>要进入&lt;code>base&lt;/code>的话，可以手动运行命令&lt;code>conda activate base&lt;/code>&lt;/p>
+&lt;p>加外，如果想让&lt;code>miniconda&lt;/code>的&lt;code>base&lt;/code>环境恢复自启动，可以：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">conda config --set auto_activate_base true
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>解决KDE桌面在vmware中的复制、粘贴和拖拽文件的问题</title><link>https://example.com/posts/d10df142/</link><pubDate>Sat, 10 Dec 2022 09:59:25 +0800</pubDate><guid>https://example.com/posts/d10df142/</guid><description>&lt;h2 id="问题描述">问题描述&lt;/h2>
+&lt;p>在vmware中安装linux的虚拟机，做了以下工作之后：&lt;/p>
+&lt;ol>
+&lt;li>虚拟机使用的是kde桌面&lt;/li>
+&lt;li>虚拟机已经安装了&lt;code>open-vm-tolls&lt;/code>和&lt;code>open-vm-tools-desktop&lt;/code>&lt;/li>
+&lt;li>在虚拟机的高级选项中启用了拖放和复制粘贴等功能&lt;/li>
+&lt;/ol>
+&lt;p>依然不能和宿主机之间双向复制、粘贴和拖放文件。&lt;/p>
+&lt;p>本人使用vmware安装kali Linux，使用的是KDE桌面，就出现了上面的问题。&lt;/p>
+&lt;h2 id="原因">原因&lt;/h2>
+&lt;p>这是KDE桌面的一个bug
+当运行&lt;code>ps -aef | grep vmtoolsd&lt;/code>后，&lt;strong>并不会&lt;/strong>出现类似下图中的第2行红框中的&lt;code>/usr/bin/vmtoolsd -n vmusr --blockFd 3&lt;/code>的结果：
+&lt;img src="https://example.com/../ps%e7%bb%93%e6%9e%9c.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>这就是导致不能复制、粘贴和拖放的原因&lt;/p>
+&lt;h2 id="解决方法">解决方法&lt;/h2>
+&lt;ol>
+&lt;li>新建一个文件&lt;code>startkderc&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo vi /etc/xdg/startkderc
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>添加以下内容并保存：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">[General]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">systemdBoot=false
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="2">
+&lt;li>添加&lt;code>vmware-user-suid-wrapper&lt;/code>到kde的自动启动
+系统设置&amp;ndash;开机与关机&amp;ndash;自动启动&amp;ndash;添加&amp;ndash;添加应用程序，在弹出的对话框中输入&lt;code>/usr/bin/vmware-user-suid-wrapper&lt;/code>&lt;/li>
+&lt;li>重新启动，问题解决&lt;/li>
+&lt;/ol>
+&lt;h2 id="延伸阅读">延伸阅读&lt;/h2>
+&lt;p>相关讨论的原文在&lt;a class="link" href="https://github.com/vmware/open-vm-tools/issues/568" target="_blank" rel="noopener"
+>这里&lt;/a>。&lt;/p>
+&lt;p>另外提一点，在帖子中有人对fedora、archlinux和opensuse都做了测试，发现只有opensuse默认状态下一切功能正常。看来opensuse还是有点东西的😊。&lt;/p>
+&lt;p>再另外，我自己测试，debian 11.5 live版本也没有问题。&lt;/p></description></item><item><title>Davinci在linux下的HiDPI分辨率的问题</title><link>https://example.com/posts/3d3eb7db/</link><pubDate>Thu, 03 Nov 2022 20:06:17 +0800</pubDate><guid>https://example.com/posts/3d3eb7db/</guid><description>&lt;p>我的显示器是27寸4K的分辨率。&lt;/p>
+&lt;p>在ubuntu下安装完davinci resolve 18后，发现启动后界面字体变得非常小，除了&lt;code>鹰眼&lt;/code>我相信没人能看得清。&lt;/p>
+&lt;p>很明显，这是个Linux下的UI缩放的问题。&lt;/p>
+&lt;h2 id="解决方法">解决方法&lt;/h2>
+&lt;p>网上一番搜索，找到了问题的&lt;a class="link" href="https://www.reallinuxuser.com/how-to-set-up-davinci-resolve-for-high-resolution-displays-in-linux/" target="_blank" rel="noopener"
+>解决方法&lt;/a>：&lt;/p>
+&lt;p>原理很简单，就是给davinci的启动程序添加几个参数，如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">QT_DEVICE_PIXEL_RATIO=3 QT_AUTO_SCREEN_SCALE_FACTOR=true ./resolve
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>解释一下：
+QT_DEVICE_PIXEL_RATIO=&lt;code>3&lt;/code>，最后这个&lt;code>3&lt;/code>是放大的倍数，即放大&lt;code>300%&lt;/code>。&lt;/p>
+&lt;p>如果是原始分辨率的话，这里设置为&lt;code>2&lt;/code>就可以了。&lt;/p>
+&lt;p>但是如果已经调整过缩放了，比如我在ubuntu下已经设置为&lt;code>150%&lt;/code>的缩放，这里设置为&lt;code>3&lt;/code>比较合适。&lt;/p>
+&lt;h2 id="添加到启动器">添加到启动器&lt;/h2>
+&lt;p>ubuntu可以使用&lt;code>alacarte&lt;/code>这个软件编辑启动菜单。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo apt install alacarte
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>在davinci的安装目录&lt;code>/opt/resolve/bin&lt;/code>下的新建一个文件&lt;code>davinci.sh&lt;/code>，内容如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#!/bin/sh
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> /opt/resolve/bin &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="nv">QT_DEVICE_PIXEL_RATIO&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="m">3&lt;/span> &lt;span class="nv">QT_AUTO_SCREEN_SCALE_FACTOR&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="nb">true&lt;/span> ./resolve
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>添加可执行权限：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo chmod +x davinci.sh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>运行&lt;code>alacarte&lt;/code>，找到&lt;code>davinci&lt;/code>的菜单项，点击&lt;code>属性&lt;/code>&amp;ndash;&lt;code>Browser&lt;/code>，选中&lt;code>davinci.sh&lt;/code>，保存即可。
+&lt;img src="https://example.com/posts/3d3eb7db/alacarte-davinci.png"
+width="1334"
+height="1126"
+srcset="https://example.com/posts/3d3eb7db/alacarte-davinci_hub65d449f9756d25fddec17428214d090_285529_480x0_resize_box_3.png 480w, https://example.com/posts/3d3eb7db/alacarte-davinci_hub65d449f9756d25fddec17428214d090_285529_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="118"
+data-flex-basis="284px"
+>&lt;/p></description></item><item><title>为nextcloud安装elasticsearch全文搜索</title><link>https://example.com/posts/f092b728/</link><pubDate>Fri, 28 Oct 2022 10:56:09 +0800</pubDate><guid>https://example.com/posts/f092b728/</guid><description>&lt;blockquote>
+&lt;p>写作本文时,elasticsearch 8.3.4版本已经发布，无奈此版本与nextcloud集成的文章太少，因此还是使用elastic7。实际使用效果非常好。&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="环境相关">环境相关&lt;/h2>
+&lt;ul>
+&lt;li>CPU:2核&lt;/li>
+&lt;li>内存:4G&lt;/li>
+&lt;li>操作系统: ubuntu 22.04 server&lt;/li>
+&lt;li>java: openjdk-11-jdk&lt;/li>
+&lt;li>php: 8.1&lt;/li>
+&lt;li>elasticsearch: 7.17.6&lt;/li>
+&lt;li>ednextcloud:24.0.6&lt;/li>
+&lt;/ul>
+&lt;h2 id="安装java">安装java&lt;/h2>
+&lt;p>elasticsearch依赖于java&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo apt install openjdk-11-jdk
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="安装elasticsearch">安装elasticsearch&lt;/h2>
+&lt;p>这里采用直接下载安装包来本地安装的方式。&lt;/p>
+&lt;p>原因是elasticsearch的中文分词插件&lt;code>elasticsearch-analysis-ik&lt;/code>只有7.17.6版本。如果使用apt的方式安装会直接安装7.17.7版本，从而不匹配而无法使用。&lt;/p>
+&lt;p>这也是为什么会安装&lt;code>elasticsearch&lt;/code> &lt;code>7.17.6&lt;/code>版本的原因。&lt;/p>
+&lt;h3 id="下载">下载&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.17.6-amd64.deb
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="安装">安装&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo dpkg -i elasticsearch-7.17.6-amd64.deb
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="配置">配置&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> vi /etc/elasticsearch/elasticsearch.yml
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>在56行左右，修改成下面的形式：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">network.host: localhost
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="设置开机启动">设置开机启动&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo systemctl start elasticsearch
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo systemctl enable elasticsearch
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="测试">测试&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">curl -X GET &amp;#34;localhost:9200&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>输出类似于下面：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">{
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;name&amp;#34; : &amp;#34;myhostname&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;cluster_name&amp;#34; : &amp;#34;elasticsearch&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;cluster_uuid&amp;#34; : &amp;#34;T6xlz9vrRe7qE9D8U4We6Q&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;version&amp;#34; : {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;number&amp;#34; : &amp;#34;7.17.6&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;build_flavor&amp;#34; : &amp;#34;default&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;build_type&amp;#34; : &amp;#34;deb&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;build_hash&amp;#34; : &amp;#34;f65e1yt67dc1d07b642e14a27f338990148ee5b6&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;build_date&amp;#34; : &amp;#34;2022-08-23T11:08:48.893373482Z&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;build_snapshot&amp;#34; : false,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;lucene_version&amp;#34; : &amp;#34;8.11.1&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;minimum_wire_compatibility_version&amp;#34; : &amp;#34;6.8.0&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;minimum_index_compatibility_version&amp;#34; : &amp;#34;6.0.0-beta1&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> },
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;tagline&amp;#34; : &amp;#34;You Know, for Search&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>并不需要网上说的用户名和密码什么的。&lt;/p>
+&lt;h3 id="安装中文插件">安装中文插件&lt;/h3>
+&lt;ol>
+&lt;li>ingest-attachment&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">/usr/share/elasticsearch/bin/elasticsearch-plugin install ingest-attachment
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="2">
+&lt;li>ik分词插件&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">/usr/share/elasticsearch/bin/elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v7.17.6/elasticsearch-analysis-ik-7.17.6.zip
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="nextcloud设置">nextcloud设置&lt;/h2>
+&lt;h3 id="安装搜索相关插件">安装搜索相关插件&lt;/h3>
+&lt;p>full text开头的那几个，如下图几个：
+&lt;img src="https://example.com/posts/f092b728/full-text-plugin.png"
+width="656"
+height="488"
+srcset="https://example.com/posts/f092b728/full-text-plugin_hu4fcabdb0f6fa28282198c600c974c6bc_29164_480x0_resize_box_3.png 480w, https://example.com/posts/f092b728/full-text-plugin_hu4fcabdb0f6fa28282198c600c974c6bc_29164_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="134"
+data-flex-basis="322px"
+>&lt;/p>
+&lt;h3 id="设置插件">设置插件&lt;/h3>
+&lt;p>打开设置-全文搜索,如下图配置
+&lt;img src="https://example.com/posts/f092b728/search-config-1.png"
+width="1413"
+height="1753"
+srcset="https://example.com/posts/f092b728/search-config-1_hu1f1f053f78b41425a04c81a129758c6d_131388_480x0_resize_box_3.png 480w, https://example.com/posts/f092b728/search-config-1_hu1f1f053f78b41425a04c81a129758c6d_131388_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="80"
+data-flex-basis="193px"
+>&lt;/p>
+&lt;p>&lt;img src="https://example.com/posts/f092b728/search-config-2.png"
+width="1241"
+height="1421"
+srcset="https://example.com/posts/f092b728/search-config-2_hub7feb5fdc19ec56ac79a2f0f1319ba04_90610_480x0_resize_box_3.png 480w, https://example.com/posts/f092b728/search-config-2_hub7feb5fdc19ec56ac79a2f0f1319ba04_90610_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="87"
+data-flex-basis="209px"
+>&lt;/p>
+&lt;h3 id="生成索引">生成索引&lt;/h3>
+&lt;p>进入到nextcloud的安装目录下,例如&lt;code>/var/www/nextcloud&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">cd /var/www/nextcloud
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>运行命令：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo -u www-data php ./occ fulltextsearch:index
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这时，可以去nextcloud里试试全文搜索了。&lt;/p>
+&lt;h2 id="额外的工作">额外的工作&lt;/h2>
+&lt;p>创建elasticsearch的索引服务，并开机自动启动&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo vi /etc/systemd/system/nextcloud-fulltext-elasticsearch-worker.service
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>输入如下内容：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">[Unit]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Description=Elasticsearch Worker for Nextcloud Fulltext Search
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">After=network.target
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[Service]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">User=www-data
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Group=www-data
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">WorkingDirectory=/var/www/nextcloud
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ExecStart=/usr/bin/php /var/www/nextcloud/occ fulltextsearch:live -q
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ExecStop=/usr/bin/php /var/www/nextcloud/occ fulltextsearch:stop
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Nice=19
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Restart=always
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[Install]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">WantedBy=multi-user.target
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>开机自启动设置：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">systemctl enable nextcloud-fulltext-elasticsearch-worker.service
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">systemctl start nextcloud-fulltext-elasticsearch-worker.service
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>全部安装配置完成。&lt;/p></description></item><item><title>手动安装Nextcloud</title><link>https://example.com/posts/b924a1ee/</link><pubDate>Wed, 12 Oct 2022 05:51:34 +0800</pubDate><guid>https://example.com/posts/b924a1ee/</guid><description>&lt;h2 id="这篇文章在office预览方面依然有些问题需要解决">这篇文章在office预览方面依然有些问题，需要解决&lt;/h2>
+&lt;p>试过docker、snpa等方式部署nextcloud，但是存在系统匹配、资源占用大等各种问题。而且配置都是写死的，看似安装部署简单，其实折腾起来更痛苦。&lt;/p>
+&lt;p>尤其是在内网环境里,不涉及升级的问题,手动安装是更好的选择，而且超级简单。&lt;/p>
+&lt;p>本文假设nextcloud的服务器地址是&lt;strong>192.168.8.14&lt;/strong>&lt;/p>
+&lt;p>操作系统： ubuntu 22.04 server&lt;/p>
+&lt;h2 id="安装apache2mariadbphpredis">安装apache2、mariadb、php、redis&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo apt update &amp;amp;&amp;amp; sudo apt upgrade
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt install apache2 mariadb-server libapache2-mod-php php-gd php-mysql php-curl php-mbstring php-intl php-gmp php-bcmath php-xml php-imagick php-zip php-readline php-apcu redis-server php-redis
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="配置mysql">配置mysql&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo mysql_secure_installation
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo mysql -u root -p
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>输入密码以登录&lt;/p>
+&lt;p>创建nextcloud的用户和数据库&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">CREATE USER &amp;#39;nextcloud&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;密码&amp;#39;;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">CREATE DATABASE nextcloud;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">GRANT ALL PRIVILEGES ON nextcloud.* TO &amp;#39;nextcloud&amp;#39;@&amp;#39;localhost&amp;#39;;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">FLUSH PRIVILEGES;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">QUIT
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>以上，创建了用户名为&lt;code>nextcloud&lt;/code>、密码是自定义的密码、数据库为&lt;code>nextcloud&lt;/code>，且用户&lt;code>nextcloud&lt;/code>拥有数据库&lt;code>nextcloud&lt;/code>所有权限。&lt;/p>
+&lt;h2 id="配置apache">配置apache&lt;/h2>
+&lt;ul>
+&lt;li>启用apache功能模块&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo a2enmod rewrite headers env dir mime ssl
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>新建2个网站配置文件&lt;/li>
+&lt;/ul>
+&lt;ol>
+&lt;li>新建&lt;code>/etc/apache2/sites-available/nextcloud.conf&lt;/code>,&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;lt;IfModule mod_ssl.c&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;VirtualHost _default_:443&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ServerName 192.168.8.14
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> DocumentRoot /var/www/nextcloud
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;Directory /var/www/nextcloud/&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Options +FollowSymlinks
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> AllowOverride All
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;IfModule mod_dav.c&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Dav off
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;/IfModule&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> SetEnv HOME /var/www/nextcloud
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> SetEnv HTTP_HOME /var/www/nextcloud
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;/Directory&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;IfModule mod_headers.c&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Header always set Strict-Transport-Security &amp;#34;max-age=15768000; preload&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;/IfModule&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> SSLEngine on
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> SSLCertificateFile /etc/ssl/certs/ssl-cert-snakeoil.pem
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> SSLCertificateKeyFile /etc/ssl/private/ssl-cert-snakeoil.key
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;/VirtualHost&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;/IfModule&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这是网站的主配置文件,使用了apache自带的证书。&lt;/p>
+&lt;ol start="2">
+&lt;li>新建 &lt;code>/etc/apache2/sites-available/nextcloud-redirect.conf&lt;/code>,内容如下:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;lt;VirtualHost *:80&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ServerAdmin 192.168.8.14
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> RewriteEngine On
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> RewriteCond %{HTTPS} off
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> RewriteRule ^(.*)$ https://%{HTTP_HOST}$1 [R=301,L]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;/VirtualHost&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这是http到https的跳转配置文件&lt;/p>
+&lt;ol start="3">
+&lt;li>启用网站配置&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo a2ensite nextcloud.conf
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo a2ensite nextcloud-redirect.conf
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#禁用默认的配置文件
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo a2dissite 000-default.conf
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="php配置">PHP配置&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo vim /etc/php/*/apache2/php.ini
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>找到下面的内容，对应修改。下面是修改后的内容：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">date.timezone = Asia/Shanghai
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">memory_limit = 2048M
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">upload_max_filesize = 16000M
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">post_max_size = 16128M
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">max_execution_time = 300
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;code>post_max_size&lt;/code>的值最好比&lt;code>upload_max_filesize&lt;/code>大一些。&lt;/p>
+&lt;h2 id="安装nextcloud">安装nextcloud&lt;/h2>
+&lt;ol>
+&lt;li>下载&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">wget https://download.nextcloud.com/server/releases/latest-24.zip
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>nextcloud 25版本刚出，app还没适配完成，这里用24版本。&lt;/p>
+&lt;ol start="2">
+&lt;li>解压&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">unzip latest-24.zip
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="3">
+&lt;li>下面的操作，是把解压出来的&lt;code>nextcloud&lt;/code>放在&lt;code>/var/www/&lt;/code>下面,并且修改权限&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo mv nextcloud /var/www/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo chown -R www-data:www-data /var/www/nextcloud
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="4">
+&lt;li>重启apache2&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo systemctl restart apache2
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>输入&lt;a class="link" href="http://192.168.8.14%ef%bc%8c%e5%ba%94%e8%af%a5%e4%bc%9a%e8%87%aa%e5%8a%a8%e8%b7%b3%e8%bd%ac%e5%88%b0https://192.168.8.14" target="_blank" rel="noopener"
+>http://192.168.8.14，应该会自动跳转到https://192.168.8.14&lt;/a> ,&lt;/p>
+&lt;p>根据页面提示安装即可.&lt;/p>
+&lt;h2 id="优化nextcloud">优化nextcloud&lt;/h2>
+&lt;h3 id="设置redis缓存">设置redis缓存&lt;/h3>
+&lt;ol>
+&lt;li>修改redis配置文件&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo vim /etc/redis/redis.conf
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>打到对应位置,修改成下面的配置:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">port 0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">unixsocket /var/run/redis/redis-server.sock
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">unixsocketperm 770
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="2">
+&lt;li>添加用户www-data使用redis的权限&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo usermod -a -G redis www-data
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="3">
+&lt;li>重启apache&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo systemctl restart apache2
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="4">
+&lt;li>修改nextcloud配置文件
+在&lt;code>/var/www/html/nextcloud/config/config.php&lt;/code>里添加如下配置:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;#39;memcache.local&amp;#39; =&amp;gt; &amp;#39;\\OC\\Memcache\\Redis&amp;#39;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#39;memcache.locking&amp;#39; =&amp;gt; &amp;#39;\\OC\\Memcache\\Redis&amp;#39;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#39;filelocking.enabled&amp;#39; =&amp;gt; &amp;#39;true&amp;#39;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#39;redis&amp;#39; =&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">array (
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#39;host&amp;#39; =&amp;gt; &amp;#39;/var/run/redis/redis-server.sock&amp;#39;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#39;port&amp;#39; =&amp;gt; 0,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#39;timeout&amp;#39; =&amp;gt; 0.0,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">),
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="5">
+&lt;li>开机启动redis&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo systemctl enable redis-server
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="使用pretty-links">使用Pretty Links&lt;/h3>
+&lt;p>即隐藏URL中的*.php的内容&lt;/p>
+&lt;p>修改nextcloud的配置文件:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo vim /var/www/html/nextcloud/config/config.php
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>添加如下内容:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;#39;htaccess.RewriteBase&amp;#39; =&amp;gt; &amp;#39;/&amp;#39;,
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>在nextcloud的主目录&lt;code>/var/www/nextcloud&lt;/code>下运行命令：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo -u www-data php occ maintenance:update:htaccess
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="php-opcache设置">PHP Opcache设置&lt;/h3>
+&lt;p>修改php配置文件&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo vim /etc/php/*/apache2/php.ini
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>添加如下内容:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">opcache.enable=1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">opcache.enable_cli=1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">opcache.interned_strings_buffer=8
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">opcache.max_accelerated_files=10000
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">opcache.memory_consumption=128
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">opcache.save_comments=1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">opcache.revalidate_freq=1
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="电话区域和本地服务跳转配置">电话区域和本地服务跳转配置&lt;/h3>
+&lt;p>修改nextcloud的配置文件:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo vim /var/www/html/nextcloud/config/config.php
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>添加如下内容:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;#39;default_phone_region&amp;#39; =&amp;gt; &amp;#39;CN&amp;#39;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#39;allow_local_remote_servers&amp;#39; =&amp;gt; true,
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="collabora无法在线打开docx等文档">Collabora无法在线打开.docx等文档&lt;/h3>
+&lt;p>现象：一直显示“正在加载 xxxx.docx”，但是一直显示不出来。&lt;/p>
+&lt;p>原因：这是由于系统缺少相关依赖造成的。&lt;/p>
+&lt;p>解决：根据Collabora官方文档，至少需要下面两个软件
+&lt;code>fontconfig&lt;/code>、&lt;code>fuse&lt;/code>，安装即可&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo apt install fontconfig fuse
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="collabora无法显示中文字体">Collabora无法显示中文字体&lt;/h3>
+&lt;p>解决方法：把需要用到的中文字体，拷贝到&lt;code>/usr/local/share/fonts/&lt;/code>目录下。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo cp SomeFont.ttf /usr/local/share/fonts/
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>正确安装WSL2的方法</title><link>https://example.com/posts/f68b8b61/</link><pubDate>Sat, 08 Oct 2022 17:58:41 +0800</pubDate><guid>https://example.com/posts/f68b8b61/</guid><description>&lt;p>近期重装系统,在安装wsl的时候,由于方法不正确,导致安装的linux运行在wsl1版本,而不是我想要的wsl2。&lt;/p>
+&lt;p>下面介绍一下正确安装wsl2，并设置wsl2为默认版本的方法，抄自&lt;a class="link" href="https://www.kali.org/docs/wsl/win-kex/" target="_blank" rel="noopener"
+>kali官方文档&lt;/a>。&lt;/p>
+&lt;p>&lt;code>win&lt;/code>+&lt;code>x&lt;/code> &lt;code>a&lt;/code>，打开管理员的powershell&lt;/p>
+&lt;p>依次运行下面命令：
+1.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="2">
+&lt;li>
+&lt;p>重启windows&lt;/p>
+&lt;/li>
+&lt;li>&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="4">
+&lt;li>
+&lt;p>重启windows&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>设置默认版本为wsl2&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">wsl --set-default-version 2
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="6">
+&lt;li>更新wsl&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">wsl --update
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>完工。&lt;/p></description></item><item><title>WSL修改linux发行版的主机名</title><link>https://example.com/posts/6b07178d/</link><pubDate>Sat, 08 Oct 2022 17:50:48 +0800</pubDate><guid>https://example.com/posts/6b07178d/</guid><description>&lt;p>wsl安装了多个linux发行版后，主机名统一都是windows的主机名，这导致各个发行版之间不是很好区分。&lt;/p>
+&lt;p>下面提供一个方法，能够单独修改wsl里的各个linux发行版的主机名，而不必修改windows的主机名。&lt;/p>
+&lt;p>在&lt;code>/etc&lt;/code>目录下新建一个文件&lt;code>wsl.conf&lt;/code>，即&lt;code>/etc/wsl.conf&lt;/code>,内容如下:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> [network]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"># generateHosts = false
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> hostname = kali
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>上面的文件里,把&lt;code>kali&lt;/code>换成你想要的主机名即可。&lt;/p>
+&lt;p>修改完成后，需要重启wsl方可生效。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">wsl --shutdown
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>再打开wsl里的linux，就能看到效果了。&lt;/p></description></item><item><title>解决burpsuite在高分屏上字体模糊的问题</title><link>https://example.com/posts/5f34e294/</link><pubDate>Tue, 27 Sep 2022 18:41:56 +0800</pubDate><guid>https://example.com/posts/5f34e294/</guid><description>&lt;h2 id="问题">问题&lt;/h2>
+&lt;p>新版本的burpsuite在启动后，会根据系统的分辨率设置情况自动进行缩放，这带来2个问题：&lt;/p>
+&lt;ol>
+&lt;li>字体界面变得模糊&lt;/li>
+&lt;li>在reapter等界面中，选择字体时鼠标会乱动，导致选不准。&lt;/li>
+&lt;/ol>
+&lt;h2 id="解决">解决&lt;/h2>
+&lt;p>要解决要很简单，在burpsuite的启动命令中加上下面的参数即可：
+&lt;code>-Dsun.java2d.uiScale=1&lt;/code>&lt;/p>
+&lt;p>完整的命令类似于下面：
+&lt;code>java --illegal-access=permit -Dfile.encoding=utf-8 -noverify -Dsun.java2d.uiScale=1 -javaagent:BurpSuiteLoader.jar -jar burpsuite_pro_org.jar&lt;/code>&lt;/p>
+&lt;p>重启后，需要在&lt;code>User options&lt;/code>&amp;ndash;&amp;gt;&lt;code>Display&lt;/code>中把字体调大，一般4K屏20号字体比较不错。&lt;/p>
+&lt;p>还有一个好处是,render中的字体也不再模糊了。&lt;/p>
+&lt;p>另外等宽字体推荐使用&lt;code>更纱黑体 mono sc nerd&lt;/code>
+&lt;img src="https://example.com/posts/5f34e294/font-setting.png"
+width="1464"
+height="588"
+srcset="https://example.com/posts/5f34e294/font-setting_huedb682363974e6137252054a487d6c2b_56306_480x0_resize_box_3.png 480w, https://example.com/posts/5f34e294/font-setting_huedb682363974e6137252054a487d6c2b_56306_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="248"
+data-flex-basis="597px"
+>&lt;/p></description></item><item><title>Vmware Workstation导出ova格式的虚拟机</title><link>https://example.com/posts/f1fa0209/</link><pubDate>Sun, 17 Jul 2022 07:31:26 +0800</pubDate><guid>https://example.com/posts/f1fa0209/</guid><description>&lt;p>两个步骤，非常简单，看图：
+&lt;img src="https://example.com/posts/f1fa0209/vmware1.png"
+width="896"
+height="604"
+srcset="https://example.com/posts/f1fa0209/vmware1_hud07470c21969d7482b2d4b5c16a4562c_65761_480x0_resize_box_3.png 480w, https://example.com/posts/f1fa0209/vmware1_hud07470c21969d7482b2d4b5c16a4562c_65761_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="148"
+data-flex-basis="356px"
+>&lt;/p>
+&lt;p>&lt;img src="https://example.com/posts/f1fa0209/vmware2.png"
+width="1185"
+height="419"
+srcset="https://example.com/posts/f1fa0209/vmware2_huc602db87ff3bb5d60fe761a043bd717c_18447_480x0_resize_box_3.png 480w, https://example.com/posts/f1fa0209/vmware2_huc602db87ff3bb5d60fe761a043bd717c_18447_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="282"
+data-flex-basis="678px"
+>&lt;/p>
+&lt;p>需要注意的是，&lt;code>vmware workstation&lt;/code>在选择导出时，只能选择&lt;code>ovf&lt;/code>格式，不是想要的&lt;code>ova&lt;/code>格式。&lt;/p>
+&lt;p>这时只需要在保存时，手动把&lt;code>ovf&lt;/code>后缀改成&lt;code>ova&lt;/code>，这样导出的就是&lt;code>ova&lt;/code>格式了。&lt;/p></description></item><item><title>Vmware在Linux作为Host下的键盘映射的问题</title><link>https://example.com/posts/846f01f3/</link><pubDate>Sat, 16 Jul 2022 19:28:53 +0800</pubDate><guid>https://example.com/posts/846f01f3/</guid><description>&lt;p>长久以来，在 Linux 使用 vmware 总是有个问题没有解决。&lt;/p>
+&lt;p>当在 Linux 里把 Ctrl 和 CapsLock 这两个键互换后，vmware 的虚拟机里并不会跟着一起换，而依旧是原来的键位。而同样的问题在 Windows 下就不存在。&lt;/p>
+&lt;p>vmware 的官方文档解释：&lt;/p>
+&lt;blockquote>
+&lt;blockquote>
+&lt;p>Workstation Player 可通过检查当前的 X 键映射确定要使用的表。但这种决策过程有时也会失败。另外，每个映射都是固定的，不保证对任何给定的键盘和 X 按键代码-键盘符号映射都正确无误。例如，如果用户使用 xmodmap 互换 Ctrl 和 CapsLock 按键，那么在使用远程服务器时虚拟机中的按键将互换（键盘符号映射），但在使用本地服务器时将取消互换（按键代码映射）。为了修正此问题，您必须在 Workstation Player 中重新映射按键。&lt;/p>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;p>也就是说，在本机上修改了键位后，远程连接到 vmware 虚拟机里是正常的，但是在本机上的虚拟机里则不能使用。&lt;/p>
+&lt;h2 id="解决方案">解决方案&lt;/h2>
+&lt;p>官方给出的解决方案是：&lt;/p>
+&lt;h3 id="查看特定键位的值">查看特定键位的值&lt;/h3>
+&lt;p>使用xev或者xmodmap -pk查看 Ctrl 和 CapsLock 的键位值&lt;/p>
+&lt;p>&lt;img src="https://example.com/posts/846f01f3/keyboard.png"
+width="1454"
+height="547"
+srcset="https://example.com/posts/846f01f3/keyboard_hu2f8781e41254bb5be0b5b653687b2689_848884_480x0_resize_box_3.png 480w, https://example.com/posts/846f01f3/keyboard_hu2f8781e41254bb5be0b5b653687b2689_848884_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="265"
+data-flex-basis="637px"
+>&lt;/p>
+&lt;p>可以看出，left Ctrl 键的值是 66,而 CapsLock 键的值是 37&lt;/p>
+&lt;h3 id="查看键位对应的-v-scan-值">查看键位对应的 V-Scan 值&lt;/h3>
+&lt;p>需要到V-Scan Code Table去查看。&lt;/p>
+&lt;p>这里直接告诉大家： Left Ctrl 的值是 0x01d CapsLock 的值是 0x03a&lt;/p>
+&lt;h3 id="添加配置文件">添加配置文件&lt;/h3>
+&lt;p>在&lt;code>~/.vmware/config&lt;/code>（没有就新建一个）里添加如下配置：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">xkeymap.keycode.66 = 0x01d
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">xkeymap.keycode.37 = 0x03a
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>至此，工作全部完成，vmware 里的虚拟机可以使用和 Host 一样的键位设置了。&lt;/p>
+&lt;h3 id="踩过的大坑">踩过的大坑&lt;/h3>
+&lt;p>这么简单的一个问题，官方文档有明确的说明了，为什么拖了好几年没解决呢？&lt;/p>
+&lt;p>主要问题有两个：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>官方的文档里说，更改健位值的两行代码，加在虚拟机配置文件里(.vmx)或者&lt;code>~/.vmware/config&lt;/code>都可以，其实不对。这两行代码只能加在&lt;code>~/.vmware/config&lt;/code>，加在其他地方不起作用。这个坑是长期未解决此问题的主要原因。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>添加这两行配置后，必须重新启动系统，以便让修改生效。&lt;/p>
+&lt;/li>
+&lt;/ol></description></item><item><title>让tmux和vim支持TrueColor</title><link>https://example.com/posts/4d263cb0/</link><pubDate>Sat, 09 Jul 2022 09:23:45 +0800</pubDate><guid>https://example.com/posts/4d263cb0/</guid><description>&lt;blockquote>
+&lt;p>&lt;code>TrueColor&lt;/code>就是24位的真彩色&lt;/p>
+&lt;/blockquote>
+&lt;p>软件版本：&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>tmux&lt;/code>：3.2&lt;/li>
+&lt;li>&lt;code>vim&lt;/code> ：8.2&lt;/li>
+&lt;/ul>
+&lt;h2 id="修改终端的类型">修改终端的类型&lt;/h2>
+&lt;blockquote>
+&lt;p>终端的类型可以用 &lt;code>echo $TERM&lt;/code>来确认。&lt;/p>
+&lt;/blockquote>
+&lt;p>默认情况下，&lt;code>linux&lt;/code>系统的shell用的终端类型是 &lt;code>xterm&lt;/code>，&lt;code>tmux&lt;/code>用的终端类型是 &lt;code>screen-256color&lt;/code>。&lt;/p>
+&lt;p>我们需要全部修改成 &lt;code>xterm-256color&lt;/code>才能使&lt;code>TrueColor&lt;/code>生效。&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;code>secreen-256&lt;/code>最大的缺点是不支持斜体字。&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="修改系统shell的终端类型">修改系统shell的终端类型&lt;/h3>
+&lt;p>假设用的是 &lt;code>zsh&lt;/code>，则修改 &lt;code>.zshrc&lt;/code>，在最后添加一行：&lt;/p>
+&lt;p>&lt;code>export TERM=&amp;quot;xterm-256color&amp;quot;&lt;/code>&lt;/p>
+&lt;p>然后 &lt;code>source .zshrc&lt;/code>生效。&lt;/p>
+&lt;h3 id="修改tmux的终端类型">修改&lt;code>tmux&lt;/code>的终端类型&lt;/h3>
+&lt;p>打开&lt;code>tmux&lt;/code>的配置文件 &lt;code>~/.tmux.conf&lt;/code>&lt;/p>
+&lt;p>添加下面两行：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"># 设置 tmux 的终端为xterm-256color
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">set -g default-terminal &amp;#34;xterm-256color&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"># 开启 tmux 的终端的ture color支持
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">set-option -ga terminal-overrides &amp;#34;,xterm-256color:Tc&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="vim支持truecolor设置">vim支持TrueColor设置&lt;/h2>
+&lt;p>在&lt;code>~/.vimrc&lt;/code>里添加下面一行&lt;/p>
+&lt;p>&lt;code>set termguicolors &amp;quot; 开启ture color,无需再设置set t_Co=256&lt;/code>&lt;/p>
+&lt;p>这样就可以了。&lt;/p>
+&lt;h2 id="truecolor设置生效">TrueColor设置生效&lt;/h2>
+&lt;p>以上修改操作做完后，需要&lt;/p>
+&lt;ol>
+&lt;li>退全部的&lt;code>tmux&lt;/code>的&lt;code>session&lt;/code>&lt;/li>
+&lt;li>断开远程连接，重新登录&lt;/li>
+&lt;/ol>
+&lt;p>这样才能生效。&lt;/p>
+&lt;p>下面是在&lt;code>tmux&lt;/code>里使用&lt;code>vim&lt;/code>的截图，&lt;code>vim&lt;/code>主题使用的是&lt;code>gruvbox&lt;/code>:&lt;/p>
+&lt;p>&lt;img src="https://example.com/posts/4d263cb0/tmux&amp;#43;vim.png"
+width="1049"
+height="1235"
+srcset="https://example.com/posts/4d263cb0/tmux&amp;#43;vim_hubdd1da61e67c101a3864bf527c968bab_195378_480x0_resize_box_3.png 480w, https://example.com/posts/4d263cb0/tmux&amp;#43;vim_hubdd1da61e67c101a3864bf527c968bab_195378_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="84"
+data-flex-basis="203px"
+>&lt;/p></description></item><item><title>Xshell确实好用</title><link>https://example.com/posts/e2c210ef/</link><pubDate>Fri, 08 Jul 2022 09:23:15 +0800</pubDate><guid>https://example.com/posts/e2c210ef/</guid><description>&lt;p>最近在学习C语言编程，准备采用下面方法：&lt;/p>
+&lt;ul>
+&lt;li>windows 10的主机，装一台 kubuntu 22.04的虚拟机&lt;/li>
+&lt;li>windows下使用远程工具连接到虚拟机。&lt;/li>
+&lt;li>使用 &lt;code>vim&lt;/code>来编辑和编译。&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>据说这是大厂常用的工作流程&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;p>远程连接工具其实没有太多的选择，常用的也就三个：&lt;code>Xshell&lt;/code>、&lt;code>SecureCRT&lt;/code>、&lt;code>MobaXterm&lt;/code>。&lt;/p>
+&lt;p>这三个我都用过，总是因为某些原因从一个换到另一个，具体什么原因自己都忘了。这次在远程连接到虚拟机上配置vim的时候，才发现了Xshell的强大和方便之处。难怪有那么多人推荐Xshell。&lt;/p>
+&lt;p>三款终端使用的版本号如下：Xshell 7、MobaXterm 22.1、SecureCRT 8.5 &amp;amp; 9.2&lt;/p>
+&lt;h2 id="一truecolor的支持">一、TrueColor的支持&lt;/h2>
+&lt;p>所谓的 &lt;code>TrueColor&lt;/code>，也就是24位真彩色，这个色彩在物理显示器上，也就是2000年初的水平。&lt;/p>
+&lt;p>但是在终端上，多年流行的都是 &lt;code>xterm 256&lt;/code>的颜色，直到最近几年才有终端开始支持。&lt;/p>
+&lt;blockquote>
+&lt;p>其实xterm 256也够用了&lt;/p>
+&lt;/blockquote>
+&lt;p>对于 &lt;code>TrueColor&lt;/code>的支持情况，三款终端如下：&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>MobaXterm&lt;/code>：支持&lt;/li>
+&lt;li>&lt;code>SecureCRT&lt;/code>：8.7版本之后支持&lt;/li>
+&lt;li>&lt;code>Xshell &lt;/code>：支持&lt;/li>
+&lt;/ul>
+&lt;h3 id="一打开xshell-7的truecolor支持">（一）打开Xshell 7的TrueColor支持&lt;/h3>
+&lt;p>工具&amp;mdash;&amp;gt;选项&amp;mdash;&amp;gt;高级&amp;mdash;&amp;gt;终端&amp;mdash;&amp;gt;选中&amp;quot;使用本色”，就可以了。如下图：&lt;/p>
+&lt;p>&lt;img src="https://example.com/posts/e2c210ef/1657249415865.png"
+width="802"
+height="712"
+srcset="https://example.com/posts/e2c210ef/1657249415865_hu18af70f362c4b36a4fff5deb2ef2fbdf_101167_480x0_resize_box_3.png 480w, https://example.com/posts/e2c210ef/1657249415865_hu18af70f362c4b36a4fff5deb2ef2fbdf_101167_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="1657249415865"
+class="gallery-image"
+data-flex-grow="112"
+data-flex-basis="270px"
+>&lt;/p>
+&lt;p>&lt;img src="https://example.com/posts/e2c210ef/1657249460673.png"
+width="763"
+height="963"
+srcset="https://example.com/posts/e2c210ef/1657249460673_huc51f21d06335d996786670daeaf3850f_71018_480x0_resize_box_3.png 480w, https://example.com/posts/e2c210ef/1657249460673_huc51f21d06335d996786670daeaf3850f_71018_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="1657249460673"
+class="gallery-image"
+data-flex-grow="79"
+data-flex-basis="190px"
+>&lt;/p>
+&lt;h2 id="二斜体的显示支持">二、斜体的显示支持&lt;/h2>
+&lt;p>我使用的 &lt;code>vim&lt;/code>主题叫 &lt;code>gruvbox&lt;/code>，这个主题可以打开斜体显示功能。默认情况下注释内容会用斜体显示。&lt;/p>
+&lt;p>同样的.&lt;code>vimrc&lt;/code>配置文件，在 &lt;code>SecureCRT&lt;/code>和 &lt;code>MobaXterm&lt;/code>里，都没有办法打开斜体显示，而 &lt;code>Xshell&lt;/code>显示正常：&lt;/p>
+&lt;p>&lt;img src="https://example.com/posts/e2c210ef/1657250828885.png"
+width="953"
+height="1249"
+srcset="https://example.com/posts/e2c210ef/1657250828885_huf113a1615b01b8e7f90cfa831e823a93_158128_480x0_resize_box_3.png 480w, https://example.com/posts/e2c210ef/1657250828885_huf113a1615b01b8e7f90cfa831e823a93_158128_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="1657250828885"
+class="gallery-image"
+data-flex-grow="76"
+data-flex-basis="183px"
+>三、Zmodem支持&lt;/p>
+&lt;p>&lt;code>Zmodem&lt;/code>，简单来说就是可以使用 &lt;code>sz&lt;/code>、&lt;code>rz&lt;/code>命令从远程主机和本地主机之间传输文件。&lt;/p>
+&lt;p>&lt;code>Xshell&lt;/code>和 &lt;code>SecureCRT&lt;/code>默认支持，&lt;code>MobaXterm&lt;/code>需要安装插件才支持。&lt;/p>
+&lt;blockquote>
+&lt;p>其实 &lt;code>Xshell&lt;/code>有 &lt;code>xftp&lt;/code>，&lt;code>SecureCRT&lt;/code>有 &lt;code>SecureFX&lt;/code>，&lt;code>MobaXterm&lt;/code>在连到远程主机时也会自动打开一个sftp传输窗口，都可以替代 &lt;code>Zmodem&lt;/code>的功能。&lt;/p>
+&lt;p>但是有 &lt;code>Zmodem&lt;/code>支持总是好的，可以很方便的传输一些配置文件。&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="四多主机同时运行相同命令">四、多主机同时运行相同命令&lt;/h2>
+&lt;p>这个功能在做运维的时候，同时管理多台主机很有用。&lt;/p>
+&lt;p>&lt;code>Xshell&lt;/code>按下 &lt;code>ALT+e&lt;/code>,就可以把命令同时在所有打开并连接的远程主机中执行了。&lt;/p>
+&lt;p>&lt;code>SecureCRT&lt;/code>有也类似的功能，但是不如 &lt;code>Xshell&lt;/code>方便。&lt;/p>
+&lt;p>&lt;code>MobaXterm&lt;/code>没有试过。&lt;/p>
+&lt;h2 id="五总结">五、总结&lt;/h2>
+&lt;p>网上有这么多人推荐 &lt;code>Xshell&lt;/code>，不是没有原因。&lt;/p>
+&lt;p>很多功能，在你没用到之前，会觉得所有远程终端都一样。&lt;/p>
+&lt;p>很多想要功能，在没踩过坑前，不会知道它有没有实现。&lt;/p>
+&lt;p>目前为止，&lt;code>Xshell&lt;/code>是最满足我需要的一个远程终端程序了。&lt;/p>
+&lt;p>如果没有特殊原因，以后不会再换了。&lt;/p></description></item><item><title>我的跨平台笔记方案-坚果云+Joplin</title><link>https://example.com/posts/3e939557/</link><pubDate>Sat, 28 May 2022 07:56:24 +0800</pubDate><guid>https://example.com/posts/3e939557/</guid><description>&lt;blockquote>
+&lt;p>笔记软件有很多,优秀的也不少。想找一个符合自己要求的跨平台笔记方案，难点在于&lt;strong>跨平台&lt;/strong>这三个字，更确切的说是能够兼顾&lt;strong>Linux&lt;/strong>平台。&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;p>历经一番波折，期间换来换去，最终找到了坚果云+Joplin这个终极跨平台笔记解决方案。&lt;/p>
+&lt;h2 id="坚果云">坚果云&lt;/h2>
+&lt;p>坚果云可以说是所有网盘中对Linux的支持最优秀的了。&lt;/p>
+&lt;p>坚果云的Linux客户端拥有和windows、Mac下客户端完全一致的功能。&lt;/p>
+&lt;p>和Drobox相比，坚果云没有用户数的限制，只有流量限制。这个限制就很聪明，用来同步一些小文件完全够用，将来需要大空间了再花钱，也不贵。&lt;/p>
+&lt;h2 id="joplin">Joplin&lt;/h2>
+&lt;p>Joplin是开源笔记软件的后起之秀，最大的优势是笔记可完全个人拥有。&lt;/p>
+&lt;p>和一些商业公司锁格式、锁导出等恶心行为相比，Joplin完全是笔记软件的清流，这也是为什么我喜欢开源软件。&lt;/p>
+&lt;p>Joplin的功能非常完备，支持图片、视频、表格、Markdown、代码、网页捕捉等，满足记笔记的一且需求。&lt;/p>
+&lt;h2 id="整合方案">整合方案&lt;/h2>
+&lt;p>简单来说，就是坚果云开启WebDAV，然后把Joplin的笔记同步到坚果云的WebDAV里。&lt;/p>
+&lt;p>因为坚果云和Joplin都是全平台的，所有也就达成了跨平台体验一致的记笔记解决方案。&lt;/p>
+&lt;h2 id="问题和解决">问题和解决&lt;/h2>
+&lt;h3 id="kde下坚果云登录界面太小的问题">KDE下坚果云登录界面太小的问题&lt;/h3>
+&lt;p>主要体现在登录界面太小，以至于无法显示登录框的问题。&lt;/p>
+&lt;p>解决方法：&lt;/p>
+&lt;p>1、右键点击登录界面的标题栏&amp;ndash;更多操作&amp;ndash;配置特殊窗口设置&lt;/p>
+&lt;p>&lt;img src="https://example.com/posts/3e939557/kde-nutstore1.png"
+width="999"
+height="528"
+srcset="https://example.com/posts/3e939557/kde-nutstore1_hu5fff8e59cbfba3aefb42e6159106cbe1_117019_480x0_resize_box_3.png 480w, https://example.com/posts/3e939557/kde-nutstore1_hu5fff8e59cbfba3aefb42e6159106cbe1_117019_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="189"
+data-flex-basis="454px"
+>&lt;/p>
+&lt;p>2、点击左下角 &lt;code>添加属性&lt;/code>&lt;/p>
+&lt;p>&lt;img src="https://example.com/posts/3e939557/kde-nutstore2.png"
+width="987"
+height="789"
+srcset="https://example.com/posts/3e939557/kde-nutstore2_hue0d71c15ff3a21df899895ccccd192de_99030_480x0_resize_box_3.png 480w, https://example.com/posts/3e939557/kde-nutstore2_hue0d71c15ff3a21df899895ccccd192de_99030_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="125"
+data-flex-basis="300px"
+>&lt;/p>
+&lt;p>3、在弹出的 &lt;code>添加属性到规则&lt;/code>中，选择 &lt;code>最小尺寸&lt;/code>&lt;/p>
+&lt;p>&lt;img src="https://example.com/posts/3e939557/kde-nutsotre3.png"
+width="984"
+height="786"
+srcset="https://example.com/posts/3e939557/kde-nutsotre3_huaa21450fd8da6d9b26d24c17f2421f05_114500_480x0_resize_box_3.png 480w, https://example.com/posts/3e939557/kde-nutsotre3_huaa21450fd8da6d9b26d24c17f2421f05_114500_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="125"
+data-flex-basis="300px"
+>&lt;/p>
+&lt;p>4、选择强制，然后设置想要的大小，建设设置500以上，我这里是1008x1061&lt;/p>
+&lt;p>&lt;img src="https://example.com/posts/3e939557/kde-nutsotre4.png"
+width="989"
+height="782"
+srcset="https://example.com/posts/3e939557/kde-nutsotre4_hu921d5a5fce7e8f8de2e827c33e279d8b_96682_480x0_resize_box_3.png 480w, https://example.com/posts/3e939557/kde-nutsotre4_hu921d5a5fce7e8f8de2e827c33e279d8b_96682_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="126"
+data-flex-basis="303px"
+>&lt;/p>
+&lt;h3 id="joplin同步到坚果云的正确方法">Joplin同步到坚果云的正确方法&lt;/h3>
+&lt;p>默认的话，Joplin通过WebDAV同步到坚果云会报错，大体意思是 &lt;code>太多的连接&lt;/code>这个错误。&lt;/p>
+&lt;p>解决方法：&lt;/p>
+&lt;p>首先在坚果云里新建一个个人同步文件夹，命名为“Joplin&amp;quot;，然后在软件设置的webdav地址里填入：&lt;/p>
+&lt;p>&lt;code>https://dav.jianguoyun.com/dav/Joplin&lt;/code>&lt;/p>
+&lt;p>其他照旧就可以了。&lt;/p></description></item></channel></rss>

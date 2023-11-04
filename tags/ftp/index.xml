@@ -1,1 +1,24 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>ftp - 标签 - 寂静·流年</title><link>https://example.com/tags/ftp/</link><description>ftp - 标签 - 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 07 Jan 2022 14:37:25 +0800</lastBuildDate><atom:link href="https://example.com/tags/ftp/" rel="self" type="application/rss+xml"/><item><title>如何使用windows的资源管理器打开FTP</title><link>https://example.com/posts/1de5cb42/</link><pubDate>Fri, 07 Jan 2022 14:37:25 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/1de5cb42/</guid><description>我是习惯用专用的FTP软件来连接FTP,比如FlashFXP等, 但是也有人喜欢用windows资源管理器连接FTP服务器，且不用老输入用户名</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ftp on 寂静·流年</title><link>https://example.com/tags/ftp/</link><description>Recent content in ftp on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Fri, 07 Jan 2022 14:37:25 +0800</lastBuildDate><atom:link href="https://example.com/tags/ftp/index.xml" rel="self" type="application/rss+xml"/><item><title>如何使用windows的资源管理器打开FTP</title><link>https://example.com/posts/1de5cb42/</link><pubDate>Fri, 07 Jan 2022 14:37:25 +0800</pubDate><guid>https://example.com/posts/1de5cb42/</guid><description>&lt;p>我是习惯用专用的FTP软件来连接FTP,比如&lt;code>FlashFXP&lt;/code>等,&lt;/p>
+&lt;p>但是也有人喜欢用windows资源管理器连接FTP服务器，且不用老输入用户名、密码&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。&lt;/p>
+&lt;p>最简单的实现方法如下：&lt;/p>
+&lt;p>在桌面右键－新建－快捷方式－在对象位置框中输入&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">explorer.exe ftp://user:pass@host/
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后下一步，随便输入一个名称，完成即可。&lt;/p>
+&lt;p>&lt;strong>注&lt;/strong>：以上&lt;code>user&lt;/code>为FTP用户名，&lt;code>pass&lt;/code>为FTP密码，&lt;code>host&lt;/code>为FTP服务器地址。&lt;/p>
+&lt;p>这样建立的快捷方式是用资源管理器打开（直接填地址会当成internet快捷方式用浏览器打开），且自动登录，并可修改快捷方式图标。&lt;/p>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>学自&lt;a class="link" href="http://shuai.be/archives/ftp-in-explorer/" target="_blank" rel="noopener"
+>这篇文章&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item></channel></rss>

@@ -1,1 +1,58 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>docker - 标签 - 寂静·流年</title><link>https://example.com/tags/docker/</link><description>docker - 标签 - 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 14 Dec 2022 11:25:00 +0800</lastBuildDate><atom:link href="https://example.com/tags/docker/" rel="self" type="application/rss+xml"/><item><title>手动编译vyos最新稳定版</title><link>https://example.com/posts/c5ea52a2/</link><pubDate>Wed, 14 Dec 2022 11:25:00 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/c5ea52a2/</guid><description>vyos官方只有night-daily的镜像，没有稳定版的镜像。 自己手动编译的话，vyos的官方文档又写的不明不白的，感觉有故意的成份。 于是</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>docker on 寂静·流年</title><link>https://example.com/tags/docker/</link><description>Recent content in docker on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Wed, 14 Dec 2022 11:25:00 +0800</lastBuildDate><atom:link href="https://example.com/tags/docker/index.xml" rel="self" type="application/rss+xml"/><item><title>手动编译vyos最新稳定版</title><link>https://example.com/posts/c5ea52a2/</link><pubDate>Wed, 14 Dec 2022 11:25:00 +0800</pubDate><guid>https://example.com/posts/c5ea52a2/</guid><description>&lt;p>vyos官方只有night-daily的镜像，没有稳定版的镜像。&lt;/p>
+&lt;p>自己手动编译的话，vyos的官方文档又写的不明不白的，感觉有故意的成份。&lt;/p>
+&lt;p>于是网上找了篇文章，简单明了的介绍了如何编译安装最新稳定LTS版本。&lt;/p>
+&lt;h2 id="vyos不同版本对应的编译环境">vyos不同版本对应的编译环境&lt;/h2>
+&lt;p>官方推荐是使用&lt;code>debian&lt;/code>来搭建编译环境.&lt;/p>
+&lt;p>vyos版本和debian版本对应关系如下：&lt;/p>
+&lt;p>VyOS 1.3(equuleus) .&amp;lt;&amp;mdash;&amp;gt; . Debian 10 (Buster)&lt;/p>
+&lt;p>VyOS 1.4(sagitta, current) . &amp;lt;&amp;mdash;&amp;gt; . Debian 11 (Bullseye)&lt;/p>
+&lt;h2 id="安装debian-10虚拟机">安装Debian 10虚拟机&lt;/h2>
+&lt;p>使用vmware，详情不再赘述。&lt;/p>
+&lt;p>不会安装虚拟机的话也就不用再想着手动编译vyos了。&lt;/p>
+&lt;p>因为要编译最新的lts 1.3.2版本，由上面的对应关系知道，需要安装debian 10.&lt;/p>
+&lt;h2 id="给debian-10安装docker环境">给debian 10安装docker环境&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ sudo apt-get update
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ sudo apt-get install -y apt-transport-https ca-certificates curl gnupg2 software-properties-common
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ sudo add-apt-repository &amp;#34;deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ sudo apt-get update
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ sudo apt-get install -y docker-ce
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">## 添加当前用户到docker组
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ sudo usermod -aG docker &amp;lt;Your username&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="编译iso镜像">编译ISO镜像&lt;/h2>
+&lt;p>目前，最新的稳定版是&lt;code>1.3.2 LTS&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">git clone -b 1.3.2 --single-branch https://github.com/vyos/vyos-build
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">cd vyos-build
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">docker run --rm -it --privileged -v $(pwd):/vyos -w /vyos vyos/vyos-build:current bash
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">./configure --architecture amd64 --build-by &amp;#34;j.randomhacker@vyos.io&amp;#34; --build-type &amp;#34;release&amp;#34; --version &amp;#34;LTS 1.3.2&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo make iso
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="编译好的iso镜像下载">编译好的ISO镜像下载&lt;/h2>
+&lt;p>在github上找到了个repo，专门发布编译好的lts镜像，地址在&lt;a class="link" href="https://github.com/naa0yama/vyos-build-lts" target="_blank" rel="noopener"
+>这里&lt;/a>。&lt;/p></description></item></channel></rss>

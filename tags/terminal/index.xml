@@ -1,1 +1,215 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>terminal - 标签 - 寂静·流年</title><link>https://example.com/tags/terminal/</link><description>terminal - 标签 - 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 02 Jan 2023 10:02:58 +0800</lastBuildDate><atom:link href="https://example.com/tags/terminal/" rel="self" type="application/rss+xml"/><item><title>Windows Terminal打开wsl报错的解决方法</title><link>https://example.com/posts/35265d36/</link><pubDate>Mon, 02 Jan 2023 10:02:58 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/35265d36/</guid><description>问题描述 使用wsl安装完kali-linux后，从windows terminal下启动，报如下错误： 解决方法 打开windows termina</description></item><item><title>Windows Terminal添加到右键菜单</title><link>https://example.com/posts/6ef25004/</link><pubDate>Sun, 01 Jan 2023 09:10:24 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/6ef25004/</guid><description>下载windows terminal的图标 在这里下载。 创建文件夹 1 mkdir &amp;#34;%USERPROFILE%\AppData\Local\terminal&amp;#34; 把下载的图标放到新创建的terminal文件夹里。 写入注册表 新建一个注册</description></item><item><title>Kali安装zsh及常用插件</title><link>https://example.com/posts/e9b31c18/</link><pubDate>Sat, 24 Sep 2022 07:26:39 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/e9b31c18/</guid><description>kali在2020.4版本后,已经将zsh设置成了默认终端。 但在一些特殊的环境下,比如wsl2里的kali,仍然使用的是bash 查看当前默认</description></item><item><title>Xshell确实好用</title><link>https://example.com/posts/e2c210ef/</link><pubDate>Fri, 08 Jul 2022 09:23:15 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/e2c210ef/</guid><description>最近在学习C语言编程，准备采用下面方法： windows 10的主机，装一台 kubuntu 22.04的虚拟机 windows下使用远程工具连接到虚拟机。 使用 vim来编辑和</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>terminal on 寂静·流年</title><link>https://example.com/tags/terminal/</link><description>Recent content in terminal on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Mon, 02 Jan 2023 10:02:58 +0800</lastBuildDate><atom:link href="https://example.com/tags/terminal/index.xml" rel="self" type="application/rss+xml"/><item><title>Windows Terminal打开wsl报错的解决方法</title><link>https://example.com/posts/35265d36/</link><pubDate>Mon, 02 Jan 2023 10:02:58 +0800</pubDate><guid>https://example.com/posts/35265d36/</guid><description>&lt;h2 id="问题描述">问题描述&lt;/h2>
+&lt;p>使用wsl安装完kali-linux后，从windows terminal下启动，报如下错误：
+&lt;img src="https://example.com/posts/35265d36/wsl-error.png"
+width="674"
+height="229"
+srcset="https://example.com/posts/35265d36/wsl-error_hub5ae49d2a552c7df07f2cf0a6ee3b2c3_9916_480x0_resize_box_3.png 480w, https://example.com/posts/35265d36/wsl-error_hub5ae49d2a552c7df07f2cf0a6ee3b2c3_9916_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="294"
+data-flex-basis="706px"
+>&lt;/p>
+&lt;h2 id="解决方法">解决方法&lt;/h2>
+&lt;p>打开windows terminal的kali-linux配置,修改启动的命令为&lt;code>wsl.exe ~ -d kali-linux&lt;/code>，即中间添加一个&lt;code>~&lt;/code>即可。
+&lt;img src="https://example.com/posts/35265d36/setting.png"
+width="754"
+height="534"
+srcset="https://example.com/posts/35265d36/setting_huf19382c2b8499f6e92dc96abd6dda0e4_30897_480x0_resize_box_3.png 480w, https://example.com/posts/35265d36/setting_huf19382c2b8499f6e92dc96abd6dda0e4_30897_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="141"
+data-flex-basis="338px"
+>&lt;/p></description></item><item><title>Windows Terminal添加到右键菜单</title><link>https://example.com/posts/6ef25004/</link><pubDate>Sun, 01 Jan 2023 09:10:24 +0800</pubDate><guid>https://example.com/posts/6ef25004/</guid><description>&lt;h2 id="下载windows-terminal的图标">下载&lt;code>windows terminal&lt;/code>的图标&lt;/h2>
+&lt;p>在&lt;a class="link" href="https://github.com/microsoft/terminal/tree/main/res" target="_blank" rel="noopener"
+>这里&lt;/a>下载。&lt;/p>
+&lt;h2 id="创建文件夹">创建文件夹&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">mkdir &amp;#34;%USERPROFILE%\AppData\Local\terminal&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>把下载的图标放到新创建的&lt;code>terminal&lt;/code>文件夹里。&lt;/p>
+&lt;h2 id="写入注册表">写入注册表&lt;/h2>
+&lt;p>新建一个注册表文件，内容如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Windows Registry Editor Version 5.00
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[HKEY_CLASSES_ROOT\Directory\background\shell\在此处打开Windows Terminal]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;#34;Icon&amp;#34;=&amp;#34;%USERPROFILE%\\AppData\\Local\\terminal\\terminal.ico&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[HKEY_CLASSES_ROOT\Directory\background\shell\在此处打开Windows Terminal\command]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">@=&amp;#34;wt -d \&amp;#34;%V\&amp;#34;&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>双击导入注册表即可。&lt;/p>
+&lt;h2 id="修改启动文件夹">修改启动文件夹&lt;/h2>
+&lt;p>打开&lt;code>windows terminal&lt;/code>的&lt;code>.json&lt;/code>配置文件，找到如下位置并修改：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;#34;profiles&amp;#34;:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;defaults&amp;#34;: {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;startingDirectory&amp;#34;: null
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> },
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;code>&amp;quot;startingDirectory&amp;quot;: null&lt;/code>这一行是新添加的。&lt;/p>
+&lt;p>完工。&lt;/p></description></item><item><title>Kali安装zsh及常用插件</title><link>https://example.com/posts/e9b31c18/</link><pubDate>Sat, 24 Sep 2022 07:26:39 +0800</pubDate><guid>https://example.com/posts/e9b31c18/</guid><description>&lt;blockquote>
+&lt;blockquote>
+&lt;p>kali在2020.4版本后,已经将zsh设置成了默认终端。
+但在一些特殊的环境下,比如wsl2里的kali,仍然使用的是bash&lt;/p>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;h2 id="查看当前默认系统shell">查看当前默认系统shell&lt;/h2>
+&lt;p>&lt;code>echo $SHELL&lt;/code>&lt;/p>
+&lt;h2 id="安装zsh和oh-my-zsh">安装zsh和oh-my-zsh&lt;/h2>
+&lt;h3 id="zsh">zsh&lt;/h3>
+&lt;p>&lt;code>sudo apt install zsh&lt;/code>&lt;/p>
+&lt;h3 id="oh-my-zsh">oh-my-zsh&lt;/h3>
+&lt;p>&lt;code>sh -c &amp;quot;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;quot;&lt;/code>&lt;/p>
+&lt;ul>
+&lt;li>需要系统中有&lt;code>curl&lt;/code>和&lt;code>git&lt;/code>&lt;/li>
+&lt;li>安装完oh-my-zsh后，会自动提示是否切换到zsh。&lt;/li>
+&lt;li>如果没有提示切换系统shell，使用&lt;code>chsh -s /bin/zsh&lt;/code>来切换。&lt;/li>
+&lt;/ul>
+&lt;h2 id="安装zsh常用插件">安装zsh常用插件&lt;/h2>
+&lt;p>最有用的就是3个：&lt;/p>
+&lt;ul>
+&lt;li>高亮插件&lt;code>zsh-syntax-highlighting&lt;/code>、&lt;/li>
+&lt;li>自动实例插件&lt;code>zsh-autosuggestions&lt;/code>、&lt;/li>
+&lt;li>跳转插件&lt;code>autojump&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;p>在&lt;code>debian&lt;/code>或者&lt;code>kali&lt;/code>下，这3个插件都有对应的软件包，直接安装即可。&lt;/p>
+&lt;p>其它linux，如果没有对应的软件包，可以用下面手动安装的方式。&lt;/p>
+&lt;h3 id="zsh-syntax-highlighting">zsh-syntax-highlighting&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> &lt;span class="nv">$ZSH&lt;/span>/custom/plugins
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="zsh-autosuggestions">zsh-autosuggestions&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> &lt;span class="nv">$ZSH&lt;/span>/custom/plugins
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git clone https://github.com/zsh-users/zsh-autosuggestions.git
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="autojump">autojump&lt;/h3>
+&lt;p>&lt;code>sudo apt install autojump&lt;/code>&lt;/p>
+&lt;h2 id="配置启用插件">配置启用插件&lt;/h2>
+&lt;p>除了上面的插件，还有几个插件建议一起启用，都是&lt;code>oh-my-zsh&lt;/code>自带的：&lt;/p>
+&lt;ul>
+&lt;li>z&lt;/li>
+&lt;li>extract&lt;/li>
+&lt;li>safe-paste&lt;/li>
+&lt;/ul>
+&lt;p>打开&lt;code>~/.zshrc&lt;/code>，找到&lt;code>plugins=(git)&lt;/code>这一行，修改成下面的内容：
+&lt;code>plugins=(git autojump zsh-autosuggestions zsh-syntax-highlighting z safe-paste extract)&lt;/code>&lt;/p>
+&lt;h2 id="配置文件生效">配置文件生效&lt;/h2>
+&lt;p>终端下运行命令:
+&lt;code>source ~/.zshrc&lt;/code>&lt;/p></description></item><item><title>Xshell确实好用</title><link>https://example.com/posts/e2c210ef/</link><pubDate>Fri, 08 Jul 2022 09:23:15 +0800</pubDate><guid>https://example.com/posts/e2c210ef/</guid><description>&lt;p>最近在学习C语言编程，准备采用下面方法：&lt;/p>
+&lt;ul>
+&lt;li>windows 10的主机，装一台 kubuntu 22.04的虚拟机&lt;/li>
+&lt;li>windows下使用远程工具连接到虚拟机。&lt;/li>
+&lt;li>使用 &lt;code>vim&lt;/code>来编辑和编译。&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>据说这是大厂常用的工作流程&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;p>远程连接工具其实没有太多的选择，常用的也就三个：&lt;code>Xshell&lt;/code>、&lt;code>SecureCRT&lt;/code>、&lt;code>MobaXterm&lt;/code>。&lt;/p>
+&lt;p>这三个我都用过，总是因为某些原因从一个换到另一个，具体什么原因自己都忘了。这次在远程连接到虚拟机上配置vim的时候，才发现了Xshell的强大和方便之处。难怪有那么多人推荐Xshell。&lt;/p>
+&lt;p>三款终端使用的版本号如下：Xshell 7、MobaXterm 22.1、SecureCRT 8.5 &amp;amp; 9.2&lt;/p>
+&lt;h2 id="一truecolor的支持">一、TrueColor的支持&lt;/h2>
+&lt;p>所谓的 &lt;code>TrueColor&lt;/code>，也就是24位真彩色，这个色彩在物理显示器上，也就是2000年初的水平。&lt;/p>
+&lt;p>但是在终端上，多年流行的都是 &lt;code>xterm 256&lt;/code>的颜色，直到最近几年才有终端开始支持。&lt;/p>
+&lt;blockquote>
+&lt;p>其实xterm 256也够用了&lt;/p>
+&lt;/blockquote>
+&lt;p>对于 &lt;code>TrueColor&lt;/code>的支持情况，三款终端如下：&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>MobaXterm&lt;/code>：支持&lt;/li>
+&lt;li>&lt;code>SecureCRT&lt;/code>：8.7版本之后支持&lt;/li>
+&lt;li>&lt;code>Xshell &lt;/code>：支持&lt;/li>
+&lt;/ul>
+&lt;h3 id="一打开xshell-7的truecolor支持">（一）打开Xshell 7的TrueColor支持&lt;/h3>
+&lt;p>工具&amp;mdash;&amp;gt;选项&amp;mdash;&amp;gt;高级&amp;mdash;&amp;gt;终端&amp;mdash;&amp;gt;选中&amp;quot;使用本色”，就可以了。如下图：&lt;/p>
+&lt;p>&lt;img src="https://example.com/posts/e2c210ef/1657249415865.png"
+width="802"
+height="712"
+srcset="https://example.com/posts/e2c210ef/1657249415865_hu18af70f362c4b36a4fff5deb2ef2fbdf_101167_480x0_resize_box_3.png 480w, https://example.com/posts/e2c210ef/1657249415865_hu18af70f362c4b36a4fff5deb2ef2fbdf_101167_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="1657249415865"
+class="gallery-image"
+data-flex-grow="112"
+data-flex-basis="270px"
+>&lt;/p>
+&lt;p>&lt;img src="https://example.com/posts/e2c210ef/1657249460673.png"
+width="763"
+height="963"
+srcset="https://example.com/posts/e2c210ef/1657249460673_huc51f21d06335d996786670daeaf3850f_71018_480x0_resize_box_3.png 480w, https://example.com/posts/e2c210ef/1657249460673_huc51f21d06335d996786670daeaf3850f_71018_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="1657249460673"
+class="gallery-image"
+data-flex-grow="79"
+data-flex-basis="190px"
+>&lt;/p>
+&lt;h2 id="二斜体的显示支持">二、斜体的显示支持&lt;/h2>
+&lt;p>我使用的 &lt;code>vim&lt;/code>主题叫 &lt;code>gruvbox&lt;/code>，这个主题可以打开斜体显示功能。默认情况下注释内容会用斜体显示。&lt;/p>
+&lt;p>同样的.&lt;code>vimrc&lt;/code>配置文件，在 &lt;code>SecureCRT&lt;/code>和 &lt;code>MobaXterm&lt;/code>里，都没有办法打开斜体显示，而 &lt;code>Xshell&lt;/code>显示正常：&lt;/p>
+&lt;p>&lt;img src="https://example.com/posts/e2c210ef/1657250828885.png"
+width="953"
+height="1249"
+srcset="https://example.com/posts/e2c210ef/1657250828885_huf113a1615b01b8e7f90cfa831e823a93_158128_480x0_resize_box_3.png 480w, https://example.com/posts/e2c210ef/1657250828885_huf113a1615b01b8e7f90cfa831e823a93_158128_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="1657250828885"
+class="gallery-image"
+data-flex-grow="76"
+data-flex-basis="183px"
+>三、Zmodem支持&lt;/p>
+&lt;p>&lt;code>Zmodem&lt;/code>，简单来说就是可以使用 &lt;code>sz&lt;/code>、&lt;code>rz&lt;/code>命令从远程主机和本地主机之间传输文件。&lt;/p>
+&lt;p>&lt;code>Xshell&lt;/code>和 &lt;code>SecureCRT&lt;/code>默认支持，&lt;code>MobaXterm&lt;/code>需要安装插件才支持。&lt;/p>
+&lt;blockquote>
+&lt;p>其实 &lt;code>Xshell&lt;/code>有 &lt;code>xftp&lt;/code>，&lt;code>SecureCRT&lt;/code>有 &lt;code>SecureFX&lt;/code>，&lt;code>MobaXterm&lt;/code>在连到远程主机时也会自动打开一个sftp传输窗口，都可以替代 &lt;code>Zmodem&lt;/code>的功能。&lt;/p>
+&lt;p>但是有 &lt;code>Zmodem&lt;/code>支持总是好的，可以很方便的传输一些配置文件。&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="四多主机同时运行相同命令">四、多主机同时运行相同命令&lt;/h2>
+&lt;p>这个功能在做运维的时候，同时管理多台主机很有用。&lt;/p>
+&lt;p>&lt;code>Xshell&lt;/code>按下 &lt;code>ALT+e&lt;/code>,就可以把命令同时在所有打开并连接的远程主机中执行了。&lt;/p>
+&lt;p>&lt;code>SecureCRT&lt;/code>有也类似的功能，但是不如 &lt;code>Xshell&lt;/code>方便。&lt;/p>
+&lt;p>&lt;code>MobaXterm&lt;/code>没有试过。&lt;/p>
+&lt;h2 id="五总结">五、总结&lt;/h2>
+&lt;p>网上有这么多人推荐 &lt;code>Xshell&lt;/code>，不是没有原因。&lt;/p>
+&lt;p>很多功能，在你没用到之前，会觉得所有远程终端都一样。&lt;/p>
+&lt;p>很多想要功能，在没踩过坑前，不会知道它有没有实现。&lt;/p>
+&lt;p>目前为止，&lt;code>Xshell&lt;/code>是最满足我需要的一个远程终端程序了。&lt;/p>
+&lt;p>如果没有特殊原因，以后不会再换了。&lt;/p></description></item></channel></rss>

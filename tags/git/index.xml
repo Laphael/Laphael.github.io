@@ -1,1 +1,326 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>git - 标签 - 寂静·流年</title><link>https://example.com/tags/git/</link><description>git - 标签 - 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 25 Feb 2023 09:24:18 +0800</lastBuildDate><atom:link href="https://example.com/tags/git/" rel="self" type="application/rss+xml"/><item><title>Git日常使用总结</title><link>https://example.com/posts/8d738bf7/</link><pubDate>Sat, 25 Feb 2023 09:24:18 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/8d738bf7/</guid><description>本文用来记录在日常使用 Git 中学到的一些知识点，不定时更新。 常规设置 设置 Git 账号的邮箱和用户名 这是使用 Git 的第一步，如果没有设置，根本用不了 Git。</description></item><item><title>使用Hugo搭建个人网站(七)-Hugo和Github Action正确修改文章的最后更新日期</title><link>https://example.com/posts/146871a6/</link><pubDate>Sat, 14 Jan 2023 12:15:00 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/146871a6/</guid><description>偏向技术或者工具使用方面的博客，难免会随着时间和技术的更新，对文章进行一些修改。 使用hugo一年多以来，一直有一个问题没有解决，就是文章修改</description></item><item><title>使用Hugo搭建个人网站(四)-使用Github Action自动部署到Github Pages</title><link>https://example.com/posts/95a48970/</link><pubDate>Thu, 06 Jan 2022 11:10:10 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/95a48970/</guid><description>部署网站到Github上使用的是Github Page功能。 一般来说，部署Hugo网站到Github Page的流程是这样的： 新建一个Githu</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>git on 寂静·流年</title><link>https://example.com/tags/git/</link><description>Recent content in git on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Sat, 25 Feb 2023 09:24:18 +0800</lastBuildDate><atom:link href="https://example.com/tags/git/index.xml" rel="self" type="application/rss+xml"/><item><title>Git日常使用总结</title><link>https://example.com/posts/8d738bf7/</link><pubDate>Sat, 25 Feb 2023 09:24:18 +0800</pubDate><guid>https://example.com/posts/8d738bf7/</guid><description>&lt;p>本文用来记录在日常使用 Git 中学到的一些知识点，不定时更新。&lt;/p>
+&lt;h2 id="常规设置">常规设置&lt;/h2>
+&lt;h3 id="设置-git-账号的邮箱和用户名">设置 Git 账号的邮箱和用户名&lt;/h3>
+&lt;p>这是使用 Git 的第一步，如果没有设置，根本用不了 Git。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">git config --global user.email &amp;#34;you@example.com&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config --global user.name &amp;#34;Your Name&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="生成-ssh-密钥">生成 SSH 密钥&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">ssh-keygen -t rsa -b 4096 -C &amp;#34;your_email@example.com&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="git-子模块操作">Git 子模块操作&lt;/h2>
+&lt;h3 id="git-克隆含有子模块的仓库">Git 克隆含有子模块的仓库&lt;/h3>
+&lt;p>如果一个 Git 仓库含有子模块（submodule），现在想要在克隆主仓库的时候，想要一并克隆子模块，则在&lt;code>git clone&lt;/code>命令加上&lt;code>--recursive&lt;/code>参数即可。例如：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">git clone --recursive https://github.com/chaconinc/MainProject
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="子模块更新之后同步操作">子模块更新之后同步操作&lt;/h3>
+&lt;p>如果更新了 &lt;code>submodule&lt;/code>，然后更新了父项目中依赖的版本号,则在同步的时候,需要在 &lt;code>git pull&lt;/code>之后，调用&lt;code>git submodule update&lt;/code>来更新&lt;code>submodule&lt;/code>信息。&lt;/p>
+&lt;p>如果在&lt;code>git pull&lt;/code>之后，忘记了调用&lt;code>git submodule update&lt;/code>，那么极有可能再次把旧的 &lt;code>submodule&lt;/code> 依赖信息提交上去。&lt;/p>
+&lt;p>因此,正确的同步子模块的步骤是:&lt;/p>
+&lt;ol>
+&lt;li>在父目录执行&lt;code>git pull&lt;/code>&lt;/li>
+&lt;li>执行&lt;code>git status&lt;/code>，查看子模块是否有修改&lt;/li>
+&lt;li>执行&lt;code>git submodule update&lt;/code>，来更新子模块。&lt;/li>
+&lt;/ol>
+&lt;h3 id="子模块修改和提交">子模块修改和提交&lt;/h3>
+&lt;p>默认情况下，&lt;code>git submodule update&lt;/code> 并不会将 &lt;code>submodule&lt;/code> 切到任何 &lt;code>branch&lt;/code>，因此 &lt;code>submodule&lt;/code> 的 &lt;code>HEAD&lt;/code> 是处于游离状态的 (‘detached HEAD’ state)。&lt;/p>
+&lt;p>所以在修改前，记得一定要用 &lt;code>git checkout master&lt;/code> 将当前的&lt;code>submodule&lt;/code>分支切换到 &lt;code>master&lt;/code>，然后才能做修改和提交。&lt;/p>
+&lt;p>因此，正确的修改和提交流程是：&lt;/p>
+&lt;ol>
+&lt;li>对 submodule 做一些修改&lt;/li>
+&lt;li>切到 submodule 的目录&lt;/li>
+&lt;li>执行git checkout master&lt;/li>
+&lt;li>执行 commit 和 push 命令。&lt;/li>
+&lt;/ol></description></item><item><title>使用Hugo搭建个人网站(七)-Hugo和Github Action正确修改文章的最后更新日期</title><link>https://example.com/posts/146871a6/</link><pubDate>Sat, 14 Jan 2023 12:15:00 +0800</pubDate><guid>https://example.com/posts/146871a6/</guid><description>&lt;p>偏向技术或者工具使用方面的博客，难免会随着时间和技术的更新，对文章进行一些修改。&lt;/p>
+&lt;p>使用hugo一年多以来，一直有一个问题没有解决，就是文章修改后不能正确的显示修改后的时间，即更新时间。&lt;/p>
+&lt;p>今天又想起这个长期以来的&amp;quot;bug&amp;quot;，这次终于彻底解决了。&lt;/p>
+&lt;h2 id="修改网站配置文件">修改网站配置文件&lt;/h2>
+&lt;p>在网站的配置文件 &lt;code>config.toml&lt;/code>里添加如下字段:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-toml" data-lang="toml">&lt;span class="line">&lt;span class="cl">&lt;span class="p">[&lt;/span>&lt;span class="nx">frontmatter&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">lastmod&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;:git&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;lastmod&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;:fileModTime&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>另外，还需要启用&lt;code>GitInfo&lt;/code>功能：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-toml" data-lang="toml">&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">enableGitInfo&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="kc">true&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="修改github-action-配置文件">修改Github Action 配置文件&lt;/h2>
+&lt;p>完整的配置文件看&lt;a class="link" href="https://dnwzlx.com/posts/95a48970/#%E7%BD%91%E7%AB%99%E8%AE%BE%E7%BD%AE" target="_blank" rel="noopener"
+>这里&lt;/a>&lt;/p>
+&lt;p>需要注意其中的这些配置：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-toml" data-lang="toml">&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">-&lt;/span> &lt;span class="nx">name&lt;/span>&lt;span class="err">:&lt;/span> &lt;span class="nx">Checkout&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">uses&lt;/span>&lt;span class="err">:&lt;/span> &lt;span class="nx">actions&lt;/span>&lt;span class="err">/&lt;/span>&lt;span class="nx">checkout&lt;/span>&lt;span class="err">@&lt;/span>&lt;span class="nx">v3&lt;/span> &lt;span class="c"># 引用actions/checkout这个action，与所在的github仓库同名&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">with&lt;/span>&lt;span class="err">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">submodules&lt;/span>&lt;span class="err">:&lt;/span> &lt;span class="kc">true&lt;/span> &lt;span class="c"># Fetch Hugo themes (true OR recursive) 获取submodule主题&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">fetch-depth&lt;/span>&lt;span class="err">:&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="c"># Fetch all history for .GitInfo and .Lastmod&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">-&lt;/span> &lt;span class="nx">name&lt;/span>&lt;span class="err">:&lt;/span> &lt;span class="nx">Disable&lt;/span> &lt;span class="nx">quotePath&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">run&lt;/span>&lt;span class="err">:&lt;/span> &lt;span class="nx">git&lt;/span> &lt;span class="nx">config&lt;/span> &lt;span class="nx">--global&lt;/span> &lt;span class="nx">core&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">quotePath&lt;/span> &lt;span class="kc">false&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="fetch-depth-0">fetch-depth: 0&lt;/h3>
+&lt;p>&lt;code>fetch-depth&lt;/code> 的默认值是 1，也就是说它默认只会拉取分支最近的一次 commit，这可能会导致一些文章的 &lt;code>GitInfo&lt;/code> 变量无法获取到。&lt;/p>
+&lt;p>设置为 0 代表拉取所有分支的所有提交。&lt;/p>
+&lt;h3 id="disable-quotepath">Disable quotePath&lt;/h3>
+&lt;p>原理是这样的：默认情况下，当文件名中包含中文的时候，git 会使用引号&lt;code>&amp;quot; &amp;quot;&lt;/code>把文件名括起来。&lt;/p>
+&lt;p>但是这会导致 action 中无法读取 &lt;code>:GitInfo&lt;/code> 变量，所以这里需要关闭&lt;code>quotePath&lt;/code>功能。&lt;/p>
+&lt;p>这样就可以正确显示文章最后更新时间了，问题解决。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(四)-使用Github Action自动部署到Github Pages</title><link>https://example.com/posts/95a48970/</link><pubDate>Thu, 06 Jan 2022 11:10:10 +0800</pubDate><guid>https://example.com/posts/95a48970/</guid><description>&lt;p>部署网站到Github上使用的是&lt;code>Github Page&lt;/code>功能。&lt;/p>
+&lt;p>一般来说，部署Hugo网站到&lt;code>Github Page&lt;/code>的流程是这样的：&lt;/p>
+&lt;ol>
+&lt;li>新建一个&lt;code>Github Page&lt;/code>的repo&lt;/li>
+&lt;li>把网站源码部署到repo的一个分支，比如&lt;code>source&lt;/code>&lt;/li>
+&lt;li>把网站的public文件部署到repo的&lt;code>master&lt;/code>分支&lt;/li>
+&lt;/ol>
+&lt;p>这种方法能同时备份网站源码和网站，但也有不足之处:&lt;/p>
+&lt;ol>
+&lt;li>网站源码和生成的网站都处于公共分支,任何人都能查看&lt;/li>
+&lt;li>每次更新网站,得同时更新网站源码和生成网站,比较繁琐&lt;/li>
+&lt;/ol>
+&lt;p>因此,本文介绍如何使用&lt;code>Github Action&lt;/code>,解决上面的两个不足之处。&lt;/p>
+&lt;h2 id="基本思路">基本思路&lt;/h2>
+&lt;ol>
+&lt;li>新建一个private repo（私人仓库）,用于保存网站源码&lt;/li>
+&lt;li>设置&lt;code>Github Action&lt;/code>,每当private repo有提交时，就自动监测源码的变化、自动生成网站且自动发布到&lt;code>Github Page&lt;/code>上。&lt;/li>
+&lt;/ol>
+&lt;p>这样，每次只需把网站源码提交到private repo就可以了，剩下的所有工作由&lt;code>Github Action&lt;/code>来自动完成。&lt;/p>
+&lt;h2 id="github-action设置">Github Action设置&lt;/h2>
+&lt;h3 id="生成personal-access-tokens">生成Personal access tokens&lt;/h3>
+&lt;p>由于源码是保存在私人仓库的，这里需要使用&lt;code>Personal access tokens&lt;/code>来具备改写别的repo的权限。&lt;/p>
+&lt;p>点击头像下拉菜单-&lt;code>Settings&lt;/code>-&lt;code>Developer Settings&lt;/code>-&lt;code>Personal access tokens&lt;/code>。&lt;/p>
+&lt;p>点击右侧的&lt;code>generate new token&lt;/code>
+&lt;img src="https://example.com/posts/95a48970/%E7%94%9F%E6%88%90newtoken1.png"
+width="1654"
+height="605"
+srcset="https://example.com/posts/95a48970/%E7%94%9F%E6%88%90newtoken1_hu941aff02339b4ebcea0ec0443c72b9cc_77671_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/%E7%94%9F%E6%88%90newtoken1_hu941aff02339b4ebcea0ec0443c72b9cc_77671_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="273"
+data-flex-basis="656px"
+>
+名字随便填,比如&lt;code>ACTION_ACCESS_TOKEN&lt;/code>&lt;/p>
+&lt;p>下方&lt;code>repo&lt;/code>的所有选项全部选上:&lt;br>
+&lt;img src="https://example.com/posts/95a48970/repo.png"
+width="894"
+height="373"
+srcset="https://example.com/posts/95a48970/repo_hub5b0bda9134eecc1fe1e6f635e7f7e97_57278_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/repo_hub5b0bda9134eecc1fe1e6f635e7f7e97_57278_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="239"
+data-flex-basis="575px"
+>&lt;/p>
+&lt;p>还有admin:repo_hook,全部选上:&lt;br>
+&lt;img src="https://example.com/posts/95a48970/admin_repo_hook.png"
+width="797"
+height="142"
+srcset="https://example.com/posts/95a48970/admin_repo_hook_hu4d949bd7a1c43850ce13586b46bafb97_20201_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/admin_repo_hook_hu4d949bd7a1c43850ce13586b46bafb97_20201_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="561"
+data-flex-basis="1347px"
+>&lt;br>
+生成的&lt;code>token&lt;/code>保存好备用&lt;/p>
+&lt;h2 id="私人仓库设置">私人仓库设置&lt;/h2>
+&lt;p>新建一个私人仓库,名字随意&lt;br>
+&lt;img src="https://example.com/posts/95a48970/newprivaterepo.png"
+width="1154"
+height="1048"
+srcset="https://example.com/posts/95a48970/newprivaterepo_hu2b3947c4ead053e90b8a1f7188fc2423_120593_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/newprivaterepo_hu2b3947c4ead053e90b8a1f7188fc2423_120593_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="110"
+data-flex-basis="264px"
+>&lt;br>
+在此repo上，&lt;code>Settings&lt;/code>-&lt;code>Secrets&lt;/code>-&lt;code>New repository secret&lt;/code>
+&lt;img src="https://example.com/posts/95a48970/privaterepoaddtoken.png"
+width="1841"
+height="1130"
+srcset="https://example.com/posts/95a48970/privaterepoaddtoken_hufd4580fc50e98fe076fd47d19569e369_113028_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/privaterepoaddtoken_hufd4580fc50e98fe076fd47d19569e369_113028_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="162"
+data-flex-basis="391px"
+>&lt;br>
+把刚才申请的&lt;code>Personal access tokens&lt;/code>填写上。
+&lt;code>Name&lt;/code>必须和刚才申请&lt;code>Personal access tokens&lt;/code>时填写的一致，比如&lt;code>ACTION_ACCESS_TOKEN&lt;/code>&lt;br>
+&lt;img src="https://example.com/posts/95a48970/newtoken.png"
+width="802"
+height="800"
+srcset="https://example.com/posts/95a48970/newtoken_hu8a16ab8eae3cf1e222e408bdc69e64a8_24669_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/newtoken_hu8a16ab8eae3cf1e222e408bdc69e64a8_24669_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="240px"
+>&lt;/p>
+&lt;h2 id="网站设置">网站设置&lt;/h2>
+&lt;p>在网站根目录里新建两个文件夹&lt;code>.github/workflows&lt;/code>。&lt;/p>
+&lt;p>在&lt;code>workflows&lt;/code>里新建一个后缀为&lt;code>.yml&lt;/code>的文件，比如&lt;code>hugodeploy.yml&lt;/code>(文件名自己随便取)。&lt;/p>
+&lt;p>&lt;code>hugodeploy.yml&lt;/code>的内容如下:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;span class="lnt">42
+&lt;/span>&lt;span class="lnt">43
+&lt;/span>&lt;span class="lnt">44
+&lt;/span>&lt;span class="lnt">45
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yml" data-lang="yml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">HugoDeploy &lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">on&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">push&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">branches&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">master &lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 这里的意思是当 master分支发生push的时候，运行下面的jobs&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">env&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">TZ&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Asia/Shanghai&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 设置当前环境时区&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">jobs&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">deploy&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 任务名自取&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">runs-on&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">ubuntu-20.04&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 在什么环境运行任务&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">steps&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Checkout&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">actions/checkout@v3&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 引用actions/checkout这个action，与所在的github仓库同名&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">submodules&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># Fetch Hugo themes (true OR recursive) 获取submodule主题&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">fetch-depth&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">0&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># Fetch all history for .GitInfo and .Lastmod&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Disable quotePath&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">run&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">git config --global core.quotePath false&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Setup Hugo&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 步骤名自取&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">peaceiris/actions-hugo@v2&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># hugo官方提供的action，用于在任务环境中获取hugo&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">hugo-version&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s1">&amp;#39;0.99.1&amp;#39;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 获取最新版本的hugo&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">extended&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Cache resources&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 缓存 resource 文件加快生成速度&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">actions/cache@v3&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">path&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">resources&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c"># 检查照片文件变化&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">key&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ runner.os }}-hugocache-${{ hashFiles(&amp;#39;content/**/*&amp;#39;) }}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">restore-keys&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ runner.os }}-hugocache-&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Build&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">run&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">hugo --minify&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 使用hugo构建静态网页&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Deploy&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">peaceiris/actions-gh-pages@v3&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 一个自动发布github pages的action&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c"># github_token: ${{ secrets.GITHUB_TOKEN }} 该项适用于发布到源码相同repo的情况，不能用于发布到其他repo&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">external_repository&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">yourname/yourname.github.io&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 发布到哪个repo&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">personal_token&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ secrets.ACTION_ACCESS_TOKEN }}&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 发布到其他repo需要提供上面生成的personal access token&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">publish_dir&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">./public&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 注意这里指的是要发布哪个文件夹的内容，而不是指发布到目的仓库的什么位置，因为hugo默认生成静态网页到public文件夹，所以这里发布public文件夹里的内容&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">publish_branch&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">master&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 发布到哪个branch&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>需要改动的是:&lt;/p>
+&lt;p>&lt;code>external_repository&lt;/code>: 填写自己的Github Page仓库地址&lt;/p>
+&lt;h2 id="部署到github">部署到Github&lt;/h2>
+&lt;p>网站根目录下,执行下面命令，部署到远程私人仓库&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">git remote add origin https://github.com/your_private_repo
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git add .
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git commit -m &amp;#34;Initial&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git push -u origin master
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>注意&lt;/strong>：&lt;code>git commit&lt;/code>后面的&lt;code>&amp;quot;Initial&amp;quot;&lt;/code>就是单次执行&lt;code>Github Action&lt;/code>的任务名称。&lt;/p>
+&lt;h2 id="查看运行情况">查看运行情况&lt;/h2>
+&lt;p>到私有仓库，点击&lt;code>Actions&lt;/code>，查看&lt;code>Github Action&lt;/code>的运行情况。
+&lt;img src="https://example.com/posts/95a48970/githubactionstatus.png"
+width="1432"
+height="532"
+srcset="https://example.com/posts/95a48970/githubactionstatus_hu1d4703f5b7aceffd02c295736663b001_61506_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/githubactionstatus_hu1d4703f5b7aceffd02c295736663b001_61506_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="269"
+data-flex-basis="646px"
+>&lt;/p>
+&lt;p>一切正常的话，在你的&lt;code>Github Page&lt;/code>仓库里就能看到生成的网站了。&lt;/p></description></item></channel></rss>

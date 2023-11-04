@@ -1,1 +1,241 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>almalinux - 标签 - 寂静·流年</title><link>https://example.com/tags/almalinux/</link><description>almalinux - 标签 - 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 05 Mar 2023 18:11:20 +0800</lastBuildDate><atom:link href="https://example.com/tags/almalinux/" rel="self" type="application/rss+xml"/><item><title>AlmaLinux9安装xrdp远程桌面</title><link>https://example.com/posts/9d4c89b2/</link><pubDate>Sun, 05 Mar 2023 18:11:20 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/9d4c89b2/</guid><description>系统是almalinux 9.0,桌面是gnome。 启用epel-release 1 2 sudo dnf in epel-release sudo dnf up -y 安装xrdp 1 sudo dnf in xrdp -y 配置文件 1 sudo vi ~/.xinitrc 添</description></item><item><title>Almalinux8修改默认的SSH端口号</title><link>https://example.com/posts/583558fa/</link><pubDate>Fri, 07 Oct 2022 11:33:41 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/583558fa/</guid><description>主要涉及修改的地方有SELinux、Firewall等。 这里以2394端口为例。 安装ssh服务 1 sudo dnf in openssh-server 修改sshd配置文件 1 sudo vi /etc/ssh/sshd_config 在#po</description></item><item><title>SELinux相关问题的解决</title><link>https://example.com/posts/9a31e845/</link><pubDate>Fri, 07 Oct 2022 11:17:16 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/9a31e845/</guid><description>为了服务器的安全性考虑,rhel系列默认会启用的SELinux最好不要关闭。 这也导致了一些坑的出现,下面记录一下解决方法。 更改SSH端口号后</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>almalinux on 寂静·流年</title><link>https://example.com/tags/almalinux/</link><description>Recent content in almalinux on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Sun, 05 Mar 2023 18:11:20 +0800</lastBuildDate><atom:link href="https://example.com/tags/almalinux/index.xml" rel="self" type="application/rss+xml"/><item><title>AlmaLinux9安装xrdp远程桌面</title><link>https://example.com/posts/9d4c89b2/</link><pubDate>Sun, 05 Mar 2023 18:11:20 +0800</pubDate><guid>https://example.com/posts/9d4c89b2/</guid><description>&lt;blockquote>
+&lt;blockquote>
+&lt;blockquote>
+&lt;p>系统是almalinux 9.0,桌面是gnome。&lt;/p>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;h2 id="启用epel-release">启用epel-release&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo dnf in epel-release
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo dnf up -y
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="安装xrdp">安装xrdp&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo dnf in xrdp -y
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="配置文件">配置文件&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo vi ~/.xinitrc
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>添加下面内容：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">exec /usr/bin/gnome-session
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="启动xrdp服务">启动xrdp服务&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo systemctl start xrdp
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo systemctl enable xrdp
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="添加防火墙例外">添加防火墙例外&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">firewall-cmd --zone=public --permanent --add-port=3389/tcp
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">firewall-cmd --reload
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="客户端">客户端&lt;/h2>
+&lt;p>在linux下，推荐使用&lt;code>remmina&lt;/code>来连接远程桌面。&lt;code>remmina&lt;/code>具备保存会话、用户名、密码和自动调整分辨率等功能，值得尝试&lt;/p>
+&lt;h2 id="排错">排错&lt;/h2>
+&lt;p>现象：能够成功登录，但是登录后却是黑屏
+解决：很大可能是没有退出远程机器的登录界面导致的。&lt;/p>
+&lt;p>如果是非服务器版本的windows，通过远程桌面登录后，会自动注销当前正在登录的用户。&lt;/p>
+&lt;p>Linux下没有这个功能，需要手动退出所有当前在图形界面下的登录，然后才能正常使用xrdp登录。&lt;/p></description></item><item><title>Almalinux8修改默认的SSH端口号</title><link>https://example.com/posts/583558fa/</link><pubDate>Fri, 07 Oct 2022 11:33:41 +0800</pubDate><guid>https://example.com/posts/583558fa/</guid><description>&lt;blockquote>
+&lt;blockquote>
+&lt;p>主要涉及修改的地方有SELinux、Firewall等。&lt;/p>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;p>这里以&lt;code>2394&lt;/code>端口为例。&lt;/p>
+&lt;h2 id="安装ssh服务">安装ssh服务&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo dnf in openssh-server
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="修改sshd配置文件">修改sshd配置文件&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo vi /etc/ssh/sshd_config
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>在&lt;code>#port 22&lt;/code>下面新添加一行&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Port 2394
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="selinux里开放端口">SELinux里开放端口&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">semanage port -a -t ssh_port_t -p tcp 2394
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>查看已经开放的端口&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">semanage port -l|grep ssh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>如果出现&lt;code>ValueError: 没有管理SELinux 策略或者无法访问存储&lt;/code>，解决方法在&lt;a class="link" href="https://dnwzlx.com/posts/9a31e845/" target="_blank" rel="noopener"
+>这里&lt;/a>。&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="firewall开放端口">firewall开放端口&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">firewall-cmd --zone=public --permanent --add-port=2394/tcp
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>一定要有&lt;code>--zone=public&lt;/code>这个参数，不然开放端口后也连接不上。&lt;/p>
+&lt;/blockquote>
+&lt;p>重载firewall&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">firewall-cmd --reload
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="启用ssh服务">启用ssh服务&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">systemctl enable ssh ##开机自启动
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">systemctl restart ssh ##重新启动ssh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="关闭默认的端口">关闭默认的端口&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">firewall-cmd --permanent --zone=public --remove-port=22/tcp
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="重启服务器">重启服务器&lt;/h2>
+&lt;p>连接即可。&lt;/p>
+&lt;h2 id="几个问题的解决">几个问题的解决&lt;/h2>
+&lt;h3 id="第一次可以连接ssh但以后再连接则不行">第一次可以连接ssh，但以后再连接则不行&lt;/h3>
+&lt;p>问题描述：初次安装完系统后，启动sshd服务，不用修改任何配置，第一次的时候可以直接连接到服务器，以后就不行了。&lt;/p>
+&lt;p>解决：这个问题出现的根本原因还未深究，但是解决方法很简单：&lt;/p>
+&lt;p>修改&lt;code>/etc/ssh/sshd_config&lt;/code>,把&lt;code>#Port 22&lt;/code>前面的&lt;code>#&lt;/code>去掉,即改成&lt;code>Port 22&lt;/code>即可。&lt;/p>
+&lt;h3 id="已经在firewall-cmd里放行了端口但还是无法连接">已经在firewall-cmd里放行了端口，但还是无法连接&lt;/h3>
+&lt;p>问题描述：一直显示 &lt;code>Connection timed out&lt;/code>&lt;/p>
+&lt;p>解决:这个问题,是由于在放行端口之后,没有执行&lt;code>firewall-cmd --reload&lt;/code>造成的。&lt;/p>
+&lt;p>如果不执行&lt;code>firewall-cmd --reload&lt;/code>命令，即使添加端口后显示success,并且重启了服务器,但是&lt;code>firewalld&lt;/code>的规则依旧不生效。&lt;/p>
+&lt;p>所以，切记在添加需要放行的端口后，要执行一次&lt;code>firewall-cmd --reload&lt;/code>命令。&lt;/p>
+&lt;h3 id="semanage命令找不到">semanage命令找不到&lt;/h3>
+&lt;p>安装下面软件包即可&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">dnf in policycoreutils-python-utils
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="almalinux最小化安装默认的几个软件">almalinux最小化安装默认的几个软件&lt;/h3>
+&lt;p>最小化安装的almalinux,默认安装了&lt;code>openssh&lt;/code>、&lt;code>openssh-server&lt;/code>、&lt;code>firewall-cmd&lt;/code>、&lt;code>firewalld&lt;/code>，对于管理来说，只需要再安装上述的&lt;code>semanage&lt;/code>即可。很是贴心和方便。&lt;/p></description></item><item><title>SELinux相关问题的解决</title><link>https://example.com/posts/9a31e845/</link><pubDate>Fri, 07 Oct 2022 11:17:16 +0800</pubDate><guid>https://example.com/posts/9a31e845/</guid><description>&lt;p>为了服务器的安全性考虑,rhel系列默认会启用的SELinux最好不要关闭。&lt;/p>
+&lt;p>这也导致了一些坑的出现,下面记录一下解决方法。&lt;/p>
+&lt;h2 id="更改ssh端口号后ssh服务无法启动">更改SSH端口号后,ssh服务无法启动&lt;/h2>
+&lt;p>这个问题是因为selinux里，只默认开放了22端口。如果只在&lt;code>/etc/ssh/sshd_config&lt;/code>里修改了端口号，就会出现上面的问题。&lt;/p>
+&lt;h3 id="解决方法">解决方法&lt;/h3>
+&lt;p>在selinux里开放对应的端口号,这里以&lt;code>2394&lt;/code>为例：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">semanage port -a -t ssh_port_t -p tcp &lt;span class="m">2394&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>详细改端口的教程看&lt;a class="link" href="https://dnwzlx.com/posts/583558fa/" target="_blank" rel="noopener"
+>这里&lt;/a>.&lt;/p>
+&lt;h2 id="valueerror-没有管理selinux-策略或者无法访问存储">ValueError: 没有管理SELinux 策略或者无法访问存储&lt;/h2>
+&lt;p>这个问题的详细解释看&lt;a class="link" href="https://blog.siphos.be/2014/10/migrating-to-selinux-userspace-2-4-small-warning-for-users/" target="_blank" rel="noopener"
+>这里&lt;/a>。&lt;/p>
+&lt;p>大体意思是：由于SELinux版本升级，新版本的SELinux的策略模型存储在&lt;code>/var/lib/selinux&lt;/code>，而不是之前的&lt;code>/etc/selinux&lt;/code>里。&lt;/p>
+&lt;p>由于各方面的原因（主要是&lt;code> portage_t&lt;/code>域名必须被移除），SELinux在版本升级的时候，并不会自动修改这个存储路径，需要手动进行修改。&lt;/p>
+&lt;p>作者也说了，出现上面的错误，并不意味着系统崩坏，也不会影响SELinux正常起作用，只会影响&lt;code> semanage&lt;/code>或者&lt;code>setsebool&lt;/code>这些工具的使用。&lt;/p>
+&lt;p>而且手动修改只需要运行一次就可以了。&lt;/p>
+&lt;h3 id="解决方法-1">解决方法&lt;/h3>
+&lt;ol>
+&lt;li>重建一下SELinux的存储路径&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">/usr/libexec/selinux/semanage_migrate_store
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="2">
+&lt;li>删除旧的策略模型：&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">rm -rf /etc/selinux/mcs/modules
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="3">
+&lt;li>重启服务器就可以了。&lt;/li>
+&lt;/ol></description></item></channel></rss>

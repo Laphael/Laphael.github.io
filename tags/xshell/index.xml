@@ -1,1 +1,77 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>xshell - 标签 - 寂静·流年</title><link>https://example.com/tags/xshell/</link><description>xshell - 标签 - 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 08 Jul 2022 09:23:15 +0800</lastBuildDate><atom:link href="https://example.com/tags/xshell/" rel="self" type="application/rss+xml"/><item><title>Xshell确实好用</title><link>https://example.com/posts/e2c210ef/</link><pubDate>Fri, 08 Jul 2022 09:23:15 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/e2c210ef/</guid><description>最近在学习C语言编程，准备采用下面方法： windows 10的主机，装一台 kubuntu 22.04的虚拟机 windows下使用远程工具连接到虚拟机。 使用 vim来编辑和</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>xshell on 寂静·流年</title><link>https://example.com/tags/xshell/</link><description>Recent content in xshell on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Fri, 08 Jul 2022 09:23:15 +0800</lastBuildDate><atom:link href="https://example.com/tags/xshell/index.xml" rel="self" type="application/rss+xml"/><item><title>Xshell确实好用</title><link>https://example.com/posts/e2c210ef/</link><pubDate>Fri, 08 Jul 2022 09:23:15 +0800</pubDate><guid>https://example.com/posts/e2c210ef/</guid><description>&lt;p>最近在学习C语言编程，准备采用下面方法：&lt;/p>
+&lt;ul>
+&lt;li>windows 10的主机，装一台 kubuntu 22.04的虚拟机&lt;/li>
+&lt;li>windows下使用远程工具连接到虚拟机。&lt;/li>
+&lt;li>使用 &lt;code>vim&lt;/code>来编辑和编译。&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>据说这是大厂常用的工作流程&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;p>远程连接工具其实没有太多的选择，常用的也就三个：&lt;code>Xshell&lt;/code>、&lt;code>SecureCRT&lt;/code>、&lt;code>MobaXterm&lt;/code>。&lt;/p>
+&lt;p>这三个我都用过，总是因为某些原因从一个换到另一个，具体什么原因自己都忘了。这次在远程连接到虚拟机上配置vim的时候，才发现了Xshell的强大和方便之处。难怪有那么多人推荐Xshell。&lt;/p>
+&lt;p>三款终端使用的版本号如下：Xshell 7、MobaXterm 22.1、SecureCRT 8.5 &amp;amp; 9.2&lt;/p>
+&lt;h2 id="一truecolor的支持">一、TrueColor的支持&lt;/h2>
+&lt;p>所谓的 &lt;code>TrueColor&lt;/code>，也就是24位真彩色，这个色彩在物理显示器上，也就是2000年初的水平。&lt;/p>
+&lt;p>但是在终端上，多年流行的都是 &lt;code>xterm 256&lt;/code>的颜色，直到最近几年才有终端开始支持。&lt;/p>
+&lt;blockquote>
+&lt;p>其实xterm 256也够用了&lt;/p>
+&lt;/blockquote>
+&lt;p>对于 &lt;code>TrueColor&lt;/code>的支持情况，三款终端如下：&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>MobaXterm&lt;/code>：支持&lt;/li>
+&lt;li>&lt;code>SecureCRT&lt;/code>：8.7版本之后支持&lt;/li>
+&lt;li>&lt;code>Xshell &lt;/code>：支持&lt;/li>
+&lt;/ul>
+&lt;h3 id="一打开xshell-7的truecolor支持">（一）打开Xshell 7的TrueColor支持&lt;/h3>
+&lt;p>工具&amp;mdash;&amp;gt;选项&amp;mdash;&amp;gt;高级&amp;mdash;&amp;gt;终端&amp;mdash;&amp;gt;选中&amp;quot;使用本色”，就可以了。如下图：&lt;/p>
+&lt;p>&lt;img src="https://example.com/posts/e2c210ef/1657249415865.png"
+width="802"
+height="712"
+srcset="https://example.com/posts/e2c210ef/1657249415865_hu18af70f362c4b36a4fff5deb2ef2fbdf_101167_480x0_resize_box_3.png 480w, https://example.com/posts/e2c210ef/1657249415865_hu18af70f362c4b36a4fff5deb2ef2fbdf_101167_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="1657249415865"
+class="gallery-image"
+data-flex-grow="112"
+data-flex-basis="270px"
+>&lt;/p>
+&lt;p>&lt;img src="https://example.com/posts/e2c210ef/1657249460673.png"
+width="763"
+height="963"
+srcset="https://example.com/posts/e2c210ef/1657249460673_huc51f21d06335d996786670daeaf3850f_71018_480x0_resize_box_3.png 480w, https://example.com/posts/e2c210ef/1657249460673_huc51f21d06335d996786670daeaf3850f_71018_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="1657249460673"
+class="gallery-image"
+data-flex-grow="79"
+data-flex-basis="190px"
+>&lt;/p>
+&lt;h2 id="二斜体的显示支持">二、斜体的显示支持&lt;/h2>
+&lt;p>我使用的 &lt;code>vim&lt;/code>主题叫 &lt;code>gruvbox&lt;/code>，这个主题可以打开斜体显示功能。默认情况下注释内容会用斜体显示。&lt;/p>
+&lt;p>同样的.&lt;code>vimrc&lt;/code>配置文件，在 &lt;code>SecureCRT&lt;/code>和 &lt;code>MobaXterm&lt;/code>里，都没有办法打开斜体显示，而 &lt;code>Xshell&lt;/code>显示正常：&lt;/p>
+&lt;p>&lt;img src="https://example.com/posts/e2c210ef/1657250828885.png"
+width="953"
+height="1249"
+srcset="https://example.com/posts/e2c210ef/1657250828885_huf113a1615b01b8e7f90cfa831e823a93_158128_480x0_resize_box_3.png 480w, https://example.com/posts/e2c210ef/1657250828885_huf113a1615b01b8e7f90cfa831e823a93_158128_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="1657250828885"
+class="gallery-image"
+data-flex-grow="76"
+data-flex-basis="183px"
+>三、Zmodem支持&lt;/p>
+&lt;p>&lt;code>Zmodem&lt;/code>，简单来说就是可以使用 &lt;code>sz&lt;/code>、&lt;code>rz&lt;/code>命令从远程主机和本地主机之间传输文件。&lt;/p>
+&lt;p>&lt;code>Xshell&lt;/code>和 &lt;code>SecureCRT&lt;/code>默认支持，&lt;code>MobaXterm&lt;/code>需要安装插件才支持。&lt;/p>
+&lt;blockquote>
+&lt;p>其实 &lt;code>Xshell&lt;/code>有 &lt;code>xftp&lt;/code>，&lt;code>SecureCRT&lt;/code>有 &lt;code>SecureFX&lt;/code>，&lt;code>MobaXterm&lt;/code>在连到远程主机时也会自动打开一个sftp传输窗口，都可以替代 &lt;code>Zmodem&lt;/code>的功能。&lt;/p>
+&lt;p>但是有 &lt;code>Zmodem&lt;/code>支持总是好的，可以很方便的传输一些配置文件。&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="四多主机同时运行相同命令">四、多主机同时运行相同命令&lt;/h2>
+&lt;p>这个功能在做运维的时候，同时管理多台主机很有用。&lt;/p>
+&lt;p>&lt;code>Xshell&lt;/code>按下 &lt;code>ALT+e&lt;/code>,就可以把命令同时在所有打开并连接的远程主机中执行了。&lt;/p>
+&lt;p>&lt;code>SecureCRT&lt;/code>有也类似的功能，但是不如 &lt;code>Xshell&lt;/code>方便。&lt;/p>
+&lt;p>&lt;code>MobaXterm&lt;/code>没有试过。&lt;/p>
+&lt;h2 id="五总结">五、总结&lt;/h2>
+&lt;p>网上有这么多人推荐 &lt;code>Xshell&lt;/code>，不是没有原因。&lt;/p>
+&lt;p>很多功能，在你没用到之前，会觉得所有远程终端都一样。&lt;/p>
+&lt;p>很多想要功能，在没踩过坑前，不会知道它有没有实现。&lt;/p>
+&lt;p>目前为止，&lt;code>Xshell&lt;/code>是最满足我需要的一个远程终端程序了。&lt;/p>
+&lt;p>如果没有特殊原因，以后不会再换了。&lt;/p></description></item></channel></rss>

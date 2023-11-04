@@ -1,1 +1,46 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>pip - 标签 - 寂静·流年</title><link>https://example.com/tags/pip/</link><description>pip - 标签 - 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 05 Oct 2022 10:29:03 +0800</lastBuildDate><atom:link href="https://example.com/tags/pip/" rel="self" type="application/rss+xml"/><item><title>Kali下python2 Python3 Pip的安装</title><link>https://example.com/posts/0b636d39/</link><pubDate>Wed, 05 Oct 2022 10:29:03 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/0b636d39/</guid><description>最近在wsl里用kali。 由于wsl里的kali只提供了一个最基本的环境，python2、python3、pip2、pip3都需要自己安装，</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pip on 寂静·流年</title><link>https://example.com/tags/pip/</link><description>Recent content in pip on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Wed, 05 Oct 2022 10:29:03 +0800</lastBuildDate><atom:link href="https://example.com/tags/pip/index.xml" rel="self" type="application/rss+xml"/><item><title>Kali下python2 Python3 Pip的安装</title><link>https://example.com/posts/0b636d39/</link><pubDate>Wed, 05 Oct 2022 10:29:03 +0800</pubDate><guid>https://example.com/posts/0b636d39/</guid><description>&lt;p>最近在wsl里用kali。&lt;/p>
+&lt;p>由于wsl里的kali只提供了一个最基本的环境，python2、python3、pip2、pip3都需要自己安装，这里记录一下安装方法。&lt;/p>
+&lt;h2 id="python3和pip3">python3和pip3&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo apt install python3 python3-dev python3-pip
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="python2和pip2">python2和pip2&lt;/h2>
+&lt;h3 id="python2安装">python2安装&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo apt install python2 python2-dev
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="pip2安装">pip2安装&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo python2 get-pip.py
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这样，在使用的时候，只需要输入&lt;code>python2&lt;/code>、&lt;code>pip2&lt;/code>和&lt;code>python3&lt;/code>、&lt;code>pip3&lt;/code>即可。&lt;/p>
+&lt;h2 id="后记">后记&lt;/h2>
+&lt;p>如果想输入&lt;code>python&lt;/code>的时候，默认调用&lt;code>python3&lt;/code>,可以安装&lt;code>python-is-python3&lt;/code>这个软件包&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo apt install python-python3
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item></channel></rss>

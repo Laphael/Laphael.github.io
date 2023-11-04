@@ -1,1 +1,848 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>hugo - 标签 - 寂静·流年</title><link>https://example.com/tags/hugo/</link><description>hugo - 标签 - 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 14 Jan 2023 12:15:00 +0800</lastBuildDate><atom:link href="https://example.com/tags/hugo/" rel="self" type="application/rss+xml"/><item><title>使用Hugo搭建个人网站(七)-Hugo和Github Action正确修改文章的最后更新日期</title><link>https://example.com/posts/146871a6/</link><pubDate>Sat, 14 Jan 2023 12:15:00 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/146871a6/</guid><description>偏向技术或者工具使用方面的博客，难免会随着时间和技术的更新，对文章进行一些修改。 使用hugo一年多以来，一直有一个问题没有解决，就是文章修改</description></item><item><title>Hugofy新建文章出现错误的解决方法</title><link>https://example.com/posts/5b6e3a97/</link><pubDate>Mon, 29 Aug 2022 19:23:58 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/5b6e3a97/</guid><description>前文说过，我使用hugo的page bundle的方式来组织整个网站，并且使用vscode来编辑和管理网站。 vscode有一个荒野无灯大佬开发</description></item><item><title>解决Hugo网站使用LoveIt主题后图片刷新不出来的问题</title><link>https://example.com/posts/da4fb9f9/</link><pubDate>Sat, 28 May 2022 11:19:35 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/da4fb9f9/</guid><description>hugo博客部署在github page上。 最近几天发现，博客的文章和disqus评论都是正常的，唯独涉及图片的部分，一直显示Loading加</description></item><item><title>使用Hugo搭建个人网站(六) 编辑文章和管理网站</title><link>https://example.com/posts/fd472e0d/</link><pubDate>Wed, 12 Jan 2022 06:44:50 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/fd472e0d/</guid><description>Hugo的本质就是把 .md格式的文章通过一套引擎渲染成 .html页面。 因为这个过程是全自动化的，所以编辑网站文章就是编辑本地的 .md文章。 Visual</description></item><item><title>使用Hugo搭建个人网站(五) 使用Page Bundles组织网站内容</title><link>https://example.com/posts/b085eb84/</link><pubDate>Tue, 11 Jan 2022 05:59:14 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/b085eb84/</guid><description>什么是Page Bundles呢,官方网站的解释在这里 简单来说,一般的Hugo网站,每篇文章是一个以文章名称命令的.md格式的文档，保存在co</description></item><item><title>使用Hugo搭建个人网站(四)-使用Github Action自动部署到Github Pages</title><link>https://example.com/posts/95a48970/</link><pubDate>Thu, 06 Jan 2022 11:10:10 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/95a48970/</guid><description>部署网站到Github上使用的是Github Page功能。 一般来说，部署Hugo网站到Github Page的流程是这样的： 新建一个Githu</description></item><item><title>使用Hugo搭建个人网站(三)-LoveIt主题启用网站图标</title><link>https://example.com/posts/b8cc834e/</link><pubDate>Wed, 05 Jan 2022 18:07:38 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/b8cc834e/</guid><description>网站图标favicon,虽然对于网站不是必须的，但是有这个东西能显著增加网站的正规性和美观性。 生成favicon 1、打开realfavico</description></item><item><title>使用Hugo搭建个人网站(二)-LoveIt主题自定义搜索</title><link>https://example.com/posts/98850c88/</link><pubDate>Wed, 05 Jan 2022 10:51:44 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/98850c88/</guid><description>LoveIt主题自带的搜索插件是lunr和algolia，这两个都不太好用。 在此，我们使用Hugo专用的搜索插件hugo-search-fu</description></item><item><title>使用Hugo搭建个人网站(一)-基本设置和LoveIt主题</title><link>https://example.com/posts/bf651441/</link><pubDate>Tue, 04 Jan 2022 17:27:10 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/bf651441/</guid><description>本文使用的软件的版本如下： hugo: 0.91.2-extended loveit主题: 0.2.10 特别注意:hugo必须使用extended版本 关于Hugo的安装和网站的生成，本文不再详述</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>hugo on 寂静·流年</title><link>https://example.com/tags/hugo/</link><description>Recent content in hugo on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Sat, 14 Jan 2023 12:15:00 +0800</lastBuildDate><atom:link href="https://example.com/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>使用Hugo搭建个人网站(七)-Hugo和Github Action正确修改文章的最后更新日期</title><link>https://example.com/posts/146871a6/</link><pubDate>Sat, 14 Jan 2023 12:15:00 +0800</pubDate><guid>https://example.com/posts/146871a6/</guid><description>&lt;p>偏向技术或者工具使用方面的博客，难免会随着时间和技术的更新，对文章进行一些修改。&lt;/p>
+&lt;p>使用hugo一年多以来，一直有一个问题没有解决，就是文章修改后不能正确的显示修改后的时间，即更新时间。&lt;/p>
+&lt;p>今天又想起这个长期以来的&amp;quot;bug&amp;quot;，这次终于彻底解决了。&lt;/p>
+&lt;h2 id="修改网站配置文件">修改网站配置文件&lt;/h2>
+&lt;p>在网站的配置文件 &lt;code>config.toml&lt;/code>里添加如下字段:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-toml" data-lang="toml">&lt;span class="line">&lt;span class="cl">&lt;span class="p">[&lt;/span>&lt;span class="nx">frontmatter&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">lastmod&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;:git&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;lastmod&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;:fileModTime&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>另外，还需要启用&lt;code>GitInfo&lt;/code>功能：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-toml" data-lang="toml">&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">enableGitInfo&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="kc">true&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="修改github-action-配置文件">修改Github Action 配置文件&lt;/h2>
+&lt;p>完整的配置文件看&lt;a class="link" href="https://dnwzlx.com/posts/95a48970/#%E7%BD%91%E7%AB%99%E8%AE%BE%E7%BD%AE" target="_blank" rel="noopener"
+>这里&lt;/a>&lt;/p>
+&lt;p>需要注意其中的这些配置：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-toml" data-lang="toml">&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">-&lt;/span> &lt;span class="nx">name&lt;/span>&lt;span class="err">:&lt;/span> &lt;span class="nx">Checkout&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">uses&lt;/span>&lt;span class="err">:&lt;/span> &lt;span class="nx">actions&lt;/span>&lt;span class="err">/&lt;/span>&lt;span class="nx">checkout&lt;/span>&lt;span class="err">@&lt;/span>&lt;span class="nx">v3&lt;/span> &lt;span class="c"># 引用actions/checkout这个action，与所在的github仓库同名&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">with&lt;/span>&lt;span class="err">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">submodules&lt;/span>&lt;span class="err">:&lt;/span> &lt;span class="kc">true&lt;/span> &lt;span class="c"># Fetch Hugo themes (true OR recursive) 获取submodule主题&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">fetch-depth&lt;/span>&lt;span class="err">:&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="c"># Fetch all history for .GitInfo and .Lastmod&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">-&lt;/span> &lt;span class="nx">name&lt;/span>&lt;span class="err">:&lt;/span> &lt;span class="nx">Disable&lt;/span> &lt;span class="nx">quotePath&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">run&lt;/span>&lt;span class="err">:&lt;/span> &lt;span class="nx">git&lt;/span> &lt;span class="nx">config&lt;/span> &lt;span class="nx">--global&lt;/span> &lt;span class="nx">core&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">quotePath&lt;/span> &lt;span class="kc">false&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="fetch-depth-0">fetch-depth: 0&lt;/h3>
+&lt;p>&lt;code>fetch-depth&lt;/code> 的默认值是 1，也就是说它默认只会拉取分支最近的一次 commit，这可能会导致一些文章的 &lt;code>GitInfo&lt;/code> 变量无法获取到。&lt;/p>
+&lt;p>设置为 0 代表拉取所有分支的所有提交。&lt;/p>
+&lt;h3 id="disable-quotepath">Disable quotePath&lt;/h3>
+&lt;p>原理是这样的：默认情况下，当文件名中包含中文的时候，git 会使用引号&lt;code>&amp;quot; &amp;quot;&lt;/code>把文件名括起来。&lt;/p>
+&lt;p>但是这会导致 action 中无法读取 &lt;code>:GitInfo&lt;/code> 变量，所以这里需要关闭&lt;code>quotePath&lt;/code>功能。&lt;/p>
+&lt;p>这样就可以正确显示文章最后更新时间了，问题解决。&lt;/p></description></item><item><title>Hugofy新建文章出现错误的解决方法</title><link>https://example.com/posts/5b6e3a97/</link><pubDate>Mon, 29 Aug 2022 19:23:58 +0800</pubDate><guid>https://example.com/posts/5b6e3a97/</guid><description>&lt;p>前文说过，我使用hugo的&lt;code>page bundle&lt;/code>的方式来组织整个网站，并且使用&lt;code>vscode&lt;/code>来编辑和管理网站。&lt;/p>
+&lt;p>vscode有一个荒野无灯大佬开发的名为&lt;code>hugofy&lt;/code>的插件，这个插件可以很好的支持&lt;code>page bundle&lt;/code>模式。&lt;/p>
+&lt;p>以前使用这个插件一直正常，今天下载了新的0.101版本的&lt;code>hugo&lt;/code>，在使用这个插件新建文章时，却提示&lt;code>Error: could not determine content directory for &amp;quot;/posts/xxx.md&amp;quot;&lt;/code>。&lt;/p>
+&lt;p>网上搜索了半天，也没发现有用的信息，最后突然想到，会不会是&lt;code>hugo&lt;/code>版本的问题呢？&lt;/p>
+&lt;p>于是下载了hugo的0.84版本，再一试，果然一切正常了。&lt;/p></description></item><item><title>解决Hugo网站使用LoveIt主题后图片刷新不出来的问题</title><link>https://example.com/posts/da4fb9f9/</link><pubDate>Sat, 28 May 2022 11:19:35 +0800</pubDate><guid>https://example.com/posts/da4fb9f9/</guid><description>&lt;p>hugo博客部署在github page上。&lt;/p>
+&lt;p>最近几天发现，博客的文章和disqus评论都是正常的，唯独涉及图片的部分，一直显示Loading加载不出来。&lt;/p>
+&lt;p>一番查找后，发现锅在LoveIt主题上，确切的说，是在LoveIt主题使用的cdn&amp;ndash;&lt;code>https://cdn.jsdelivr.net&lt;/code>上。&lt;/p>
+&lt;h2 id="问题的根源">问题的根源&lt;/h2>
+&lt;p>LoveIt主题使用的图片加载技术叫&lt;code>lazysizes&lt;/code> ，它的官方解释说明是这样的：&lt;/p>
+&lt;ul>
+&lt;li>基于&lt;code>lazysizes&lt;/code>自动转换图片为懒加载&lt;/li>
+&lt;/ul>
+&lt;p>我的理解是，&lt;code>lazysizes&lt;/code>可以自动把图片压缩成设置好的大小，并且按需加载。这样就能够加快网页的打开速度了。&lt;/p>
+&lt;p>&lt;code>lazysizes&lt;/code>依赖的核心js是&lt;code> lazysizes.min.js&lt;/code>。&lt;/p>
+&lt;p>而&lt;code> lazysizes.min.js&lt;/code>存放于&lt;code>https://cdn.jsdelivr.net&lt;/code>上。如果&lt;code>https://cdn.jsdelivr.net&lt;/code>出现访问问题，图片自然也就加载不出来。&lt;/p>
+&lt;p>公共CDN属于基础网络设施，全球有大量的项目依赖于它，一般不会出现问题。&lt;/p>
+&lt;p>很不幸的是，这次恰恰就是&lt;code>https://cdn.jsdelivr.net&lt;/code>出现了问题，而且好像只有在中国大陆出现了问题。&lt;/p>
+&lt;blockquote>
+&lt;p>更进一步，是只有移动、电信的网络出现了问题，联通访问还是正常的（我为什么会知道？因为我有电信、联通、移动三网的环境:stuck_out_tongue:）。&lt;/p>
+&lt;/blockquote>
+&lt;p>这就是此次Hugo网站加载不出来图片的根本原因。&lt;/p>
+&lt;h2 id="解决方法">解决方法&lt;/h2>
+&lt;p>知道问题根源了,解决方法也很简单&amp;ndash;换一个cdn就可以了。&lt;/p>
+&lt;p>最简单的方法是：&lt;/p>
+&lt;p>还是使用&lt;code>jsdelivr.net&lt;/code>的cdn，但是换一个域名，目前&lt;code>gcore.jsdelivr.net&lt;/code>这个域名是可以使用的。&lt;/p>
+&lt;p>具体步骤：&lt;/p>
+&lt;p>编辑文件&lt;/p>
+&lt;p>&lt;code>themes\LoveIt\assets\data\cdn\jsdelivr.yml&lt;/code>&lt;/p>
+&lt;p>修改第二行,原来是:&lt;/p>
+&lt;p>&lt;code>libFiles: https://cdn.jsdelivr.net/npm/&lt;/code>&lt;/p>
+&lt;p>修改为:&lt;/p>
+&lt;p>&lt;code>libFiles: https://gcore.jsdelivr.net/npm/&lt;/code>&lt;/p>
+&lt;p>问题解决。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(六) 编辑文章和管理网站</title><link>https://example.com/posts/fd472e0d/</link><pubDate>Wed, 12 Jan 2022 06:44:50 +0800</pubDate><guid>https://example.com/posts/fd472e0d/</guid><description>&lt;p>&lt;code>Hugo&lt;/code>的本质就是把 &lt;code>.md&lt;/code>格式的文章通过一套引擎渲染成 &lt;code>.html&lt;/code>页面。&lt;/p>
+&lt;p>因为这个过程是全自动化的，所以编辑网站文章就是编辑本地的 &lt;code>.md&lt;/code>文章。&lt;/p>
+&lt;p>&lt;code>Visual Studio Code&lt;/code>(简称 &lt;code>vscode&lt;/code>)，集成了Git以及编辑markdown的插件，同时也有Hugo相关的插件，成为了我认为最适合编辑和管理Hugo网站的编辑器。&lt;/p>
+&lt;h2 id="vscode">VSCode&lt;/h2>
+&lt;h3 id="插件">插件&lt;/h3>
+&lt;ul>
+&lt;li>Markdown All in One 此插件主要提供了新建/提升/降级标题的等级的快捷键.&lt;/li>
+&lt;li>Markdown Shotcuts 此插件主要是提供了粗体、斜体、行内代码、代码块的快捷键。&lt;/li>
+&lt;li>Markdown Paste 此插件主要是提供了直接向 &lt;code>md&lt;/code>文章里贴图的功能.&lt;/li>
+&lt;li>Hugofy(荒野無燈版) 此插件主要是提供了新建文章时直接使用&lt;a class="link" href="https://dnwzlx.com/posts/b085eb84/" target="_blank" rel="noopener"
+>Hugo Page Bundles&lt;/a>的方式.&lt;/li>
+&lt;/ul>
+&lt;p>有了以上四个插件,编辑Hugo网站直接起飞。&lt;/p>
+&lt;h3 id="workspace">workspace&lt;/h3>
+&lt;p>&lt;code>vscode&lt;/code>有个功能是 &lt;code>workspace&lt;/code>。它的最大的作用是为不同的环境启用或者禁用不同的插件。&lt;/p>
+&lt;p>在某个目录下添加一个名为 &lt;code>workspace.code-workspace&lt;/code>的文件，就可以把整个目录当成一个工作区。&lt;/p>
+&lt;p>而且这个 &lt;code>workspace.code-workspace&lt;/code>文件是自动创建的。&lt;/p>
+&lt;p>&lt;img src="https://example.com/posts/fd472e0d/workspace.png"
+width="426"
+height="467"
+srcset="https://example.com/posts/fd472e0d/workspace_hu2e4f0e5bbb78de66fe45d9f435becdd2_47083_480x0_resize_box_3.png 480w, https://example.com/posts/fd472e0d/workspace_hu2e4f0e5bbb78de66fe45d9f435becdd2_47083_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="91"
+data-flex-basis="218px"
+>&lt;/p>
+&lt;h3 id="git上传">Git上传&lt;/h3>
+&lt;p>当有文件变更时：&lt;/p>
+&lt;ol>
+&lt;li>点击左侧的Git图标&lt;/li>
+&lt;li>点击+号&lt;/li>
+&lt;li>在输入框里输入commit的内容&lt;/li>
+&lt;li>点击同步&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://example.com/posts/fd472e0d/vscode-git.png"
+width="604"
+height="293"
+srcset="https://example.com/posts/fd472e0d/vscode-git_hue89e28e4c314eef993b33ba0c93356e7_50446_480x0_resize_box_3.png 480w, https://example.com/posts/fd472e0d/vscode-git_hue89e28e4c314eef993b33ba0c93356e7_50446_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="206"
+data-flex-basis="494px"
+>&lt;/p>
+&lt;h2 id="onedrive">OneDrive&lt;/h2>
+&lt;p>算是一个技巧吧。&lt;/p>
+&lt;p>把Hugo的本地网站放在 &lt;code>OneDrive&lt;/code>里同步，&lt;/p>
+&lt;ul>
+&lt;li>Github之外，又多了一份备份&lt;/li>
+&lt;li>省去了在不同电脑间编辑时，&lt;code>git pull&lt;/code>等git的同步操作。&lt;/li>
+&lt;/ul>
+&lt;p>通过上面这些设置，可以在 &lt;code>vscode&lt;/code>里进行Hugo编辑、管理、上传的全部操作，而且步骤简单。&lt;/p>
+&lt;p>让我们把精力全部放在网站内容上。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(五) 使用Page Bundles组织网站内容</title><link>https://example.com/posts/b085eb84/</link><pubDate>Tue, 11 Jan 2022 05:59:14 +0800</pubDate><guid>https://example.com/posts/b085eb84/</guid><description>&lt;p>什么是&lt;code>Page Bundles&lt;/code>呢,官方网站的解释在&lt;a class="link" href="https://gohugo.io/content-management/page-bundles/" target="_blank" rel="noopener"
+>这里&lt;/a>&lt;/p>
+&lt;p>简单来说,一般的Hugo网站,每篇文章是一个以文章名称命令的&lt;code>.md&lt;/code>格式的文档，保存在&lt;code>content/posts&lt;/code>目录下，文章中所有的资源-图片、视频、PDF等附件，都保存在根目录的&lt;code>static&lt;/code>目录里。&lt;/p>
+&lt;p>这种做法的缺点是，所有文章的附件都在一个目录里，管理上非常混乱，分不清哪个图片或者附件是属于哪篇文章的。而且在本地预览时，因为图片链接格式的原因，还会遇到无法正常显示图片的问题。&lt;/p>
+&lt;p>而&lt;code>Page Bundles&lt;/code>则解决了这些问题：&lt;/p>
+&lt;ol>
+&lt;li>新建文章时，会在&lt;code>content/posts&lt;/code>目录下创建一个以文章名命令的目录，目录下的&lt;code>index.md&lt;/code>才是文章的本体。&lt;/li>
+&lt;li>文章所有涉及的附件，都保存在&lt;code>index.md&lt;/code>的同级目录下。&lt;/li>
+&lt;/ol>
+&lt;p>看下图&lt;/p>
+&lt;p>&lt;img src="https://example.com/posts/b085eb84/orgazination.png"
+width="508"
+height="688"
+srcset="https://example.com/posts/b085eb84/orgazination_hu43554d536c54dbb73623489c002dc47e_93025_480x0_resize_box_3.png 480w, https://example.com/posts/b085eb84/orgazination_hu43554d536c54dbb73623489c002dc47e_93025_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="73"
+data-flex-basis="177px"
+>&lt;/p>
+&lt;p>如果使用vscode管理编辑Hugo网站，还有插件能很简单的实现&lt;code>Page Bundles&lt;/code>的组织形式。下篇再讲。&lt;/p>
+&lt;p>在这里推荐&lt;code>Page Bundles&lt;/code>的网站组织形式，会使网站的文章和附件管理非常的有组织性。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(四)-使用Github Action自动部署到Github Pages</title><link>https://example.com/posts/95a48970/</link><pubDate>Thu, 06 Jan 2022 11:10:10 +0800</pubDate><guid>https://example.com/posts/95a48970/</guid><description>&lt;p>部署网站到Github上使用的是&lt;code>Github Page&lt;/code>功能。&lt;/p>
+&lt;p>一般来说，部署Hugo网站到&lt;code>Github Page&lt;/code>的流程是这样的：&lt;/p>
+&lt;ol>
+&lt;li>新建一个&lt;code>Github Page&lt;/code>的repo&lt;/li>
+&lt;li>把网站源码部署到repo的一个分支，比如&lt;code>source&lt;/code>&lt;/li>
+&lt;li>把网站的public文件部署到repo的&lt;code>master&lt;/code>分支&lt;/li>
+&lt;/ol>
+&lt;p>这种方法能同时备份网站源码和网站，但也有不足之处:&lt;/p>
+&lt;ol>
+&lt;li>网站源码和生成的网站都处于公共分支,任何人都能查看&lt;/li>
+&lt;li>每次更新网站,得同时更新网站源码和生成网站,比较繁琐&lt;/li>
+&lt;/ol>
+&lt;p>因此,本文介绍如何使用&lt;code>Github Action&lt;/code>,解决上面的两个不足之处。&lt;/p>
+&lt;h2 id="基本思路">基本思路&lt;/h2>
+&lt;ol>
+&lt;li>新建一个private repo（私人仓库）,用于保存网站源码&lt;/li>
+&lt;li>设置&lt;code>Github Action&lt;/code>,每当private repo有提交时，就自动监测源码的变化、自动生成网站且自动发布到&lt;code>Github Page&lt;/code>上。&lt;/li>
+&lt;/ol>
+&lt;p>这样，每次只需把网站源码提交到private repo就可以了，剩下的所有工作由&lt;code>Github Action&lt;/code>来自动完成。&lt;/p>
+&lt;h2 id="github-action设置">Github Action设置&lt;/h2>
+&lt;h3 id="生成personal-access-tokens">生成Personal access tokens&lt;/h3>
+&lt;p>由于源码是保存在私人仓库的，这里需要使用&lt;code>Personal access tokens&lt;/code>来具备改写别的repo的权限。&lt;/p>
+&lt;p>点击头像下拉菜单-&lt;code>Settings&lt;/code>-&lt;code>Developer Settings&lt;/code>-&lt;code>Personal access tokens&lt;/code>。&lt;/p>
+&lt;p>点击右侧的&lt;code>generate new token&lt;/code>
+&lt;img src="https://example.com/posts/95a48970/%E7%94%9F%E6%88%90newtoken1.png"
+width="1654"
+height="605"
+srcset="https://example.com/posts/95a48970/%E7%94%9F%E6%88%90newtoken1_hu941aff02339b4ebcea0ec0443c72b9cc_77671_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/%E7%94%9F%E6%88%90newtoken1_hu941aff02339b4ebcea0ec0443c72b9cc_77671_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="273"
+data-flex-basis="656px"
+>
+名字随便填,比如&lt;code>ACTION_ACCESS_TOKEN&lt;/code>&lt;/p>
+&lt;p>下方&lt;code>repo&lt;/code>的所有选项全部选上:&lt;br>
+&lt;img src="https://example.com/posts/95a48970/repo.png"
+width="894"
+height="373"
+srcset="https://example.com/posts/95a48970/repo_hub5b0bda9134eecc1fe1e6f635e7f7e97_57278_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/repo_hub5b0bda9134eecc1fe1e6f635e7f7e97_57278_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="239"
+data-flex-basis="575px"
+>&lt;/p>
+&lt;p>还有admin:repo_hook,全部选上:&lt;br>
+&lt;img src="https://example.com/posts/95a48970/admin_repo_hook.png"
+width="797"
+height="142"
+srcset="https://example.com/posts/95a48970/admin_repo_hook_hu4d949bd7a1c43850ce13586b46bafb97_20201_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/admin_repo_hook_hu4d949bd7a1c43850ce13586b46bafb97_20201_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="561"
+data-flex-basis="1347px"
+>&lt;br>
+生成的&lt;code>token&lt;/code>保存好备用&lt;/p>
+&lt;h2 id="私人仓库设置">私人仓库设置&lt;/h2>
+&lt;p>新建一个私人仓库,名字随意&lt;br>
+&lt;img src="https://example.com/posts/95a48970/newprivaterepo.png"
+width="1154"
+height="1048"
+srcset="https://example.com/posts/95a48970/newprivaterepo_hu2b3947c4ead053e90b8a1f7188fc2423_120593_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/newprivaterepo_hu2b3947c4ead053e90b8a1f7188fc2423_120593_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="110"
+data-flex-basis="264px"
+>&lt;br>
+在此repo上，&lt;code>Settings&lt;/code>-&lt;code>Secrets&lt;/code>-&lt;code>New repository secret&lt;/code>
+&lt;img src="https://example.com/posts/95a48970/privaterepoaddtoken.png"
+width="1841"
+height="1130"
+srcset="https://example.com/posts/95a48970/privaterepoaddtoken_hufd4580fc50e98fe076fd47d19569e369_113028_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/privaterepoaddtoken_hufd4580fc50e98fe076fd47d19569e369_113028_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="162"
+data-flex-basis="391px"
+>&lt;br>
+把刚才申请的&lt;code>Personal access tokens&lt;/code>填写上。
+&lt;code>Name&lt;/code>必须和刚才申请&lt;code>Personal access tokens&lt;/code>时填写的一致，比如&lt;code>ACTION_ACCESS_TOKEN&lt;/code>&lt;br>
+&lt;img src="https://example.com/posts/95a48970/newtoken.png"
+width="802"
+height="800"
+srcset="https://example.com/posts/95a48970/newtoken_hu8a16ab8eae3cf1e222e408bdc69e64a8_24669_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/newtoken_hu8a16ab8eae3cf1e222e408bdc69e64a8_24669_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="240px"
+>&lt;/p>
+&lt;h2 id="网站设置">网站设置&lt;/h2>
+&lt;p>在网站根目录里新建两个文件夹&lt;code>.github/workflows&lt;/code>。&lt;/p>
+&lt;p>在&lt;code>workflows&lt;/code>里新建一个后缀为&lt;code>.yml&lt;/code>的文件，比如&lt;code>hugodeploy.yml&lt;/code>(文件名自己随便取)。&lt;/p>
+&lt;p>&lt;code>hugodeploy.yml&lt;/code>的内容如下:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;span class="lnt">42
+&lt;/span>&lt;span class="lnt">43
+&lt;/span>&lt;span class="lnt">44
+&lt;/span>&lt;span class="lnt">45
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yml" data-lang="yml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">HugoDeploy &lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">on&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">push&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">branches&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">master &lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 这里的意思是当 master分支发生push的时候，运行下面的jobs&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">env&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">TZ&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Asia/Shanghai&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 设置当前环境时区&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">jobs&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">deploy&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 任务名自取&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">runs-on&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">ubuntu-20.04&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 在什么环境运行任务&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">steps&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Checkout&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">actions/checkout@v3&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 引用actions/checkout这个action，与所在的github仓库同名&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">submodules&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># Fetch Hugo themes (true OR recursive) 获取submodule主题&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">fetch-depth&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">0&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># Fetch all history for .GitInfo and .Lastmod&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Disable quotePath&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">run&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">git config --global core.quotePath false&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Setup Hugo&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 步骤名自取&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">peaceiris/actions-hugo@v2&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># hugo官方提供的action，用于在任务环境中获取hugo&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">hugo-version&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s1">&amp;#39;0.99.1&amp;#39;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 获取最新版本的hugo&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">extended&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Cache resources&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 缓存 resource 文件加快生成速度&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">actions/cache@v3&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">path&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">resources&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c"># 检查照片文件变化&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">key&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ runner.os }}-hugocache-${{ hashFiles(&amp;#39;content/**/*&amp;#39;) }}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">restore-keys&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ runner.os }}-hugocache-&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Build&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">run&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">hugo --minify&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 使用hugo构建静态网页&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Deploy&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">peaceiris/actions-gh-pages@v3&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 一个自动发布github pages的action&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="c"># github_token: ${{ secrets.GITHUB_TOKEN }} 该项适用于发布到源码相同repo的情况，不能用于发布到其他repo&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">external_repository&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">yourname/yourname.github.io&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 发布到哪个repo&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">personal_token&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ secrets.ACTION_ACCESS_TOKEN }}&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 发布到其他repo需要提供上面生成的personal access token&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">publish_dir&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">./public&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 注意这里指的是要发布哪个文件夹的内容，而不是指发布到目的仓库的什么位置，因为hugo默认生成静态网页到public文件夹，所以这里发布public文件夹里的内容&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">publish_branch&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">master&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 发布到哪个branch&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>需要改动的是:&lt;/p>
+&lt;p>&lt;code>external_repository&lt;/code>: 填写自己的Github Page仓库地址&lt;/p>
+&lt;h2 id="部署到github">部署到Github&lt;/h2>
+&lt;p>网站根目录下,执行下面命令，部署到远程私人仓库&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">git remote add origin https://github.com/your_private_repo
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git add .
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git commit -m &amp;#34;Initial&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git push -u origin master
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>注意&lt;/strong>：&lt;code>git commit&lt;/code>后面的&lt;code>&amp;quot;Initial&amp;quot;&lt;/code>就是单次执行&lt;code>Github Action&lt;/code>的任务名称。&lt;/p>
+&lt;h2 id="查看运行情况">查看运行情况&lt;/h2>
+&lt;p>到私有仓库，点击&lt;code>Actions&lt;/code>，查看&lt;code>Github Action&lt;/code>的运行情况。
+&lt;img src="https://example.com/posts/95a48970/githubactionstatus.png"
+width="1432"
+height="532"
+srcset="https://example.com/posts/95a48970/githubactionstatus_hu1d4703f5b7aceffd02c295736663b001_61506_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/githubactionstatus_hu1d4703f5b7aceffd02c295736663b001_61506_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="269"
+data-flex-basis="646px"
+>&lt;/p>
+&lt;p>一切正常的话，在你的&lt;code>Github Page&lt;/code>仓库里就能看到生成的网站了。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(三)-LoveIt主题启用网站图标</title><link>https://example.com/posts/b8cc834e/</link><pubDate>Wed, 05 Jan 2022 18:07:38 +0800</pubDate><guid>https://example.com/posts/b8cc834e/</guid><description>&lt;p>网站图标&lt;code>favicon&lt;/code>,虽然对于网站不是必须的，但是有这个东西能显著增加网站的正规性和美观性。&lt;/p>
+&lt;h2 id="生成favicon">生成favicon&lt;/h2>
+&lt;p>1、打开&lt;a class="link" href="https://realfavicongenerator.net/" target="_blank" rel="noopener"
+>realfavicongenerator&lt;/a>,点击右上角&lt;code>Select your Favicon image&lt;/code>链接。
+&lt;img src="https://example.com/posts/b8cc834e/clicklink1.png"
+width="992"
+height="504"
+srcset="https://example.com/posts/b8cc834e/clicklink1_hu9d1a6e0b570176a2b2aa9adabd9f9e29_107314_480x0_resize_box_3.png 480w, https://example.com/posts/b8cc834e/clicklink1_hu9d1a6e0b570176a2b2aa9adabd9f9e29_107314_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="196"
+data-flex-basis="472px"
+>&lt;br>
+这时会打开对话框，让你选择一张图片，等待完成即可。&lt;/p>
+&lt;p>2、完成后，会出现下载链接，点击下载即可。
+&lt;img src="https://example.com/posts/b8cc834e/download1.png"
+width="975"
+height="483"
+srcset="https://example.com/posts/b8cc834e/download1_hu52d8e90aabca1b5a7da4f832306d25ac_213382_480x0_resize_box_3.png 480w, https://example.com/posts/b8cc834e/download1_hu52d8e90aabca1b5a7da4f832306d25ac_213382_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="201"
+data-flex-basis="484px"
+>&lt;/p>
+&lt;h2 id="启用favicon">启用favicon&lt;/h2>
+&lt;p>把下载的文件，全部解压到网站根目录的&lt;code>static&lt;/code>中。&lt;/p>
+&lt;p>因为LoveIt主题自带了对realfavicongenerator生成的favicon格式支持，所以不用再做其它设置，直接就生效。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(二)-LoveIt主题自定义搜索</title><link>https://example.com/posts/98850c88/</link><pubDate>Wed, 05 Jan 2022 10:51:44 +0800</pubDate><guid>https://example.com/posts/98850c88/</guid><description>&lt;p>LoveIt主题自带的搜索插件是lunr和algolia，这两个都不太好用。&lt;/p>
+&lt;p>在此，我们使用Hugo专用的搜索插件&lt;a class="link" href="https://github.com/kaushalmodi/hugo-search-fuse-js" target="_blank" rel="noopener"
+>hugo-search-fuse-js&lt;/a>来替代LoveIt主题自带的搜索。&lt;/p>
+&lt;h2 id="安装hugo-search-fuse-js">安装hugo-search-fuse-js&lt;/h2>
+&lt;p>1、网站根目录下，使用下面命令来安装：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">git submodule add https://github.com/kaushalmodi/hugo-search-fuse-js themes/hugo-search-fuse-js
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>2、把&lt;code>hugo-search-fuse-js&lt;/code>添加到站点配置文件&lt;code>config.toml&lt;/code>里，如下所示：&lt;/p>
+&lt;p>&lt;code>theme = [&amp;quot;hugo-search-fuse-js&amp;quot;, &amp;quot;LoveIt&amp;quot;]&lt;/code>&lt;/p>
+&lt;p>hugo-search-fuse-js要在最前面，后面跟着的是主题的名字。&lt;/p>
+&lt;p>3、新建一个&lt;code>content/search.md&lt;/code>文件&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">hugo new search.md
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>内容如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">+++
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">title = &amp;#34;Search&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">layout = &amp;#34;search&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">outputs = [&amp;#34;html&amp;#34;, &amp;#34;json&amp;#34;]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[sitemap]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> priority = 0.1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">+++
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>4、修改页面模板文件&lt;code>baseof.html&lt;/code>
+把主题目录下的\themes\LoveIt\layouts_default\baseof.html拷贝到站点根目录下的&lt;code>layouts\_default\baseof.html&lt;/code>。&lt;/p>
+&lt;p>在拷贝后的&lt;code>baseof.html&lt;/code>里插入两段代码：&lt;code>{{ block &amp;quot;main&amp;quot; . }}{{ end }}&lt;/code>和&lt;code>{{ block &amp;quot;footer&amp;quot; . }}{{ end }}&lt;/code>&lt;/p>
+&lt;p>如下所示：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;lt;div class=&amp;#34;wrapper&amp;#34;&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{- partial &amp;#34;header.html&amp;#34; . -}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;main class=&amp;#34;main&amp;#34;&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;div class=&amp;#34;container&amp;#34;&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ block &amp;#34;main&amp;#34; . }}{{ end }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{- block &amp;#34;content&amp;#34; . }}{{ end -}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;/main&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{- partial &amp;#34;footer.html&amp;#34; . -}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{ block &amp;#34;footer&amp;#34; . }}{{ end }}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="添加搜索按钮">添加搜索按钮&lt;/h2>
+&lt;p>在站点配置文件里添加一个新的按钮给搜索功能使用，如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> [[languages.zh-cn.menu.main]]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> identifier = &amp;#34;search&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> pre = &amp;#34;&amp;lt;i class=&amp;#39;fas fa-fw fa-search&amp;#39;&amp;gt;&amp;lt;/i&amp;gt;&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> name = &amp;#34;搜索&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> url = &amp;#34;/search/&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> weight = 6
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="关闭loveit主题默认的搜索插件">关闭LoveIt主题默认的搜索插件&lt;/h2>
+&lt;p>在站点配置文件里把默认的搜索插件关闭，如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">[params]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> [params.app]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> [params.search]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> enable = false
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="修改搜索页面的样式">修改搜索页面的样式&lt;/h2>
+&lt;p>如果对该插件生成的搜索页面样式不满意，可以自行修改。&lt;/p>
+&lt;p>在网站&lt;code>assets\css\_custom.scss&lt;/code>文件里添加下面内容：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;span class="lnt">42
+&lt;/span>&lt;span class="lnt">43
+&lt;/span>&lt;span class="lnt">44
+&lt;/span>&lt;span class="lnt">45
+&lt;/span>&lt;span class="lnt">46
+&lt;/span>&lt;span class="lnt">47
+&lt;/span>&lt;span class="lnt">48
+&lt;/span>&lt;span class="lnt">49
+&lt;/span>&lt;span class="lnt">50
+&lt;/span>&lt;span class="lnt">51
+&lt;/span>&lt;span class="lnt">52
+&lt;/span>&lt;span class="lnt">53
+&lt;/span>&lt;span class="lnt">54
+&lt;/span>&lt;span class="lnt">55
+&lt;/span>&lt;span class="lnt">56
+&lt;/span>&lt;span class="lnt">57
+&lt;/span>&lt;span class="lnt">58
+&lt;/span>&lt;span class="lnt">59
+&lt;/span>&lt;span class="lnt">60
+&lt;/span>&lt;span class="lnt">61
+&lt;/span>&lt;span class="lnt">62
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">/* 搜索页面 */
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">.search {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> position: relative;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> padding-top: 3.5rem;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> padding-bottom: 1rem;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> width: 57.5%;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> margin: 0 auto;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> background: white;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> opacity: .95;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[theme=dark] .search {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> background: #3a3535;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[theme=dark] .search header,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">.search header {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> background-color: #f8f8f8;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[theme=dark] .search header:hover,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">.search header:hover {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -webkit-box-shadow: none;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> box-shadow: none;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">.search header h1 {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> padding-left: 1rem;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> background: white;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[theme=dark] .search header h1 {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> background: #3a3535;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[theme=dark] .search input,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">.search input {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> height: initial;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> width: initial;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> color: initial;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> background-color: white;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> margin: 0 0 0 1rem;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> border-width: 2px;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> border-style: inset;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> border-color: initial;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> border-image: initial;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -webkit-border-radius: 0;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -moz-border-radius: 0;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> border-radius: 0;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">.search #search-results {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> padding-left: 1rem;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> padding-right: 1rem;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[theme=dark] a:active, [theme=dark] a:hover {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> color: #2d96bd;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">.search hr {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> margin-left: 1rem;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> margin-right: 1rem;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="优化中文搜索效果">优化中文搜索效果&lt;/h2>
+&lt;p>这个搜索功能借助了Fuse.js模糊搜索引擎，针对中文搜索需要做一些优化。&lt;/p>
+&lt;p>编辑&lt;code>themes\hugo-search-fuse-js\static\js\search.js&lt;/code>，下面的示例已经添加了部分中文注释：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">// Options for fuse.js
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">let fuseOptions = {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> shouldSort: true, // 是否按分数对结果列表排序
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> includeMatches: true, // 是否应将分数包含在结果集中。0分表示完全匹配，1分表示完全不匹配。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> tokenize: true,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> matchAllTokens: true,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> threshold: 0.2, // 匹配算法阈值。阈值为0.0需要完全匹配（字母和位置），阈值为1.0将匹配任何内容。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> location: 0, // 确定文本中预期找到的模式的大致位置。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> /**
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> * 确定匹配与模糊位置（由位置指定）的距离。一个精确的字母匹配，即距离模糊位置很远的字符将被视为完全不匹配。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> * 距离为0要求匹配位于指定的准确位置，距离为100则要求完全匹配位于使用阈值0.2找到的位置的20个字符以内。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> */
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> distance: 100,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> maxPatternLength: 64, // 模式的最大长度
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> minMatchCharLength: 2, // 模式的最小字符长度
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> keys: [
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {name:&amp;#34;title&amp;#34;,weight:0.8},
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {name:&amp;#34;tags&amp;#34;,weight:0.5},
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {name:&amp;#34;categories&amp;#34;,weight:0.5},
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {name:&amp;#34;contents&amp;#34;,weight:0.4}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">};
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这里和中文搜索有关的主要就3个选项：&lt;/p>
+&lt;ol>
+&lt;li>threshold&lt;/li>
+&lt;li>location&lt;/li>
+&lt;li>distance&lt;/li>
+&lt;/ol>
+&lt;p>threshold是阈值，这个参数搭配distance使用。如果阈值填了0.0，相当于distance没有意义。&lt;/p>
+&lt;p>location填0就行，distance填100就足够了，太大了会导致搜索到过多的结果。&lt;/p>
+&lt;p>最张参数如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> threshold: 0.2,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> location: 0,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> distance: 100
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>可以根据个人情况来修改这几个参数的值。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(一)-基本设置和LoveIt主题</title><link>https://example.com/posts/bf651441/</link><pubDate>Tue, 04 Jan 2022 17:27:10 +0800</pubDate><guid>https://example.com/posts/bf651441/</guid><description>&lt;blockquote>
+&lt;p>本文使用的软件的版本如下：&lt;/p>
+&lt;p>hugo: 0.91.2-extended&lt;/p>
+&lt;p>loveit主题: 0.2.10&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>特别注意&lt;/strong>:hugo必须使用&lt;strong>extended&lt;/strong>版本&lt;/p>
+&lt;p>关于Hugo的安装和网站的生成，本文不再详述,网上教程一大堆。&lt;/p>
+&lt;p>本文主要介绍在安装过程中遇到一些问题及解决方法。&lt;/p>
+&lt;h2 id="设置自定义css文件">设置自定义CSS文件&lt;/h2>
+&lt;p>生成网站后,需要在网站根目录下创建一个自定义的文件：&lt;code>assets\css\_custom.scss&lt;/code>。&lt;/p>
+&lt;p>以后一些主题没提供的页面，所需要的css都保存在这个文件里，最典型的就是自定义搜索的页面。&lt;/p>
+&lt;h2 id="安装loveit主题">安装LoveIt主题&lt;/h2>
+&lt;p>我喜欢用&lt;a class="link" href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener"
+>LoveIt&lt;/a>主题，安装方式有：&lt;/p>
+&lt;ol>
+&lt;li>去官网下载zip文件，解压到&lt;code>themes&lt;/code>目录下&lt;/li>
+&lt;li>用&lt;code>git clone&lt;/code>的方式&lt;/li>
+&lt;li>用&lt;code>git submodule&lt;/code>的方法&lt;/li>
+&lt;/ol>
+&lt;p>在这里采用&lt;code>git submodule&lt;/code>的方法。&lt;/p>
+&lt;p>进入网站根目录后，运行命令：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">git init
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git submodule add https://github.com/dillonzq/LoveIt themes/LoveIt
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="修改configtoml">修改config.toml&lt;/h2>
+&lt;p>&lt;code>config.toml&lt;/code>是整个网站的配置文件，位于网站的根目录下。&lt;/p>
+&lt;p>生成网站后，自带的&lt;code>config.toml&lt;/code>太简单了，基本没啥用,我们需要用LoveIt主题目录下的&lt;code>config.toml&lt;/code>来替代。&lt;/p>
+&lt;p>把网站根目录下的&lt;code>themes\LoveIt\exampleSite\config.toml&lt;/code>文件，拷贝到网站的根目录下。&lt;/p>
+&lt;p>网站首次运行前，需要对&lt;code>config.toml&lt;/code>进行一些修改，确保首次运行网站时不会报错。&lt;/p>
+&lt;p>&lt;strong>错误1&lt;/strong>：关于module&lt;/p>
+&lt;p>&lt;strong>现象&lt;/strong>: &lt;code>Error: module &amp;quot;LoveIt&amp;quot; not found; either add it as a Hugo Module or store it in xxx&lt;/code>&lt;/p>
+&lt;p>&lt;strong>原因&lt;/strong>：&lt;code>config.toml&lt;/code>的第10行设置了主题路径。&lt;/p>
+&lt;p>&lt;strong>解决&lt;/strong>: 把第10行注释掉就可以了。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"># 主题目录
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#themesDir = &amp;#34;../..&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>错误2&lt;/strong>：关于git&lt;/p>
+&lt;p>&lt;strong>现象&lt;/strong>:在运行&lt;code>hugo server&lt;/code>的时候，有和git有关的错误提示&lt;/p>
+&lt;p>&lt;strong>原因&lt;/strong>：这是因为在&lt;code>config.toml&lt;/code>中，启用了&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"># 是否使用 git 信息
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">enableGitInfo = true
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>解决&lt;/strong>：两种方法：&lt;/p>
+&lt;ol>
+&lt;li>在网站根目录下运行&lt;code>git init&lt;/code>。&lt;/li>
+&lt;li>把&lt;code>enableGitInfo&lt;/code>属性改成&lt;code>false&lt;/code>:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"># 是否使用 git 信息
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">enableGitInfo = false
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="新建页面">新建页面&lt;/h2>
+&lt;p>有一些页面需要自己创建,比如说网站常见的&lt;code>关于&lt;/code>(about)页面。&lt;/p>
+&lt;p>方法很简单，运行&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">hugo new about.md
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>生成的文件存放于&lt;code>conten/posts&lt;/code>下。&lt;/p>
+&lt;h2 id="新建文章">新建文章&lt;/h2>
+&lt;p>使用下面命令:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">hugo new posts/my-first-post.md
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这样就创建了一篇名字为&lt;code>my-first-post&lt;/code>的文章，存放在网站根目录的&lt;code>content\posts&lt;/code>下。&lt;br>
+这种新建文章的方式不推荐，有更好的方式，看这里。&lt;/p>
+&lt;h2 id="本地预览">本地预览&lt;/h2>
+&lt;p>运行命令：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">hugo server
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>在浏览器输入&lt;a class="link" href="http://localhost:1313" target="_blank" rel="noopener"
+>http://localhost:1313&lt;/a>来预览。&lt;/p>
+&lt;p>&lt;code>hugo serve&lt;/code>的默认运行环境是 &lt;code>development&lt;/code>, 由于本地 &lt;code>development&lt;/code> 环境的限制, 评论系统, CDN 和 fingerprint 不会在 &lt;code>development&lt;/code> 环境下启用。
+如果想开启这些特性，使用下面的命令来开启：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">hugo serve -e production
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>至此，一个基本的Hugo网站就搭建起来了。&lt;/p></description></item></channel></rss>

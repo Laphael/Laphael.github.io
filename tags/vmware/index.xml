@@ -1,1 +1,180 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>vmware - 标签 - 寂静·流年</title><link>https://example.com/tags/vmware/</link><description>vmware - 标签 - 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 31 May 2023 09:45:23 +0800</lastBuildDate><atom:link href="https://example.com/tags/vmware/" rel="self" type="application/rss+xml"/><item><title>Opensuse安装vmware Workstation Pro</title><link>https://example.com/posts/d4ead7a4/</link><pubDate>Wed, 31 May 2023 09:45:23 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/d4ead7a4/</guid><description>安装相关的系统依赖 1 sudo zypper install kernel-source kernel-devel gcc 开始安装 添加可执行权限 1 chmod +x VMware-Workstation-Full-17.0.2-21581411.x86_64.bundle 安装 1 sudo ./VMware-Workstation-Full-17.0.2-21581411.x86_64.bundle</description></item><item><title>Wsl和vmware共存的问题</title><link>https://example.com/posts/9c090dd7/</link><pubDate>Wed, 04 Jan 2023 11:32:30 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/9c090dd7/</guid><description>、 问题描述 近期在使用wsl2和vmware时遇到了一些问题 如果要使用wsl2，则必须要在windows功能里开启虚拟机平台。 但是开启虚拟机平</description></item><item><title>解决KDE桌面在vmware中的复制、粘贴和拖拽文件的问题</title><link>https://example.com/posts/d10df142/</link><pubDate>Sat, 10 Dec 2022 09:59:25 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/d10df142/</guid><description>问题描述 在vmware中安装linux的虚拟机，做了以下工作之后： 虚拟机使用的是kde桌面 虚拟机已经安装了open-vm-tolls和ope</description></item><item><title>Vmware Workstation导出ova格式的虚拟机</title><link>https://example.com/posts/f1fa0209/</link><pubDate>Sun, 17 Jul 2022 07:31:26 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/f1fa0209/</guid><description>两个步骤，非常简单，看图： 需要注意的是，vmware workstation在选择导出时，只能选择ovf格式，不是想要的ova格式。 这时只需要</description></item><item><title>Vmware在Linux作为Host下的键盘映射的问题</title><link>https://example.com/posts/846f01f3/</link><pubDate>Sat, 16 Jul 2022 19:28:53 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/846f01f3/</guid><description>长久以来，在 Linux 使用 vmware 总是有个问题没有解决。 当在 Linux 里把 Ctrl 和 CapsLock 这两个键互换后，vmware 的虚拟机里并不会跟着一起换，而依旧是原来的键位。而同样</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>vmware on 寂静·流年</title><link>https://example.com/tags/vmware/</link><description>Recent content in vmware on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Wed, 31 May 2023 09:45:23 +0800</lastBuildDate><atom:link href="https://example.com/tags/vmware/index.xml" rel="self" type="application/rss+xml"/><item><title>Opensuse安装vmware Workstation Pro</title><link>https://example.com/posts/d4ead7a4/</link><pubDate>Wed, 31 May 2023 09:45:23 +0800</pubDate><guid>https://example.com/posts/d4ead7a4/</guid><description>&lt;h2 id="安装相关的系统依赖">安装相关的系统依赖&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo zypper install kernel-source kernel-devel gcc
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="开始安装">开始安装&lt;/h2>
+&lt;h3 id="添加可执行权限">添加可执行权限&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">chmod +x VMware-Workstation-Full-17.0.2-21581411.x86_64.bundle
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="安装">安装&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo ./VMware-Workstation-Full-17.0.2-21581411.x86_64.bundle
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Wsl和vmware共存的问题</title><link>https://example.com/posts/9c090dd7/</link><pubDate>Wed, 04 Jan 2023 11:32:30 +0800</pubDate><guid>https://example.com/posts/9c090dd7/</guid><description>&lt;p>、&lt;/p>
+&lt;h2 id="问题描述">问题描述&lt;/h2>
+&lt;p>近期在使用wsl2和vmware时遇到了一些问题&lt;/p>
+&lt;p>如果要使用wsl2，则必须要在&lt;code>windows功能&lt;/code>里开启&lt;code>虚拟机平台&lt;/code>。&lt;/p>
+&lt;p>但是开启&lt;code>虚拟机平台&lt;/code>后，打开vmware、virtualBox等虚拟机时会提示&lt;/p>
+&lt;ul>
+&lt;li>VMware Workstation与Device/Credential Guard不兼容&lt;/li>
+&lt;li>VT不支持、&lt;/li>
+&lt;li>该主机cpu类型不支持虚拟化性能计数器，开启模块VPMC的操作失败，未能启动虚拟机&lt;/li>
+&lt;/ul>
+&lt;p>等等错误。&lt;/p>
+&lt;h2 id="解决方法">解决方法&lt;/h2>
+&lt;p>解决方案很简单，就是把&lt;code>wsl2&lt;/code>降为&lt;code>wsl1&lt;/code>。&lt;/p>
+&lt;p>具体方法如下：&lt;/p>
+&lt;h3 id="1转换已经有的虚拟机">1.转换已经有的虚拟机&lt;/h3>
+&lt;p>比如我现在的&lt;code>kali-linux&lt;/code>虚拟机使用的是&lt;code>wsl2&lt;/code>，想降为&lt;code>wsl1&lt;/code>，则：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">wsl --set-version kali-linux 1
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="2删除虚拟机平台">2.删除&lt;code>虚拟机平台&lt;/code>&lt;/h3>
+&lt;p>管理员权限打开&lt;code>powershell&lt;/code>，输入：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Disable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>重启电脑。&lt;/p></description></item><item><title>解决KDE桌面在vmware中的复制、粘贴和拖拽文件的问题</title><link>https://example.com/posts/d10df142/</link><pubDate>Sat, 10 Dec 2022 09:59:25 +0800</pubDate><guid>https://example.com/posts/d10df142/</guid><description>&lt;h2 id="问题描述">问题描述&lt;/h2>
+&lt;p>在vmware中安装linux的虚拟机，做了以下工作之后：&lt;/p>
+&lt;ol>
+&lt;li>虚拟机使用的是kde桌面&lt;/li>
+&lt;li>虚拟机已经安装了&lt;code>open-vm-tolls&lt;/code>和&lt;code>open-vm-tools-desktop&lt;/code>&lt;/li>
+&lt;li>在虚拟机的高级选项中启用了拖放和复制粘贴等功能&lt;/li>
+&lt;/ol>
+&lt;p>依然不能和宿主机之间双向复制、粘贴和拖放文件。&lt;/p>
+&lt;p>本人使用vmware安装kali Linux，使用的是KDE桌面，就出现了上面的问题。&lt;/p>
+&lt;h2 id="原因">原因&lt;/h2>
+&lt;p>这是KDE桌面的一个bug
+当运行&lt;code>ps -aef | grep vmtoolsd&lt;/code>后，&lt;strong>并不会&lt;/strong>出现类似下图中的第2行红框中的&lt;code>/usr/bin/vmtoolsd -n vmusr --blockFd 3&lt;/code>的结果：
+&lt;img src="https://example.com/../ps%e7%bb%93%e6%9e%9c.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>这就是导致不能复制、粘贴和拖放的原因&lt;/p>
+&lt;h2 id="解决方法">解决方法&lt;/h2>
+&lt;ol>
+&lt;li>新建一个文件&lt;code>startkderc&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo vi /etc/xdg/startkderc
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>添加以下内容并保存：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">[General]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">systemdBoot=false
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="2">
+&lt;li>添加&lt;code>vmware-user-suid-wrapper&lt;/code>到kde的自动启动
+系统设置&amp;ndash;开机与关机&amp;ndash;自动启动&amp;ndash;添加&amp;ndash;添加应用程序，在弹出的对话框中输入&lt;code>/usr/bin/vmware-user-suid-wrapper&lt;/code>&lt;/li>
+&lt;li>重新启动，问题解决&lt;/li>
+&lt;/ol>
+&lt;h2 id="延伸阅读">延伸阅读&lt;/h2>
+&lt;p>相关讨论的原文在&lt;a class="link" href="https://github.com/vmware/open-vm-tools/issues/568" target="_blank" rel="noopener"
+>这里&lt;/a>。&lt;/p>
+&lt;p>另外提一点，在帖子中有人对fedora、archlinux和opensuse都做了测试，发现只有opensuse默认状态下一切功能正常。看来opensuse还是有点东西的😊。&lt;/p>
+&lt;p>再另外，我自己测试，debian 11.5 live版本也没有问题。&lt;/p></description></item><item><title>Vmware Workstation导出ova格式的虚拟机</title><link>https://example.com/posts/f1fa0209/</link><pubDate>Sun, 17 Jul 2022 07:31:26 +0800</pubDate><guid>https://example.com/posts/f1fa0209/</guid><description>&lt;p>两个步骤，非常简单，看图：
+&lt;img src="https://example.com/posts/f1fa0209/vmware1.png"
+width="896"
+height="604"
+srcset="https://example.com/posts/f1fa0209/vmware1_hud07470c21969d7482b2d4b5c16a4562c_65761_480x0_resize_box_3.png 480w, https://example.com/posts/f1fa0209/vmware1_hud07470c21969d7482b2d4b5c16a4562c_65761_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="148"
+data-flex-basis="356px"
+>&lt;/p>
+&lt;p>&lt;img src="https://example.com/posts/f1fa0209/vmware2.png"
+width="1185"
+height="419"
+srcset="https://example.com/posts/f1fa0209/vmware2_huc602db87ff3bb5d60fe761a043bd717c_18447_480x0_resize_box_3.png 480w, https://example.com/posts/f1fa0209/vmware2_huc602db87ff3bb5d60fe761a043bd717c_18447_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="282"
+data-flex-basis="678px"
+>&lt;/p>
+&lt;p>需要注意的是，&lt;code>vmware workstation&lt;/code>在选择导出时，只能选择&lt;code>ovf&lt;/code>格式，不是想要的&lt;code>ova&lt;/code>格式。&lt;/p>
+&lt;p>这时只需要在保存时，手动把&lt;code>ovf&lt;/code>后缀改成&lt;code>ova&lt;/code>，这样导出的就是&lt;code>ova&lt;/code>格式了。&lt;/p></description></item><item><title>Vmware在Linux作为Host下的键盘映射的问题</title><link>https://example.com/posts/846f01f3/</link><pubDate>Sat, 16 Jul 2022 19:28:53 +0800</pubDate><guid>https://example.com/posts/846f01f3/</guid><description>&lt;p>长久以来，在 Linux 使用 vmware 总是有个问题没有解决。&lt;/p>
+&lt;p>当在 Linux 里把 Ctrl 和 CapsLock 这两个键互换后，vmware 的虚拟机里并不会跟着一起换，而依旧是原来的键位。而同样的问题在 Windows 下就不存在。&lt;/p>
+&lt;p>vmware 的官方文档解释：&lt;/p>
+&lt;blockquote>
+&lt;blockquote>
+&lt;p>Workstation Player 可通过检查当前的 X 键映射确定要使用的表。但这种决策过程有时也会失败。另外，每个映射都是固定的，不保证对任何给定的键盘和 X 按键代码-键盘符号映射都正确无误。例如，如果用户使用 xmodmap 互换 Ctrl 和 CapsLock 按键，那么在使用远程服务器时虚拟机中的按键将互换（键盘符号映射），但在使用本地服务器时将取消互换（按键代码映射）。为了修正此问题，您必须在 Workstation Player 中重新映射按键。&lt;/p>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;p>也就是说，在本机上修改了键位后，远程连接到 vmware 虚拟机里是正常的，但是在本机上的虚拟机里则不能使用。&lt;/p>
+&lt;h2 id="解决方案">解决方案&lt;/h2>
+&lt;p>官方给出的解决方案是：&lt;/p>
+&lt;h3 id="查看特定键位的值">查看特定键位的值&lt;/h3>
+&lt;p>使用xev或者xmodmap -pk查看 Ctrl 和 CapsLock 的键位值&lt;/p>
+&lt;p>&lt;img src="https://example.com/posts/846f01f3/keyboard.png"
+width="1454"
+height="547"
+srcset="https://example.com/posts/846f01f3/keyboard_hu2f8781e41254bb5be0b5b653687b2689_848884_480x0_resize_box_3.png 480w, https://example.com/posts/846f01f3/keyboard_hu2f8781e41254bb5be0b5b653687b2689_848884_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="265"
+data-flex-basis="637px"
+>&lt;/p>
+&lt;p>可以看出，left Ctrl 键的值是 66,而 CapsLock 键的值是 37&lt;/p>
+&lt;h3 id="查看键位对应的-v-scan-值">查看键位对应的 V-Scan 值&lt;/h3>
+&lt;p>需要到V-Scan Code Table去查看。&lt;/p>
+&lt;p>这里直接告诉大家： Left Ctrl 的值是 0x01d CapsLock 的值是 0x03a&lt;/p>
+&lt;h3 id="添加配置文件">添加配置文件&lt;/h3>
+&lt;p>在&lt;code>~/.vmware/config&lt;/code>（没有就新建一个）里添加如下配置：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">xkeymap.keycode.66 = 0x01d
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">xkeymap.keycode.37 = 0x03a
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>至此，工作全部完成，vmware 里的虚拟机可以使用和 Host 一样的键位设置了。&lt;/p>
+&lt;h3 id="踩过的大坑">踩过的大坑&lt;/h3>
+&lt;p>这么简单的一个问题，官方文档有明确的说明了，为什么拖了好几年没解决呢？&lt;/p>
+&lt;p>主要问题有两个：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>官方的文档里说，更改健位值的两行代码，加在虚拟机配置文件里(.vmx)或者&lt;code>~/.vmware/config&lt;/code>都可以，其实不对。这两行代码只能加在&lt;code>~/.vmware/config&lt;/code>，加在其他地方不起作用。这个坑是长期未解决此问题的主要原因。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>添加这两行配置后，必须重新启动系统，以便让修改生效。&lt;/p>
+&lt;/li>
+&lt;/ol></description></item></channel></rss>

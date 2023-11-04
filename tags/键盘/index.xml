@@ -1,1 +1,62 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>键盘 - 标签 - 寂静·流年</title><link>https://example.com/tags/%E9%94%AE%E7%9B%98/</link><description>键盘 - 标签 - 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 16 Jul 2022 19:28:53 +0800</lastBuildDate><atom:link href="https://example.com/tags/%E9%94%AE%E7%9B%98/" rel="self" type="application/rss+xml"/><item><title>Vmware在Linux作为Host下的键盘映射的问题</title><link>https://example.com/posts/846f01f3/</link><pubDate>Sat, 16 Jul 2022 19:28:53 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/846f01f3/</guid><description>长久以来，在 Linux 使用 vmware 总是有个问题没有解决。 当在 Linux 里把 Ctrl 和 CapsLock 这两个键互换后，vmware 的虚拟机里并不会跟着一起换，而依旧是原来的键位。而同样</description></item><item><title>解决键盘上的Windows快捷键失灵的问题</title><link>https://example.com/posts/c0dac05c/</link><pubDate>Wed, 09 Mar 2022 17:30:08 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/c0dac05c/</guid><description>键盘型号是IKBC W210无线机械键盘。 问题 最近两天,忽然发现键盘上的Windows快捷键不起作用了。 Windows 10最让我满意的地方就是它的快捷键了</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>键盘 on 寂静·流年</title><link>https://example.com/tags/%E9%94%AE%E7%9B%98/</link><description>Recent content in 键盘 on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Sat, 16 Jul 2022 19:28:53 +0800</lastBuildDate><atom:link href="https://example.com/tags/%E9%94%AE%E7%9B%98/index.xml" rel="self" type="application/rss+xml"/><item><title>Vmware在Linux作为Host下的键盘映射的问题</title><link>https://example.com/posts/846f01f3/</link><pubDate>Sat, 16 Jul 2022 19:28:53 +0800</pubDate><guid>https://example.com/posts/846f01f3/</guid><description>&lt;p>长久以来，在 Linux 使用 vmware 总是有个问题没有解决。&lt;/p>
+&lt;p>当在 Linux 里把 Ctrl 和 CapsLock 这两个键互换后，vmware 的虚拟机里并不会跟着一起换，而依旧是原来的键位。而同样的问题在 Windows 下就不存在。&lt;/p>
+&lt;p>vmware 的官方文档解释：&lt;/p>
+&lt;blockquote>
+&lt;blockquote>
+&lt;p>Workstation Player 可通过检查当前的 X 键映射确定要使用的表。但这种决策过程有时也会失败。另外，每个映射都是固定的，不保证对任何给定的键盘和 X 按键代码-键盘符号映射都正确无误。例如，如果用户使用 xmodmap 互换 Ctrl 和 CapsLock 按键，那么在使用远程服务器时虚拟机中的按键将互换（键盘符号映射），但在使用本地服务器时将取消互换（按键代码映射）。为了修正此问题，您必须在 Workstation Player 中重新映射按键。&lt;/p>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;p>也就是说，在本机上修改了键位后，远程连接到 vmware 虚拟机里是正常的，但是在本机上的虚拟机里则不能使用。&lt;/p>
+&lt;h2 id="解决方案">解决方案&lt;/h2>
+&lt;p>官方给出的解决方案是：&lt;/p>
+&lt;h3 id="查看特定键位的值">查看特定键位的值&lt;/h3>
+&lt;p>使用xev或者xmodmap -pk查看 Ctrl 和 CapsLock 的键位值&lt;/p>
+&lt;p>&lt;img src="https://example.com/posts/846f01f3/keyboard.png"
+width="1454"
+height="547"
+srcset="https://example.com/posts/846f01f3/keyboard_hu2f8781e41254bb5be0b5b653687b2689_848884_480x0_resize_box_3.png 480w, https://example.com/posts/846f01f3/keyboard_hu2f8781e41254bb5be0b5b653687b2689_848884_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="265"
+data-flex-basis="637px"
+>&lt;/p>
+&lt;p>可以看出，left Ctrl 键的值是 66,而 CapsLock 键的值是 37&lt;/p>
+&lt;h3 id="查看键位对应的-v-scan-值">查看键位对应的 V-Scan 值&lt;/h3>
+&lt;p>需要到V-Scan Code Table去查看。&lt;/p>
+&lt;p>这里直接告诉大家： Left Ctrl 的值是 0x01d CapsLock 的值是 0x03a&lt;/p>
+&lt;h3 id="添加配置文件">添加配置文件&lt;/h3>
+&lt;p>在&lt;code>~/.vmware/config&lt;/code>（没有就新建一个）里添加如下配置：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">xkeymap.keycode.66 = 0x01d
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">xkeymap.keycode.37 = 0x03a
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>至此，工作全部完成，vmware 里的虚拟机可以使用和 Host 一样的键位设置了。&lt;/p>
+&lt;h3 id="踩过的大坑">踩过的大坑&lt;/h3>
+&lt;p>这么简单的一个问题，官方文档有明确的说明了，为什么拖了好几年没解决呢？&lt;/p>
+&lt;p>主要问题有两个：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>官方的文档里说，更改健位值的两行代码，加在虚拟机配置文件里(.vmx)或者&lt;code>~/.vmware/config&lt;/code>都可以，其实不对。这两行代码只能加在&lt;code>~/.vmware/config&lt;/code>，加在其他地方不起作用。这个坑是长期未解决此问题的主要原因。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>添加这两行配置后，必须重新启动系统，以便让修改生效。&lt;/p>
+&lt;/li>
+&lt;/ol></description></item><item><title>解决键盘上的Windows快捷键失灵的问题</title><link>https://example.com/posts/c0dac05c/</link><pubDate>Wed, 09 Mar 2022 17:30:08 +0800</pubDate><guid>https://example.com/posts/c0dac05c/</guid><description>&lt;p>键盘型号是IKBC W210无线机械键盘。&lt;/p>
+&lt;h2 id="问题">问题&lt;/h2>
+&lt;p>最近两天,忽然发现键盘上的Windows快捷键不起作用了。&lt;/p>
+&lt;p>Windows 10最让我满意的地方就是它的快捷键了，而这些快捷键大部分是以Win开头的。&lt;/p>
+&lt;p>没有了快捷键，Windows 10仿佛失去了灵魂。&lt;/p>
+&lt;h2 id="解决过程">解决过程&lt;/h2>
+&lt;p>一开始以为是Windows 10的三月更新引起的。网上搜索了一下，没有发现反映相关问题的。&lt;/p>
+&lt;p>于是以“Windows键盘不起作用”为关键字搜索，最终在短乎上一篇反映阿米洛机械键盘的帖子上找到了答案：&lt;/p>
+&lt;h2 id="解决方法">解决方法&lt;/h2>
+&lt;p>其实是我不小心把Windows快捷键给禁用了，附上解决方法&lt;/p>
+&lt;p>锁定方法 ：fn + 左win&lt;/p>
+&lt;p>解锁方法： fn + 右win&lt;/p>
+&lt;p>尽管是针对阿米洛机械键盘的，但是对IKBC W210同样起作用。&lt;/p></description></item></channel></rss>

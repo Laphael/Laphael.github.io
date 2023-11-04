@@ -1,1 +1,255 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>python - 标签 - 寂静·流年</title><link>https://example.com/tags/python/</link><description>python - 标签 - 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 01 Jan 2023 06:59:55 +0800</lastBuildDate><atom:link href="https://example.com/tags/python/" rel="self" type="application/rss+xml"/><item><title>修改Conda默认启动的Python环境</title><link>https://example.com/posts/0cab458e/</link><pubDate>Sun, 01 Jan 2023 06:59:55 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/0cab458e/</guid><description>问题描述 安装完 Conda 之后，开启终端将默认进入 base 环境。 但是，base 经常不是我们所需要的环境。因此，每次进入终端都得 conda activate 到想要的环境，很麻烦。 解决</description></item><item><title>Pycharm的基本设置</title><link>https://example.com/posts/05159db4/</link><pubDate>Sat, 24 Dec 2022 08:09:17 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/05159db4/</guid><description>设置自动换行/折行 按ctrl+alt+s,打开设置 在左上角搜索框中输入soft-wraps，打到editor-General,勾选soft-</description></item><item><title>Linux下使用miniconda的一些设置</title><link>https://example.com/posts/d96c6166/</link><pubDate>Mon, 12 Dec 2022 02:04:54 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/d96c6166/</guid><description>在kali的zsh环境中使用miniconda，遇到一些问题，这里记录一下解决的过程。 对于其它的linux来说，应该是通用的。 使用命令行安装</description></item><item><title>Kali下python2 Python3 Pip的安装</title><link>https://example.com/posts/0b636d39/</link><pubDate>Wed, 05 Oct 2022 10:29:03 +0800</pubDate><author>Laphael</author><guid>https://example.com/posts/0b636d39/</guid><description>最近在wsl里用kali。 由于wsl里的kali只提供了一个最基本的环境，python2、python3、pip2、pip3都需要自己安装，</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>python on 寂静·流年</title><link>https://example.com/tags/python/</link><description>Recent content in python on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Sun, 01 Jan 2023 06:59:55 +0800</lastBuildDate><atom:link href="https://example.com/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>修改Conda默认启动的Python环境</title><link>https://example.com/posts/0cab458e/</link><pubDate>Sun, 01 Jan 2023 06:59:55 +0800</pubDate><guid>https://example.com/posts/0cab458e/</guid><description>&lt;h2 id="问题描述">问题描述&lt;/h2>
+&lt;p>安装完 Conda 之后，开启终端将默认进入 &lt;code>base&lt;/code> 环境。&lt;/p>
+&lt;p>但是，&lt;code>base&lt;/code> 经常不是我们所需要的环境。因此，每次进入终端都得 &lt;code>conda activate&lt;/code> 到想要的环境，很麻烦。&lt;/p>
+&lt;h2 id="解决方法">解决方法&lt;/h2>
+&lt;p>假如想让&lt;code>conda&lt;/code>默认启动&lt;code>py3s&lt;/code>这个python环境&lt;/p>
+&lt;h3 id="linux">Linux&lt;/h3>
+&lt;p>在&lt;code>shell&lt;/code>的配置文件最后，添加&lt;code>source activate py3s&lt;/code>&lt;/p>
+&lt;p>例如&lt;code>zsh&lt;/code>，则&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">cd
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">vi .zshrc
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>在最后添加&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">source activate py3s
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="windows">windows&lt;/h3>
+&lt;p>打开&lt;code>powershell&lt;/code>
+运行命令：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">notepad $PROFILE
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>如果提示不存在则新建即可。&lt;/p>
+&lt;p>在 &lt;code>Profile&lt;/code> 文件中增加:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">conda activate py3s
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Pycharm的基本设置</title><link>https://example.com/posts/05159db4/</link><pubDate>Sat, 24 Dec 2022 08:09:17 +0800</pubDate><guid>https://example.com/posts/05159db4/</guid><description>&lt;h2 id="设置自动换行折行">设置自动换行/折行&lt;/h2>
+&lt;p>按&lt;code>ctrl&lt;/code>+&lt;code>alt&lt;/code>+&lt;code>s&lt;/code>,打开设置&lt;/p>
+&lt;p>在左上角搜索框中输入&lt;code>soft-wraps&lt;/code>，打到editor-General,勾选&lt;code>soft-wrap these files&lt;/code>,然后在最后添加&lt;code>; *.py&lt;/code>。
+&lt;img src="https://example.com/posts/05159db4/pycharm-softwrap.png"
+width="1229"
+height="505"
+srcset="https://example.com/posts/05159db4/pycharm-softwrap_hu8c353ee3e59eabe961f3994ccc17fcd6_50155_480x0_resize_box_3.png 480w, https://example.com/posts/05159db4/pycharm-softwrap_hu8c353ee3e59eabe961f3994ccc17fcd6_50155_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="243"
+data-flex-basis="584px"
+>&lt;/p>
+&lt;p>找到editor-General-Console,勾选&lt;code>Use soft wraps in console&lt;/code>,启用控制台的自动折行功能
+&lt;img src="https://example.com/posts/05159db4/pycharm-softwrap2.png"
+width="742"
+height="372"
+srcset="https://example.com/posts/05159db4/pycharm-softwrap2_hu09c09b42a52a5d7ec573683f6308f4fd_33999_480x0_resize_box_3.png 480w, https://example.com/posts/05159db4/pycharm-softwrap2_hu09c09b42a52a5d7ec573683f6308f4fd_33999_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="199"
+data-flex-basis="478px"
+>&lt;/p>
+&lt;h2 id="行号栏过宽">行号栏过宽&lt;/h2>
+&lt;p>按&lt;code>ctrl&lt;/code>+&lt;code>alt&lt;/code>+&lt;code>s&lt;/code>,打开设置&lt;/p>
+&lt;p>在左上角搜索框中输入&lt;code>show gutter icons&lt;/code>，然后&lt;strong>取消勾选&lt;/strong>&lt;code>show gutter icons&lt;/code>即可。&lt;/p>
+&lt;h2 id="跳出成对的括号">跳出成对的括号&lt;/h2>
+&lt;p>在输入&lt;code>' '&lt;/code>、&lt;code>&amp;quot; &amp;quot;&lt;/code>、&lt;code>()&lt;/code>等成对的括号后，如果想跳出当前括号，可以再按一下当前的括号即可跳出括号。&lt;/p>
+&lt;p>例如输入&lt;code>''&lt;/code>后，再输入&lt;code>abcde&lt;/code>,此时光标是处于&lt;code>e&lt;/code>的后面、&lt;code>'&lt;/code>的前面。&lt;/p>
+&lt;p>此时再按一下&lt;code>'&lt;/code>，即可跳到&lt;code>'&lt;/code>的后面了。&lt;/p></description></item><item><title>Linux下使用miniconda的一些设置</title><link>https://example.com/posts/d96c6166/</link><pubDate>Mon, 12 Dec 2022 02:04:54 +0800</pubDate><guid>https://example.com/posts/d96c6166/</guid><description>&lt;p>在&lt;code>kali&lt;/code>的&lt;code>zsh&lt;/code>环境中使用&lt;code>miniconda&lt;/code>，遇到一些问题，这里记录一下解决的过程。&lt;/p>
+&lt;p>对于其它的linux来说，应该是通用的。&lt;/p>
+&lt;h2 id="使用命令行安装miniconda">使用命令行安装miniconda&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">mkdir -p ~/miniconda3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">## 如果使用bash，则把下面命令中的zsh替换成bash：
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">zsh ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">rm -rf ~/miniconda3/miniconda.sh
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">## 如果使用zsh,则执行：
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">~/miniconda3/bin/conda init zsh
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">## 如果使用bash，则执行：
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">~/miniconda3/bin/conda init bash
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="oh-my-zsh主题配置">oh-my-zsh主题配置&lt;/h2>
+&lt;p>默认情况下，使用双行显示的oh-my-zsh主题，会在第一行的前面显示&lt;code>(base)&lt;/code>的标志:
+&lt;img src="https://example.com/posts/d96c6166/default-base.png"
+width="352"
+height="78"
+srcset="https://example.com/posts/d96c6166/default-base_hue7a70516c9bcb22154f0dd10772c86d9_4091_480x0_resize_box_3.png 480w, https://example.com/posts/d96c6166/default-base_hue7a70516c9bcb22154f0dd10772c86d9_4091_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="451"
+data-flex-basis="1083px"
+>&lt;br>
+这就非常的不美观，因此需要对oh-my-zsh的主题做一些修改。&lt;/p>
+&lt;p>这里以&lt;code>gnzh&lt;/code>主题为例。&lt;/p>
+&lt;ol>
+&lt;li>取消掉&lt;code>miniconda&lt;/code>默认的环境显示：&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">conda config --set changeps1 False
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol start="2">
+&lt;li>添加下面代码到gnzh主题的配置文件中&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">local conda_prompt=&amp;#39;$(conda_prompt_info)&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">conda_prompt_info() {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> if [ -n &amp;#34;$CONDA_DEFAULT_ENV&amp;#34; ]; then
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> echo -n &amp;#34;%{$terminfo[bold]$fg[yellow]%}($CONDA_DEFAULT_ENV) %{$reset_color%}&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> else
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> echo -n &amp;#39;&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> fi
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>注意：&lt;code>$conda_prompt&lt;/code>一定要写成函数的形式，否则PROMPT只会在启动&lt;code>zsh&lt;/code>的时候获取一次&lt;code>conda&lt;/code>环境信息，后续切换环境就不会再改变了。&lt;/p>
+&lt;ol start="3">
+&lt;li>在gnzh主题配置文件的合适地方添加&lt;code>${conda_prompt}&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;p>例如下面：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">PROMPT=&amp;#34;╭─${user_host}${conda_prompt}${current_dir}\$(ruby_prompt_info)${git_branch}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">╰─$PR_PROMPT &amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">RPROMPT=&amp;#34;${return_code}&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>退出并重新进入&lt;code>shell&lt;/code>，即可看到效果。&lt;/p>
+&lt;h2 id="默认不启用conda的base环境">默认不启用conda的base环境&lt;/h2>
+&lt;p>安装完&lt;code>miniconda&lt;/code>后，每次登录系统都会自动启用默认的&lt;code>base&lt;/code>环境，这就取代了系统自带的&lt;code>python2&lt;/code>和&lt;code>python3&lt;/code>。&lt;/p>
+&lt;p>如果想使用系统自带&lt;code>python&lt;/code>环境，有两种方法，推荐使用方法2：&lt;/p>
+&lt;ul>
+&lt;li>方法1:
+手动退出base环境回到系统自带的环境&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">conda deactivate
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>方法2:
+取消&lt;code>miniconda&lt;/code>的&lt;code>base&lt;/code>环境自启动设置：&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">conda config --set auto_activate_base false
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>要进入&lt;code>base&lt;/code>的话，可以手动运行命令&lt;code>conda activate base&lt;/code>&lt;/p>
+&lt;p>加外，如果想让&lt;code>miniconda&lt;/code>的&lt;code>base&lt;/code>环境恢复自启动，可以：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">conda config --set auto_activate_base true
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Kali下python2 Python3 Pip的安装</title><link>https://example.com/posts/0b636d39/</link><pubDate>Wed, 05 Oct 2022 10:29:03 +0800</pubDate><guid>https://example.com/posts/0b636d39/</guid><description>&lt;p>最近在wsl里用kali。&lt;/p>
+&lt;p>由于wsl里的kali只提供了一个最基本的环境，python2、python3、pip2、pip3都需要自己安装，这里记录一下安装方法。&lt;/p>
+&lt;h2 id="python3和pip3">python3和pip3&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo apt install python3 python3-dev python3-pip
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="python2和pip2">python2和pip2&lt;/h2>
+&lt;h3 id="python2安装">python2安装&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo apt install python2 python2-dev
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="pip2安装">pip2安装&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo python2 get-pip.py
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>这样，在使用的时候，只需要输入&lt;code>python2&lt;/code>、&lt;code>pip2&lt;/code>和&lt;code>python3&lt;/code>、&lt;code>pip3&lt;/code>即可。&lt;/p>
+&lt;h2 id="后记">后记&lt;/h2>
+&lt;p>如果想输入&lt;code>python&lt;/code>的时候，默认调用&lt;code>python3&lt;/code>,可以安装&lt;code>python-is-python3&lt;/code>这个软件包&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo apt install python-python3
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item></channel></rss>
