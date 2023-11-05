@@ -3959,7 +3959,8 @@ data-flex-basis="484px"
 &lt;/div>
 &lt;/div>&lt;p>至此，一个基本的Hugo网站就搭建起来了。&lt;/p></description></item><item><title>归档</title><link>https://dnwzlx.com/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate><guid>https://dnwzlx.com/archives/</guid><description/></item><item><title>关于</title><link>https://dnwzlx.com/%E5%85%B3%E4%BA%8E/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dnwzlx.com/%E5%85%B3%E4%BA%8E/</guid><description>&lt;p>记录一些和生活、兴趣、研究等相关的东西。&lt;/p>
 &lt;h2 id="2023年11月5日">2023年11月5日&lt;/h2>
-&lt;p>博客主题从LoveIt换成了hugo-theme-stack。&lt;/p>
+&lt;p>博客主题从LoveIt换成了hugo-theme-stack。
+之所以换成stack主题，是因为这个主题自带本地搜索，我的博客终于能够使用搜索功能了。&lt;/p>
 &lt;h2 id="2023年1月14日--添加和更新功能">2023年1月14日 添加和更新功能&lt;/h2>
 &lt;ul>
 &lt;li>升级github action到v3版本&lt;/li>
