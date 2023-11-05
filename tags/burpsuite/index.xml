@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>burpsuite on 寂静·流年</title><link>https://example.com/tags/burpsuite/</link><description>Recent content in burpsuite on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Tue, 27 Sep 2022 18:41:56 +0800</lastBuildDate><atom:link href="https://example.com/tags/burpsuite/index.xml" rel="self" type="application/rss+xml"/><item><title>解决burpsuite在高分屏上字体模糊的问题</title><link>https://example.com/posts/5f34e294/</link><pubDate>Tue, 27 Sep 2022 18:41:56 +0800</pubDate><guid>https://example.com/posts/5f34e294/</guid><description>&lt;h2 id="问题">问题&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>burpsuite on 寂静·流年</title><link>https://dnwzlx.com/tags/burpsuite/</link><description>Recent content in burpsuite on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Tue, 27 Sep 2022 18:41:56 +0800</lastBuildDate><atom:link href="https://dnwzlx.com/tags/burpsuite/index.xml" rel="self" type="application/rss+xml"/><item><title>解决burpsuite在高分屏上字体模糊的问题</title><link>https://dnwzlx.com/posts/5f34e294/</link><pubDate>Tue, 27 Sep 2022 18:41:56 +0800</pubDate><guid>https://dnwzlx.com/posts/5f34e294/</guid><description>&lt;h2 id="问题">问题&lt;/h2>
 &lt;p>新版本的burpsuite在启动后，会根据系统的分辨率设置情况自动进行缩放，这带来2个问题：&lt;/p>
 &lt;ol>
 &lt;li>字体界面变得模糊&lt;/li>
@@ -12,10 +12,10 @@
 &lt;p>重启后，需要在&lt;code>User options&lt;/code>&amp;ndash;&amp;gt;&lt;code>Display&lt;/code>中把字体调大，一般4K屏20号字体比较不错。&lt;/p>
 &lt;p>还有一个好处是,render中的字体也不再模糊了。&lt;/p>
 &lt;p>另外等宽字体推荐使用&lt;code>更纱黑体 mono sc nerd&lt;/code>
-&lt;img src="https://example.com/posts/5f34e294/font-setting.png"
+&lt;img src="https://dnwzlx.com/posts/5f34e294/font-setting.png"
 width="1464"
 height="588"
-srcset="https://example.com/posts/5f34e294/font-setting_huedb682363974e6137252054a487d6c2b_56306_480x0_resize_box_3.png 480w, https://example.com/posts/5f34e294/font-setting_huedb682363974e6137252054a487d6c2b_56306_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/5f34e294/font-setting_huedb682363974e6137252054a487d6c2b_56306_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/5f34e294/font-setting_huedb682363974e6137252054a487d6c2b_56306_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="248"

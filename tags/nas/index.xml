@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>nas on 寂静·流年</title><link>https://example.com/tags/nas/</link><description>Recent content in nas on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Fri, 13 Jan 2023 13:10:42 +0800</lastBuildDate><atom:link href="https://example.com/tags/nas/index.xml" rel="self" type="application/rss+xml"/><item><title>KDE播放Samba共享里的视频文件</title><link>https://example.com/posts/0ce4c4b3/</link><pubDate>Fri, 13 Jan 2023 13:10:42 +0800</pubDate><guid>https://example.com/posts/0ce4c4b3/</guid><description>&lt;h2 id="问题描述">问题描述&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>nas on 寂静·流年</title><link>https://dnwzlx.com/tags/nas/</link><description>Recent content in nas on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Fri, 13 Jan 2023 13:10:42 +0800</lastBuildDate><atom:link href="https://dnwzlx.com/tags/nas/index.xml" rel="self" type="application/rss+xml"/><item><title>KDE播放Samba共享里的视频文件</title><link>https://dnwzlx.com/posts/0ce4c4b3/</link><pubDate>Fri, 13 Jan 2023 13:10:42 +0800</pubDate><guid>https://dnwzlx.com/posts/0ce4c4b3/</guid><description>&lt;h2 id="问题描述">问题描述&lt;/h2>
 &lt;p>使用&lt;code>debian 11 &lt;/code>+ &lt;code>KDE&lt;/code> 桌面，通过samba协议连接到NAS后，发现无法播放NAS上的视频文件。&lt;/p>
 &lt;h2 id="解决方法">解决方法&lt;/h2>
 &lt;p>安装&lt;code>kio-fuse&lt;/code>即可&lt;/p>
@@ -10,7 +10,7 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo apt install kio-fuse
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>debian确实是稳定，在chrome和nvidia驱动方面非常出色，不比windows差，但是在一些小的易用性方面，还是有坑&lt;/p></description></item><item><title>导出微软日历的方法</title><link>https://example.com/posts/3553344e/</link><pubDate>Tue, 27 Dec 2022 05:25:49 +0800</pubDate><guid>https://example.com/posts/3553344e/</guid><description>&lt;blockquote>
+&lt;/div>&lt;p>debian确实是稳定，在chrome和nvidia驱动方面非常出色，不比windows差，但是在一些小的易用性方面，还是有坑&lt;/p></description></item><item><title>导出微软日历的方法</title><link>https://dnwzlx.com/posts/3553344e/</link><pubDate>Tue, 27 Dec 2022 05:25:49 +0800</pubDate><guid>https://dnwzlx.com/posts/3553344e/</guid><description>&lt;blockquote>
 &lt;blockquote>
 &lt;blockquote>
 &lt;p>导出为ics格式&lt;/p>
@@ -18,40 +18,40 @@
 &lt;/blockquote>
 &lt;/blockquote>
 &lt;p>1、打开outlook，选中需要导出的日历&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/3553344e/%E9%80%89%E6%8B%A9%E6%97%A5%E5%8E%86.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/3553344e/%E9%80%89%E6%8B%A9%E6%97%A5%E5%8E%86.png"
 width="330"
 height="338"
-srcset="https://example.com/posts/3553344e/%E9%80%89%E6%8B%A9%E6%97%A5%E5%8E%86_huaf428dfaf1dbaea30f779e9029ad2178_9358_480x0_resize_box_3.png 480w, https://example.com/posts/3553344e/%E9%80%89%E6%8B%A9%E6%97%A5%E5%8E%86_huaf428dfaf1dbaea30f779e9029ad2178_9358_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/3553344e/%E9%80%89%E6%8B%A9%E6%97%A5%E5%8E%86_huaf428dfaf1dbaea30f779e9029ad2178_9358_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/3553344e/%E9%80%89%E6%8B%A9%E6%97%A5%E5%8E%86_huaf428dfaf1dbaea30f779e9029ad2178_9358_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="97"
 data-flex-basis="234px"
 >&lt;/p>
 &lt;p>2、点击左上角文件&amp;ndash;保存日历&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/3553344e/%E4%BF%9D%E5%AD%98%E6%97%A5%E5%8E%86.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/3553344e/%E4%BF%9D%E5%AD%98%E6%97%A5%E5%8E%86.png"
 width="341"
 height="547"
-srcset="https://example.com/posts/3553344e/%E4%BF%9D%E5%AD%98%E6%97%A5%E5%8E%86_hud1ca1759b2adf90a89c2167d10b69d2f_14457_480x0_resize_box_3.png 480w, https://example.com/posts/3553344e/%E4%BF%9D%E5%AD%98%E6%97%A5%E5%8E%86_hud1ca1759b2adf90a89c2167d10b69d2f_14457_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/3553344e/%E4%BF%9D%E5%AD%98%E6%97%A5%E5%8E%86_hud1ca1759b2adf90a89c2167d10b69d2f_14457_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/3553344e/%E4%BF%9D%E5%AD%98%E6%97%A5%E5%8E%86_hud1ca1759b2adf90a89c2167d10b69d2f_14457_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="62"
 data-flex-basis="149px"
 >&lt;/p>
 &lt;p>3、弹出的对话框中，点击&lt;code>其它选项&lt;/code>&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE1.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE1.png"
 width="989"
 height="323"
-srcset="https://example.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE1_hu360c93cf0e355d0fcca25d9c3abd5b4f_13051_480x0_resize_box_3.png 480w, https://example.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE1_hu360c93cf0e355d0fcca25d9c3abd5b4f_13051_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE1_hu360c93cf0e355d0fcca25d9c3abd5b4f_13051_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE1_hu360c93cf0e355d0fcca25d9c3abd5b4f_13051_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="306"
 data-flex-basis="734px"
 >&lt;/p>
 &lt;p>4、按照下图中的选项来选择，然后点击&lt;code>确定&lt;/code>&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE2.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE2.png"
 width="891"
 height="551"
-srcset="https://example.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE2_hu97b1248a99bc1be4fe4cc1a72b15fb19_29748_480x0_resize_box_3.png 480w, https://example.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE2_hu97b1248a99bc1be4fe4cc1a72b15fb19_29748_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE2_hu97b1248a99bc1be4fe4cc1a72b15fb19_29748_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE2_hu97b1248a99bc1be4fe4cc1a72b15fb19_29748_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="161"

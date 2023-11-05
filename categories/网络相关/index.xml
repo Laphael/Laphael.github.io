@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>网络相关 on 寂静·流年</title><link>https://example.com/categories/%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3/</link><description>Recent content in 网络相关 on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Fri, 17 Feb 2023 19:30:32 +0800</lastBuildDate><atom:link href="https://example.com/categories/%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3/index.xml" rel="self" type="application/rss+xml"/><item><title>解决openwrt软路由下两个客户端不通的问题</title><link>https://example.com/posts/cc8c44d2/</link><pubDate>Fri, 17 Feb 2023 19:30:32 +0800</pubDate><guid>https://example.com/posts/cc8c44d2/</guid><description>&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>网络相关 on 寂静·流年</title><link>https://dnwzlx.com/categories/%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3/</link><description>Recent content in 网络相关 on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Fri, 17 Feb 2023 19:30:32 +0800</lastBuildDate><atom:link href="https://dnwzlx.com/categories/%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3/index.xml" rel="self" type="application/rss+xml"/><item><title>解决openwrt软路由下两个客户端不通的问题</title><link>https://dnwzlx.com/posts/cc8c44d2/</link><pubDate>Fri, 17 Feb 2023 19:30:32 +0800</pubDate><guid>https://dnwzlx.com/posts/cc8c44d2/</guid><description>&lt;blockquote>
 &lt;p>前段时间把家庭网络改造了一下:&lt;/p>
 &lt;/blockquote>
 &lt;ol>
@@ -13,16 +13,16 @@
 &lt;p>所有网上的解决方案对我来说都没有用。&lt;/p>
 &lt;h2 id="解决方法">解决方法&lt;/h2>
 &lt;p>解决方法非常简单，在&lt;code>openwrt&lt;/code>-防火墙下，把&lt;code>启用FullCone-NAT&lt;/code>从&lt;code>高性能模式&lt;/code>改成&lt;code>兼容模式&lt;/code>就可以了。
-&lt;img src="https://example.com/posts/cc8c44d2/openwrt-firewall-set.png"
+&lt;img src="https://dnwzlx.com/posts/cc8c44d2/openwrt-firewall-set.png"
 width="1555"
 height="544"
-srcset="https://example.com/posts/cc8c44d2/openwrt-firewall-set_hu9dd040f9ab7836b96791aa046546d2c7_768923_480x0_resize_box_3.png 480w, https://example.com/posts/cc8c44d2/openwrt-firewall-set_hu9dd040f9ab7836b96791aa046546d2c7_768923_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/cc8c44d2/openwrt-firewall-set_hu9dd040f9ab7836b96791aa046546d2c7_768923_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/cc8c44d2/openwrt-firewall-set_hu9dd040f9ab7836b96791aa046546d2c7_768923_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="285"
 data-flex-basis="686px"
 >&lt;/p>
-&lt;p>原理我不清楚，怀疑是&lt;code>FullCone-NA&lt;/code>兼容性的问题。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(七)-Hugo和Github Action正确修改文章的最后更新日期</title><link>https://example.com/posts/146871a6/</link><pubDate>Sat, 14 Jan 2023 12:15:00 +0800</pubDate><guid>https://example.com/posts/146871a6/</guid><description>&lt;p>偏向技术或者工具使用方面的博客，难免会随着时间和技术的更新，对文章进行一些修改。&lt;/p>
+&lt;p>原理我不清楚，怀疑是&lt;code>FullCone-NA&lt;/code>兼容性的问题。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(七)-Hugo和Github Action正确修改文章的最后更新日期</title><link>https://dnwzlx.com/posts/146871a6/</link><pubDate>Sat, 14 Jan 2023 12:15:00 +0800</pubDate><guid>https://dnwzlx.com/posts/146871a6/</guid><description>&lt;p>偏向技术或者工具使用方面的博客，难免会随着时间和技术的更新，对文章进行一些修改。&lt;/p>
 &lt;p>使用hugo一年多以来，一直有一个问题没有解决，就是文章修改后不能正确的显示修改后的时间，即更新时间。&lt;/p>
 &lt;p>今天又想起这个长期以来的&amp;quot;bug&amp;quot;，这次终于彻底解决了。&lt;/p>
 &lt;h2 id="修改网站配置文件">修改网站配置文件&lt;/h2>
@@ -78,11 +78,11 @@ data-flex-basis="686px"
 &lt;h3 id="disable-quotepath">Disable quotePath&lt;/h3>
 &lt;p>原理是这样的：默认情况下，当文件名中包含中文的时候，git 会使用引号&lt;code>&amp;quot; &amp;quot;&lt;/code>把文件名括起来。&lt;/p>
 &lt;p>但是这会导致 action 中无法读取 &lt;code>:GitInfo&lt;/code> 变量，所以这里需要关闭&lt;code>quotePath&lt;/code>功能。&lt;/p>
-&lt;p>这样就可以正确显示文章最后更新时间了，问题解决。&lt;/p></description></item><item><title>Hugofy新建文章出现错误的解决方法</title><link>https://example.com/posts/5b6e3a97/</link><pubDate>Mon, 29 Aug 2022 19:23:58 +0800</pubDate><guid>https://example.com/posts/5b6e3a97/</guid><description>&lt;p>前文说过，我使用hugo的&lt;code>page bundle&lt;/code>的方式来组织整个网站，并且使用&lt;code>vscode&lt;/code>来编辑和管理网站。&lt;/p>
+&lt;p>这样就可以正确显示文章最后更新时间了，问题解决。&lt;/p></description></item><item><title>Hugofy新建文章出现错误的解决方法</title><link>https://dnwzlx.com/posts/5b6e3a97/</link><pubDate>Mon, 29 Aug 2022 19:23:58 +0800</pubDate><guid>https://dnwzlx.com/posts/5b6e3a97/</guid><description>&lt;p>前文说过，我使用hugo的&lt;code>page bundle&lt;/code>的方式来组织整个网站，并且使用&lt;code>vscode&lt;/code>来编辑和管理网站。&lt;/p>
 &lt;p>vscode有一个荒野无灯大佬开发的名为&lt;code>hugofy&lt;/code>的插件，这个插件可以很好的支持&lt;code>page bundle&lt;/code>模式。&lt;/p>
 &lt;p>以前使用这个插件一直正常，今天下载了新的0.101版本的&lt;code>hugo&lt;/code>，在使用这个插件新建文章时，却提示&lt;code>Error: could not determine content directory for &amp;quot;/posts/xxx.md&amp;quot;&lt;/code>。&lt;/p>
 &lt;p>网上搜索了半天，也没发现有用的信息，最后突然想到，会不会是&lt;code>hugo&lt;/code>版本的问题呢？&lt;/p>
-&lt;p>于是下载了hugo的0.84版本，再一试，果然一切正常了。&lt;/p></description></item><item><title>IKuai的DNS设置</title><link>https://example.com/posts/f86cf3fe/</link><pubDate>Mon, 29 Aug 2022 18:28:40 +0800</pubDate><guid>https://example.com/posts/f86cf3fe/</guid><description>&lt;p>这几天黑苹果终于是折腾完美了，但是有一个问题：&lt;/p>
+&lt;p>于是下载了hugo的0.84版本，再一试，果然一切正常了。&lt;/p></description></item><item><title>IKuai的DNS设置</title><link>https://dnwzlx.com/posts/f86cf3fe/</link><pubDate>Mon, 29 Aug 2022 18:28:40 +0800</pubDate><guid>https://dnwzlx.com/posts/f86cf3fe/</guid><description>&lt;p>这几天黑苹果终于是折腾完美了，但是有一个问题：&lt;/p>
 &lt;p>在黑苹果里打开网页非常的慢，而且打开网站后，再点击网站里的链接也是非常慢。&lt;/p>
 &lt;p>切换到Windows系统里测试了一上，快了一点，但是也没有达到秒开的地步。&lt;/p>
 &lt;p>这是非常不应该的。我家里的是千兆宽带，打开的也是sohu、ifeng之类的大站，DNS用的也是114，怎么会打开个网页也慢呢？&lt;/p>
@@ -90,17 +90,17 @@ data-flex-basis="686px"
 &lt;p>家里用的是软路由，使用的是ikuai虚拟机。一番折腾后，找到了问题的答案。&lt;/p>
 &lt;p>在ikuai-网络设置-DNS设置里，有一个&lt;code>DNS加速模式&lt;/code>。&lt;/p>
 &lt;p>我原本的设置是&lt;code>代理模式（DoH:DNS Over Https）&lt;/code>,把它改成&lt;code>代理模式（UDP)&lt;/code>就可以了。
-&lt;img src="https://example.com/posts/f86cf3fe/ikuai-dns.png"
+&lt;img src="https://dnwzlx.com/posts/f86cf3fe/ikuai-dns.png"
 width="1924"
 height="1026"
-srcset="https://example.com/posts/f86cf3fe/ikuai-dns_huc3ff059f22820ba3d0c8d16cfa8bd26d_195768_480x0_resize_box_3.png 480w, https://example.com/posts/f86cf3fe/ikuai-dns_huc3ff059f22820ba3d0c8d16cfa8bd26d_195768_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/f86cf3fe/ikuai-dns_huc3ff059f22820ba3d0c8d16cfa8bd26d_195768_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/f86cf3fe/ikuai-dns_huc3ff059f22820ba3d0c8d16cfa8bd26d_195768_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="187"
 data-flex-basis="450px"
 >&lt;/p>
 &lt;p>这样打开任何国内的大站，都是秒开的效果。&lt;/p>
-&lt;p>问题解决。&lt;/p></description></item><item><title>解决Hugo网站使用LoveIt主题后图片刷新不出来的问题</title><link>https://example.com/posts/da4fb9f9/</link><pubDate>Sat, 28 May 2022 11:19:35 +0800</pubDate><guid>https://example.com/posts/da4fb9f9/</guid><description>&lt;p>hugo博客部署在github page上。&lt;/p>
+&lt;p>问题解决。&lt;/p></description></item><item><title>解决Hugo网站使用LoveIt主题后图片刷新不出来的问题</title><link>https://dnwzlx.com/posts/da4fb9f9/</link><pubDate>Sat, 28 May 2022 11:19:35 +0800</pubDate><guid>https://dnwzlx.com/posts/da4fb9f9/</guid><description>&lt;p>hugo博客部署在github page上。&lt;/p>
 &lt;p>最近几天发现，博客的文章和disqus评论都是正常的，唯独涉及图片的部分，一直显示Loading加载不出来。&lt;/p>
 &lt;p>一番查找后，发现锅在LoveIt主题上，确切的说，是在LoveIt主题使用的cdn&amp;ndash;&lt;code>https://cdn.jsdelivr.net&lt;/code>上。&lt;/p>
 &lt;h2 id="问题的根源">问题的根源&lt;/h2>
@@ -128,7 +128,7 @@ data-flex-basis="450px"
 &lt;p>&lt;code>libFiles: https://cdn.jsdelivr.net/npm/&lt;/code>&lt;/p>
 &lt;p>修改为:&lt;/p>
 &lt;p>&lt;code>libFiles: https://gcore.jsdelivr.net/npm/&lt;/code>&lt;/p>
-&lt;p>问题解决。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(六) 编辑文章和管理网站</title><link>https://example.com/posts/fd472e0d/</link><pubDate>Wed, 12 Jan 2022 06:44:50 +0800</pubDate><guid>https://example.com/posts/fd472e0d/</guid><description>&lt;p>&lt;code>Hugo&lt;/code>的本质就是把 &lt;code>.md&lt;/code>格式的文章通过一套引擎渲染成 &lt;code>.html&lt;/code>页面。&lt;/p>
+&lt;p>问题解决。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(六) 编辑文章和管理网站</title><link>https://dnwzlx.com/posts/fd472e0d/</link><pubDate>Wed, 12 Jan 2022 06:44:50 +0800</pubDate><guid>https://dnwzlx.com/posts/fd472e0d/</guid><description>&lt;p>&lt;code>Hugo&lt;/code>的本质就是把 &lt;code>.md&lt;/code>格式的文章通过一套引擎渲染成 &lt;code>.html&lt;/code>页面。&lt;/p>
 &lt;p>因为这个过程是全自动化的，所以编辑网站文章就是编辑本地的 &lt;code>.md&lt;/code>文章。&lt;/p>
 &lt;p>&lt;code>Visual Studio Code&lt;/code>(简称 &lt;code>vscode&lt;/code>)，集成了Git以及编辑markdown的插件，同时也有Hugo相关的插件，成为了我认为最适合编辑和管理Hugo网站的编辑器。&lt;/p>
 &lt;h2 id="vscode">VSCode&lt;/h2>
@@ -145,10 +145,10 @@ data-flex-basis="450px"
 &lt;p>&lt;code>vscode&lt;/code>有个功能是 &lt;code>workspace&lt;/code>。它的最大的作用是为不同的环境启用或者禁用不同的插件。&lt;/p>
 &lt;p>在某个目录下添加一个名为 &lt;code>workspace.code-workspace&lt;/code>的文件，就可以把整个目录当成一个工作区。&lt;/p>
 &lt;p>而且这个 &lt;code>workspace.code-workspace&lt;/code>文件是自动创建的。&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/fd472e0d/workspace.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/fd472e0d/workspace.png"
 width="426"
 height="467"
-srcset="https://example.com/posts/fd472e0d/workspace_hu2e4f0e5bbb78de66fe45d9f435becdd2_47083_480x0_resize_box_3.png 480w, https://example.com/posts/fd472e0d/workspace_hu2e4f0e5bbb78de66fe45d9f435becdd2_47083_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/fd472e0d/workspace_hu2e4f0e5bbb78de66fe45d9f435becdd2_47083_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/fd472e0d/workspace_hu2e4f0e5bbb78de66fe45d9f435becdd2_47083_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="91"
@@ -162,10 +162,10 @@ data-flex-basis="218px"
 &lt;li>在输入框里输入commit的内容&lt;/li>
 &lt;li>点击同步&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="https://example.com/posts/fd472e0d/vscode-git.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/fd472e0d/vscode-git.png"
 width="604"
 height="293"
-srcset="https://example.com/posts/fd472e0d/vscode-git_hue89e28e4c314eef993b33ba0c93356e7_50446_480x0_resize_box_3.png 480w, https://example.com/posts/fd472e0d/vscode-git_hue89e28e4c314eef993b33ba0c93356e7_50446_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/fd472e0d/vscode-git_hue89e28e4c314eef993b33ba0c93356e7_50446_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/fd472e0d/vscode-git_hue89e28e4c314eef993b33ba0c93356e7_50446_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="206"
@@ -179,7 +179,7 @@ data-flex-basis="494px"
 &lt;li>省去了在不同电脑间编辑时，&lt;code>git pull&lt;/code>等git的同步操作。&lt;/li>
 &lt;/ul>
 &lt;p>通过上面这些设置，可以在 &lt;code>vscode&lt;/code>里进行Hugo编辑、管理、上传的全部操作，而且步骤简单。&lt;/p>
-&lt;p>让我们把精力全部放在网站内容上。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(五) 使用Page Bundles组织网站内容</title><link>https://example.com/posts/b085eb84/</link><pubDate>Tue, 11 Jan 2022 05:59:14 +0800</pubDate><guid>https://example.com/posts/b085eb84/</guid><description>&lt;p>什么是&lt;code>Page Bundles&lt;/code>呢,官方网站的解释在&lt;a class="link" href="https://gohugo.io/content-management/page-bundles/" target="_blank" rel="noopener"
+&lt;p>让我们把精力全部放在网站内容上。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(五) 使用Page Bundles组织网站内容</title><link>https://dnwzlx.com/posts/b085eb84/</link><pubDate>Tue, 11 Jan 2022 05:59:14 +0800</pubDate><guid>https://dnwzlx.com/posts/b085eb84/</guid><description>&lt;p>什么是&lt;code>Page Bundles&lt;/code>呢,官方网站的解释在&lt;a class="link" href="https://gohugo.io/content-management/page-bundles/" target="_blank" rel="noopener"
 >这里&lt;/a>&lt;/p>
 &lt;p>简单来说,一般的Hugo网站,每篇文章是一个以文章名称命令的&lt;code>.md&lt;/code>格式的文档，保存在&lt;code>content/posts&lt;/code>目录下，文章中所有的资源-图片、视频、PDF等附件，都保存在根目录的&lt;code>static&lt;/code>目录里。&lt;/p>
 &lt;p>这种做法的缺点是，所有文章的附件都在一个目录里，管理上非常混乱，分不清哪个图片或者附件是属于哪篇文章的。而且在本地预览时，因为图片链接格式的原因，还会遇到无法正常显示图片的问题。&lt;/p>
@@ -189,17 +189,17 @@ data-flex-basis="494px"
 &lt;li>文章所有涉及的附件，都保存在&lt;code>index.md&lt;/code>的同级目录下。&lt;/li>
 &lt;/ol>
 &lt;p>看下图&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/b085eb84/orgazination.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/b085eb84/orgazination.png"
 width="508"
 height="688"
-srcset="https://example.com/posts/b085eb84/orgazination_hu43554d536c54dbb73623489c002dc47e_93025_480x0_resize_box_3.png 480w, https://example.com/posts/b085eb84/orgazination_hu43554d536c54dbb73623489c002dc47e_93025_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/b085eb84/orgazination_hu43554d536c54dbb73623489c002dc47e_93025_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/b085eb84/orgazination_hu43554d536c54dbb73623489c002dc47e_93025_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="73"
 data-flex-basis="177px"
 >&lt;/p>
 &lt;p>如果使用vscode管理编辑Hugo网站，还有插件能很简单的实现&lt;code>Page Bundles&lt;/code>的组织形式。下篇再讲。&lt;/p>
-&lt;p>在这里推荐&lt;code>Page Bundles&lt;/code>的网站组织形式，会使网站的文章和附件管理非常的有组织性。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(四)-使用Github Action自动部署到Github Pages</title><link>https://example.com/posts/95a48970/</link><pubDate>Thu, 06 Jan 2022 11:10:10 +0800</pubDate><guid>https://example.com/posts/95a48970/</guid><description>&lt;p>部署网站到Github上使用的是&lt;code>Github Page&lt;/code>功能。&lt;/p>
+&lt;p>在这里推荐&lt;code>Page Bundles&lt;/code>的网站组织形式，会使网站的文章和附件管理非常的有组织性。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(四)-使用Github Action自动部署到Github Pages</title><link>https://dnwzlx.com/posts/95a48970/</link><pubDate>Thu, 06 Jan 2022 11:10:10 +0800</pubDate><guid>https://dnwzlx.com/posts/95a48970/</guid><description>&lt;p>部署网站到Github上使用的是&lt;code>Github Page&lt;/code>功能。&lt;/p>
 &lt;p>一般来说，部署Hugo网站到&lt;code>Github Page&lt;/code>的流程是这样的：&lt;/p>
 &lt;ol>
 &lt;li>新建一个&lt;code>Github Page&lt;/code>的repo&lt;/li>
@@ -223,10 +223,10 @@ data-flex-basis="177px"
 &lt;p>由于源码是保存在私人仓库的，这里需要使用&lt;code>Personal access tokens&lt;/code>来具备改写别的repo的权限。&lt;/p>
 &lt;p>点击头像下拉菜单-&lt;code>Settings&lt;/code>-&lt;code>Developer Settings&lt;/code>-&lt;code>Personal access tokens&lt;/code>。&lt;/p>
 &lt;p>点击右侧的&lt;code>generate new token&lt;/code>
-&lt;img src="https://example.com/posts/95a48970/%E7%94%9F%E6%88%90newtoken1.png"
+&lt;img src="https://dnwzlx.com/posts/95a48970/%E7%94%9F%E6%88%90newtoken1.png"
 width="1654"
 height="605"
-srcset="https://example.com/posts/95a48970/%E7%94%9F%E6%88%90newtoken1_hu941aff02339b4ebcea0ec0443c72b9cc_77671_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/%E7%94%9F%E6%88%90newtoken1_hu941aff02339b4ebcea0ec0443c72b9cc_77671_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/95a48970/%E7%94%9F%E6%88%90newtoken1_hu941aff02339b4ebcea0ec0443c72b9cc_77671_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/95a48970/%E7%94%9F%E6%88%90newtoken1_hu941aff02339b4ebcea0ec0443c72b9cc_77671_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="273"
@@ -234,20 +234,20 @@ data-flex-basis="656px"
 >
 名字随便填,比如&lt;code>ACTION_ACCESS_TOKEN&lt;/code>&lt;/p>
 &lt;p>下方&lt;code>repo&lt;/code>的所有选项全部选上:&lt;br>
-&lt;img src="https://example.com/posts/95a48970/repo.png"
+&lt;img src="https://dnwzlx.com/posts/95a48970/repo.png"
 width="894"
 height="373"
-srcset="https://example.com/posts/95a48970/repo_hub5b0bda9134eecc1fe1e6f635e7f7e97_57278_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/repo_hub5b0bda9134eecc1fe1e6f635e7f7e97_57278_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/95a48970/repo_hub5b0bda9134eecc1fe1e6f635e7f7e97_57278_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/95a48970/repo_hub5b0bda9134eecc1fe1e6f635e7f7e97_57278_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="239"
 data-flex-basis="575px"
 >&lt;/p>
 &lt;p>还有admin:repo_hook,全部选上:&lt;br>
-&lt;img src="https://example.com/posts/95a48970/admin_repo_hook.png"
+&lt;img src="https://dnwzlx.com/posts/95a48970/admin_repo_hook.png"
 width="797"
 height="142"
-srcset="https://example.com/posts/95a48970/admin_repo_hook_hu4d949bd7a1c43850ce13586b46bafb97_20201_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/admin_repo_hook_hu4d949bd7a1c43850ce13586b46bafb97_20201_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/95a48970/admin_repo_hook_hu4d949bd7a1c43850ce13586b46bafb97_20201_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/95a48970/admin_repo_hook_hu4d949bd7a1c43850ce13586b46bafb97_20201_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="561"
@@ -256,20 +256,20 @@ data-flex-basis="1347px"
 生成的&lt;code>token&lt;/code>保存好备用&lt;/p>
 &lt;h2 id="私人仓库设置">私人仓库设置&lt;/h2>
 &lt;p>新建一个私人仓库,名字随意&lt;br>
-&lt;img src="https://example.com/posts/95a48970/newprivaterepo.png"
+&lt;img src="https://dnwzlx.com/posts/95a48970/newprivaterepo.png"
 width="1154"
 height="1048"
-srcset="https://example.com/posts/95a48970/newprivaterepo_hu2b3947c4ead053e90b8a1f7188fc2423_120593_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/newprivaterepo_hu2b3947c4ead053e90b8a1f7188fc2423_120593_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/95a48970/newprivaterepo_hu2b3947c4ead053e90b8a1f7188fc2423_120593_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/95a48970/newprivaterepo_hu2b3947c4ead053e90b8a1f7188fc2423_120593_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="110"
 data-flex-basis="264px"
 >&lt;br>
 在此repo上，&lt;code>Settings&lt;/code>-&lt;code>Secrets&lt;/code>-&lt;code>New repository secret&lt;/code>
-&lt;img src="https://example.com/posts/95a48970/privaterepoaddtoken.png"
+&lt;img src="https://dnwzlx.com/posts/95a48970/privaterepoaddtoken.png"
 width="1841"
 height="1130"
-srcset="https://example.com/posts/95a48970/privaterepoaddtoken_hufd4580fc50e98fe076fd47d19569e369_113028_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/privaterepoaddtoken_hufd4580fc50e98fe076fd47d19569e369_113028_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/95a48970/privaterepoaddtoken_hufd4580fc50e98fe076fd47d19569e369_113028_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/95a48970/privaterepoaddtoken_hufd4580fc50e98fe076fd47d19569e369_113028_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="162"
@@ -277,10 +277,10 @@ data-flex-basis="391px"
 >&lt;br>
 把刚才申请的&lt;code>Personal access tokens&lt;/code>填写上。
 &lt;code>Name&lt;/code>必须和刚才申请&lt;code>Personal access tokens&lt;/code>时填写的一致，比如&lt;code>ACTION_ACCESS_TOKEN&lt;/code>&lt;br>
-&lt;img src="https://example.com/posts/95a48970/newtoken.png"
+&lt;img src="https://dnwzlx.com/posts/95a48970/newtoken.png"
 width="802"
 height="800"
-srcset="https://example.com/posts/95a48970/newtoken_hu8a16ab8eae3cf1e222e408bdc69e64a8_24669_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/newtoken_hu8a16ab8eae3cf1e222e408bdc69e64a8_24669_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/95a48970/newtoken_hu8a16ab8eae3cf1e222e408bdc69e64a8_24669_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/95a48970/newtoken_hu8a16ab8eae3cf1e222e408bdc69e64a8_24669_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="100"
@@ -407,23 +407,23 @@ data-flex-basis="240px"
 &lt;/div>&lt;p>&lt;strong>注意&lt;/strong>：&lt;code>git commit&lt;/code>后面的&lt;code>&amp;quot;Initial&amp;quot;&lt;/code>就是单次执行&lt;code>Github Action&lt;/code>的任务名称。&lt;/p>
 &lt;h2 id="查看运行情况">查看运行情况&lt;/h2>
 &lt;p>到私有仓库，点击&lt;code>Actions&lt;/code>，查看&lt;code>Github Action&lt;/code>的运行情况。
-&lt;img src="https://example.com/posts/95a48970/githubactionstatus.png"
+&lt;img src="https://dnwzlx.com/posts/95a48970/githubactionstatus.png"
 width="1432"
 height="532"
-srcset="https://example.com/posts/95a48970/githubactionstatus_hu1d4703f5b7aceffd02c295736663b001_61506_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/githubactionstatus_hu1d4703f5b7aceffd02c295736663b001_61506_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/95a48970/githubactionstatus_hu1d4703f5b7aceffd02c295736663b001_61506_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/95a48970/githubactionstatus_hu1d4703f5b7aceffd02c295736663b001_61506_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="269"
 data-flex-basis="646px"
 >&lt;/p>
-&lt;p>一切正常的话，在你的&lt;code>Github Page&lt;/code>仓库里就能看到生成的网站了。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(三)-LoveIt主题启用网站图标</title><link>https://example.com/posts/b8cc834e/</link><pubDate>Wed, 05 Jan 2022 18:07:38 +0800</pubDate><guid>https://example.com/posts/b8cc834e/</guid><description>&lt;p>网站图标&lt;code>favicon&lt;/code>,虽然对于网站不是必须的，但是有这个东西能显著增加网站的正规性和美观性。&lt;/p>
+&lt;p>一切正常的话，在你的&lt;code>Github Page&lt;/code>仓库里就能看到生成的网站了。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(三)-LoveIt主题启用网站图标</title><link>https://dnwzlx.com/posts/b8cc834e/</link><pubDate>Wed, 05 Jan 2022 18:07:38 +0800</pubDate><guid>https://dnwzlx.com/posts/b8cc834e/</guid><description>&lt;p>网站图标&lt;code>favicon&lt;/code>,虽然对于网站不是必须的，但是有这个东西能显著增加网站的正规性和美观性。&lt;/p>
 &lt;h2 id="生成favicon">生成favicon&lt;/h2>
 &lt;p>1、打开&lt;a class="link" href="https://realfavicongenerator.net/" target="_blank" rel="noopener"
 >realfavicongenerator&lt;/a>,点击右上角&lt;code>Select your Favicon image&lt;/code>链接。
-&lt;img src="https://example.com/posts/b8cc834e/clicklink1.png"
+&lt;img src="https://dnwzlx.com/posts/b8cc834e/clicklink1.png"
 width="992"
 height="504"
-srcset="https://example.com/posts/b8cc834e/clicklink1_hu9d1a6e0b570176a2b2aa9adabd9f9e29_107314_480x0_resize_box_3.png 480w, https://example.com/posts/b8cc834e/clicklink1_hu9d1a6e0b570176a2b2aa9adabd9f9e29_107314_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/b8cc834e/clicklink1_hu9d1a6e0b570176a2b2aa9adabd9f9e29_107314_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/b8cc834e/clicklink1_hu9d1a6e0b570176a2b2aa9adabd9f9e29_107314_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="196"
@@ -431,10 +431,10 @@ data-flex-basis="472px"
 >&lt;br>
 这时会打开对话框，让你选择一张图片，等待完成即可。&lt;/p>
 &lt;p>2、完成后，会出现下载链接，点击下载即可。
-&lt;img src="https://example.com/posts/b8cc834e/download1.png"
+&lt;img src="https://dnwzlx.com/posts/b8cc834e/download1.png"
 width="975"
 height="483"
-srcset="https://example.com/posts/b8cc834e/download1_hu52d8e90aabca1b5a7da4f832306d25ac_213382_480x0_resize_box_3.png 480w, https://example.com/posts/b8cc834e/download1_hu52d8e90aabca1b5a7da4f832306d25ac_213382_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/b8cc834e/download1_hu52d8e90aabca1b5a7da4f832306d25ac_213382_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/b8cc834e/download1_hu52d8e90aabca1b5a7da4f832306d25ac_213382_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="201"
@@ -442,7 +442,7 @@ data-flex-basis="484px"
 >&lt;/p>
 &lt;h2 id="启用favicon">启用favicon&lt;/h2>
 &lt;p>把下载的文件，全部解压到网站根目录的&lt;code>static&lt;/code>中。&lt;/p>
-&lt;p>因为LoveIt主题自带了对realfavicongenerator生成的favicon格式支持，所以不用再做其它设置，直接就生效。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(二)-LoveIt主题自定义搜索</title><link>https://example.com/posts/98850c88/</link><pubDate>Wed, 05 Jan 2022 10:51:44 +0800</pubDate><guid>https://example.com/posts/98850c88/</guid><description>&lt;p>LoveIt主题自带的搜索插件是lunr和algolia，这两个都不太好用。&lt;/p>
+&lt;p>因为LoveIt主题自带了对realfavicongenerator生成的favicon格式支持，所以不用再做其它设置，直接就生效。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(二)-LoveIt主题自定义搜索</title><link>https://dnwzlx.com/posts/98850c88/</link><pubDate>Wed, 05 Jan 2022 10:51:44 +0800</pubDate><guid>https://dnwzlx.com/posts/98850c88/</guid><description>&lt;p>LoveIt主题自带的搜索插件是lunr和algolia，这两个都不太好用。&lt;/p>
 &lt;p>在此，我们使用Hugo专用的搜索插件&lt;a class="link" href="https://github.com/kaushalmodi/hugo-search-fuse-js" target="_blank" rel="noopener"
 >hugo-search-fuse-js&lt;/a>来替代LoveIt主题自带的搜索。&lt;/p>
 &lt;h2 id="安装hugo-search-fuse-js">安装hugo-search-fuse-js&lt;/h2>
@@ -763,7 +763,7 @@ data-flex-basis="484px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> distance: 100
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>可以根据个人情况来修改这几个参数的值。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(一)-基本设置和LoveIt主题</title><link>https://example.com/posts/bf651441/</link><pubDate>Tue, 04 Jan 2022 17:27:10 +0800</pubDate><guid>https://example.com/posts/bf651441/</guid><description>&lt;blockquote>
+&lt;/div>&lt;p>可以根据个人情况来修改这几个参数的值。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(一)-基本设置和LoveIt主题</title><link>https://dnwzlx.com/posts/bf651441/</link><pubDate>Tue, 04 Jan 2022 17:27:10 +0800</pubDate><guid>https://dnwzlx.com/posts/bf651441/</guid><description>&lt;blockquote>
 &lt;p>本文使用的软件的版本如下：&lt;/p>
 &lt;p>hugo: 0.91.2-extended&lt;/p>
 &lt;p>loveit主题: 0.2.10&lt;/p>

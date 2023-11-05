@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>plugin on 寂静·流年</title><link>https://example.com/tags/plugin/</link><description>Recent content in plugin on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Wed, 12 Jan 2022 06:44:50 +0800</lastBuildDate><atom:link href="https://example.com/tags/plugin/index.xml" rel="self" type="application/rss+xml"/><item><title>使用Hugo搭建个人网站(六) 编辑文章和管理网站</title><link>https://example.com/posts/fd472e0d/</link><pubDate>Wed, 12 Jan 2022 06:44:50 +0800</pubDate><guid>https://example.com/posts/fd472e0d/</guid><description>&lt;p>&lt;code>Hugo&lt;/code>的本质就是把 &lt;code>.md&lt;/code>格式的文章通过一套引擎渲染成 &lt;code>.html&lt;/code>页面。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>plugin on 寂静·流年</title><link>https://dnwzlx.com/tags/plugin/</link><description>Recent content in plugin on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Wed, 12 Jan 2022 06:44:50 +0800</lastBuildDate><atom:link href="https://dnwzlx.com/tags/plugin/index.xml" rel="self" type="application/rss+xml"/><item><title>使用Hugo搭建个人网站(六) 编辑文章和管理网站</title><link>https://dnwzlx.com/posts/fd472e0d/</link><pubDate>Wed, 12 Jan 2022 06:44:50 +0800</pubDate><guid>https://dnwzlx.com/posts/fd472e0d/</guid><description>&lt;p>&lt;code>Hugo&lt;/code>的本质就是把 &lt;code>.md&lt;/code>格式的文章通过一套引擎渲染成 &lt;code>.html&lt;/code>页面。&lt;/p>
 &lt;p>因为这个过程是全自动化的，所以编辑网站文章就是编辑本地的 &lt;code>.md&lt;/code>文章。&lt;/p>
 &lt;p>&lt;code>Visual Studio Code&lt;/code>(简称 &lt;code>vscode&lt;/code>)，集成了Git以及编辑markdown的插件，同时也有Hugo相关的插件，成为了我认为最适合编辑和管理Hugo网站的编辑器。&lt;/p>
 &lt;h2 id="vscode">VSCode&lt;/h2>
@@ -15,10 +15,10 @@
 &lt;p>&lt;code>vscode&lt;/code>有个功能是 &lt;code>workspace&lt;/code>。它的最大的作用是为不同的环境启用或者禁用不同的插件。&lt;/p>
 &lt;p>在某个目录下添加一个名为 &lt;code>workspace.code-workspace&lt;/code>的文件，就可以把整个目录当成一个工作区。&lt;/p>
 &lt;p>而且这个 &lt;code>workspace.code-workspace&lt;/code>文件是自动创建的。&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/fd472e0d/workspace.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/fd472e0d/workspace.png"
 width="426"
 height="467"
-srcset="https://example.com/posts/fd472e0d/workspace_hu2e4f0e5bbb78de66fe45d9f435becdd2_47083_480x0_resize_box_3.png 480w, https://example.com/posts/fd472e0d/workspace_hu2e4f0e5bbb78de66fe45d9f435becdd2_47083_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/fd472e0d/workspace_hu2e4f0e5bbb78de66fe45d9f435becdd2_47083_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/fd472e0d/workspace_hu2e4f0e5bbb78de66fe45d9f435becdd2_47083_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="91"
@@ -32,10 +32,10 @@ data-flex-basis="218px"
 &lt;li>在输入框里输入commit的内容&lt;/li>
 &lt;li>点击同步&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="https://example.com/posts/fd472e0d/vscode-git.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/fd472e0d/vscode-git.png"
 width="604"
 height="293"
-srcset="https://example.com/posts/fd472e0d/vscode-git_hue89e28e4c314eef993b33ba0c93356e7_50446_480x0_resize_box_3.png 480w, https://example.com/posts/fd472e0d/vscode-git_hue89e28e4c314eef993b33ba0c93356e7_50446_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/fd472e0d/vscode-git_hue89e28e4c314eef993b33ba0c93356e7_50446_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/fd472e0d/vscode-git_hue89e28e4c314eef993b33ba0c93356e7_50446_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="206"

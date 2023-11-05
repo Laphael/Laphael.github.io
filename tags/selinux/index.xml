@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>selinux on 寂静·流年</title><link>https://example.com/tags/selinux/</link><description>Recent content in selinux on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Sun, 05 Mar 2023 18:11:20 +0800</lastBuildDate><atom:link href="https://example.com/tags/selinux/index.xml" rel="self" type="application/rss+xml"/><item><title>AlmaLinux9安装xrdp远程桌面</title><link>https://example.com/posts/9d4c89b2/</link><pubDate>Sun, 05 Mar 2023 18:11:20 +0800</pubDate><guid>https://example.com/posts/9d4c89b2/</guid><description>&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>selinux on 寂静·流年</title><link>https://dnwzlx.com/tags/selinux/</link><description>Recent content in selinux on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Sun, 05 Mar 2023 18:11:20 +0800</lastBuildDate><atom:link href="https://dnwzlx.com/tags/selinux/index.xml" rel="self" type="application/rss+xml"/><item><title>AlmaLinux9安装xrdp远程桌面</title><link>https://dnwzlx.com/posts/9d4c89b2/</link><pubDate>Sun, 05 Mar 2023 18:11:20 +0800</pubDate><guid>https://dnwzlx.com/posts/9d4c89b2/</guid><description>&lt;blockquote>
 &lt;blockquote>
 &lt;blockquote>
 &lt;p>系统是almalinux 9.0,桌面是gnome。&lt;/p>
@@ -71,7 +71,7 @@
 &lt;p>现象：能够成功登录，但是登录后却是黑屏
 解决：很大可能是没有退出远程机器的登录界面导致的。&lt;/p>
 &lt;p>如果是非服务器版本的windows，通过远程桌面登录后，会自动注销当前正在登录的用户。&lt;/p>
-&lt;p>Linux下没有这个功能，需要手动退出所有当前在图形界面下的登录，然后才能正常使用xrdp登录。&lt;/p></description></item><item><title>SELinux相关问题的解决</title><link>https://example.com/posts/9a31e845/</link><pubDate>Fri, 07 Oct 2022 11:17:16 +0800</pubDate><guid>https://example.com/posts/9a31e845/</guid><description>&lt;p>为了服务器的安全性考虑,rhel系列默认会启用的SELinux最好不要关闭。&lt;/p>
+&lt;p>Linux下没有这个功能，需要手动退出所有当前在图形界面下的登录，然后才能正常使用xrdp登录。&lt;/p></description></item><item><title>SELinux相关问题的解决</title><link>https://dnwzlx.com/posts/9a31e845/</link><pubDate>Fri, 07 Oct 2022 11:17:16 +0800</pubDate><guid>https://dnwzlx.com/posts/9a31e845/</guid><description>&lt;p>为了服务器的安全性考虑,rhel系列默认会启用的SELinux最好不要关闭。&lt;/p>
 &lt;p>这也导致了一些坑的出现,下面记录一下解决方法。&lt;/p>
 &lt;h2 id="更改ssh端口号后ssh服务无法启动">更改SSH端口号后,ssh服务无法启动&lt;/h2>
 &lt;p>这个问题是因为selinux里，只默认开放了22端口。如果只在&lt;code>/etc/ssh/sshd_config&lt;/code>里修改了端口号，就会出现上面的问题。&lt;/p>

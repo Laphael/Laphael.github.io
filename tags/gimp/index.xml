@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>gimp on 寂静·流年</title><link>https://example.com/tags/gimp/</link><description>Recent content in gimp on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Mon, 12 Jun 2023 20:18:37 +0800</lastBuildDate><atom:link href="https://example.com/tags/gimp/index.xml" rel="self" type="application/rss+xml"/><item><title>Windows下调整GIMP的字体和图标的大小</title><link>https://example.com/posts/9251a95c/</link><pubDate>Mon, 12 Jun 2023 20:18:37 +0800</pubDate><guid>https://example.com/posts/9251a95c/</guid><description>&lt;p>在windows下，4K屏幕上,gimp默认显示的图标和字体太小了,字体也不好看,下面介绍如何调整字体类型和大小,以及图标的大小.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>gimp on 寂静·流年</title><link>https://dnwzlx.com/tags/gimp/</link><description>Recent content in gimp on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Mon, 12 Jun 2023 20:18:37 +0800</lastBuildDate><atom:link href="https://dnwzlx.com/tags/gimp/index.xml" rel="self" type="application/rss+xml"/><item><title>Windows下调整GIMP的字体和图标的大小</title><link>https://dnwzlx.com/posts/9251a95c/</link><pubDate>Mon, 12 Jun 2023 20:18:37 +0800</pubDate><guid>https://dnwzlx.com/posts/9251a95c/</guid><description>&lt;p>在windows下，4K屏幕上,gimp默认显示的图标和字体太小了,字体也不好看,下面介绍如何调整字体类型和大小,以及图标的大小.&lt;/p>
 &lt;p>这里以gimp默认的Dark主题为例,其它主题类似&lt;/p>
 &lt;h2 id="调整字体类型和大小">调整字体类型和大小&lt;/h2>
 &lt;p>打开&lt;code>C:\Program Files\GIMP 2\share\gimp\2.0\themes\Dark&lt;/code>文件夹,编辑&lt;code>gtkrc&lt;/code>这个文件&lt;/p>
@@ -69,10 +69,10 @@
 &lt;p>以上这些参数都可以根据自己的屏幕大小和个人喜好，随意自己调整。&lt;/p>
 &lt;h2 id="实际效果">实际效果&lt;/h2>
 &lt;p>下面放一张27寸4K分辨率168%缩放下，使用文中提到的参数的显示效果：
-&lt;img src="https://example.com/posts/9251a95c/image.png"
+&lt;img src="https://dnwzlx.com/posts/9251a95c/image.png"
 width="2014"
 height="1278"
-srcset="https://example.com/posts/9251a95c/image_hu4d310c3495e8f9c1e950b11f8dfcee95_241438_480x0_resize_box_3.png 480w, https://example.com/posts/9251a95c/image_hu4d310c3495e8f9c1e950b11f8dfcee95_241438_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/9251a95c/image_hu4d310c3495e8f9c1e950b11f8dfcee95_241438_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/9251a95c/image_hu4d310c3495e8f9c1e950b11f8dfcee95_241438_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 alt="Alt text"
 class="gallery-image"

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>openwrt on 寂静·流年</title><link>https://example.com/tags/openwrt/</link><description>Recent content in openwrt on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Fri, 17 Feb 2023 19:30:32 +0800</lastBuildDate><atom:link href="https://example.com/tags/openwrt/index.xml" rel="self" type="application/rss+xml"/><item><title>解决openwrt软路由下两个客户端不通的问题</title><link>https://example.com/posts/cc8c44d2/</link><pubDate>Fri, 17 Feb 2023 19:30:32 +0800</pubDate><guid>https://example.com/posts/cc8c44d2/</guid><description>&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>openwrt on 寂静·流年</title><link>https://dnwzlx.com/tags/openwrt/</link><description>Recent content in openwrt on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Fri, 17 Feb 2023 19:30:32 +0800</lastBuildDate><atom:link href="https://dnwzlx.com/tags/openwrt/index.xml" rel="self" type="application/rss+xml"/><item><title>解决openwrt软路由下两个客户端不通的问题</title><link>https://dnwzlx.com/posts/cc8c44d2/</link><pubDate>Fri, 17 Feb 2023 19:30:32 +0800</pubDate><guid>https://dnwzlx.com/posts/cc8c44d2/</guid><description>&lt;blockquote>
 &lt;p>前段时间把家庭网络改造了一下:&lt;/p>
 &lt;/blockquote>
 &lt;ol>
@@ -13,10 +13,10 @@
 &lt;p>所有网上的解决方案对我来说都没有用。&lt;/p>
 &lt;h2 id="解决方法">解决方法&lt;/h2>
 &lt;p>解决方法非常简单，在&lt;code>openwrt&lt;/code>-防火墙下，把&lt;code>启用FullCone-NAT&lt;/code>从&lt;code>高性能模式&lt;/code>改成&lt;code>兼容模式&lt;/code>就可以了。
-&lt;img src="https://example.com/posts/cc8c44d2/openwrt-firewall-set.png"
+&lt;img src="https://dnwzlx.com/posts/cc8c44d2/openwrt-firewall-set.png"
 width="1555"
 height="544"
-srcset="https://example.com/posts/cc8c44d2/openwrt-firewall-set_hu9dd040f9ab7836b96791aa046546d2c7_768923_480x0_resize_box_3.png 480w, https://example.com/posts/cc8c44d2/openwrt-firewall-set_hu9dd040f9ab7836b96791aa046546d2c7_768923_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/cc8c44d2/openwrt-firewall-set_hu9dd040f9ab7836b96791aa046546d2c7_768923_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/cc8c44d2/openwrt-firewall-set_hu9dd040f9ab7836b96791aa046546d2c7_768923_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="285"

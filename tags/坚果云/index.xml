@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>坚果云 on 寂静·流年</title><link>https://example.com/tags/%E5%9D%9A%E6%9E%9C%E4%BA%91/</link><description>Recent content in 坚果云 on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Sat, 28 May 2022 07:56:24 +0800</lastBuildDate><atom:link href="https://example.com/tags/%E5%9D%9A%E6%9E%9C%E4%BA%91/index.xml" rel="self" type="application/rss+xml"/><item><title>我的跨平台笔记方案-坚果云+Joplin</title><link>https://example.com/posts/3e939557/</link><pubDate>Sat, 28 May 2022 07:56:24 +0800</pubDate><guid>https://example.com/posts/3e939557/</guid><description>&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>坚果云 on 寂静·流年</title><link>https://dnwzlx.com/tags/%E5%9D%9A%E6%9E%9C%E4%BA%91/</link><description>Recent content in 坚果云 on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Sat, 28 May 2022 07:56:24 +0800</lastBuildDate><atom:link href="https://dnwzlx.com/tags/%E5%9D%9A%E6%9E%9C%E4%BA%91/index.xml" rel="self" type="application/rss+xml"/><item><title>我的跨平台笔记方案-坚果云+Joplin</title><link>https://dnwzlx.com/posts/3e939557/</link><pubDate>Sat, 28 May 2022 07:56:24 +0800</pubDate><guid>https://dnwzlx.com/posts/3e939557/</guid><description>&lt;blockquote>
 &lt;p>笔记软件有很多,优秀的也不少。想找一个符合自己要求的跨平台笔记方案，难点在于&lt;strong>跨平台&lt;/strong>这三个字，更确切的说是能够兼顾&lt;strong>Linux&lt;/strong>平台。&lt;/p>
 &lt;/blockquote>
 &lt;hr>
@@ -19,40 +19,40 @@
 &lt;p>主要体现在登录界面太小，以至于无法显示登录框的问题。&lt;/p>
 &lt;p>解决方法：&lt;/p>
 &lt;p>1、右键点击登录界面的标题栏&amp;ndash;更多操作&amp;ndash;配置特殊窗口设置&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/3e939557/kde-nutstore1.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/3e939557/kde-nutstore1.png"
 width="999"
 height="528"
-srcset="https://example.com/posts/3e939557/kde-nutstore1_hu5fff8e59cbfba3aefb42e6159106cbe1_117019_480x0_resize_box_3.png 480w, https://example.com/posts/3e939557/kde-nutstore1_hu5fff8e59cbfba3aefb42e6159106cbe1_117019_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/3e939557/kde-nutstore1_hu5fff8e59cbfba3aefb42e6159106cbe1_117019_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/3e939557/kde-nutstore1_hu5fff8e59cbfba3aefb42e6159106cbe1_117019_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="189"
 data-flex-basis="454px"
 >&lt;/p>
 &lt;p>2、点击左下角 &lt;code>添加属性&lt;/code>&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/3e939557/kde-nutstore2.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/3e939557/kde-nutstore2.png"
 width="987"
 height="789"
-srcset="https://example.com/posts/3e939557/kde-nutstore2_hue0d71c15ff3a21df899895ccccd192de_99030_480x0_resize_box_3.png 480w, https://example.com/posts/3e939557/kde-nutstore2_hue0d71c15ff3a21df899895ccccd192de_99030_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/3e939557/kde-nutstore2_hue0d71c15ff3a21df899895ccccd192de_99030_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/3e939557/kde-nutstore2_hue0d71c15ff3a21df899895ccccd192de_99030_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="125"
 data-flex-basis="300px"
 >&lt;/p>
 &lt;p>3、在弹出的 &lt;code>添加属性到规则&lt;/code>中，选择 &lt;code>最小尺寸&lt;/code>&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/3e939557/kde-nutsotre3.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/3e939557/kde-nutsotre3.png"
 width="984"
 height="786"
-srcset="https://example.com/posts/3e939557/kde-nutsotre3_huaa21450fd8da6d9b26d24c17f2421f05_114500_480x0_resize_box_3.png 480w, https://example.com/posts/3e939557/kde-nutsotre3_huaa21450fd8da6d9b26d24c17f2421f05_114500_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/3e939557/kde-nutsotre3_huaa21450fd8da6d9b26d24c17f2421f05_114500_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/3e939557/kde-nutsotre3_huaa21450fd8da6d9b26d24c17f2421f05_114500_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="125"
 data-flex-basis="300px"
 >&lt;/p>
 &lt;p>4、选择强制，然后设置想要的大小，建设设置500以上，我这里是1008x1061&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/3e939557/kde-nutsotre4.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/3e939557/kde-nutsotre4.png"
 width="989"
 height="782"
-srcset="https://example.com/posts/3e939557/kde-nutsotre4_hu921d5a5fce7e8f8de2e827c33e279d8b_96682_480x0_resize_box_3.png 480w, https://example.com/posts/3e939557/kde-nutsotre4_hu921d5a5fce7e8f8de2e827c33e279d8b_96682_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/3e939557/kde-nutsotre4_hu921d5a5fce7e8f8de2e827c33e279d8b_96682_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/3e939557/kde-nutsotre4_hu921d5a5fce7e8f8de2e827c33e279d8b_96682_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="126"

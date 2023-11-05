@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>onedrive on 寂静·流年</title><link>https://example.com/tags/onedrive/</link><description>Recent content in onedrive on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Mon, 03 Oct 2022 09:11:03 +0800</lastBuildDate><atom:link href="https://example.com/tags/onedrive/index.xml" rel="self" type="application/rss+xml"/><item><title>解决Windows Server 2022里OneDrive的同步问题</title><link>https://example.com/posts/584fb855/</link><pubDate>Mon, 03 Oct 2022 09:11:03 +0800</pubDate><guid>https://example.com/posts/584fb855/</guid><description>&lt;h2 id="问题">问题&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>onedrive on 寂静·流年</title><link>https://dnwzlx.com/tags/onedrive/</link><description>Recent content in onedrive on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Mon, 03 Oct 2022 09:11:03 +0800</lastBuildDate><atom:link href="https://dnwzlx.com/tags/onedrive/index.xml" rel="self" type="application/rss+xml"/><item><title>解决Windows Server 2022里OneDrive的同步问题</title><link>https://dnwzlx.com/posts/584fb855/</link><pubDate>Mon, 03 Oct 2022 09:11:03 +0800</pubDate><guid>https://dnwzlx.com/posts/584fb855/</guid><description>&lt;h2 id="问题">问题&lt;/h2>
 &lt;p>在windows server 2022里，OneDrive可以正常安装使用，但是缺少了一项功能：&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/584fb855/%E5%8A%9F%E8%83%BD1.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/584fb855/%E5%8A%9F%E8%83%BD1.png"
 width="747"
 height="381"
-srcset="https://example.com/posts/584fb855/%E5%8A%9F%E8%83%BD1_hu74008aa5849cb2387b684f2eac555c32_31623_480x0_resize_box_3.png 480w, https://example.com/posts/584fb855/%E5%8A%9F%E8%83%BD1_hu74008aa5849cb2387b684f2eac555c32_31623_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/584fb855/%E5%8A%9F%E8%83%BD1_hu74008aa5849cb2387b684f2eac555c32_31623_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/584fb855/%E5%8A%9F%E8%83%BD1_hu74008aa5849cb2387b684f2eac555c32_31623_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="196"
@@ -16,10 +16,10 @@ data-flex-basis="470px"
 &lt;li>修改安全配置&lt;/li>
 &lt;/ol>
 &lt;p>&lt;code>win&lt;/code>+&lt;code>R&lt;/code>，输入&lt;code>secpol.msc&lt;/code>，选择 本地策略&amp;raquo;安全选项&amp;raquo;右边策略栏拉至用户账户控制相关配置，修改3个选项如下图：&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/584fb855/%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/584fb855/%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE.png"
 width="1096"
 height="367"
-srcset="https://example.com/posts/584fb855/%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE_hu7071f231a9a675b7773250c38e000d7f_277565_480x0_resize_box_3.png 480w, https://example.com/posts/584fb855/%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE_hu7071f231a9a675b7773250c38e000d7f_277565_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/584fb855/%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE_hu7071f231a9a675b7773250c38e000d7f_277565_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/584fb855/%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE_hu7071f231a9a675b7773250c38e000d7f_277565_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="298"

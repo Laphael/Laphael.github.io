@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>vmware on 寂静·流年</title><link>https://example.com/tags/vmware/</link><description>Recent content in vmware on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Wed, 31 May 2023 09:45:23 +0800</lastBuildDate><atom:link href="https://example.com/tags/vmware/index.xml" rel="self" type="application/rss+xml"/><item><title>Opensuse安装vmware Workstation Pro</title><link>https://example.com/posts/d4ead7a4/</link><pubDate>Wed, 31 May 2023 09:45:23 +0800</pubDate><guid>https://example.com/posts/d4ead7a4/</guid><description>&lt;h2 id="安装相关的系统依赖">安装相关的系统依赖&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>vmware on 寂静·流年</title><link>https://dnwzlx.com/tags/vmware/</link><description>Recent content in vmware on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Wed, 31 May 2023 09:45:23 +0800</lastBuildDate><atom:link href="https://dnwzlx.com/tags/vmware/index.xml" rel="self" type="application/rss+xml"/><item><title>Opensuse安装vmware Workstation Pro</title><link>https://dnwzlx.com/posts/d4ead7a4/</link><pubDate>Wed, 31 May 2023 09:45:23 +0800</pubDate><guid>https://dnwzlx.com/posts/d4ead7a4/</guid><description>&lt;h2 id="安装相关的系统依赖">安装相关的系统依赖&lt;/h2>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -26,7 +26,7 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo ./VMware-Workstation-Full-17.0.2-21581411.x86_64.bundle
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>Wsl和vmware共存的问题</title><link>https://example.com/posts/9c090dd7/</link><pubDate>Wed, 04 Jan 2023 11:32:30 +0800</pubDate><guid>https://example.com/posts/9c090dd7/</guid><description>&lt;p>、&lt;/p>
+&lt;/div></description></item><item><title>Wsl和vmware共存的问题</title><link>https://dnwzlx.com/posts/9c090dd7/</link><pubDate>Wed, 04 Jan 2023 11:32:30 +0800</pubDate><guid>https://dnwzlx.com/posts/9c090dd7/</guid><description>&lt;p>、&lt;/p>
 &lt;h2 id="问题描述">问题描述&lt;/h2>
 &lt;p>近期在使用wsl2和vmware时遇到了一些问题&lt;/p>
 &lt;p>如果要使用wsl2，则必须要在&lt;code>windows功能&lt;/code>里开启&lt;code>虚拟机平台&lt;/code>。&lt;/p>
@@ -60,7 +60,7 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Disable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>重启电脑。&lt;/p></description></item><item><title>解决KDE桌面在vmware中的复制、粘贴和拖拽文件的问题</title><link>https://example.com/posts/d10df142/</link><pubDate>Sat, 10 Dec 2022 09:59:25 +0800</pubDate><guid>https://example.com/posts/d10df142/</guid><description>&lt;h2 id="问题描述">问题描述&lt;/h2>
+&lt;/div>&lt;p>重启电脑。&lt;/p></description></item><item><title>解决KDE桌面在vmware中的复制、粘贴和拖拽文件的问题</title><link>https://dnwzlx.com/posts/d10df142/</link><pubDate>Sat, 10 Dec 2022 09:59:25 +0800</pubDate><guid>https://dnwzlx.com/posts/d10df142/</guid><description>&lt;h2 id="问题描述">问题描述&lt;/h2>
 &lt;p>在vmware中安装linux的虚拟机，做了以下工作之后：&lt;/p>
 &lt;ol>
 &lt;li>虚拟机使用的是kde桌面&lt;/li>
@@ -72,7 +72,7 @@
 &lt;h2 id="原因">原因&lt;/h2>
 &lt;p>这是KDE桌面的一个bug
 当运行&lt;code>ps -aef | grep vmtoolsd&lt;/code>后，&lt;strong>并不会&lt;/strong>出现类似下图中的第2行红框中的&lt;code>/usr/bin/vmtoolsd -n vmusr --blockFd 3&lt;/code>的结果：
-&lt;img src="https://example.com/../ps%e7%bb%93%e6%9e%9c.png"
+&lt;img src="https://dnwzlx.com/../ps%e7%bb%93%e6%9e%9c.png"
 loading="lazy"
 >&lt;/p>
 &lt;p>这就是导致不能复制、粘贴和拖放的原因&lt;/p>
@@ -108,27 +108,27 @@ loading="lazy"
 &lt;p>相关讨论的原文在&lt;a class="link" href="https://github.com/vmware/open-vm-tools/issues/568" target="_blank" rel="noopener"
 >这里&lt;/a>。&lt;/p>
 &lt;p>另外提一点，在帖子中有人对fedora、archlinux和opensuse都做了测试，发现只有opensuse默认状态下一切功能正常。看来opensuse还是有点东西的😊。&lt;/p>
-&lt;p>再另外，我自己测试，debian 11.5 live版本也没有问题。&lt;/p></description></item><item><title>Vmware Workstation导出ova格式的虚拟机</title><link>https://example.com/posts/f1fa0209/</link><pubDate>Sun, 17 Jul 2022 07:31:26 +0800</pubDate><guid>https://example.com/posts/f1fa0209/</guid><description>&lt;p>两个步骤，非常简单，看图：
-&lt;img src="https://example.com/posts/f1fa0209/vmware1.png"
+&lt;p>再另外，我自己测试，debian 11.5 live版本也没有问题。&lt;/p></description></item><item><title>Vmware Workstation导出ova格式的虚拟机</title><link>https://dnwzlx.com/posts/f1fa0209/</link><pubDate>Sun, 17 Jul 2022 07:31:26 +0800</pubDate><guid>https://dnwzlx.com/posts/f1fa0209/</guid><description>&lt;p>两个步骤，非常简单，看图：
+&lt;img src="https://dnwzlx.com/posts/f1fa0209/vmware1.png"
 width="896"
 height="604"
-srcset="https://example.com/posts/f1fa0209/vmware1_hud07470c21969d7482b2d4b5c16a4562c_65761_480x0_resize_box_3.png 480w, https://example.com/posts/f1fa0209/vmware1_hud07470c21969d7482b2d4b5c16a4562c_65761_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/f1fa0209/vmware1_hud07470c21969d7482b2d4b5c16a4562c_65761_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/f1fa0209/vmware1_hud07470c21969d7482b2d4b5c16a4562c_65761_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="148"
 data-flex-basis="356px"
 >&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/f1fa0209/vmware2.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/f1fa0209/vmware2.png"
 width="1185"
 height="419"
-srcset="https://example.com/posts/f1fa0209/vmware2_huc602db87ff3bb5d60fe761a043bd717c_18447_480x0_resize_box_3.png 480w, https://example.com/posts/f1fa0209/vmware2_huc602db87ff3bb5d60fe761a043bd717c_18447_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/f1fa0209/vmware2_huc602db87ff3bb5d60fe761a043bd717c_18447_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/f1fa0209/vmware2_huc602db87ff3bb5d60fe761a043bd717c_18447_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="282"
 data-flex-basis="678px"
 >&lt;/p>
 &lt;p>需要注意的是，&lt;code>vmware workstation&lt;/code>在选择导出时，只能选择&lt;code>ovf&lt;/code>格式，不是想要的&lt;code>ova&lt;/code>格式。&lt;/p>
-&lt;p>这时只需要在保存时，手动把&lt;code>ovf&lt;/code>后缀改成&lt;code>ova&lt;/code>，这样导出的就是&lt;code>ova&lt;/code>格式了。&lt;/p></description></item><item><title>Vmware在Linux作为Host下的键盘映射的问题</title><link>https://example.com/posts/846f01f3/</link><pubDate>Sat, 16 Jul 2022 19:28:53 +0800</pubDate><guid>https://example.com/posts/846f01f3/</guid><description>&lt;p>长久以来，在 Linux 使用 vmware 总是有个问题没有解决。&lt;/p>
+&lt;p>这时只需要在保存时，手动把&lt;code>ovf&lt;/code>后缀改成&lt;code>ova&lt;/code>，这样导出的就是&lt;code>ova&lt;/code>格式了。&lt;/p></description></item><item><title>Vmware在Linux作为Host下的键盘映射的问题</title><link>https://dnwzlx.com/posts/846f01f3/</link><pubDate>Sat, 16 Jul 2022 19:28:53 +0800</pubDate><guid>https://dnwzlx.com/posts/846f01f3/</guid><description>&lt;p>长久以来，在 Linux 使用 vmware 总是有个问题没有解决。&lt;/p>
 &lt;p>当在 Linux 里把 Ctrl 和 CapsLock 这两个键互换后，vmware 的虚拟机里并不会跟着一起换，而依旧是原来的键位。而同样的问题在 Windows 下就不存在。&lt;/p>
 &lt;p>vmware 的官方文档解释：&lt;/p>
 &lt;blockquote>
@@ -141,10 +141,10 @@ data-flex-basis="678px"
 &lt;p>官方给出的解决方案是：&lt;/p>
 &lt;h3 id="查看特定键位的值">查看特定键位的值&lt;/h3>
 &lt;p>使用xev或者xmodmap -pk查看 Ctrl 和 CapsLock 的键位值&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/846f01f3/keyboard.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/846f01f3/keyboard.png"
 width="1454"
 height="547"
-srcset="https://example.com/posts/846f01f3/keyboard_hu2f8781e41254bb5be0b5b653687b2689_848884_480x0_resize_box_3.png 480w, https://example.com/posts/846f01f3/keyboard_hu2f8781e41254bb5be0b5b653687b2689_848884_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/846f01f3/keyboard_hu2f8781e41254bb5be0b5b653687b2689_848884_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/846f01f3/keyboard_hu2f8781e41254bb5be0b5b653687b2689_848884_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="265"

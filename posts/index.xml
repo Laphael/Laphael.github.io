@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 寂静·流年</title><link>https://example.com/posts/</link><description>Recent content in Posts on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Thu, 12 Oct 2023 17:58:21 +0800</lastBuildDate><atom:link href="https://example.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Debian常用软件清单</title><link>https://example.com/posts/f59f4dff/</link><pubDate>Thu, 12 Oct 2023 17:58:21 +0800</pubDate><guid>https://example.com/posts/f59f4dff/</guid><description>&lt;p>最近在把debian12（LMDE6）当成主力操作系统使用，记录一下必备的软件：&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 寂静·流年</title><link>https://dnwzlx.com/posts/</link><description>Recent content in Posts on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Thu, 12 Oct 2023 17:58:21 +0800</lastBuildDate><atom:link href="https://dnwzlx.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Debian常用软件清单</title><link>https://dnwzlx.com/posts/f59f4dff/</link><pubDate>Thu, 12 Oct 2023 17:58:21 +0800</pubDate><guid>https://dnwzlx.com/posts/f59f4dff/</guid><description>&lt;p>最近在把debian12（LMDE6）当成主力操作系统使用，记录一下必备的软件：&lt;/p>
 &lt;ul>
 &lt;li>xmind 23.08.02122 字体漂亮、演讲模式非常好用&lt;/li>
 &lt;li>davinci resolve 18.6.2 UI缩放正确&lt;/li>
@@ -14,7 +14,7 @@
 &lt;li>Obstudio 和win下没区别&lt;/li>
 &lt;li>vmware 在debian12下表现非常好，睡眠唤醒后虚拟机没有黑屏、卡死现象&lt;/li>
 &lt;/ul>
-&lt;p>这些软件能够满足我日常应用场景了&lt;/p></description></item><item><title>Centos7安装mysql 5.7</title><link>https://example.com/posts/7770af61/</link><pubDate>Sun, 17 Sep 2023 09:34:53 +0800</pubDate><guid>https://example.com/posts/7770af61/</guid><description>&lt;h2 id="开放3306端口">开放3306端口&lt;/h2>
+&lt;p>这些软件能够满足我日常应用场景了&lt;/p></description></item><item><title>Centos7安装mysql 5.7</title><link>https://dnwzlx.com/posts/7770af61/</link><pubDate>Sun, 17 Sep 2023 09:34:53 +0800</pubDate><guid>https://dnwzlx.com/posts/7770af61/</guid><description>&lt;h2 id="开放3306端口">开放3306端口&lt;/h2>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -189,7 +189,7 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">systemctl restart mysqld
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>让windows 10完美支持Intel处理器的大小核调度</title><link>https://example.com/posts/7e5ceabf/</link><pubDate>Fri, 15 Sep 2023 21:25:53 +0800</pubDate><guid>https://example.com/posts/7e5ceabf/</guid><description>&lt;p>实在是不喜欢windows 11的各种设计，但是新买的13700K据说只能在windows 11下才能完美发挥性能。&lt;/p>
+&lt;/div></description></item><item><title>让windows 10完美支持Intel处理器的大小核调度</title><link>https://dnwzlx.com/posts/7e5ceabf/</link><pubDate>Fri, 15 Sep 2023 21:25:53 +0800</pubDate><guid>https://dnwzlx.com/posts/7e5ceabf/</guid><description>&lt;p>实在是不喜欢windows 11的各种设计，但是新买的13700K据说只能在windows 11下才能完美发挥性能。&lt;/p>
 &lt;p>有没有让windows 10支持intel 13代cpu大小核调度的方法呢？&lt;/p>
 &lt;p>一番搜索，找到了完美的解决方案。&lt;/p>
 &lt;p>原文在&lt;a class="link" href="https://www.bilibili.com/video/BV1LK411B7ZS/?spm_id_from=333.1007.top_right_bar_window_default_collection.content.click&amp;amp;vd_source=f58c6359690424b3ca690f7d63a18318" target="_blank" rel="noopener"
@@ -250,7 +250,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">异类短线程调度策略：首选高性能处理器
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>以上设置是针对台式机的，笔记本电脑另有设置，可查看原文&lt;/p></description></item><item><title>CentOS7设置本地yum源</title><link>https://example.com/posts/30c5c884/</link><pubDate>Sun, 27 Aug 2023 11:22:15 +0800</pubDate><guid>https://example.com/posts/30c5c884/</guid><description>&lt;p>有时会遇到生产环境部署在内网上，无法使用在线yum的情况。&lt;/p>
+&lt;/div>&lt;p>以上设置是针对台式机的，笔记本电脑另有设置，可查看原文&lt;/p></description></item><item><title>CentOS7设置本地yum源</title><link>https://dnwzlx.com/posts/30c5c884/</link><pubDate>Sun, 27 Aug 2023 11:22:15 +0800</pubDate><guid>https://dnwzlx.com/posts/30c5c884/</guid><description>&lt;p>有时会遇到生产环境部署在内网上，无法使用在线yum的情况。&lt;/p>
 &lt;p>这时候就需要使用centos的安装镜像，挂载到本地后建立本地yum来安装软件了。&lt;/p>
 &lt;p>下面介绍具体方法&lt;/p>
 &lt;h2 id="挂载iso镜像文件">挂载ISO镜像文件&lt;/h2>
@@ -311,7 +311,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">yum makecache
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>在群晖DSM7上安装ResilioSync</title><link>https://example.com/posts/2761c3a7/</link><pubDate>Thu, 24 Aug 2023 17:50:56 +0800</pubDate><guid>https://example.com/posts/2761c3a7/</guid><description>&lt;h2 id="安装">安装&lt;/h2>
+&lt;/div></description></item><item><title>在群晖DSM7上安装ResilioSync</title><link>https://dnwzlx.com/posts/2761c3a7/</link><pubDate>Thu, 24 Aug 2023 17:50:56 +0800</pubDate><guid>https://dnwzlx.com/posts/2761c3a7/</guid><description>&lt;h2 id="安装">安装&lt;/h2>
 &lt;p>在DSM 7的&lt;code>套件中心&lt;/code>里，有官方的resilio sync套件，直接安装即可。&lt;/p>
 &lt;h2 id="权限设置">权限设置&lt;/h2>
 &lt;p>这里应该是DSM 7上设置resilio sync的难点了。&lt;/p>
@@ -325,15 +325,15 @@
 &lt;li>在&lt;code>配置用户权限&lt;/code>这一步，点击左上角，选择&lt;code>系统内部用户账号&lt;/code>，找到&lt;code>rslsync&lt;/code>，选中&lt;code>可读写&lt;/code>。&lt;/li>
 &lt;li>在resilio sync的Web UI里，&lt;code>默认文件夹位置&lt;/code>和&lt;code>文件下载位置&lt;/code>设置为&lt;code>resiliosync&lt;/code>即可。&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="https://example.com/posts/2761c3a7/resilio-permission.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/2761c3a7/resilio-permission.png"
 width="1624"
 height="1191"
-srcset="https://example.com/posts/2761c3a7/resilio-permission_huf966b190293ef16df99abaec0efd0385_126999_480x0_resize_box_3.png 480w, https://example.com/posts/2761c3a7/resilio-permission_huf966b190293ef16df99abaec0efd0385_126999_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/2761c3a7/resilio-permission_huf966b190293ef16df99abaec0efd0385_126999_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/2761c3a7/resilio-permission_huf966b190293ef16df99abaec0efd0385_126999_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="136"
 data-flex-basis="327px"
->&lt;/p></description></item><item><title>Dell R730XD风扇调速</title><link>https://example.com/posts/d3869276/</link><pubDate>Sun, 09 Jul 2023 06:58:51 +0800</pubDate><guid>https://example.com/posts/d3869276/</guid><description>&lt;p>虽然Dell R730XD号称静音，但是默认的风扇转速还是让人爱不了。&lt;/p>
+>&lt;/p></description></item><item><title>Dell R730XD风扇调速</title><link>https://dnwzlx.com/posts/d3869276/</link><pubDate>Sun, 09 Jul 2023 06:58:51 +0800</pubDate><guid>https://dnwzlx.com/posts/d3869276/</guid><description>&lt;p>虽然Dell R730XD号称静音，但是默认的风扇转速还是让人爱不了。&lt;/p>
 &lt;p>但是好在，R730xd是支持风扇调速的，下面是具体方法&lt;/p>
 &lt;h2 id="安装ipmitool">安装ipmitool&lt;/h2>
 &lt;p>最简单的方法是安装一台linux的虚拟机，例如debian 12,&lt;code>impitool&lt;/code>在很多linux下都在官方的软件仓库里。&lt;/p>
@@ -362,7 +362,7 @@ data-flex-basis="327px"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>上面手动设置的风扇转速为15%。&lt;/p>
-&lt;p>我感觉15%是比较合适的，静音又能保障一定的散热能力。&lt;/p></description></item><item><title>Windows下调整GIMP的字体和图标的大小</title><link>https://example.com/posts/9251a95c/</link><pubDate>Mon, 12 Jun 2023 20:18:37 +0800</pubDate><guid>https://example.com/posts/9251a95c/</guid><description>&lt;p>在windows下，4K屏幕上,gimp默认显示的图标和字体太小了,字体也不好看,下面介绍如何调整字体类型和大小,以及图标的大小.&lt;/p>
+&lt;p>我感觉15%是比较合适的，静音又能保障一定的散热能力。&lt;/p></description></item><item><title>Windows下调整GIMP的字体和图标的大小</title><link>https://dnwzlx.com/posts/9251a95c/</link><pubDate>Mon, 12 Jun 2023 20:18:37 +0800</pubDate><guid>https://dnwzlx.com/posts/9251a95c/</guid><description>&lt;p>在windows下，4K屏幕上,gimp默认显示的图标和字体太小了,字体也不好看,下面介绍如何调整字体类型和大小,以及图标的大小.&lt;/p>
 &lt;p>这里以gimp默认的Dark主题为例,其它主题类似&lt;/p>
 &lt;h2 id="调整字体类型和大小">调整字体类型和大小&lt;/h2>
 &lt;p>打开&lt;code>C:\Program Files\GIMP 2\share\gimp\2.0\themes\Dark&lt;/code>文件夹,编辑&lt;code>gtkrc&lt;/code>这个文件&lt;/p>
@@ -433,16 +433,16 @@ data-flex-basis="327px"
 &lt;p>以上这些参数都可以根据自己的屏幕大小和个人喜好，随意自己调整。&lt;/p>
 &lt;h2 id="实际效果">实际效果&lt;/h2>
 &lt;p>下面放一张27寸4K分辨率168%缩放下，使用文中提到的参数的显示效果：
-&lt;img src="https://example.com/posts/9251a95c/image.png"
+&lt;img src="https://dnwzlx.com/posts/9251a95c/image.png"
 width="2014"
 height="1278"
-srcset="https://example.com/posts/9251a95c/image_hu4d310c3495e8f9c1e950b11f8dfcee95_241438_480x0_resize_box_3.png 480w, https://example.com/posts/9251a95c/image_hu4d310c3495e8f9c1e950b11f8dfcee95_241438_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/9251a95c/image_hu4d310c3495e8f9c1e950b11f8dfcee95_241438_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/9251a95c/image_hu4d310c3495e8f9c1e950b11f8dfcee95_241438_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 alt="Alt text"
 class="gallery-image"
 data-flex-grow="157"
 data-flex-basis="378px"
->&lt;/p></description></item><item><title>Opensuse安装vmware Workstation Pro</title><link>https://example.com/posts/d4ead7a4/</link><pubDate>Wed, 31 May 2023 09:45:23 +0800</pubDate><guid>https://example.com/posts/d4ead7a4/</guid><description>&lt;h2 id="安装相关的系统依赖">安装相关的系统依赖&lt;/h2>
+>&lt;/p></description></item><item><title>Opensuse安装vmware Workstation Pro</title><link>https://dnwzlx.com/posts/d4ead7a4/</link><pubDate>Wed, 31 May 2023 09:45:23 +0800</pubDate><guid>https://dnwzlx.com/posts/d4ead7a4/</guid><description>&lt;h2 id="安装相关的系统依赖">安装相关的系统依赖&lt;/h2>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -470,7 +470,7 @@ data-flex-basis="378px"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo ./VMware-Workstation-Full-17.0.2-21581411.x86_64.bundle
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>Linux下设置ResilioSync</title><link>https://example.com/posts/821e7658/</link><pubDate>Sun, 28 May 2023 23:39:06 +0800</pubDate><guid>https://example.com/posts/821e7658/</guid><description>&lt;p>Resilio Sync在linux下的安装方式就不讲了，官方提供了大量发行版的安装包，根据自己的linux发行版下载安装即可。&lt;/p>
+&lt;/div></description></item><item><title>Linux下设置ResilioSync</title><link>https://dnwzlx.com/posts/821e7658/</link><pubDate>Sun, 28 May 2023 23:39:06 +0800</pubDate><guid>https://dnwzlx.com/posts/821e7658/</guid><description>&lt;p>Resilio Sync在linux下的安装方式就不讲了，官方提供了大量发行版的安装包，根据自己的linux发行版下载安装即可。&lt;/p>
 &lt;h2 id="管理界面">管理界面&lt;/h2>
 &lt;p>linux下，Resilio Sync必须使用web界面来进行管理，地址是: &lt;a class="link" href="https://localhost:8888/gui/" target="_blank" rel="noopener"
 >https://localhost:8888/gui/&lt;/a>&lt;/p>
@@ -517,7 +517,7 @@ data-flex-basis="378px"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">systemctl --user enable resilio-sync
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>上面的命令，&lt;strong>不要&lt;/strong>使用&lt;code>sudo&lt;/code>来执行。&lt;/p></description></item><item><title>Windows10关闭系统保留的7G空间</title><link>https://example.com/posts/7a83bb33/</link><pubDate>Sun, 07 May 2023 21:36:03 +0800</pubDate><guid>https://example.com/posts/7a83bb33/</guid><description>&lt;p>从windows 10 1903版本开始，微软为win10默认保留了大约7G左右的系统空间，用于防止因存储空间不足导致的更新失败问题。&lt;/p>
+&lt;/div>&lt;p>上面的命令，&lt;strong>不要&lt;/strong>使用&lt;code>sudo&lt;/code>来执行。&lt;/p></description></item><item><title>Windows10关闭系统保留的7G空间</title><link>https://dnwzlx.com/posts/7a83bb33/</link><pubDate>Sun, 07 May 2023 21:36:03 +0800</pubDate><guid>https://dnwzlx.com/posts/7a83bb33/</guid><description>&lt;p>从windows 10 1903版本开始，微软为win10默认保留了大约7G左右的系统空间，用于防止因存储空间不足导致的更新失败问题。&lt;/p>
 &lt;p>通过下面几个命令，可以将这保留的7G空间释放出来：&lt;/p>
 &lt;p>以管理员打开powershell:&lt;/p>
 &lt;h2 id="一键入下条命令即可关闭立即生效">一、键入下条命令即可关闭，立即生效&lt;/h2>
@@ -547,7 +547,7 @@ data-flex-basis="378px"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">DISM.exe /Online /Get-ReservedStorageState
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>使用命令行删除windows Defender</title><link>https://example.com/posts/dfbed6b5/</link><pubDate>Thu, 16 Mar 2023 07:13:48 +0800</pubDate><guid>https://example.com/posts/dfbed6b5/</guid><description>&lt;p>在使用windows server的时候，可以使用命令行来删除windows defender.&lt;/p>
+&lt;/div></description></item><item><title>使用命令行删除windows Defender</title><link>https://dnwzlx.com/posts/dfbed6b5/</link><pubDate>Thu, 16 Mar 2023 07:13:48 +0800</pubDate><guid>https://dnwzlx.com/posts/dfbed6b5/</guid><description>&lt;p>在使用windows server的时候，可以使用命令行来删除windows defender.&lt;/p>
 &lt;h2 id="卸载-windows-server-2016-或-windows-server-2019-上的-microsoft-defender-防病毒">卸载 Windows Server 2016 或 Windows Server 2019 上的 Microsoft Defender 防病毒&lt;/h2>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -566,7 +566,7 @@ data-flex-basis="378px"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Uninstall-WindowsFeature -Name Windows-Defender-GUI
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>注意，上面这条关闭GUI的命令，在windows server 2022下无效。&lt;/p></description></item><item><title>AlmaLinux9安装xrdp远程桌面</title><link>https://example.com/posts/9d4c89b2/</link><pubDate>Sun, 05 Mar 2023 18:11:20 +0800</pubDate><guid>https://example.com/posts/9d4c89b2/</guid><description>&lt;blockquote>
+&lt;/div>&lt;p>注意，上面这条关闭GUI的命令，在windows server 2022下无效。&lt;/p></description></item><item><title>AlmaLinux9安装xrdp远程桌面</title><link>https://dnwzlx.com/posts/9d4c89b2/</link><pubDate>Sun, 05 Mar 2023 18:11:20 +0800</pubDate><guid>https://dnwzlx.com/posts/9d4c89b2/</guid><description>&lt;blockquote>
 &lt;blockquote>
 &lt;blockquote>
 &lt;p>系统是almalinux 9.0,桌面是gnome。&lt;/p>
@@ -639,7 +639,7 @@ data-flex-basis="378px"
 &lt;p>现象：能够成功登录，但是登录后却是黑屏
 解决：很大可能是没有退出远程机器的登录界面导致的。&lt;/p>
 &lt;p>如果是非服务器版本的windows，通过远程桌面登录后，会自动注销当前正在登录的用户。&lt;/p>
-&lt;p>Linux下没有这个功能，需要手动退出所有当前在图形界面下的登录，然后才能正常使用xrdp登录。&lt;/p></description></item><item><title>Ubuntu禁用错误报告</title><link>https://example.com/posts/4ba43e1c/</link><pubDate>Sun, 05 Mar 2023 08:28:49 +0800</pubDate><guid>https://example.com/posts/4ba43e1c/</guid><description>&lt;p>Ubuntu在日常使用时，经常会弹出一个错误报告窗口，提示你“XXX已经崩溃，是否发送错误信息”之类的内容。&lt;/p>
+&lt;p>Linux下没有这个功能，需要手动退出所有当前在图形界面下的登录，然后才能正常使用xrdp登录。&lt;/p></description></item><item><title>Ubuntu禁用错误报告</title><link>https://dnwzlx.com/posts/4ba43e1c/</link><pubDate>Sun, 05 Mar 2023 08:28:49 +0800</pubDate><guid>https://dnwzlx.com/posts/4ba43e1c/</guid><description>&lt;p>Ubuntu在日常使用时，经常会弹出一个错误报告窗口，提示你“XXX已经崩溃，是否发送错误信息”之类的内容。&lt;/p>
 &lt;p>这个挺烦人的，毕竟在windows下我也从来没发送过系统错误报告。&lt;/p>
 &lt;p>出现这个弹窗，是因为ubuntu默认安装并启用了&lt;code>Appport&lt;/code>这个服务。如果不想提示错误汇报，禁用这个软件就可以解决了。&lt;/p>
 &lt;ol>
@@ -657,7 +657,7 @@ data-flex-basis="378px"
 &lt;li>修改配置&lt;/li>
 &lt;/ol>
 &lt;p>把&lt;code>enabled=1&lt;/code>改成&lt;code>enabled=0&lt;/code>&lt;/p>
-&lt;p>重启生效。&lt;/p></description></item><item><title>Git日常使用总结</title><link>https://example.com/posts/8d738bf7/</link><pubDate>Sat, 25 Feb 2023 09:24:18 +0800</pubDate><guid>https://example.com/posts/8d738bf7/</guid><description>&lt;p>本文用来记录在日常使用 Git 中学到的一些知识点，不定时更新。&lt;/p>
+&lt;p>重启生效。&lt;/p></description></item><item><title>Git日常使用总结</title><link>https://dnwzlx.com/posts/8d738bf7/</link><pubDate>Sat, 25 Feb 2023 09:24:18 +0800</pubDate><guid>https://dnwzlx.com/posts/8d738bf7/</guid><description>&lt;p>本文用来记录在日常使用 Git 中学到的一些知识点，不定时更新。&lt;/p>
 &lt;h2 id="常规设置">常规设置&lt;/h2>
 &lt;h3 id="设置-git-账号的邮箱和用户名">设置 Git 账号的邮箱和用户名&lt;/h3>
 &lt;p>这是使用 Git 的第一步，如果没有设置，根本用不了 Git。&lt;/p>
@@ -709,7 +709,7 @@ data-flex-basis="378px"
 &lt;li>切到 submodule 的目录&lt;/li>
 &lt;li>执行git checkout master&lt;/li>
 &lt;li>执行 commit 和 push 命令。&lt;/li>
-&lt;/ol></description></item><item><title>在Ubuntu22.04上安装KVM虚拟化软件</title><link>https://example.com/posts/f949f020/</link><pubDate>Sat, 25 Feb 2023 08:52:31 +0800</pubDate><guid>https://example.com/posts/f949f020/</guid><description>&lt;blockquote>
+&lt;/ol></description></item><item><title>在Ubuntu22.04上安装KVM虚拟化软件</title><link>https://dnwzlx.com/posts/f949f020/</link><pubDate>Sat, 25 Feb 2023 08:52:31 +0800</pubDate><guid>https://dnwzlx.com/posts/f949f020/</guid><description>&lt;blockquote>
 &lt;p>网上文章千千万，最后还得自己实践一遍&lt;/p>
 &lt;/blockquote>
 &lt;p>本文是亲自验证过可行的，系统是Ubuntu 22.04.1。&lt;/p>
@@ -843,7 +843,7 @@ data-flex-basis="378px"
 可以用&lt;code>ip a&lt;/code>查看你自己的网卡的名称。&lt;/li>
 &lt;li>&lt;code>addresses&lt;/code>、&lt;code>macaddress&lt;/code>、&lt;code>nameservers&lt;/code>和&lt;code>routers&lt;/code>里的路由要根据实际情况改成你自己的。&lt;/li>
 &lt;li>执行成功后，使用&lt;code>ip a&lt;/code>查看会多出一个&lt;code>br0&lt;/code>设备，同时原来的网卡，比如&lt;code>eno1&lt;/code>会失去IP地址。这都是正常的，牵涉到一些网络知识，这里不再多说。&lt;/li>
-&lt;/ol></description></item><item><title>解决openwrt软路由下两个客户端不通的问题</title><link>https://example.com/posts/cc8c44d2/</link><pubDate>Fri, 17 Feb 2023 19:30:32 +0800</pubDate><guid>https://example.com/posts/cc8c44d2/</guid><description>&lt;blockquote>
+&lt;/ol></description></item><item><title>解决openwrt软路由下两个客户端不通的问题</title><link>https://dnwzlx.com/posts/cc8c44d2/</link><pubDate>Fri, 17 Feb 2023 19:30:32 +0800</pubDate><guid>https://dnwzlx.com/posts/cc8c44d2/</guid><description>&lt;blockquote>
 &lt;p>前段时间把家庭网络改造了一下:&lt;/p>
 &lt;/blockquote>
 &lt;ol>
@@ -858,16 +858,16 @@ data-flex-basis="378px"
 &lt;p>所有网上的解决方案对我来说都没有用。&lt;/p>
 &lt;h2 id="解决方法">解决方法&lt;/h2>
 &lt;p>解决方法非常简单，在&lt;code>openwrt&lt;/code>-防火墙下，把&lt;code>启用FullCone-NAT&lt;/code>从&lt;code>高性能模式&lt;/code>改成&lt;code>兼容模式&lt;/code>就可以了。
-&lt;img src="https://example.com/posts/cc8c44d2/openwrt-firewall-set.png"
+&lt;img src="https://dnwzlx.com/posts/cc8c44d2/openwrt-firewall-set.png"
 width="1555"
 height="544"
-srcset="https://example.com/posts/cc8c44d2/openwrt-firewall-set_hu9dd040f9ab7836b96791aa046546d2c7_768923_480x0_resize_box_3.png 480w, https://example.com/posts/cc8c44d2/openwrt-firewall-set_hu9dd040f9ab7836b96791aa046546d2c7_768923_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/cc8c44d2/openwrt-firewall-set_hu9dd040f9ab7836b96791aa046546d2c7_768923_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/cc8c44d2/openwrt-firewall-set_hu9dd040f9ab7836b96791aa046546d2c7_768923_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="285"
 data-flex-basis="686px"
 >&lt;/p>
-&lt;p>原理我不清楚，怀疑是&lt;code>FullCone-NA&lt;/code>兼容性的问题。&lt;/p></description></item><item><title>Gnome调整鼠标指针大小</title><link>https://example.com/posts/f55580eb/</link><pubDate>Thu, 19 Jan 2023 09:45:28 +0800</pubDate><guid>https://example.com/posts/f55580eb/</guid><description>&lt;p>gnome如果调整了缩放，鼠标指针的大小不会跟着变，需要自定义大小。&lt;/p>
+&lt;p>原理我不清楚，怀疑是&lt;code>FullCone-NA&lt;/code>兼容性的问题。&lt;/p></description></item><item><title>Gnome调整鼠标指针大小</title><link>https://dnwzlx.com/posts/f55580eb/</link><pubDate>Thu, 19 Jan 2023 09:45:28 +0800</pubDate><guid>https://dnwzlx.com/posts/f55580eb/</guid><description>&lt;p>gnome如果调整了缩放，鼠标指针的大小不会跟着变，需要自定义大小。&lt;/p>
 &lt;p>运行下面的命令即可调整鼠标指针大小:&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -877,7 +877,7 @@ data-flex-basis="686px"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">dconf write /org/gnome/desktop/interface/cursor-size 40
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>缩放150%的话，调整到大小&lt;code>40&lt;/code>比较合适。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(七)-Hugo和Github Action正确修改文章的最后更新日期</title><link>https://example.com/posts/146871a6/</link><pubDate>Sat, 14 Jan 2023 12:15:00 +0800</pubDate><guid>https://example.com/posts/146871a6/</guid><description>&lt;p>偏向技术或者工具使用方面的博客，难免会随着时间和技术的更新，对文章进行一些修改。&lt;/p>
+&lt;/div>&lt;p>缩放150%的话，调整到大小&lt;code>40&lt;/code>比较合适。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(七)-Hugo和Github Action正确修改文章的最后更新日期</title><link>https://dnwzlx.com/posts/146871a6/</link><pubDate>Sat, 14 Jan 2023 12:15:00 +0800</pubDate><guid>https://dnwzlx.com/posts/146871a6/</guid><description>&lt;p>偏向技术或者工具使用方面的博客，难免会随着时间和技术的更新，对文章进行一些修改。&lt;/p>
 &lt;p>使用hugo一年多以来，一直有一个问题没有解决，就是文章修改后不能正确的显示修改后的时间，即更新时间。&lt;/p>
 &lt;p>今天又想起这个长期以来的&amp;quot;bug&amp;quot;，这次终于彻底解决了。&lt;/p>
 &lt;h2 id="修改网站配置文件">修改网站配置文件&lt;/h2>
@@ -933,7 +933,7 @@ data-flex-basis="686px"
 &lt;h3 id="disable-quotepath">Disable quotePath&lt;/h3>
 &lt;p>原理是这样的：默认情况下，当文件名中包含中文的时候，git 会使用引号&lt;code>&amp;quot; &amp;quot;&lt;/code>把文件名括起来。&lt;/p>
 &lt;p>但是这会导致 action 中无法读取 &lt;code>:GitInfo&lt;/code> 变量，所以这里需要关闭&lt;code>quotePath&lt;/code>功能。&lt;/p>
-&lt;p>这样就可以正确显示文章最后更新时间了，问题解决。&lt;/p></description></item><item><title>KDE播放Samba共享里的视频文件</title><link>https://example.com/posts/0ce4c4b3/</link><pubDate>Fri, 13 Jan 2023 13:10:42 +0800</pubDate><guid>https://example.com/posts/0ce4c4b3/</guid><description>&lt;h2 id="问题描述">问题描述&lt;/h2>
+&lt;p>这样就可以正确显示文章最后更新时间了，问题解决。&lt;/p></description></item><item><title>KDE播放Samba共享里的视频文件</title><link>https://dnwzlx.com/posts/0ce4c4b3/</link><pubDate>Fri, 13 Jan 2023 13:10:42 +0800</pubDate><guid>https://dnwzlx.com/posts/0ce4c4b3/</guid><description>&lt;h2 id="问题描述">问题描述&lt;/h2>
 &lt;p>使用&lt;code>debian 11 &lt;/code>+ &lt;code>KDE&lt;/code> 桌面，通过samba协议连接到NAS后，发现无法播放NAS上的视频文件。&lt;/p>
 &lt;h2 id="解决方法">解决方法&lt;/h2>
 &lt;p>安装&lt;code>kio-fuse&lt;/code>即可&lt;/p>
@@ -945,7 +945,7 @@ data-flex-basis="686px"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo apt install kio-fuse
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>debian确实是稳定，在chrome和nvidia驱动方面非常出色，不比windows差，但是在一些小的易用性方面，还是有坑&lt;/p></description></item><item><title>Wsl和vmware共存的问题</title><link>https://example.com/posts/9c090dd7/</link><pubDate>Wed, 04 Jan 2023 11:32:30 +0800</pubDate><guid>https://example.com/posts/9c090dd7/</guid><description>&lt;p>、&lt;/p>
+&lt;/div>&lt;p>debian确实是稳定，在chrome和nvidia驱动方面非常出色，不比windows差，但是在一些小的易用性方面，还是有坑&lt;/p></description></item><item><title>Wsl和vmware共存的问题</title><link>https://dnwzlx.com/posts/9c090dd7/</link><pubDate>Wed, 04 Jan 2023 11:32:30 +0800</pubDate><guid>https://dnwzlx.com/posts/9c090dd7/</guid><description>&lt;p>、&lt;/p>
 &lt;h2 id="问题描述">问题描述&lt;/h2>
 &lt;p>近期在使用wsl2和vmware时遇到了一些问题&lt;/p>
 &lt;p>如果要使用wsl2，则必须要在&lt;code>windows功能&lt;/code>里开启&lt;code>虚拟机平台&lt;/code>。&lt;/p>
@@ -979,12 +979,12 @@ data-flex-basis="686px"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Disable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>重启电脑。&lt;/p></description></item><item><title>Windows Terminal打开wsl报错的解决方法</title><link>https://example.com/posts/35265d36/</link><pubDate>Mon, 02 Jan 2023 10:02:58 +0800</pubDate><guid>https://example.com/posts/35265d36/</guid><description>&lt;h2 id="问题描述">问题描述&lt;/h2>
+&lt;/div>&lt;p>重启电脑。&lt;/p></description></item><item><title>Windows Terminal打开wsl报错的解决方法</title><link>https://dnwzlx.com/posts/35265d36/</link><pubDate>Mon, 02 Jan 2023 10:02:58 +0800</pubDate><guid>https://dnwzlx.com/posts/35265d36/</guid><description>&lt;h2 id="问题描述">问题描述&lt;/h2>
 &lt;p>使用wsl安装完kali-linux后，从windows terminal下启动，报如下错误：
-&lt;img src="https://example.com/posts/35265d36/wsl-error.png"
+&lt;img src="https://dnwzlx.com/posts/35265d36/wsl-error.png"
 width="674"
 height="229"
-srcset="https://example.com/posts/35265d36/wsl-error_hub5ae49d2a552c7df07f2cf0a6ee3b2c3_9916_480x0_resize_box_3.png 480w, https://example.com/posts/35265d36/wsl-error_hub5ae49d2a552c7df07f2cf0a6ee3b2c3_9916_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/35265d36/wsl-error_hub5ae49d2a552c7df07f2cf0a6ee3b2c3_9916_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/35265d36/wsl-error_hub5ae49d2a552c7df07f2cf0a6ee3b2c3_9916_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="294"
@@ -992,15 +992,15 @@ data-flex-basis="706px"
 >&lt;/p>
 &lt;h2 id="解决方法">解决方法&lt;/h2>
 &lt;p>打开windows terminal的kali-linux配置,修改启动的命令为&lt;code>wsl.exe ~ -d kali-linux&lt;/code>，即中间添加一个&lt;code>~&lt;/code>即可。
-&lt;img src="https://example.com/posts/35265d36/setting.png"
+&lt;img src="https://dnwzlx.com/posts/35265d36/setting.png"
 width="754"
 height="534"
-srcset="https://example.com/posts/35265d36/setting_huf19382c2b8499f6e92dc96abd6dda0e4_30897_480x0_resize_box_3.png 480w, https://example.com/posts/35265d36/setting_huf19382c2b8499f6e92dc96abd6dda0e4_30897_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/35265d36/setting_huf19382c2b8499f6e92dc96abd6dda0e4_30897_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/35265d36/setting_huf19382c2b8499f6e92dc96abd6dda0e4_30897_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="141"
 data-flex-basis="338px"
->&lt;/p></description></item><item><title>Windows Terminal添加到右键菜单</title><link>https://example.com/posts/6ef25004/</link><pubDate>Sun, 01 Jan 2023 09:10:24 +0800</pubDate><guid>https://example.com/posts/6ef25004/</guid><description>&lt;h2 id="下载windows-terminal的图标">下载&lt;code>windows terminal&lt;/code>的图标&lt;/h2>
+>&lt;/p></description></item><item><title>Windows Terminal添加到右键菜单</title><link>https://dnwzlx.com/posts/6ef25004/</link><pubDate>Sun, 01 Jan 2023 09:10:24 +0800</pubDate><guid>https://dnwzlx.com/posts/6ef25004/</guid><description>&lt;h2 id="下载windows-terminal的图标">下载&lt;code>windows terminal&lt;/code>的图标&lt;/h2>
 &lt;p>在&lt;a class="link" href="https://github.com/microsoft/terminal/tree/main/res" target="_blank" rel="noopener"
 >这里&lt;/a>下载。&lt;/p>
 &lt;h2 id="创建文件夹">创建文件夹&lt;/h2>
@@ -1055,7 +1055,7 @@ data-flex-basis="338px"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>&lt;code>&amp;quot;startingDirectory&amp;quot;: null&lt;/code>这一行是新添加的。&lt;/p>
-&lt;p>完工。&lt;/p></description></item><item><title>修改Conda默认启动的Python环境</title><link>https://example.com/posts/0cab458e/</link><pubDate>Sun, 01 Jan 2023 06:59:55 +0800</pubDate><guid>https://example.com/posts/0cab458e/</guid><description>&lt;h2 id="问题描述">问题描述&lt;/h2>
+&lt;p>完工。&lt;/p></description></item><item><title>修改Conda默认启动的Python环境</title><link>https://dnwzlx.com/posts/0cab458e/</link><pubDate>Sun, 01 Jan 2023 06:59:55 +0800</pubDate><guid>https://dnwzlx.com/posts/0cab458e/</guid><description>&lt;h2 id="问题描述">问题描述&lt;/h2>
 &lt;p>安装完 Conda 之后，开启终端将默认进入 &lt;code>base&lt;/code> 环境。&lt;/p>
 &lt;p>但是，&lt;code>base&lt;/code> 经常不是我们所需要的环境。因此，每次进入终端都得 &lt;code>conda activate&lt;/code> 到想要的环境，很麻烦。&lt;/p>
 &lt;h2 id="解决方法">解决方法&lt;/h2>
@@ -1105,7 +1105,7 @@ data-flex-basis="338px"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">conda activate py3s
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>Linux下安装utools</title><link>https://example.com/posts/e1bbdf98/</link><pubDate>Thu, 29 Dec 2022 08:03:18 +0800</pubDate><guid>https://example.com/posts/e1bbdf98/</guid><description>&lt;p>&lt;code>utools&lt;/code>是个快速启动工具，支持mac、win、linux三大平台，自带丰富的插件。&lt;/p>
+&lt;/div></description></item><item><title>Linux下安装utools</title><link>https://dnwzlx.com/posts/e1bbdf98/</link><pubDate>Thu, 29 Dec 2022 08:03:18 +0800</pubDate><guid>https://dnwzlx.com/posts/e1bbdf98/</guid><description>&lt;p>&lt;code>utools&lt;/code>是个快速启动工具，支持mac、win、linux三大平台，自带丰富的插件。&lt;/p>
 &lt;p>本人安装utools主要是为了它的词典插件，用来查词非常方便。&lt;/p>
 &lt;p>最新的3.3版本，在kali linux下可以正常安装，但是启动时却报错：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -1155,7 +1155,7 @@ data-flex-basis="338px"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo cp /opt/kingsoft/wps-office/office6/libcrypto.so.1.1 /opt/uTools/
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>即可正常运行&lt;code>utools&lt;/code>了。&lt;/p></description></item><item><title>导出微软日历的方法</title><link>https://example.com/posts/3553344e/</link><pubDate>Tue, 27 Dec 2022 05:25:49 +0800</pubDate><guid>https://example.com/posts/3553344e/</guid><description>&lt;blockquote>
+&lt;/div>&lt;p>即可正常运行&lt;code>utools&lt;/code>了。&lt;/p></description></item><item><title>导出微软日历的方法</title><link>https://dnwzlx.com/posts/3553344e/</link><pubDate>Tue, 27 Dec 2022 05:25:49 +0800</pubDate><guid>https://dnwzlx.com/posts/3553344e/</guid><description>&lt;blockquote>
 &lt;blockquote>
 &lt;blockquote>
 &lt;p>导出为ics格式&lt;/p>
@@ -1163,40 +1163,40 @@ data-flex-basis="338px"
 &lt;/blockquote>
 &lt;/blockquote>
 &lt;p>1、打开outlook，选中需要导出的日历&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/3553344e/%E9%80%89%E6%8B%A9%E6%97%A5%E5%8E%86.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/3553344e/%E9%80%89%E6%8B%A9%E6%97%A5%E5%8E%86.png"
 width="330"
 height="338"
-srcset="https://example.com/posts/3553344e/%E9%80%89%E6%8B%A9%E6%97%A5%E5%8E%86_huaf428dfaf1dbaea30f779e9029ad2178_9358_480x0_resize_box_3.png 480w, https://example.com/posts/3553344e/%E9%80%89%E6%8B%A9%E6%97%A5%E5%8E%86_huaf428dfaf1dbaea30f779e9029ad2178_9358_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/3553344e/%E9%80%89%E6%8B%A9%E6%97%A5%E5%8E%86_huaf428dfaf1dbaea30f779e9029ad2178_9358_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/3553344e/%E9%80%89%E6%8B%A9%E6%97%A5%E5%8E%86_huaf428dfaf1dbaea30f779e9029ad2178_9358_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="97"
 data-flex-basis="234px"
 >&lt;/p>
 &lt;p>2、点击左上角文件&amp;ndash;保存日历&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/3553344e/%E4%BF%9D%E5%AD%98%E6%97%A5%E5%8E%86.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/3553344e/%E4%BF%9D%E5%AD%98%E6%97%A5%E5%8E%86.png"
 width="341"
 height="547"
-srcset="https://example.com/posts/3553344e/%E4%BF%9D%E5%AD%98%E6%97%A5%E5%8E%86_hud1ca1759b2adf90a89c2167d10b69d2f_14457_480x0_resize_box_3.png 480w, https://example.com/posts/3553344e/%E4%BF%9D%E5%AD%98%E6%97%A5%E5%8E%86_hud1ca1759b2adf90a89c2167d10b69d2f_14457_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/3553344e/%E4%BF%9D%E5%AD%98%E6%97%A5%E5%8E%86_hud1ca1759b2adf90a89c2167d10b69d2f_14457_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/3553344e/%E4%BF%9D%E5%AD%98%E6%97%A5%E5%8E%86_hud1ca1759b2adf90a89c2167d10b69d2f_14457_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="62"
 data-flex-basis="149px"
 >&lt;/p>
 &lt;p>3、弹出的对话框中，点击&lt;code>其它选项&lt;/code>&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE1.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE1.png"
 width="989"
 height="323"
-srcset="https://example.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE1_hu360c93cf0e355d0fcca25d9c3abd5b4f_13051_480x0_resize_box_3.png 480w, https://example.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE1_hu360c93cf0e355d0fcca25d9c3abd5b4f_13051_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE1_hu360c93cf0e355d0fcca25d9c3abd5b4f_13051_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE1_hu360c93cf0e355d0fcca25d9c3abd5b4f_13051_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="306"
 data-flex-basis="734px"
 >&lt;/p>
 &lt;p>4、按照下图中的选项来选择，然后点击&lt;code>确定&lt;/code>&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE2.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE2.png"
 width="891"
 height="551"
-srcset="https://example.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE2_hu97b1248a99bc1be4fe4cc1a72b15fb19_29748_480x0_resize_box_3.png 480w, https://example.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE2_hu97b1248a99bc1be4fe4cc1a72b15fb19_29748_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE2_hu97b1248a99bc1be4fe4cc1a72b15fb19_29748_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/3553344e/%E5%AF%BC%E5%87%BA%E8%AE%BE%E7%BD%AE2_hu97b1248a99bc1be4fe4cc1a72b15fb19_29748_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="161"
@@ -1204,23 +1204,23 @@ data-flex-basis="388px"
 >&lt;/p>
 &lt;p>5、点击保存，即可导出为ics格式的日历&lt;/p>
 &lt;p>6、重复第一项，导出其他的日历&lt;/p>
-&lt;p>注意，每一次只能导出一个日历&lt;/p></description></item><item><title>Pycharm的基本设置</title><link>https://example.com/posts/05159db4/</link><pubDate>Sat, 24 Dec 2022 08:09:17 +0800</pubDate><guid>https://example.com/posts/05159db4/</guid><description>&lt;h2 id="设置自动换行折行">设置自动换行/折行&lt;/h2>
+&lt;p>注意，每一次只能导出一个日历&lt;/p></description></item><item><title>Pycharm的基本设置</title><link>https://dnwzlx.com/posts/05159db4/</link><pubDate>Sat, 24 Dec 2022 08:09:17 +0800</pubDate><guid>https://dnwzlx.com/posts/05159db4/</guid><description>&lt;h2 id="设置自动换行折行">设置自动换行/折行&lt;/h2>
 &lt;p>按&lt;code>ctrl&lt;/code>+&lt;code>alt&lt;/code>+&lt;code>s&lt;/code>,打开设置&lt;/p>
 &lt;p>在左上角搜索框中输入&lt;code>soft-wraps&lt;/code>，打到editor-General,勾选&lt;code>soft-wrap these files&lt;/code>,然后在最后添加&lt;code>; *.py&lt;/code>。
-&lt;img src="https://example.com/posts/05159db4/pycharm-softwrap.png"
+&lt;img src="https://dnwzlx.com/posts/05159db4/pycharm-softwrap.png"
 width="1229"
 height="505"
-srcset="https://example.com/posts/05159db4/pycharm-softwrap_hu8c353ee3e59eabe961f3994ccc17fcd6_50155_480x0_resize_box_3.png 480w, https://example.com/posts/05159db4/pycharm-softwrap_hu8c353ee3e59eabe961f3994ccc17fcd6_50155_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/05159db4/pycharm-softwrap_hu8c353ee3e59eabe961f3994ccc17fcd6_50155_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/05159db4/pycharm-softwrap_hu8c353ee3e59eabe961f3994ccc17fcd6_50155_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="243"
 data-flex-basis="584px"
 >&lt;/p>
 &lt;p>找到editor-General-Console,勾选&lt;code>Use soft wraps in console&lt;/code>,启用控制台的自动折行功能
-&lt;img src="https://example.com/posts/05159db4/pycharm-softwrap2.png"
+&lt;img src="https://dnwzlx.com/posts/05159db4/pycharm-softwrap2.png"
 width="742"
 height="372"
-srcset="https://example.com/posts/05159db4/pycharm-softwrap2_hu09c09b42a52a5d7ec573683f6308f4fd_33999_480x0_resize_box_3.png 480w, https://example.com/posts/05159db4/pycharm-softwrap2_hu09c09b42a52a5d7ec573683f6308f4fd_33999_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/05159db4/pycharm-softwrap2_hu09c09b42a52a5d7ec573683f6308f4fd_33999_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/05159db4/pycharm-softwrap2_hu09c09b42a52a5d7ec573683f6308f4fd_33999_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="199"
@@ -1232,7 +1232,7 @@ data-flex-basis="478px"
 &lt;h2 id="跳出成对的括号">跳出成对的括号&lt;/h2>
 &lt;p>在输入&lt;code>' '&lt;/code>、&lt;code>&amp;quot; &amp;quot;&lt;/code>、&lt;code>()&lt;/code>等成对的括号后，如果想跳出当前括号，可以再按一下当前的括号即可跳出括号。&lt;/p>
 &lt;p>例如输入&lt;code>''&lt;/code>后，再输入&lt;code>abcde&lt;/code>,此时光标是处于&lt;code>e&lt;/code>的后面、&lt;code>'&lt;/code>的前面。&lt;/p>
-&lt;p>此时再按一下&lt;code>'&lt;/code>，即可跳到&lt;code>'&lt;/code>的后面了。&lt;/p></description></item><item><title>手动编译vyos最新稳定版</title><link>https://example.com/posts/c5ea52a2/</link><pubDate>Wed, 14 Dec 2022 11:25:00 +0800</pubDate><guid>https://example.com/posts/c5ea52a2/</guid><description>&lt;p>vyos官方只有night-daily的镜像，没有稳定版的镜像。&lt;/p>
+&lt;p>此时再按一下&lt;code>'&lt;/code>，即可跳到&lt;code>'&lt;/code>的后面了。&lt;/p></description></item><item><title>手动编译vyos最新稳定版</title><link>https://dnwzlx.com/posts/c5ea52a2/</link><pubDate>Wed, 14 Dec 2022 11:25:00 +0800</pubDate><guid>https://dnwzlx.com/posts/c5ea52a2/</guid><description>&lt;p>vyos官方只有night-daily的镜像，没有稳定版的镜像。&lt;/p>
 &lt;p>自己手动编译的话，vyos的官方文档又写的不明不白的，感觉有故意的成份。&lt;/p>
 &lt;p>于是网上找了篇文章，简单明了的介绍了如何编译安装最新稳定LTS版本。&lt;/p>
 &lt;h2 id="vyos不同版本对应的编译环境">vyos不同版本对应的编译环境&lt;/h2>
@@ -1289,7 +1289,7 @@ data-flex-basis="478px"
 &lt;/div>
 &lt;/div>&lt;h2 id="编译好的iso镜像下载">编译好的ISO镜像下载&lt;/h2>
 &lt;p>在github上找到了个repo，专门发布编译好的lts镜像，地址在&lt;a class="link" href="https://github.com/naa0yama/vyos-build-lts" target="_blank" rel="noopener"
->这里&lt;/a>。&lt;/p></description></item><item><title>Linux下使用miniconda的一些设置</title><link>https://example.com/posts/d96c6166/</link><pubDate>Mon, 12 Dec 2022 02:04:54 +0800</pubDate><guid>https://example.com/posts/d96c6166/</guid><description>&lt;p>在&lt;code>kali&lt;/code>的&lt;code>zsh&lt;/code>环境中使用&lt;code>miniconda&lt;/code>，遇到一些问题，这里记录一下解决的过程。&lt;/p>
+>这里&lt;/a>。&lt;/p></description></item><item><title>Linux下使用miniconda的一些设置</title><link>https://dnwzlx.com/posts/d96c6166/</link><pubDate>Mon, 12 Dec 2022 02:04:54 +0800</pubDate><guid>https://dnwzlx.com/posts/d96c6166/</guid><description>&lt;p>在&lt;code>kali&lt;/code>的&lt;code>zsh&lt;/code>环境中使用&lt;code>miniconda&lt;/code>，遇到一些问题，这里记录一下解决的过程。&lt;/p>
 &lt;p>对于其它的linux来说，应该是通用的。&lt;/p>
 &lt;h2 id="使用命令行安装miniconda">使用命令行安装miniconda&lt;/h2>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -1318,10 +1318,10 @@ data-flex-basis="478px"
 &lt;/div>
 &lt;/div>&lt;h2 id="oh-my-zsh主题配置">oh-my-zsh主题配置&lt;/h2>
 &lt;p>默认情况下，使用双行显示的oh-my-zsh主题，会在第一行的前面显示&lt;code>(base)&lt;/code>的标志:
-&lt;img src="https://example.com/posts/d96c6166/default-base.png"
+&lt;img src="https://dnwzlx.com/posts/d96c6166/default-base.png"
 width="352"
 height="78"
-srcset="https://example.com/posts/d96c6166/default-base_hue7a70516c9bcb22154f0dd10772c86d9_4091_480x0_resize_box_3.png 480w, https://example.com/posts/d96c6166/default-base_hue7a70516c9bcb22154f0dd10772c86d9_4091_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/d96c6166/default-base_hue7a70516c9bcb22154f0dd10772c86d9_4091_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/d96c6166/default-base_hue7a70516c9bcb22154f0dd10772c86d9_4091_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="451"
@@ -1420,7 +1420,7 @@ data-flex-basis="1083px"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">conda config --set auto_activate_base true
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>解决KDE桌面在vmware中的复制、粘贴和拖拽文件的问题</title><link>https://example.com/posts/d10df142/</link><pubDate>Sat, 10 Dec 2022 09:59:25 +0800</pubDate><guid>https://example.com/posts/d10df142/</guid><description>&lt;h2 id="问题描述">问题描述&lt;/h2>
+&lt;/div></description></item><item><title>解决KDE桌面在vmware中的复制、粘贴和拖拽文件的问题</title><link>https://dnwzlx.com/posts/d10df142/</link><pubDate>Sat, 10 Dec 2022 09:59:25 +0800</pubDate><guid>https://dnwzlx.com/posts/d10df142/</guid><description>&lt;h2 id="问题描述">问题描述&lt;/h2>
 &lt;p>在vmware中安装linux的虚拟机，做了以下工作之后：&lt;/p>
 &lt;ol>
 &lt;li>虚拟机使用的是kde桌面&lt;/li>
@@ -1432,7 +1432,7 @@ data-flex-basis="1083px"
 &lt;h2 id="原因">原因&lt;/h2>
 &lt;p>这是KDE桌面的一个bug
 当运行&lt;code>ps -aef | grep vmtoolsd&lt;/code>后，&lt;strong>并不会&lt;/strong>出现类似下图中的第2行红框中的&lt;code>/usr/bin/vmtoolsd -n vmusr --blockFd 3&lt;/code>的结果：
-&lt;img src="https://example.com/../ps%e7%bb%93%e6%9e%9c.png"
+&lt;img src="https://dnwzlx.com/../ps%e7%bb%93%e6%9e%9c.png"
 loading="lazy"
 >&lt;/p>
 &lt;p>这就是导致不能复制、粘贴和拖放的原因&lt;/p>
@@ -1468,7 +1468,7 @@ loading="lazy"
 &lt;p>相关讨论的原文在&lt;a class="link" href="https://github.com/vmware/open-vm-tools/issues/568" target="_blank" rel="noopener"
 >这里&lt;/a>。&lt;/p>
 &lt;p>另外提一点，在帖子中有人对fedora、archlinux和opensuse都做了测试，发现只有opensuse默认状态下一切功能正常。看来opensuse还是有点东西的😊。&lt;/p>
-&lt;p>再另外，我自己测试，debian 11.5 live版本也没有问题。&lt;/p></description></item><item><title>Davinci在linux下的HiDPI分辨率的问题</title><link>https://example.com/posts/3d3eb7db/</link><pubDate>Thu, 03 Nov 2022 20:06:17 +0800</pubDate><guid>https://example.com/posts/3d3eb7db/</guid><description>&lt;p>我的显示器是27寸4K的分辨率。&lt;/p>
+&lt;p>再另外，我自己测试，debian 11.5 live版本也没有问题。&lt;/p></description></item><item><title>Davinci在linux下的HiDPI分辨率的问题</title><link>https://dnwzlx.com/posts/3d3eb7db/</link><pubDate>Thu, 03 Nov 2022 20:06:17 +0800</pubDate><guid>https://dnwzlx.com/posts/3d3eb7db/</guid><description>&lt;p>我的显示器是27寸4K的分辨率。&lt;/p>
 &lt;p>在ubuntu下安装完davinci resolve 18后，发现启动后界面字体变得非常小，除了&lt;code>鹰眼&lt;/code>我相信没人能看得清。&lt;/p>
 &lt;p>很明显，这是个Linux下的UI缩放的问题。&lt;/p>
 &lt;h2 id="解决方法">解决方法&lt;/h2>
@@ -1520,15 +1520,15 @@ QT_DEVICE_PIXEL_RATIO=&lt;code>3&lt;/code>，最后这个&lt;code>3&lt;/code>是
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>运行&lt;code>alacarte&lt;/code>，找到&lt;code>davinci&lt;/code>的菜单项，点击&lt;code>属性&lt;/code>&amp;ndash;&lt;code>Browser&lt;/code>，选中&lt;code>davinci.sh&lt;/code>，保存即可。
-&lt;img src="https://example.com/posts/3d3eb7db/alacarte-davinci.png"
+&lt;img src="https://dnwzlx.com/posts/3d3eb7db/alacarte-davinci.png"
 width="1334"
 height="1126"
-srcset="https://example.com/posts/3d3eb7db/alacarte-davinci_hub65d449f9756d25fddec17428214d090_285529_480x0_resize_box_3.png 480w, https://example.com/posts/3d3eb7db/alacarte-davinci_hub65d449f9756d25fddec17428214d090_285529_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/3d3eb7db/alacarte-davinci_hub65d449f9756d25fddec17428214d090_285529_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/3d3eb7db/alacarte-davinci_hub65d449f9756d25fddec17428214d090_285529_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="118"
 data-flex-basis="284px"
->&lt;/p></description></item><item><title>为nextcloud安装elasticsearch全文搜索</title><link>https://example.com/posts/f092b728/</link><pubDate>Fri, 28 Oct 2022 10:56:09 +0800</pubDate><guid>https://example.com/posts/f092b728/</guid><description>&lt;blockquote>
+>&lt;/p></description></item><item><title>为nextcloud安装elasticsearch全文搜索</title><link>https://dnwzlx.com/posts/f092b728/</link><pubDate>Fri, 28 Oct 2022 10:56:09 +0800</pubDate><guid>https://dnwzlx.com/posts/f092b728/</guid><description>&lt;blockquote>
 &lt;p>写作本文时,elasticsearch 8.3.4版本已经发布，无奈此版本与nextcloud集成的文章太少，因此还是使用elastic7。实际使用效果非常好。&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="环境相关">环境相关&lt;/h2>
@@ -1681,10 +1681,10 @@ data-flex-basis="284px"
 &lt;/div>&lt;h2 id="nextcloud设置">nextcloud设置&lt;/h2>
 &lt;h3 id="安装搜索相关插件">安装搜索相关插件&lt;/h3>
 &lt;p>full text开头的那几个，如下图几个：
-&lt;img src="https://example.com/posts/f092b728/full-text-plugin.png"
+&lt;img src="https://dnwzlx.com/posts/f092b728/full-text-plugin.png"
 width="656"
 height="488"
-srcset="https://example.com/posts/f092b728/full-text-plugin_hu4fcabdb0f6fa28282198c600c974c6bc_29164_480x0_resize_box_3.png 480w, https://example.com/posts/f092b728/full-text-plugin_hu4fcabdb0f6fa28282198c600c974c6bc_29164_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/f092b728/full-text-plugin_hu4fcabdb0f6fa28282198c600c974c6bc_29164_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/f092b728/full-text-plugin_hu4fcabdb0f6fa28282198c600c974c6bc_29164_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="134"
@@ -1692,19 +1692,19 @@ data-flex-basis="322px"
 >&lt;/p>
 &lt;h3 id="设置插件">设置插件&lt;/h3>
 &lt;p>打开设置-全文搜索,如下图配置
-&lt;img src="https://example.com/posts/f092b728/search-config-1.png"
+&lt;img src="https://dnwzlx.com/posts/f092b728/search-config-1.png"
 width="1413"
 height="1753"
-srcset="https://example.com/posts/f092b728/search-config-1_hu1f1f053f78b41425a04c81a129758c6d_131388_480x0_resize_box_3.png 480w, https://example.com/posts/f092b728/search-config-1_hu1f1f053f78b41425a04c81a129758c6d_131388_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/f092b728/search-config-1_hu1f1f053f78b41425a04c81a129758c6d_131388_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/f092b728/search-config-1_hu1f1f053f78b41425a04c81a129758c6d_131388_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="80"
 data-flex-basis="193px"
 >&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/f092b728/search-config-2.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/f092b728/search-config-2.png"
 width="1241"
 height="1421"
-srcset="https://example.com/posts/f092b728/search-config-2_hub7feb5fdc19ec56ac79a2f0f1319ba04_90610_480x0_resize_box_3.png 480w, https://example.com/posts/f092b728/search-config-2_hub7feb5fdc19ec56ac79a2f0f1319ba04_90610_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/f092b728/search-config-2_hub7feb5fdc19ec56ac79a2f0f1319ba04_90610_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/f092b728/search-config-2_hub7feb5fdc19ec56ac79a2f0f1319ba04_90610_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="87"
@@ -1790,7 +1790,7 @@ data-flex-basis="209px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">systemctl start nextcloud-fulltext-elasticsearch-worker.service
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>全部安装配置完成。&lt;/p></description></item><item><title>手动安装Nextcloud</title><link>https://example.com/posts/b924a1ee/</link><pubDate>Wed, 12 Oct 2022 05:51:34 +0800</pubDate><guid>https://example.com/posts/b924a1ee/</guid><description>&lt;h2 id="这篇文章在office预览方面依然有些问题需要解决">这篇文章在office预览方面依然有些问题，需要解决&lt;/h2>
+&lt;/div>&lt;p>全部安装配置完成。&lt;/p></description></item><item><title>手动安装Nextcloud</title><link>https://dnwzlx.com/posts/b924a1ee/</link><pubDate>Wed, 12 Oct 2022 05:51:34 +0800</pubDate><guid>https://dnwzlx.com/posts/b924a1ee/</guid><description>&lt;h2 id="这篇文章在office预览方面依然有些问题需要解决">这篇文章在office预览方面依然有些问题，需要解决&lt;/h2>
 &lt;p>试过docker、snpa等方式部署nextcloud，但是存在系统匹配、资源占用大等各种问题。而且配置都是写死的，看似安装部署简单，其实折腾起来更痛苦。&lt;/p>
 &lt;p>尤其是在内网环境里,不涉及升级的问题,手动安装是更好的选择，而且超级简单。&lt;/p>
 &lt;p>本文假设nextcloud的服务器地址是&lt;strong>192.168.8.14&lt;/strong>&lt;/p>
@@ -2249,7 +2249,7 @@ data-flex-basis="209px"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo cp SomeFont.ttf /usr/local/share/fonts/
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>正确安装WSL2的方法</title><link>https://example.com/posts/f68b8b61/</link><pubDate>Sat, 08 Oct 2022 17:58:41 +0800</pubDate><guid>https://example.com/posts/f68b8b61/</guid><description>&lt;p>近期重装系统,在安装wsl的时候,由于方法不正确,导致安装的linux运行在wsl1版本,而不是我想要的wsl2。&lt;/p>
+&lt;/div></description></item><item><title>正确安装WSL2的方法</title><link>https://dnwzlx.com/posts/f68b8b61/</link><pubDate>Sat, 08 Oct 2022 17:58:41 +0800</pubDate><guid>https://dnwzlx.com/posts/f68b8b61/</guid><description>&lt;p>近期重装系统,在安装wsl的时候,由于方法不正确,导致安装的linux运行在wsl1版本,而不是我想要的wsl2。&lt;/p>
 &lt;p>下面介绍一下正确安装wsl2，并设置wsl2为默认版本的方法，抄自&lt;a class="link" href="https://www.kali.org/docs/wsl/win-kex/" target="_blank" rel="noopener"
 >kali官方文档&lt;/a>。&lt;/p>
 &lt;p>&lt;code>win&lt;/code>+&lt;code>x&lt;/code> &lt;code>a&lt;/code>，打开管理员的powershell&lt;/p>
@@ -2308,7 +2308,7 @@ data-flex-basis="209px"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">wsl --update
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>完工。&lt;/p></description></item><item><title>WSL修改linux发行版的主机名</title><link>https://example.com/posts/6b07178d/</link><pubDate>Sat, 08 Oct 2022 17:50:48 +0800</pubDate><guid>https://example.com/posts/6b07178d/</guid><description>&lt;p>wsl安装了多个linux发行版后，主机名统一都是windows的主机名，这导致各个发行版之间不是很好区分。&lt;/p>
+&lt;/div>&lt;p>完工。&lt;/p></description></item><item><title>WSL修改linux发行版的主机名</title><link>https://dnwzlx.com/posts/6b07178d/</link><pubDate>Sat, 08 Oct 2022 17:50:48 +0800</pubDate><guid>https://dnwzlx.com/posts/6b07178d/</guid><description>&lt;p>wsl安装了多个linux发行版后，主机名统一都是windows的主机名，这导致各个发行版之间不是很好区分。&lt;/p>
 &lt;p>下面提供一个方法，能够单独修改wsl里的各个linux发行版的主机名，而不必修改windows的主机名。&lt;/p>
 &lt;p>在&lt;code>/etc&lt;/code>目录下新建一个文件&lt;code>wsl.conf&lt;/code>，即&lt;code>/etc/wsl.conf&lt;/code>,内容如下:&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -2333,7 +2333,7 @@ data-flex-basis="209px"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">wsl --shutdown
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>再打开wsl里的linux，就能看到效果了。&lt;/p></description></item><item><title>Almalinux8修改默认的SSH端口号</title><link>https://example.com/posts/583558fa/</link><pubDate>Fri, 07 Oct 2022 11:33:41 +0800</pubDate><guid>https://example.com/posts/583558fa/</guid><description>&lt;blockquote>
+&lt;/div>&lt;p>再打开wsl里的linux，就能看到效果了。&lt;/p></description></item><item><title>Almalinux8修改默认的SSH端口号</title><link>https://dnwzlx.com/posts/583558fa/</link><pubDate>Fri, 07 Oct 2022 11:33:41 +0800</pubDate><guid>https://dnwzlx.com/posts/583558fa/</guid><description>&lt;blockquote>
 &lt;blockquote>
 &lt;p>主要涉及修改的地方有SELinux、Firewall等。&lt;/p>
 &lt;/blockquote>
@@ -2452,7 +2452,7 @@ data-flex-basis="209px"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h3 id="almalinux最小化安装默认的几个软件">almalinux最小化安装默认的几个软件&lt;/h3>
-&lt;p>最小化安装的almalinux,默认安装了&lt;code>openssh&lt;/code>、&lt;code>openssh-server&lt;/code>、&lt;code>firewall-cmd&lt;/code>、&lt;code>firewalld&lt;/code>，对于管理来说，只需要再安装上述的&lt;code>semanage&lt;/code>即可。很是贴心和方便。&lt;/p></description></item><item><title>SELinux相关问题的解决</title><link>https://example.com/posts/9a31e845/</link><pubDate>Fri, 07 Oct 2022 11:17:16 +0800</pubDate><guid>https://example.com/posts/9a31e845/</guid><description>&lt;p>为了服务器的安全性考虑,rhel系列默认会启用的SELinux最好不要关闭。&lt;/p>
+&lt;p>最小化安装的almalinux,默认安装了&lt;code>openssh&lt;/code>、&lt;code>openssh-server&lt;/code>、&lt;code>firewall-cmd&lt;/code>、&lt;code>firewalld&lt;/code>，对于管理来说，只需要再安装上述的&lt;code>semanage&lt;/code>即可。很是贴心和方便。&lt;/p></description></item><item><title>SELinux相关问题的解决</title><link>https://dnwzlx.com/posts/9a31e845/</link><pubDate>Fri, 07 Oct 2022 11:17:16 +0800</pubDate><guid>https://dnwzlx.com/posts/9a31e845/</guid><description>&lt;p>为了服务器的安全性考虑,rhel系列默认会启用的SELinux最好不要关闭。&lt;/p>
 &lt;p>这也导致了一些坑的出现,下面记录一下解决方法。&lt;/p>
 &lt;h2 id="更改ssh端口号后ssh服务无法启动">更改SSH端口号后,ssh服务无法启动&lt;/h2>
 &lt;p>这个问题是因为selinux里，只默认开放了22端口。如果只在&lt;code>/etc/ssh/sshd_config&lt;/code>里修改了端口号，就会出现上面的问题。&lt;/p>
@@ -2500,7 +2500,7 @@ data-flex-basis="209px"
 &lt;/div>
 &lt;/div>&lt;ol start="3">
 &lt;li>重启服务器就可以了。&lt;/li>
-&lt;/ol></description></item><item><title>Kali下python2 Python3 Pip的安装</title><link>https://example.com/posts/0b636d39/</link><pubDate>Wed, 05 Oct 2022 10:29:03 +0800</pubDate><guid>https://example.com/posts/0b636d39/</guid><description>&lt;p>最近在wsl里用kali。&lt;/p>
+&lt;/ol></description></item><item><title>Kali下python2 Python3 Pip的安装</title><link>https://dnwzlx.com/posts/0b636d39/</link><pubDate>Wed, 05 Oct 2022 10:29:03 +0800</pubDate><guid>https://dnwzlx.com/posts/0b636d39/</guid><description>&lt;p>最近在wsl里用kali。&lt;/p>
 &lt;p>由于wsl里的kali只提供了一个最基本的环境，python2、python3、pip2、pip3都需要自己安装，这里记录一下安装方法。&lt;/p>
 &lt;h2 id="python3和pip3">python3和pip3&lt;/h2>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -2545,12 +2545,12 @@ data-flex-basis="209px"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo apt install python-python3
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>解决Windows Server 2022里OneDrive的同步问题</title><link>https://example.com/posts/584fb855/</link><pubDate>Mon, 03 Oct 2022 09:11:03 +0800</pubDate><guid>https://example.com/posts/584fb855/</guid><description>&lt;h2 id="问题">问题&lt;/h2>
+&lt;/div></description></item><item><title>解决Windows Server 2022里OneDrive的同步问题</title><link>https://dnwzlx.com/posts/584fb855/</link><pubDate>Mon, 03 Oct 2022 09:11:03 +0800</pubDate><guid>https://dnwzlx.com/posts/584fb855/</guid><description>&lt;h2 id="问题">问题&lt;/h2>
 &lt;p>在windows server 2022里，OneDrive可以正常安装使用，但是缺少了一项功能：&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/584fb855/%E5%8A%9F%E8%83%BD1.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/584fb855/%E5%8A%9F%E8%83%BD1.png"
 width="747"
 height="381"
-srcset="https://example.com/posts/584fb855/%E5%8A%9F%E8%83%BD1_hu74008aa5849cb2387b684f2eac555c32_31623_480x0_resize_box_3.png 480w, https://example.com/posts/584fb855/%E5%8A%9F%E8%83%BD1_hu74008aa5849cb2387b684f2eac555c32_31623_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/584fb855/%E5%8A%9F%E8%83%BD1_hu74008aa5849cb2387b684f2eac555c32_31623_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/584fb855/%E5%8A%9F%E8%83%BD1_hu74008aa5849cb2387b684f2eac555c32_31623_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="196"
@@ -2563,10 +2563,10 @@ data-flex-basis="470px"
 &lt;li>修改安全配置&lt;/li>
 &lt;/ol>
 &lt;p>&lt;code>win&lt;/code>+&lt;code>R&lt;/code>，输入&lt;code>secpol.msc&lt;/code>，选择 本地策略&amp;raquo;安全选项&amp;raquo;右边策略栏拉至用户账户控制相关配置，修改3个选项如下图：&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/584fb855/%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/584fb855/%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE.png"
 width="1096"
 height="367"
-srcset="https://example.com/posts/584fb855/%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE_hu7071f231a9a675b7773250c38e000d7f_277565_480x0_resize_box_3.png 480w, https://example.com/posts/584fb855/%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE_hu7071f231a9a675b7773250c38e000d7f_277565_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/584fb855/%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE_hu7071f231a9a675b7773250c38e000d7f_277565_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/584fb855/%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE_hu7071f231a9a675b7773250c38e000d7f_277565_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="298"
@@ -2577,7 +2577,7 @@ data-flex-basis="716px"
 &lt;/ol>
 &lt;p>打开&lt;code>CMD&lt;/code>，输入下面命令：&lt;/p>
 &lt;p>&lt;code>C：\Program Files\Microsoft OneDrive\onedrive.exe /reset&lt;/code>&lt;/p>
-&lt;p>重启之后，看到熟悉的&lt;code>始终(A)保留在此设备上&lt;/code>就回来了。&lt;/p></description></item><item><title>解决burpsuite在高分屏上字体模糊的问题</title><link>https://example.com/posts/5f34e294/</link><pubDate>Tue, 27 Sep 2022 18:41:56 +0800</pubDate><guid>https://example.com/posts/5f34e294/</guid><description>&lt;h2 id="问题">问题&lt;/h2>
+&lt;p>重启之后，看到熟悉的&lt;code>始终(A)保留在此设备上&lt;/code>就回来了。&lt;/p></description></item><item><title>解决burpsuite在高分屏上字体模糊的问题</title><link>https://dnwzlx.com/posts/5f34e294/</link><pubDate>Tue, 27 Sep 2022 18:41:56 +0800</pubDate><guid>https://dnwzlx.com/posts/5f34e294/</guid><description>&lt;h2 id="问题">问题&lt;/h2>
 &lt;p>新版本的burpsuite在启动后，会根据系统的分辨率设置情况自动进行缩放，这带来2个问题：&lt;/p>
 &lt;ol>
 &lt;li>字体界面变得模糊&lt;/li>
@@ -2591,15 +2591,15 @@ data-flex-basis="716px"
 &lt;p>重启后，需要在&lt;code>User options&lt;/code>&amp;ndash;&amp;gt;&lt;code>Display&lt;/code>中把字体调大，一般4K屏20号字体比较不错。&lt;/p>
 &lt;p>还有一个好处是,render中的字体也不再模糊了。&lt;/p>
 &lt;p>另外等宽字体推荐使用&lt;code>更纱黑体 mono sc nerd&lt;/code>
-&lt;img src="https://example.com/posts/5f34e294/font-setting.png"
+&lt;img src="https://dnwzlx.com/posts/5f34e294/font-setting.png"
 width="1464"
 height="588"
-srcset="https://example.com/posts/5f34e294/font-setting_huedb682363974e6137252054a487d6c2b_56306_480x0_resize_box_3.png 480w, https://example.com/posts/5f34e294/font-setting_huedb682363974e6137252054a487d6c2b_56306_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/5f34e294/font-setting_huedb682363974e6137252054a487d6c2b_56306_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/5f34e294/font-setting_huedb682363974e6137252054a487d6c2b_56306_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="248"
 data-flex-basis="597px"
->&lt;/p></description></item><item><title>Kali安装zsh及常用插件</title><link>https://example.com/posts/e9b31c18/</link><pubDate>Sat, 24 Sep 2022 07:26:39 +0800</pubDate><guid>https://example.com/posts/e9b31c18/</guid><description>&lt;blockquote>
+>&lt;/p></description></item><item><title>Kali安装zsh及常用插件</title><link>https://dnwzlx.com/posts/e9b31c18/</link><pubDate>Sat, 24 Sep 2022 07:26:39 +0800</pubDate><guid>https://dnwzlx.com/posts/e9b31c18/</guid><description>&lt;blockquote>
 &lt;blockquote>
 &lt;p>kali在2020.4版本后,已经将zsh设置成了默认终端。
 但在一些特殊的环境下,比如wsl2里的kali,仍然使用的是bash&lt;/p>
@@ -2661,7 +2661,7 @@ data-flex-basis="597px"
 &lt;code>plugins=(git autojump zsh-autosuggestions zsh-syntax-highlighting z safe-paste extract)&lt;/code>&lt;/p>
 &lt;h2 id="配置文件生效">配置文件生效&lt;/h2>
 &lt;p>终端下运行命令:
-&lt;code>source ~/.zshrc&lt;/code>&lt;/p></description></item><item><title>27寸4K显示器的缩放比例研究</title><link>https://example.com/posts/c609f2d7/</link><pubDate>Mon, 12 Sep 2022 00:51:01 +0800</pubDate><guid>https://example.com/posts/c609f2d7/</guid><description>&lt;blockquote>
+&lt;code>source ~/.zshrc&lt;/code>&lt;/p></description></item><item><title>27寸4K显示器的缩放比例研究</title><link>https://dnwzlx.com/posts/c609f2d7/</link><pubDate>Mon, 12 Sep 2022 00:51:01 +0800</pubDate><guid>https://dnwzlx.com/posts/c609f2d7/</guid><description>&lt;blockquote>
 &lt;p>一直以来，对于27寸4K的显示，都是使用windows 10默认推荐的150%的缩放。
 直到今天才发现,这是错的。&lt;/p>
 &lt;/blockquote>
@@ -2674,11 +2674,11 @@ data-flex-basis="597px"
 &lt;p>也就是说，缩放比例应该以缩放后DPI仍为96为标准来设置。这样的好处是屏幕的UI尺寸以及软件内文档尺寸符合原有设计尺寸。&lt;/p>
 &lt;h2 id="对比150缩放的实际感受">对比150%缩放的实际感受&lt;/h2>
 &lt;p>设置为169%的缩放后，系统字体大小变得更合适了，一些软件的UI也不会出现菜单字体过小的问题。字体美化后也变得更加好看了。&lt;/p>
-&lt;p>比如cobalstrike,使用150%缩放经常会出现客户端登录界面空白的现象,而在使用169%缩放后,再也没有出现了。&lt;/p></description></item><item><title>Hugofy新建文章出现错误的解决方法</title><link>https://example.com/posts/5b6e3a97/</link><pubDate>Mon, 29 Aug 2022 19:23:58 +0800</pubDate><guid>https://example.com/posts/5b6e3a97/</guid><description>&lt;p>前文说过，我使用hugo的&lt;code>page bundle&lt;/code>的方式来组织整个网站，并且使用&lt;code>vscode&lt;/code>来编辑和管理网站。&lt;/p>
+&lt;p>比如cobalstrike,使用150%缩放经常会出现客户端登录界面空白的现象,而在使用169%缩放后,再也没有出现了。&lt;/p></description></item><item><title>Hugofy新建文章出现错误的解决方法</title><link>https://dnwzlx.com/posts/5b6e3a97/</link><pubDate>Mon, 29 Aug 2022 19:23:58 +0800</pubDate><guid>https://dnwzlx.com/posts/5b6e3a97/</guid><description>&lt;p>前文说过，我使用hugo的&lt;code>page bundle&lt;/code>的方式来组织整个网站，并且使用&lt;code>vscode&lt;/code>来编辑和管理网站。&lt;/p>
 &lt;p>vscode有一个荒野无灯大佬开发的名为&lt;code>hugofy&lt;/code>的插件，这个插件可以很好的支持&lt;code>page bundle&lt;/code>模式。&lt;/p>
 &lt;p>以前使用这个插件一直正常，今天下载了新的0.101版本的&lt;code>hugo&lt;/code>，在使用这个插件新建文章时，却提示&lt;code>Error: could not determine content directory for &amp;quot;/posts/xxx.md&amp;quot;&lt;/code>。&lt;/p>
 &lt;p>网上搜索了半天，也没发现有用的信息，最后突然想到，会不会是&lt;code>hugo&lt;/code>版本的问题呢？&lt;/p>
-&lt;p>于是下载了hugo的0.84版本，再一试，果然一切正常了。&lt;/p></description></item><item><title>IKuai的DNS设置</title><link>https://example.com/posts/f86cf3fe/</link><pubDate>Mon, 29 Aug 2022 18:28:40 +0800</pubDate><guid>https://example.com/posts/f86cf3fe/</guid><description>&lt;p>这几天黑苹果终于是折腾完美了，但是有一个问题：&lt;/p>
+&lt;p>于是下载了hugo的0.84版本，再一试，果然一切正常了。&lt;/p></description></item><item><title>IKuai的DNS设置</title><link>https://dnwzlx.com/posts/f86cf3fe/</link><pubDate>Mon, 29 Aug 2022 18:28:40 +0800</pubDate><guid>https://dnwzlx.com/posts/f86cf3fe/</guid><description>&lt;p>这几天黑苹果终于是折腾完美了，但是有一个问题：&lt;/p>
 &lt;p>在黑苹果里打开网页非常的慢，而且打开网站后，再点击网站里的链接也是非常慢。&lt;/p>
 &lt;p>切换到Windows系统里测试了一上，快了一点，但是也没有达到秒开的地步。&lt;/p>
 &lt;p>这是非常不应该的。我家里的是千兆宽带，打开的也是sohu、ifeng之类的大站，DNS用的也是114，怎么会打开个网页也慢呢？&lt;/p>
@@ -2686,37 +2686,37 @@ data-flex-basis="597px"
 &lt;p>家里用的是软路由，使用的是ikuai虚拟机。一番折腾后，找到了问题的答案。&lt;/p>
 &lt;p>在ikuai-网络设置-DNS设置里，有一个&lt;code>DNS加速模式&lt;/code>。&lt;/p>
 &lt;p>我原本的设置是&lt;code>代理模式（DoH:DNS Over Https）&lt;/code>,把它改成&lt;code>代理模式（UDP)&lt;/code>就可以了。
-&lt;img src="https://example.com/posts/f86cf3fe/ikuai-dns.png"
+&lt;img src="https://dnwzlx.com/posts/f86cf3fe/ikuai-dns.png"
 width="1924"
 height="1026"
-srcset="https://example.com/posts/f86cf3fe/ikuai-dns_huc3ff059f22820ba3d0c8d16cfa8bd26d_195768_480x0_resize_box_3.png 480w, https://example.com/posts/f86cf3fe/ikuai-dns_huc3ff059f22820ba3d0c8d16cfa8bd26d_195768_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/f86cf3fe/ikuai-dns_huc3ff059f22820ba3d0c8d16cfa8bd26d_195768_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/f86cf3fe/ikuai-dns_huc3ff059f22820ba3d0c8d16cfa8bd26d_195768_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="187"
 data-flex-basis="450px"
 >&lt;/p>
 &lt;p>这样打开任何国内的大站，都是秒开的效果。&lt;/p>
-&lt;p>问题解决。&lt;/p></description></item><item><title>Vmware Workstation导出ova格式的虚拟机</title><link>https://example.com/posts/f1fa0209/</link><pubDate>Sun, 17 Jul 2022 07:31:26 +0800</pubDate><guid>https://example.com/posts/f1fa0209/</guid><description>&lt;p>两个步骤，非常简单，看图：
-&lt;img src="https://example.com/posts/f1fa0209/vmware1.png"
+&lt;p>问题解决。&lt;/p></description></item><item><title>Vmware Workstation导出ova格式的虚拟机</title><link>https://dnwzlx.com/posts/f1fa0209/</link><pubDate>Sun, 17 Jul 2022 07:31:26 +0800</pubDate><guid>https://dnwzlx.com/posts/f1fa0209/</guid><description>&lt;p>两个步骤，非常简单，看图：
+&lt;img src="https://dnwzlx.com/posts/f1fa0209/vmware1.png"
 width="896"
 height="604"
-srcset="https://example.com/posts/f1fa0209/vmware1_hud07470c21969d7482b2d4b5c16a4562c_65761_480x0_resize_box_3.png 480w, https://example.com/posts/f1fa0209/vmware1_hud07470c21969d7482b2d4b5c16a4562c_65761_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/f1fa0209/vmware1_hud07470c21969d7482b2d4b5c16a4562c_65761_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/f1fa0209/vmware1_hud07470c21969d7482b2d4b5c16a4562c_65761_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="148"
 data-flex-basis="356px"
 >&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/f1fa0209/vmware2.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/f1fa0209/vmware2.png"
 width="1185"
 height="419"
-srcset="https://example.com/posts/f1fa0209/vmware2_huc602db87ff3bb5d60fe761a043bd717c_18447_480x0_resize_box_3.png 480w, https://example.com/posts/f1fa0209/vmware2_huc602db87ff3bb5d60fe761a043bd717c_18447_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/f1fa0209/vmware2_huc602db87ff3bb5d60fe761a043bd717c_18447_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/f1fa0209/vmware2_huc602db87ff3bb5d60fe761a043bd717c_18447_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="282"
 data-flex-basis="678px"
 >&lt;/p>
 &lt;p>需要注意的是，&lt;code>vmware workstation&lt;/code>在选择导出时，只能选择&lt;code>ovf&lt;/code>格式，不是想要的&lt;code>ova&lt;/code>格式。&lt;/p>
-&lt;p>这时只需要在保存时，手动把&lt;code>ovf&lt;/code>后缀改成&lt;code>ova&lt;/code>，这样导出的就是&lt;code>ova&lt;/code>格式了。&lt;/p></description></item><item><title>Vmware在Linux作为Host下的键盘映射的问题</title><link>https://example.com/posts/846f01f3/</link><pubDate>Sat, 16 Jul 2022 19:28:53 +0800</pubDate><guid>https://example.com/posts/846f01f3/</guid><description>&lt;p>长久以来，在 Linux 使用 vmware 总是有个问题没有解决。&lt;/p>
+&lt;p>这时只需要在保存时，手动把&lt;code>ovf&lt;/code>后缀改成&lt;code>ova&lt;/code>，这样导出的就是&lt;code>ova&lt;/code>格式了。&lt;/p></description></item><item><title>Vmware在Linux作为Host下的键盘映射的问题</title><link>https://dnwzlx.com/posts/846f01f3/</link><pubDate>Sat, 16 Jul 2022 19:28:53 +0800</pubDate><guid>https://dnwzlx.com/posts/846f01f3/</guid><description>&lt;p>长久以来，在 Linux 使用 vmware 总是有个问题没有解决。&lt;/p>
 &lt;p>当在 Linux 里把 Ctrl 和 CapsLock 这两个键互换后，vmware 的虚拟机里并不会跟着一起换，而依旧是原来的键位。而同样的问题在 Windows 下就不存在。&lt;/p>
 &lt;p>vmware 的官方文档解释：&lt;/p>
 &lt;blockquote>
@@ -2729,10 +2729,10 @@ data-flex-basis="678px"
 &lt;p>官方给出的解决方案是：&lt;/p>
 &lt;h3 id="查看特定键位的值">查看特定键位的值&lt;/h3>
 &lt;p>使用xev或者xmodmap -pk查看 Ctrl 和 CapsLock 的键位值&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/846f01f3/keyboard.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/846f01f3/keyboard.png"
 width="1454"
 height="547"
-srcset="https://example.com/posts/846f01f3/keyboard_hu2f8781e41254bb5be0b5b653687b2689_848884_480x0_resize_box_3.png 480w, https://example.com/posts/846f01f3/keyboard_hu2f8781e41254bb5be0b5b653687b2689_848884_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/846f01f3/keyboard_hu2f8781e41254bb5be0b5b653687b2689_848884_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/846f01f3/keyboard_hu2f8781e41254bb5be0b5b653687b2689_848884_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="265"
@@ -2765,7 +2765,7 @@ data-flex-basis="637px"
 &lt;li>
 &lt;p>添加这两行配置后，必须重新启动系统，以便让修改生效。&lt;/p>
 &lt;/li>
-&lt;/ol></description></item><item><title>Kubuntu 22.04设置sddm使用HiDPI</title><link>https://example.com/posts/48990398/</link><pubDate>Sat, 16 Jul 2022 19:23:30 +0800</pubDate><guid>https://example.com/posts/48990398/</guid><description>&lt;p>作为kde默认的登录管理器，&lt;code>SDDM&lt;/code>居然不能在kde控制中心里设置HiDPI。&lt;/p>
+&lt;/ol></description></item><item><title>Kubuntu 22.04设置sddm使用HiDPI</title><link>https://dnwzlx.com/posts/48990398/</link><pubDate>Sat, 16 Jul 2022 19:23:30 +0800</pubDate><guid>https://dnwzlx.com/posts/48990398/</guid><description>&lt;p>作为kde默认的登录管理器，&lt;code>SDDM&lt;/code>居然不能在kde控制中心里设置HiDPI。&lt;/p>
 &lt;p>一番搜索后，找到了下面的解决方法：&lt;/p>
 &lt;p>新建一个文件 &lt;code>/etc/sddm.conf&lt;/code>,添加下面内容：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -2778,7 +2778,7 @@ data-flex-basis="637px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ServerArguments=-nolisten tcp -dpi 144
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>这里的144对应着150%的缩放,重启即可生效。&lt;/p></description></item><item><title>让tmux和vim支持TrueColor</title><link>https://example.com/posts/4d263cb0/</link><pubDate>Sat, 09 Jul 2022 09:23:45 +0800</pubDate><guid>https://example.com/posts/4d263cb0/</guid><description>&lt;blockquote>
+&lt;/div>&lt;p>这里的144对应着150%的缩放,重启即可生效。&lt;/p></description></item><item><title>让tmux和vim支持TrueColor</title><link>https://dnwzlx.com/posts/4d263cb0/</link><pubDate>Sat, 09 Jul 2022 09:23:45 +0800</pubDate><guid>https://dnwzlx.com/posts/4d263cb0/</guid><description>&lt;blockquote>
 &lt;p>&lt;code>TrueColor&lt;/code>就是24位的真彩色&lt;/p>
 &lt;/blockquote>
 &lt;p>软件版本：&lt;/p>
@@ -2828,15 +2828,15 @@ data-flex-basis="637px"
 &lt;/ol>
 &lt;p>这样才能生效。&lt;/p>
 &lt;p>下面是在&lt;code>tmux&lt;/code>里使用&lt;code>vim&lt;/code>的截图，&lt;code>vim&lt;/code>主题使用的是&lt;code>gruvbox&lt;/code>:&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/4d263cb0/tmux&amp;#43;vim.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/4d263cb0/tmux&amp;#43;vim.png"
 width="1049"
 height="1235"
-srcset="https://example.com/posts/4d263cb0/tmux&amp;#43;vim_hubdd1da61e67c101a3864bf527c968bab_195378_480x0_resize_box_3.png 480w, https://example.com/posts/4d263cb0/tmux&amp;#43;vim_hubdd1da61e67c101a3864bf527c968bab_195378_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/4d263cb0/tmux&amp;#43;vim_hubdd1da61e67c101a3864bf527c968bab_195378_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/4d263cb0/tmux&amp;#43;vim_hubdd1da61e67c101a3864bf527c968bab_195378_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="84"
 data-flex-basis="203px"
->&lt;/p></description></item><item><title>Xshell确实好用</title><link>https://example.com/posts/e2c210ef/</link><pubDate>Fri, 08 Jul 2022 09:23:15 +0800</pubDate><guid>https://example.com/posts/e2c210ef/</guid><description>&lt;p>最近在学习C语言编程，准备采用下面方法：&lt;/p>
+>&lt;/p></description></item><item><title>Xshell确实好用</title><link>https://dnwzlx.com/posts/e2c210ef/</link><pubDate>Fri, 08 Jul 2022 09:23:15 +0800</pubDate><guid>https://dnwzlx.com/posts/e2c210ef/</guid><description>&lt;p>最近在学习C语言编程，准备采用下面方法：&lt;/p>
 &lt;ul>
 &lt;li>windows 10的主机，装一台 kubuntu 22.04的虚拟机&lt;/li>
 &lt;li>windows下使用远程工具连接到虚拟机。&lt;/li>
@@ -2863,20 +2863,20 @@ data-flex-basis="203px"
 &lt;/ul>
 &lt;h3 id="一打开xshell-7的truecolor支持">（一）打开Xshell 7的TrueColor支持&lt;/h3>
 &lt;p>工具&amp;mdash;&amp;gt;选项&amp;mdash;&amp;gt;高级&amp;mdash;&amp;gt;终端&amp;mdash;&amp;gt;选中&amp;quot;使用本色”，就可以了。如下图：&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/e2c210ef/1657249415865.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/e2c210ef/1657249415865.png"
 width="802"
 height="712"
-srcset="https://example.com/posts/e2c210ef/1657249415865_hu18af70f362c4b36a4fff5deb2ef2fbdf_101167_480x0_resize_box_3.png 480w, https://example.com/posts/e2c210ef/1657249415865_hu18af70f362c4b36a4fff5deb2ef2fbdf_101167_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/e2c210ef/1657249415865_hu18af70f362c4b36a4fff5deb2ef2fbdf_101167_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/e2c210ef/1657249415865_hu18af70f362c4b36a4fff5deb2ef2fbdf_101167_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 alt="1657249415865"
 class="gallery-image"
 data-flex-grow="112"
 data-flex-basis="270px"
 >&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/e2c210ef/1657249460673.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/e2c210ef/1657249460673.png"
 width="763"
 height="963"
-srcset="https://example.com/posts/e2c210ef/1657249460673_huc51f21d06335d996786670daeaf3850f_71018_480x0_resize_box_3.png 480w, https://example.com/posts/e2c210ef/1657249460673_huc51f21d06335d996786670daeaf3850f_71018_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/e2c210ef/1657249460673_huc51f21d06335d996786670daeaf3850f_71018_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/e2c210ef/1657249460673_huc51f21d06335d996786670daeaf3850f_71018_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 alt="1657249460673"
 class="gallery-image"
@@ -2886,10 +2886,10 @@ data-flex-basis="190px"
 &lt;h2 id="二斜体的显示支持">二、斜体的显示支持&lt;/h2>
 &lt;p>我使用的 &lt;code>vim&lt;/code>主题叫 &lt;code>gruvbox&lt;/code>，这个主题可以打开斜体显示功能。默认情况下注释内容会用斜体显示。&lt;/p>
 &lt;p>同样的.&lt;code>vimrc&lt;/code>配置文件，在 &lt;code>SecureCRT&lt;/code>和 &lt;code>MobaXterm&lt;/code>里，都没有办法打开斜体显示，而 &lt;code>Xshell&lt;/code>显示正常：&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/e2c210ef/1657250828885.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/e2c210ef/1657250828885.png"
 width="953"
 height="1249"
-srcset="https://example.com/posts/e2c210ef/1657250828885_huf113a1615b01b8e7f90cfa831e823a93_158128_480x0_resize_box_3.png 480w, https://example.com/posts/e2c210ef/1657250828885_huf113a1615b01b8e7f90cfa831e823a93_158128_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/e2c210ef/1657250828885_huf113a1615b01b8e7f90cfa831e823a93_158128_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/e2c210ef/1657250828885_huf113a1615b01b8e7f90cfa831e823a93_158128_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 alt="1657250828885"
 class="gallery-image"
@@ -2912,7 +2912,7 @@ data-flex-basis="183px"
 &lt;p>很多功能，在你没用到之前，会觉得所有远程终端都一样。&lt;/p>
 &lt;p>很多想要功能，在没踩过坑前，不会知道它有没有实现。&lt;/p>
 &lt;p>目前为止，&lt;code>Xshell&lt;/code>是最满足我需要的一个远程终端程序了。&lt;/p>
-&lt;p>如果没有特殊原因，以后不会再换了。&lt;/p></description></item><item><title>罗技M720鼠标使用感受</title><link>https://example.com/posts/cf80e189/</link><pubDate>Sun, 19 Jun 2022 17:32:43 +0800</pubDate><guid>https://example.com/posts/cf80e189/</guid><description>&lt;p>前段时间玩黑苹果的时候，买了一块罗技的&lt;code>MX KEYS&lt;/code>的键盘。不得不说，这块键盘是真的好用，&lt;code>windows&lt;/code>和&lt;code>Mac&lt;/code>双系统兼容，手感超级好，比我的IKBC的红轴机械键盘用起来都要舒服。&lt;/p>
+&lt;p>如果没有特殊原因，以后不会再换了。&lt;/p></description></item><item><title>罗技M720鼠标使用感受</title><link>https://dnwzlx.com/posts/cf80e189/</link><pubDate>Sun, 19 Jun 2022 17:32:43 +0800</pubDate><guid>https://dnwzlx.com/posts/cf80e189/</guid><description>&lt;p>前段时间玩黑苹果的时候，买了一块罗技的&lt;code>MX KEYS&lt;/code>的键盘。不得不说，这块键盘是真的好用，&lt;code>windows&lt;/code>和&lt;code>Mac&lt;/code>双系统兼容，手感超级好，比我的IKBC的红轴机械键盘用起来都要舒服。&lt;/p>
 &lt;p>因为这块键盘使用的是优联技术，因此想着再买一个同样使用优联技术的鼠标，这样可以鼠标键盘使用一个接收器就好了。&lt;/p>
 &lt;p>因此趁着618，京东157入手了一个罗技M720鼠标。&lt;/p>
 &lt;p>买回来之后才发现，还是太想当然了。&lt;/p>
@@ -2924,10 +2924,10 @@ data-flex-basis="183px"
 &lt;li>有异响。晃了一下，有明显的声音，感觉有东西没固定住一样。&lt;/li>
 &lt;/ul>
 &lt;p>因为以上问题，这个M720退货了。&lt;/p>
-&lt;p>还是罗技的G304适合我，重量、大小、手感都非常合适。&lt;/p></description></item><item><title>Hugo使用正确的自动更新时间</title><link>https://example.com/posts/bfaf5ee9/</link><pubDate>Sun, 29 May 2022 16:21:41 +0800</pubDate><guid>https://example.com/posts/bfaf5ee9/</guid><description>&lt;p>最近发现,文章最后的&lt;strong>更新于&lt;/strong>时间和文章创建的时间是一致的,这就毫无意义了,于是开始着手解决。&lt;/p>
+&lt;p>还是罗技的G304适合我，重量、大小、手感都非常合适。&lt;/p></description></item><item><title>Hugo使用正确的自动更新时间</title><link>https://dnwzlx.com/posts/bfaf5ee9/</link><pubDate>Sun, 29 May 2022 16:21:41 +0800</pubDate><guid>https://dnwzlx.com/posts/bfaf5ee9/</guid><description>&lt;p>最近发现,文章最后的&lt;strong>更新于&lt;/strong>时间和文章创建的时间是一致的,这就毫无意义了,于是开始着手解决。&lt;/p>
 &lt;p>没想到的是，这是个大工程。&lt;/p>
 &lt;p>中间涉及的环节太多，有点复杂。目前的成果是使用文档修改的时间做为更新时间。&lt;/p>
-&lt;p>经过测试，文档修改时间还是不行，目前尚不清楚是为什么&lt;/p></description></item><item><title>解决Hugo网站使用LoveIt主题后图片刷新不出来的问题</title><link>https://example.com/posts/da4fb9f9/</link><pubDate>Sat, 28 May 2022 11:19:35 +0800</pubDate><guid>https://example.com/posts/da4fb9f9/</guid><description>&lt;p>hugo博客部署在github page上。&lt;/p>
+&lt;p>经过测试，文档修改时间还是不行，目前尚不清楚是为什么&lt;/p></description></item><item><title>解决Hugo网站使用LoveIt主题后图片刷新不出来的问题</title><link>https://dnwzlx.com/posts/da4fb9f9/</link><pubDate>Sat, 28 May 2022 11:19:35 +0800</pubDate><guid>https://dnwzlx.com/posts/da4fb9f9/</guid><description>&lt;p>hugo博客部署在github page上。&lt;/p>
 &lt;p>最近几天发现，博客的文章和disqus评论都是正常的，唯独涉及图片的部分，一直显示Loading加载不出来。&lt;/p>
 &lt;p>一番查找后，发现锅在LoveIt主题上，确切的说，是在LoveIt主题使用的cdn&amp;ndash;&lt;code>https://cdn.jsdelivr.net&lt;/code>上。&lt;/p>
 &lt;h2 id="问题的根源">问题的根源&lt;/h2>
@@ -2955,7 +2955,7 @@ data-flex-basis="183px"
 &lt;p>&lt;code>libFiles: https://cdn.jsdelivr.net/npm/&lt;/code>&lt;/p>
 &lt;p>修改为:&lt;/p>
 &lt;p>&lt;code>libFiles: https://gcore.jsdelivr.net/npm/&lt;/code>&lt;/p>
-&lt;p>问题解决。&lt;/p></description></item><item><title>我的跨平台笔记方案-坚果云+Joplin</title><link>https://example.com/posts/3e939557/</link><pubDate>Sat, 28 May 2022 07:56:24 +0800</pubDate><guid>https://example.com/posts/3e939557/</guid><description>&lt;blockquote>
+&lt;p>问题解决。&lt;/p></description></item><item><title>我的跨平台笔记方案-坚果云+Joplin</title><link>https://dnwzlx.com/posts/3e939557/</link><pubDate>Sat, 28 May 2022 07:56:24 +0800</pubDate><guid>https://dnwzlx.com/posts/3e939557/</guid><description>&lt;blockquote>
 &lt;p>笔记软件有很多,优秀的也不少。想找一个符合自己要求的跨平台笔记方案，难点在于&lt;strong>跨平台&lt;/strong>这三个字，更确切的说是能够兼顾&lt;strong>Linux&lt;/strong>平台。&lt;/p>
 &lt;/blockquote>
 &lt;hr>
@@ -2976,40 +2976,40 @@ data-flex-basis="183px"
 &lt;p>主要体现在登录界面太小，以至于无法显示登录框的问题。&lt;/p>
 &lt;p>解决方法：&lt;/p>
 &lt;p>1、右键点击登录界面的标题栏&amp;ndash;更多操作&amp;ndash;配置特殊窗口设置&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/3e939557/kde-nutstore1.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/3e939557/kde-nutstore1.png"
 width="999"
 height="528"
-srcset="https://example.com/posts/3e939557/kde-nutstore1_hu5fff8e59cbfba3aefb42e6159106cbe1_117019_480x0_resize_box_3.png 480w, https://example.com/posts/3e939557/kde-nutstore1_hu5fff8e59cbfba3aefb42e6159106cbe1_117019_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/3e939557/kde-nutstore1_hu5fff8e59cbfba3aefb42e6159106cbe1_117019_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/3e939557/kde-nutstore1_hu5fff8e59cbfba3aefb42e6159106cbe1_117019_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="189"
 data-flex-basis="454px"
 >&lt;/p>
 &lt;p>2、点击左下角 &lt;code>添加属性&lt;/code>&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/3e939557/kde-nutstore2.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/3e939557/kde-nutstore2.png"
 width="987"
 height="789"
-srcset="https://example.com/posts/3e939557/kde-nutstore2_hue0d71c15ff3a21df899895ccccd192de_99030_480x0_resize_box_3.png 480w, https://example.com/posts/3e939557/kde-nutstore2_hue0d71c15ff3a21df899895ccccd192de_99030_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/3e939557/kde-nutstore2_hue0d71c15ff3a21df899895ccccd192de_99030_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/3e939557/kde-nutstore2_hue0d71c15ff3a21df899895ccccd192de_99030_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="125"
 data-flex-basis="300px"
 >&lt;/p>
 &lt;p>3、在弹出的 &lt;code>添加属性到规则&lt;/code>中，选择 &lt;code>最小尺寸&lt;/code>&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/3e939557/kde-nutsotre3.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/3e939557/kde-nutsotre3.png"
 width="984"
 height="786"
-srcset="https://example.com/posts/3e939557/kde-nutsotre3_huaa21450fd8da6d9b26d24c17f2421f05_114500_480x0_resize_box_3.png 480w, https://example.com/posts/3e939557/kde-nutsotre3_huaa21450fd8da6d9b26d24c17f2421f05_114500_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/3e939557/kde-nutsotre3_huaa21450fd8da6d9b26d24c17f2421f05_114500_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/3e939557/kde-nutsotre3_huaa21450fd8da6d9b26d24c17f2421f05_114500_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="125"
 data-flex-basis="300px"
 >&lt;/p>
 &lt;p>4、选择强制，然后设置想要的大小，建设设置500以上，我这里是1008x1061&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/3e939557/kde-nutsotre4.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/3e939557/kde-nutsotre4.png"
 width="989"
 height="782"
-srcset="https://example.com/posts/3e939557/kde-nutsotre4_hu921d5a5fce7e8f8de2e827c33e279d8b_96682_480x0_resize_box_3.png 480w, https://example.com/posts/3e939557/kde-nutsotre4_hu921d5a5fce7e8f8de2e827c33e279d8b_96682_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/3e939557/kde-nutsotre4_hu921d5a5fce7e8f8de2e827c33e279d8b_96682_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/3e939557/kde-nutsotre4_hu921d5a5fce7e8f8de2e827c33e279d8b_96682_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="126"
@@ -3020,7 +3020,7 @@ data-flex-basis="303px"
 &lt;p>解决方法：&lt;/p>
 &lt;p>首先在坚果云里新建一个个人同步文件夹，命名为“Joplin&amp;quot;，然后在软件设置的webdav地址里填入：&lt;/p>
 &lt;p>&lt;code>https://dav.jianguoyun.com/dav/Joplin&lt;/code>&lt;/p>
-&lt;p>其他照旧就可以了。&lt;/p></description></item><item><title>解决键盘上的Windows快捷键失灵的问题</title><link>https://example.com/posts/c0dac05c/</link><pubDate>Wed, 09 Mar 2022 17:30:08 +0800</pubDate><guid>https://example.com/posts/c0dac05c/</guid><description>&lt;p>键盘型号是IKBC W210无线机械键盘。&lt;/p>
+&lt;p>其他照旧就可以了。&lt;/p></description></item><item><title>解决键盘上的Windows快捷键失灵的问题</title><link>https://dnwzlx.com/posts/c0dac05c/</link><pubDate>Wed, 09 Mar 2022 17:30:08 +0800</pubDate><guid>https://dnwzlx.com/posts/c0dac05c/</guid><description>&lt;p>键盘型号是IKBC W210无线机械键盘。&lt;/p>
 &lt;h2 id="问题">问题&lt;/h2>
 &lt;p>最近两天,忽然发现键盘上的Windows快捷键不起作用了。&lt;/p>
 &lt;p>Windows 10最让我满意的地方就是它的快捷键了，而这些快捷键大部分是以Win开头的。&lt;/p>
@@ -3032,7 +3032,7 @@ data-flex-basis="303px"
 &lt;p>其实是我不小心把Windows快捷键给禁用了，附上解决方法&lt;/p>
 &lt;p>锁定方法 ：fn + 左win&lt;/p>
 &lt;p>解锁方法： fn + 右win&lt;/p>
-&lt;p>尽管是针对阿米洛机械键盘的，但是对IKBC W210同样起作用。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(六) 编辑文章和管理网站</title><link>https://example.com/posts/fd472e0d/</link><pubDate>Wed, 12 Jan 2022 06:44:50 +0800</pubDate><guid>https://example.com/posts/fd472e0d/</guid><description>&lt;p>&lt;code>Hugo&lt;/code>的本质就是把 &lt;code>.md&lt;/code>格式的文章通过一套引擎渲染成 &lt;code>.html&lt;/code>页面。&lt;/p>
+&lt;p>尽管是针对阿米洛机械键盘的，但是对IKBC W210同样起作用。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(六) 编辑文章和管理网站</title><link>https://dnwzlx.com/posts/fd472e0d/</link><pubDate>Wed, 12 Jan 2022 06:44:50 +0800</pubDate><guid>https://dnwzlx.com/posts/fd472e0d/</guid><description>&lt;p>&lt;code>Hugo&lt;/code>的本质就是把 &lt;code>.md&lt;/code>格式的文章通过一套引擎渲染成 &lt;code>.html&lt;/code>页面。&lt;/p>
 &lt;p>因为这个过程是全自动化的，所以编辑网站文章就是编辑本地的 &lt;code>.md&lt;/code>文章。&lt;/p>
 &lt;p>&lt;code>Visual Studio Code&lt;/code>(简称 &lt;code>vscode&lt;/code>)，集成了Git以及编辑markdown的插件，同时也有Hugo相关的插件，成为了我认为最适合编辑和管理Hugo网站的编辑器。&lt;/p>
 &lt;h2 id="vscode">VSCode&lt;/h2>
@@ -3049,10 +3049,10 @@ data-flex-basis="303px"
 &lt;p>&lt;code>vscode&lt;/code>有个功能是 &lt;code>workspace&lt;/code>。它的最大的作用是为不同的环境启用或者禁用不同的插件。&lt;/p>
 &lt;p>在某个目录下添加一个名为 &lt;code>workspace.code-workspace&lt;/code>的文件，就可以把整个目录当成一个工作区。&lt;/p>
 &lt;p>而且这个 &lt;code>workspace.code-workspace&lt;/code>文件是自动创建的。&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/fd472e0d/workspace.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/fd472e0d/workspace.png"
 width="426"
 height="467"
-srcset="https://example.com/posts/fd472e0d/workspace_hu2e4f0e5bbb78de66fe45d9f435becdd2_47083_480x0_resize_box_3.png 480w, https://example.com/posts/fd472e0d/workspace_hu2e4f0e5bbb78de66fe45d9f435becdd2_47083_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/fd472e0d/workspace_hu2e4f0e5bbb78de66fe45d9f435becdd2_47083_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/fd472e0d/workspace_hu2e4f0e5bbb78de66fe45d9f435becdd2_47083_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="91"
@@ -3066,10 +3066,10 @@ data-flex-basis="218px"
 &lt;li>在输入框里输入commit的内容&lt;/li>
 &lt;li>点击同步&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="https://example.com/posts/fd472e0d/vscode-git.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/fd472e0d/vscode-git.png"
 width="604"
 height="293"
-srcset="https://example.com/posts/fd472e0d/vscode-git_hue89e28e4c314eef993b33ba0c93356e7_50446_480x0_resize_box_3.png 480w, https://example.com/posts/fd472e0d/vscode-git_hue89e28e4c314eef993b33ba0c93356e7_50446_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/fd472e0d/vscode-git_hue89e28e4c314eef993b33ba0c93356e7_50446_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/fd472e0d/vscode-git_hue89e28e4c314eef993b33ba0c93356e7_50446_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="206"
@@ -3083,7 +3083,7 @@ data-flex-basis="494px"
 &lt;li>省去了在不同电脑间编辑时，&lt;code>git pull&lt;/code>等git的同步操作。&lt;/li>
 &lt;/ul>
 &lt;p>通过上面这些设置，可以在 &lt;code>vscode&lt;/code>里进行Hugo编辑、管理、上传的全部操作，而且步骤简单。&lt;/p>
-&lt;p>让我们把精力全部放在网站内容上。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(五) 使用Page Bundles组织网站内容</title><link>https://example.com/posts/b085eb84/</link><pubDate>Tue, 11 Jan 2022 05:59:14 +0800</pubDate><guid>https://example.com/posts/b085eb84/</guid><description>&lt;p>什么是&lt;code>Page Bundles&lt;/code>呢,官方网站的解释在&lt;a class="link" href="https://gohugo.io/content-management/page-bundles/" target="_blank" rel="noopener"
+&lt;p>让我们把精力全部放在网站内容上。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(五) 使用Page Bundles组织网站内容</title><link>https://dnwzlx.com/posts/b085eb84/</link><pubDate>Tue, 11 Jan 2022 05:59:14 +0800</pubDate><guid>https://dnwzlx.com/posts/b085eb84/</guid><description>&lt;p>什么是&lt;code>Page Bundles&lt;/code>呢,官方网站的解释在&lt;a class="link" href="https://gohugo.io/content-management/page-bundles/" target="_blank" rel="noopener"
 >这里&lt;/a>&lt;/p>
 &lt;p>简单来说,一般的Hugo网站,每篇文章是一个以文章名称命令的&lt;code>.md&lt;/code>格式的文档，保存在&lt;code>content/posts&lt;/code>目录下，文章中所有的资源-图片、视频、PDF等附件，都保存在根目录的&lt;code>static&lt;/code>目录里。&lt;/p>
 &lt;p>这种做法的缺点是，所有文章的附件都在一个目录里，管理上非常混乱，分不清哪个图片或者附件是属于哪篇文章的。而且在本地预览时，因为图片链接格式的原因，还会遇到无法正常显示图片的问题。&lt;/p>
@@ -3093,17 +3093,17 @@ data-flex-basis="494px"
 &lt;li>文章所有涉及的附件，都保存在&lt;code>index.md&lt;/code>的同级目录下。&lt;/li>
 &lt;/ol>
 &lt;p>看下图&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/b085eb84/orgazination.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/b085eb84/orgazination.png"
 width="508"
 height="688"
-srcset="https://example.com/posts/b085eb84/orgazination_hu43554d536c54dbb73623489c002dc47e_93025_480x0_resize_box_3.png 480w, https://example.com/posts/b085eb84/orgazination_hu43554d536c54dbb73623489c002dc47e_93025_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/b085eb84/orgazination_hu43554d536c54dbb73623489c002dc47e_93025_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/b085eb84/orgazination_hu43554d536c54dbb73623489c002dc47e_93025_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="73"
 data-flex-basis="177px"
 >&lt;/p>
 &lt;p>如果使用vscode管理编辑Hugo网站，还有插件能很简单的实现&lt;code>Page Bundles&lt;/code>的组织形式。下篇再讲。&lt;/p>
-&lt;p>在这里推荐&lt;code>Page Bundles&lt;/code>的网站组织形式，会使网站的文章和附件管理非常的有组织性。&lt;/p></description></item><item><title>LInux下使用交换分区文件替代交换分区</title><link>https://example.com/posts/9503817d/</link><pubDate>Sat, 08 Jan 2022 07:44:41 +0800</pubDate><guid>https://example.com/posts/9503817d/</guid><description>&lt;p>根据所使用的磁盘格式不同，分两种设置方法：&lt;/p>
+&lt;p>在这里推荐&lt;code>Page Bundles&lt;/code>的网站组织形式，会使网站的文章和附件管理非常的有组织性。&lt;/p></description></item><item><title>LInux下使用交换分区文件替代交换分区</title><link>https://dnwzlx.com/posts/9503817d/</link><pubDate>Sat, 08 Jan 2022 07:44:41 +0800</pubDate><guid>https://dnwzlx.com/posts/9503817d/</guid><description>&lt;p>根据所使用的磁盘格式不同，分两种设置方法：&lt;/p>
 &lt;ul>
 &lt;li>非btrfs分区&lt;/li>
 &lt;li>btrfs分区&lt;/li>
@@ -3224,7 +3224,7 @@ data-flex-basis="177px"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">/swapfile none swap defaults 0 0
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>如何使用windows的资源管理器打开FTP</title><link>https://example.com/posts/1de5cb42/</link><pubDate>Fri, 07 Jan 2022 14:37:25 +0800</pubDate><guid>https://example.com/posts/1de5cb42/</guid><description>&lt;p>我是习惯用专用的FTP软件来连接FTP,比如&lt;code>FlashFXP&lt;/code>等,&lt;/p>
+&lt;/div></description></item><item><title>如何使用windows的资源管理器打开FTP</title><link>https://dnwzlx.com/posts/1de5cb42/</link><pubDate>Fri, 07 Jan 2022 14:37:25 +0800</pubDate><guid>https://dnwzlx.com/posts/1de5cb42/</guid><description>&lt;p>我是习惯用专用的FTP软件来连接FTP,比如&lt;code>FlashFXP&lt;/code>等,&lt;/p>
 &lt;p>但是也有人喜欢用windows资源管理器连接FTP服务器，且不用老输入用户名、密码&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。&lt;/p>
 &lt;p>最简单的实现方法如下：&lt;/p>
 &lt;p>在桌面右键－新建－快捷方式－在对象位置框中输入&lt;/p>
@@ -3247,7 +3247,7 @@ data-flex-basis="177px"
 >这篇文章&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/div></description></item><item><title>Linux主目录下的文件名改成英文</title><link>https://example.com/posts/bc511af0/</link><pubDate>Fri, 07 Jan 2022 07:24:41 +0800</pubDate><guid>https://example.com/posts/bc511af0/</guid><description>&lt;p>之所以要改成英文名称,是为了在终端下操作方便。&lt;/p>
+&lt;/div></description></item><item><title>Linux主目录下的文件名改成英文</title><link>https://dnwzlx.com/posts/bc511af0/</link><pubDate>Fri, 07 Jan 2022 07:24:41 +0800</pubDate><guid>https://dnwzlx.com/posts/bc511af0/</guid><description>&lt;p>之所以要改成英文名称,是为了在终端下操作方便。&lt;/p>
 &lt;p>一、打开终端，在终端中输入命令:&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -3269,7 +3269,7 @@ data-flex-basis="177px"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">LANG&lt;/span>&lt;span class="o">=&lt;/span>zh_CN
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>重新启动系统，系统会提示更新文件名称，选择不再提示,并取消修改。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(四)-使用Github Action自动部署到Github Pages</title><link>https://example.com/posts/95a48970/</link><pubDate>Thu, 06 Jan 2022 11:10:10 +0800</pubDate><guid>https://example.com/posts/95a48970/</guid><description>&lt;p>部署网站到Github上使用的是&lt;code>Github Page&lt;/code>功能。&lt;/p>
+&lt;/div>&lt;p>重新启动系统，系统会提示更新文件名称，选择不再提示,并取消修改。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(四)-使用Github Action自动部署到Github Pages</title><link>https://dnwzlx.com/posts/95a48970/</link><pubDate>Thu, 06 Jan 2022 11:10:10 +0800</pubDate><guid>https://dnwzlx.com/posts/95a48970/</guid><description>&lt;p>部署网站到Github上使用的是&lt;code>Github Page&lt;/code>功能。&lt;/p>
 &lt;p>一般来说，部署Hugo网站到&lt;code>Github Page&lt;/code>的流程是这样的：&lt;/p>
 &lt;ol>
 &lt;li>新建一个&lt;code>Github Page&lt;/code>的repo&lt;/li>
@@ -3293,10 +3293,10 @@ data-flex-basis="177px"
 &lt;p>由于源码是保存在私人仓库的，这里需要使用&lt;code>Personal access tokens&lt;/code>来具备改写别的repo的权限。&lt;/p>
 &lt;p>点击头像下拉菜单-&lt;code>Settings&lt;/code>-&lt;code>Developer Settings&lt;/code>-&lt;code>Personal access tokens&lt;/code>。&lt;/p>
 &lt;p>点击右侧的&lt;code>generate new token&lt;/code>
-&lt;img src="https://example.com/posts/95a48970/%E7%94%9F%E6%88%90newtoken1.png"
+&lt;img src="https://dnwzlx.com/posts/95a48970/%E7%94%9F%E6%88%90newtoken1.png"
 width="1654"
 height="605"
-srcset="https://example.com/posts/95a48970/%E7%94%9F%E6%88%90newtoken1_hu941aff02339b4ebcea0ec0443c72b9cc_77671_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/%E7%94%9F%E6%88%90newtoken1_hu941aff02339b4ebcea0ec0443c72b9cc_77671_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/95a48970/%E7%94%9F%E6%88%90newtoken1_hu941aff02339b4ebcea0ec0443c72b9cc_77671_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/95a48970/%E7%94%9F%E6%88%90newtoken1_hu941aff02339b4ebcea0ec0443c72b9cc_77671_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="273"
@@ -3304,20 +3304,20 @@ data-flex-basis="656px"
 >
 名字随便填,比如&lt;code>ACTION_ACCESS_TOKEN&lt;/code>&lt;/p>
 &lt;p>下方&lt;code>repo&lt;/code>的所有选项全部选上:&lt;br>
-&lt;img src="https://example.com/posts/95a48970/repo.png"
+&lt;img src="https://dnwzlx.com/posts/95a48970/repo.png"
 width="894"
 height="373"
-srcset="https://example.com/posts/95a48970/repo_hub5b0bda9134eecc1fe1e6f635e7f7e97_57278_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/repo_hub5b0bda9134eecc1fe1e6f635e7f7e97_57278_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/95a48970/repo_hub5b0bda9134eecc1fe1e6f635e7f7e97_57278_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/95a48970/repo_hub5b0bda9134eecc1fe1e6f635e7f7e97_57278_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="239"
 data-flex-basis="575px"
 >&lt;/p>
 &lt;p>还有admin:repo_hook,全部选上:&lt;br>
-&lt;img src="https://example.com/posts/95a48970/admin_repo_hook.png"
+&lt;img src="https://dnwzlx.com/posts/95a48970/admin_repo_hook.png"
 width="797"
 height="142"
-srcset="https://example.com/posts/95a48970/admin_repo_hook_hu4d949bd7a1c43850ce13586b46bafb97_20201_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/admin_repo_hook_hu4d949bd7a1c43850ce13586b46bafb97_20201_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/95a48970/admin_repo_hook_hu4d949bd7a1c43850ce13586b46bafb97_20201_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/95a48970/admin_repo_hook_hu4d949bd7a1c43850ce13586b46bafb97_20201_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="561"
@@ -3326,20 +3326,20 @@ data-flex-basis="1347px"
 生成的&lt;code>token&lt;/code>保存好备用&lt;/p>
 &lt;h2 id="私人仓库设置">私人仓库设置&lt;/h2>
 &lt;p>新建一个私人仓库,名字随意&lt;br>
-&lt;img src="https://example.com/posts/95a48970/newprivaterepo.png"
+&lt;img src="https://dnwzlx.com/posts/95a48970/newprivaterepo.png"
 width="1154"
 height="1048"
-srcset="https://example.com/posts/95a48970/newprivaterepo_hu2b3947c4ead053e90b8a1f7188fc2423_120593_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/newprivaterepo_hu2b3947c4ead053e90b8a1f7188fc2423_120593_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/95a48970/newprivaterepo_hu2b3947c4ead053e90b8a1f7188fc2423_120593_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/95a48970/newprivaterepo_hu2b3947c4ead053e90b8a1f7188fc2423_120593_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="110"
 data-flex-basis="264px"
 >&lt;br>
 在此repo上，&lt;code>Settings&lt;/code>-&lt;code>Secrets&lt;/code>-&lt;code>New repository secret&lt;/code>
-&lt;img src="https://example.com/posts/95a48970/privaterepoaddtoken.png"
+&lt;img src="https://dnwzlx.com/posts/95a48970/privaterepoaddtoken.png"
 width="1841"
 height="1130"
-srcset="https://example.com/posts/95a48970/privaterepoaddtoken_hufd4580fc50e98fe076fd47d19569e369_113028_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/privaterepoaddtoken_hufd4580fc50e98fe076fd47d19569e369_113028_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/95a48970/privaterepoaddtoken_hufd4580fc50e98fe076fd47d19569e369_113028_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/95a48970/privaterepoaddtoken_hufd4580fc50e98fe076fd47d19569e369_113028_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="162"
@@ -3347,10 +3347,10 @@ data-flex-basis="391px"
 >&lt;br>
 把刚才申请的&lt;code>Personal access tokens&lt;/code>填写上。
 &lt;code>Name&lt;/code>必须和刚才申请&lt;code>Personal access tokens&lt;/code>时填写的一致，比如&lt;code>ACTION_ACCESS_TOKEN&lt;/code>&lt;br>
-&lt;img src="https://example.com/posts/95a48970/newtoken.png"
+&lt;img src="https://dnwzlx.com/posts/95a48970/newtoken.png"
 width="802"
 height="800"
-srcset="https://example.com/posts/95a48970/newtoken_hu8a16ab8eae3cf1e222e408bdc69e64a8_24669_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/newtoken_hu8a16ab8eae3cf1e222e408bdc69e64a8_24669_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/95a48970/newtoken_hu8a16ab8eae3cf1e222e408bdc69e64a8_24669_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/95a48970/newtoken_hu8a16ab8eae3cf1e222e408bdc69e64a8_24669_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="100"
@@ -3477,23 +3477,23 @@ data-flex-basis="240px"
 &lt;/div>&lt;p>&lt;strong>注意&lt;/strong>：&lt;code>git commit&lt;/code>后面的&lt;code>&amp;quot;Initial&amp;quot;&lt;/code>就是单次执行&lt;code>Github Action&lt;/code>的任务名称。&lt;/p>
 &lt;h2 id="查看运行情况">查看运行情况&lt;/h2>
 &lt;p>到私有仓库，点击&lt;code>Actions&lt;/code>，查看&lt;code>Github Action&lt;/code>的运行情况。
-&lt;img src="https://example.com/posts/95a48970/githubactionstatus.png"
+&lt;img src="https://dnwzlx.com/posts/95a48970/githubactionstatus.png"
 width="1432"
 height="532"
-srcset="https://example.com/posts/95a48970/githubactionstatus_hu1d4703f5b7aceffd02c295736663b001_61506_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/githubactionstatus_hu1d4703f5b7aceffd02c295736663b001_61506_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/95a48970/githubactionstatus_hu1d4703f5b7aceffd02c295736663b001_61506_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/95a48970/githubactionstatus_hu1d4703f5b7aceffd02c295736663b001_61506_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="269"
 data-flex-basis="646px"
 >&lt;/p>
-&lt;p>一切正常的话，在你的&lt;code>Github Page&lt;/code>仓库里就能看到生成的网站了。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(三)-LoveIt主题启用网站图标</title><link>https://example.com/posts/b8cc834e/</link><pubDate>Wed, 05 Jan 2022 18:07:38 +0800</pubDate><guid>https://example.com/posts/b8cc834e/</guid><description>&lt;p>网站图标&lt;code>favicon&lt;/code>,虽然对于网站不是必须的，但是有这个东西能显著增加网站的正规性和美观性。&lt;/p>
+&lt;p>一切正常的话，在你的&lt;code>Github Page&lt;/code>仓库里就能看到生成的网站了。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(三)-LoveIt主题启用网站图标</title><link>https://dnwzlx.com/posts/b8cc834e/</link><pubDate>Wed, 05 Jan 2022 18:07:38 +0800</pubDate><guid>https://dnwzlx.com/posts/b8cc834e/</guid><description>&lt;p>网站图标&lt;code>favicon&lt;/code>,虽然对于网站不是必须的，但是有这个东西能显著增加网站的正规性和美观性。&lt;/p>
 &lt;h2 id="生成favicon">生成favicon&lt;/h2>
 &lt;p>1、打开&lt;a class="link" href="https://realfavicongenerator.net/" target="_blank" rel="noopener"
 >realfavicongenerator&lt;/a>,点击右上角&lt;code>Select your Favicon image&lt;/code>链接。
-&lt;img src="https://example.com/posts/b8cc834e/clicklink1.png"
+&lt;img src="https://dnwzlx.com/posts/b8cc834e/clicklink1.png"
 width="992"
 height="504"
-srcset="https://example.com/posts/b8cc834e/clicklink1_hu9d1a6e0b570176a2b2aa9adabd9f9e29_107314_480x0_resize_box_3.png 480w, https://example.com/posts/b8cc834e/clicklink1_hu9d1a6e0b570176a2b2aa9adabd9f9e29_107314_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/b8cc834e/clicklink1_hu9d1a6e0b570176a2b2aa9adabd9f9e29_107314_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/b8cc834e/clicklink1_hu9d1a6e0b570176a2b2aa9adabd9f9e29_107314_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="196"
@@ -3501,10 +3501,10 @@ data-flex-basis="472px"
 >&lt;br>
 这时会打开对话框，让你选择一张图片，等待完成即可。&lt;/p>
 &lt;p>2、完成后，会出现下载链接，点击下载即可。
-&lt;img src="https://example.com/posts/b8cc834e/download1.png"
+&lt;img src="https://dnwzlx.com/posts/b8cc834e/download1.png"
 width="975"
 height="483"
-srcset="https://example.com/posts/b8cc834e/download1_hu52d8e90aabca1b5a7da4f832306d25ac_213382_480x0_resize_box_3.png 480w, https://example.com/posts/b8cc834e/download1_hu52d8e90aabca1b5a7da4f832306d25ac_213382_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/b8cc834e/download1_hu52d8e90aabca1b5a7da4f832306d25ac_213382_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/b8cc834e/download1_hu52d8e90aabca1b5a7da4f832306d25ac_213382_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="201"
@@ -3512,7 +3512,7 @@ data-flex-basis="484px"
 >&lt;/p>
 &lt;h2 id="启用favicon">启用favicon&lt;/h2>
 &lt;p>把下载的文件，全部解压到网站根目录的&lt;code>static&lt;/code>中。&lt;/p>
-&lt;p>因为LoveIt主题自带了对realfavicongenerator生成的favicon格式支持，所以不用再做其它设置，直接就生效。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(二)-LoveIt主题自定义搜索</title><link>https://example.com/posts/98850c88/</link><pubDate>Wed, 05 Jan 2022 10:51:44 +0800</pubDate><guid>https://example.com/posts/98850c88/</guid><description>&lt;p>LoveIt主题自带的搜索插件是lunr和algolia，这两个都不太好用。&lt;/p>
+&lt;p>因为LoveIt主题自带了对realfavicongenerator生成的favicon格式支持，所以不用再做其它设置，直接就生效。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(二)-LoveIt主题自定义搜索</title><link>https://dnwzlx.com/posts/98850c88/</link><pubDate>Wed, 05 Jan 2022 10:51:44 +0800</pubDate><guid>https://dnwzlx.com/posts/98850c88/</guid><description>&lt;p>LoveIt主题自带的搜索插件是lunr和algolia，这两个都不太好用。&lt;/p>
 &lt;p>在此，我们使用Hugo专用的搜索插件&lt;a class="link" href="https://github.com/kaushalmodi/hugo-search-fuse-js" target="_blank" rel="noopener"
 >hugo-search-fuse-js&lt;/a>来替代LoveIt主题自带的搜索。&lt;/p>
 &lt;h2 id="安装hugo-search-fuse-js">安装hugo-search-fuse-js&lt;/h2>
@@ -3833,7 +3833,7 @@ data-flex-basis="484px"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> distance: 100
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>可以根据个人情况来修改这几个参数的值。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(一)-基本设置和LoveIt主题</title><link>https://example.com/posts/bf651441/</link><pubDate>Tue, 04 Jan 2022 17:27:10 +0800</pubDate><guid>https://example.com/posts/bf651441/</guid><description>&lt;blockquote>
+&lt;/div>&lt;p>可以根据个人情况来修改这几个参数的值。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(一)-基本设置和LoveIt主题</title><link>https://dnwzlx.com/posts/bf651441/</link><pubDate>Tue, 04 Jan 2022 17:27:10 +0800</pubDate><guid>https://dnwzlx.com/posts/bf651441/</guid><description>&lt;blockquote>
 &lt;p>本文使用的软件的版本如下：&lt;/p>
 &lt;p>hugo: 0.91.2-extended&lt;/p>
 &lt;p>loveit主题: 0.2.10&lt;/p>

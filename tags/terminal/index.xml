@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>terminal on 寂静·流年</title><link>https://example.com/tags/terminal/</link><description>Recent content in terminal on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Mon, 02 Jan 2023 10:02:58 +0800</lastBuildDate><atom:link href="https://example.com/tags/terminal/index.xml" rel="self" type="application/rss+xml"/><item><title>Windows Terminal打开wsl报错的解决方法</title><link>https://example.com/posts/35265d36/</link><pubDate>Mon, 02 Jan 2023 10:02:58 +0800</pubDate><guid>https://example.com/posts/35265d36/</guid><description>&lt;h2 id="问题描述">问题描述&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>terminal on 寂静·流年</title><link>https://dnwzlx.com/tags/terminal/</link><description>Recent content in terminal on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Mon, 02 Jan 2023 10:02:58 +0800</lastBuildDate><atom:link href="https://dnwzlx.com/tags/terminal/index.xml" rel="self" type="application/rss+xml"/><item><title>Windows Terminal打开wsl报错的解决方法</title><link>https://dnwzlx.com/posts/35265d36/</link><pubDate>Mon, 02 Jan 2023 10:02:58 +0800</pubDate><guid>https://dnwzlx.com/posts/35265d36/</guid><description>&lt;h2 id="问题描述">问题描述&lt;/h2>
 &lt;p>使用wsl安装完kali-linux后，从windows terminal下启动，报如下错误：
-&lt;img src="https://example.com/posts/35265d36/wsl-error.png"
+&lt;img src="https://dnwzlx.com/posts/35265d36/wsl-error.png"
 width="674"
 height="229"
-srcset="https://example.com/posts/35265d36/wsl-error_hub5ae49d2a552c7df07f2cf0a6ee3b2c3_9916_480x0_resize_box_3.png 480w, https://example.com/posts/35265d36/wsl-error_hub5ae49d2a552c7df07f2cf0a6ee3b2c3_9916_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/35265d36/wsl-error_hub5ae49d2a552c7df07f2cf0a6ee3b2c3_9916_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/35265d36/wsl-error_hub5ae49d2a552c7df07f2cf0a6ee3b2c3_9916_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="294"
@@ -11,15 +11,15 @@ data-flex-basis="706px"
 >&lt;/p>
 &lt;h2 id="解决方法">解决方法&lt;/h2>
 &lt;p>打开windows terminal的kali-linux配置,修改启动的命令为&lt;code>wsl.exe ~ -d kali-linux&lt;/code>，即中间添加一个&lt;code>~&lt;/code>即可。
-&lt;img src="https://example.com/posts/35265d36/setting.png"
+&lt;img src="https://dnwzlx.com/posts/35265d36/setting.png"
 width="754"
 height="534"
-srcset="https://example.com/posts/35265d36/setting_huf19382c2b8499f6e92dc96abd6dda0e4_30897_480x0_resize_box_3.png 480w, https://example.com/posts/35265d36/setting_huf19382c2b8499f6e92dc96abd6dda0e4_30897_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/35265d36/setting_huf19382c2b8499f6e92dc96abd6dda0e4_30897_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/35265d36/setting_huf19382c2b8499f6e92dc96abd6dda0e4_30897_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="141"
 data-flex-basis="338px"
->&lt;/p></description></item><item><title>Windows Terminal添加到右键菜单</title><link>https://example.com/posts/6ef25004/</link><pubDate>Sun, 01 Jan 2023 09:10:24 +0800</pubDate><guid>https://example.com/posts/6ef25004/</guid><description>&lt;h2 id="下载windows-terminal的图标">下载&lt;code>windows terminal&lt;/code>的图标&lt;/h2>
+>&lt;/p></description></item><item><title>Windows Terminal添加到右键菜单</title><link>https://dnwzlx.com/posts/6ef25004/</link><pubDate>Sun, 01 Jan 2023 09:10:24 +0800</pubDate><guid>https://dnwzlx.com/posts/6ef25004/</guid><description>&lt;h2 id="下载windows-terminal的图标">下载&lt;code>windows terminal&lt;/code>的图标&lt;/h2>
 &lt;p>在&lt;a class="link" href="https://github.com/microsoft/terminal/tree/main/res" target="_blank" rel="noopener"
 >这里&lt;/a>下载。&lt;/p>
 &lt;h2 id="创建文件夹">创建文件夹&lt;/h2>
@@ -74,7 +74,7 @@ data-flex-basis="338px"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>&lt;code>&amp;quot;startingDirectory&amp;quot;: null&lt;/code>这一行是新添加的。&lt;/p>
-&lt;p>完工。&lt;/p></description></item><item><title>Kali安装zsh及常用插件</title><link>https://example.com/posts/e9b31c18/</link><pubDate>Sat, 24 Sep 2022 07:26:39 +0800</pubDate><guid>https://example.com/posts/e9b31c18/</guid><description>&lt;blockquote>
+&lt;p>完工。&lt;/p></description></item><item><title>Kali安装zsh及常用插件</title><link>https://dnwzlx.com/posts/e9b31c18/</link><pubDate>Sat, 24 Sep 2022 07:26:39 +0800</pubDate><guid>https://dnwzlx.com/posts/e9b31c18/</guid><description>&lt;blockquote>
 &lt;blockquote>
 &lt;p>kali在2020.4版本后,已经将zsh设置成了默认终端。
 但在一些特殊的环境下,比如wsl2里的kali,仍然使用的是bash&lt;/p>
@@ -136,7 +136,7 @@ data-flex-basis="338px"
 &lt;code>plugins=(git autojump zsh-autosuggestions zsh-syntax-highlighting z safe-paste extract)&lt;/code>&lt;/p>
 &lt;h2 id="配置文件生效">配置文件生效&lt;/h2>
 &lt;p>终端下运行命令:
-&lt;code>source ~/.zshrc&lt;/code>&lt;/p></description></item><item><title>Xshell确实好用</title><link>https://example.com/posts/e2c210ef/</link><pubDate>Fri, 08 Jul 2022 09:23:15 +0800</pubDate><guid>https://example.com/posts/e2c210ef/</guid><description>&lt;p>最近在学习C语言编程，准备采用下面方法：&lt;/p>
+&lt;code>source ~/.zshrc&lt;/code>&lt;/p></description></item><item><title>Xshell确实好用</title><link>https://dnwzlx.com/posts/e2c210ef/</link><pubDate>Fri, 08 Jul 2022 09:23:15 +0800</pubDate><guid>https://dnwzlx.com/posts/e2c210ef/</guid><description>&lt;p>最近在学习C语言编程，准备采用下面方法：&lt;/p>
 &lt;ul>
 &lt;li>windows 10的主机，装一台 kubuntu 22.04的虚拟机&lt;/li>
 &lt;li>windows下使用远程工具连接到虚拟机。&lt;/li>
@@ -163,20 +163,20 @@ data-flex-basis="338px"
 &lt;/ul>
 &lt;h3 id="一打开xshell-7的truecolor支持">（一）打开Xshell 7的TrueColor支持&lt;/h3>
 &lt;p>工具&amp;mdash;&amp;gt;选项&amp;mdash;&amp;gt;高级&amp;mdash;&amp;gt;终端&amp;mdash;&amp;gt;选中&amp;quot;使用本色”，就可以了。如下图：&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/e2c210ef/1657249415865.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/e2c210ef/1657249415865.png"
 width="802"
 height="712"
-srcset="https://example.com/posts/e2c210ef/1657249415865_hu18af70f362c4b36a4fff5deb2ef2fbdf_101167_480x0_resize_box_3.png 480w, https://example.com/posts/e2c210ef/1657249415865_hu18af70f362c4b36a4fff5deb2ef2fbdf_101167_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/e2c210ef/1657249415865_hu18af70f362c4b36a4fff5deb2ef2fbdf_101167_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/e2c210ef/1657249415865_hu18af70f362c4b36a4fff5deb2ef2fbdf_101167_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 alt="1657249415865"
 class="gallery-image"
 data-flex-grow="112"
 data-flex-basis="270px"
 >&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/e2c210ef/1657249460673.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/e2c210ef/1657249460673.png"
 width="763"
 height="963"
-srcset="https://example.com/posts/e2c210ef/1657249460673_huc51f21d06335d996786670daeaf3850f_71018_480x0_resize_box_3.png 480w, https://example.com/posts/e2c210ef/1657249460673_huc51f21d06335d996786670daeaf3850f_71018_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/e2c210ef/1657249460673_huc51f21d06335d996786670daeaf3850f_71018_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/e2c210ef/1657249460673_huc51f21d06335d996786670daeaf3850f_71018_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 alt="1657249460673"
 class="gallery-image"
@@ -186,10 +186,10 @@ data-flex-basis="190px"
 &lt;h2 id="二斜体的显示支持">二、斜体的显示支持&lt;/h2>
 &lt;p>我使用的 &lt;code>vim&lt;/code>主题叫 &lt;code>gruvbox&lt;/code>，这个主题可以打开斜体显示功能。默认情况下注释内容会用斜体显示。&lt;/p>
 &lt;p>同样的.&lt;code>vimrc&lt;/code>配置文件，在 &lt;code>SecureCRT&lt;/code>和 &lt;code>MobaXterm&lt;/code>里，都没有办法打开斜体显示，而 &lt;code>Xshell&lt;/code>显示正常：&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/e2c210ef/1657250828885.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/e2c210ef/1657250828885.png"
 width="953"
 height="1249"
-srcset="https://example.com/posts/e2c210ef/1657250828885_huf113a1615b01b8e7f90cfa831e823a93_158128_480x0_resize_box_3.png 480w, https://example.com/posts/e2c210ef/1657250828885_huf113a1615b01b8e7f90cfa831e823a93_158128_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/e2c210ef/1657250828885_huf113a1615b01b8e7f90cfa831e823a93_158128_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/e2c210ef/1657250828885_huf113a1615b01b8e7f90cfa831e823a93_158128_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 alt="1657250828885"
 class="gallery-image"

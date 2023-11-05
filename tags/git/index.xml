@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>git on 寂静·流年</title><link>https://example.com/tags/git/</link><description>Recent content in git on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Sat, 25 Feb 2023 09:24:18 +0800</lastBuildDate><atom:link href="https://example.com/tags/git/index.xml" rel="self" type="application/rss+xml"/><item><title>Git日常使用总结</title><link>https://example.com/posts/8d738bf7/</link><pubDate>Sat, 25 Feb 2023 09:24:18 +0800</pubDate><guid>https://example.com/posts/8d738bf7/</guid><description>&lt;p>本文用来记录在日常使用 Git 中学到的一些知识点，不定时更新。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>git on 寂静·流年</title><link>https://dnwzlx.com/tags/git/</link><description>Recent content in git on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Sat, 25 Feb 2023 09:24:18 +0800</lastBuildDate><atom:link href="https://dnwzlx.com/tags/git/index.xml" rel="self" type="application/rss+xml"/><item><title>Git日常使用总结</title><link>https://dnwzlx.com/posts/8d738bf7/</link><pubDate>Sat, 25 Feb 2023 09:24:18 +0800</pubDate><guid>https://dnwzlx.com/posts/8d738bf7/</guid><description>&lt;p>本文用来记录在日常使用 Git 中学到的一些知识点，不定时更新。&lt;/p>
 &lt;h2 id="常规设置">常规设置&lt;/h2>
 &lt;h3 id="设置-git-账号的邮箱和用户名">设置 Git 账号的邮箱和用户名&lt;/h3>
 &lt;p>这是使用 Git 的第一步，如果没有设置，根本用不了 Git。&lt;/p>
@@ -50,7 +50,7 @@
 &lt;li>切到 submodule 的目录&lt;/li>
 &lt;li>执行git checkout master&lt;/li>
 &lt;li>执行 commit 和 push 命令。&lt;/li>
-&lt;/ol></description></item><item><title>使用Hugo搭建个人网站(七)-Hugo和Github Action正确修改文章的最后更新日期</title><link>https://example.com/posts/146871a6/</link><pubDate>Sat, 14 Jan 2023 12:15:00 +0800</pubDate><guid>https://example.com/posts/146871a6/</guid><description>&lt;p>偏向技术或者工具使用方面的博客，难免会随着时间和技术的更新，对文章进行一些修改。&lt;/p>
+&lt;/ol></description></item><item><title>使用Hugo搭建个人网站(七)-Hugo和Github Action正确修改文章的最后更新日期</title><link>https://dnwzlx.com/posts/146871a6/</link><pubDate>Sat, 14 Jan 2023 12:15:00 +0800</pubDate><guid>https://dnwzlx.com/posts/146871a6/</guid><description>&lt;p>偏向技术或者工具使用方面的博客，难免会随着时间和技术的更新，对文章进行一些修改。&lt;/p>
 &lt;p>使用hugo一年多以来，一直有一个问题没有解决，就是文章修改后不能正确的显示修改后的时间，即更新时间。&lt;/p>
 &lt;p>今天又想起这个长期以来的&amp;quot;bug&amp;quot;，这次终于彻底解决了。&lt;/p>
 &lt;h2 id="修改网站配置文件">修改网站配置文件&lt;/h2>
@@ -106,7 +106,7 @@
 &lt;h3 id="disable-quotepath">Disable quotePath&lt;/h3>
 &lt;p>原理是这样的：默认情况下，当文件名中包含中文的时候，git 会使用引号&lt;code>&amp;quot; &amp;quot;&lt;/code>把文件名括起来。&lt;/p>
 &lt;p>但是这会导致 action 中无法读取 &lt;code>:GitInfo&lt;/code> 变量，所以这里需要关闭&lt;code>quotePath&lt;/code>功能。&lt;/p>
-&lt;p>这样就可以正确显示文章最后更新时间了，问题解决。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(四)-使用Github Action自动部署到Github Pages</title><link>https://example.com/posts/95a48970/</link><pubDate>Thu, 06 Jan 2022 11:10:10 +0800</pubDate><guid>https://example.com/posts/95a48970/</guid><description>&lt;p>部署网站到Github上使用的是&lt;code>Github Page&lt;/code>功能。&lt;/p>
+&lt;p>这样就可以正确显示文章最后更新时间了，问题解决。&lt;/p></description></item><item><title>使用Hugo搭建个人网站(四)-使用Github Action自动部署到Github Pages</title><link>https://dnwzlx.com/posts/95a48970/</link><pubDate>Thu, 06 Jan 2022 11:10:10 +0800</pubDate><guid>https://dnwzlx.com/posts/95a48970/</guid><description>&lt;p>部署网站到Github上使用的是&lt;code>Github Page&lt;/code>功能。&lt;/p>
 &lt;p>一般来说，部署Hugo网站到&lt;code>Github Page&lt;/code>的流程是这样的：&lt;/p>
 &lt;ol>
 &lt;li>新建一个&lt;code>Github Page&lt;/code>的repo&lt;/li>
@@ -130,10 +130,10 @@
 &lt;p>由于源码是保存在私人仓库的，这里需要使用&lt;code>Personal access tokens&lt;/code>来具备改写别的repo的权限。&lt;/p>
 &lt;p>点击头像下拉菜单-&lt;code>Settings&lt;/code>-&lt;code>Developer Settings&lt;/code>-&lt;code>Personal access tokens&lt;/code>。&lt;/p>
 &lt;p>点击右侧的&lt;code>generate new token&lt;/code>
-&lt;img src="https://example.com/posts/95a48970/%E7%94%9F%E6%88%90newtoken1.png"
+&lt;img src="https://dnwzlx.com/posts/95a48970/%E7%94%9F%E6%88%90newtoken1.png"
 width="1654"
 height="605"
-srcset="https://example.com/posts/95a48970/%E7%94%9F%E6%88%90newtoken1_hu941aff02339b4ebcea0ec0443c72b9cc_77671_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/%E7%94%9F%E6%88%90newtoken1_hu941aff02339b4ebcea0ec0443c72b9cc_77671_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/95a48970/%E7%94%9F%E6%88%90newtoken1_hu941aff02339b4ebcea0ec0443c72b9cc_77671_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/95a48970/%E7%94%9F%E6%88%90newtoken1_hu941aff02339b4ebcea0ec0443c72b9cc_77671_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="273"
@@ -141,20 +141,20 @@ data-flex-basis="656px"
 >
 名字随便填,比如&lt;code>ACTION_ACCESS_TOKEN&lt;/code>&lt;/p>
 &lt;p>下方&lt;code>repo&lt;/code>的所有选项全部选上:&lt;br>
-&lt;img src="https://example.com/posts/95a48970/repo.png"
+&lt;img src="https://dnwzlx.com/posts/95a48970/repo.png"
 width="894"
 height="373"
-srcset="https://example.com/posts/95a48970/repo_hub5b0bda9134eecc1fe1e6f635e7f7e97_57278_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/repo_hub5b0bda9134eecc1fe1e6f635e7f7e97_57278_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/95a48970/repo_hub5b0bda9134eecc1fe1e6f635e7f7e97_57278_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/95a48970/repo_hub5b0bda9134eecc1fe1e6f635e7f7e97_57278_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="239"
 data-flex-basis="575px"
 >&lt;/p>
 &lt;p>还有admin:repo_hook,全部选上:&lt;br>
-&lt;img src="https://example.com/posts/95a48970/admin_repo_hook.png"
+&lt;img src="https://dnwzlx.com/posts/95a48970/admin_repo_hook.png"
 width="797"
 height="142"
-srcset="https://example.com/posts/95a48970/admin_repo_hook_hu4d949bd7a1c43850ce13586b46bafb97_20201_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/admin_repo_hook_hu4d949bd7a1c43850ce13586b46bafb97_20201_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/95a48970/admin_repo_hook_hu4d949bd7a1c43850ce13586b46bafb97_20201_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/95a48970/admin_repo_hook_hu4d949bd7a1c43850ce13586b46bafb97_20201_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="561"
@@ -163,20 +163,20 @@ data-flex-basis="1347px"
 生成的&lt;code>token&lt;/code>保存好备用&lt;/p>
 &lt;h2 id="私人仓库设置">私人仓库设置&lt;/h2>
 &lt;p>新建一个私人仓库,名字随意&lt;br>
-&lt;img src="https://example.com/posts/95a48970/newprivaterepo.png"
+&lt;img src="https://dnwzlx.com/posts/95a48970/newprivaterepo.png"
 width="1154"
 height="1048"
-srcset="https://example.com/posts/95a48970/newprivaterepo_hu2b3947c4ead053e90b8a1f7188fc2423_120593_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/newprivaterepo_hu2b3947c4ead053e90b8a1f7188fc2423_120593_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/95a48970/newprivaterepo_hu2b3947c4ead053e90b8a1f7188fc2423_120593_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/95a48970/newprivaterepo_hu2b3947c4ead053e90b8a1f7188fc2423_120593_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="110"
 data-flex-basis="264px"
 >&lt;br>
 在此repo上，&lt;code>Settings&lt;/code>-&lt;code>Secrets&lt;/code>-&lt;code>New repository secret&lt;/code>
-&lt;img src="https://example.com/posts/95a48970/privaterepoaddtoken.png"
+&lt;img src="https://dnwzlx.com/posts/95a48970/privaterepoaddtoken.png"
 width="1841"
 height="1130"
-srcset="https://example.com/posts/95a48970/privaterepoaddtoken_hufd4580fc50e98fe076fd47d19569e369_113028_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/privaterepoaddtoken_hufd4580fc50e98fe076fd47d19569e369_113028_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/95a48970/privaterepoaddtoken_hufd4580fc50e98fe076fd47d19569e369_113028_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/95a48970/privaterepoaddtoken_hufd4580fc50e98fe076fd47d19569e369_113028_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="162"
@@ -184,10 +184,10 @@ data-flex-basis="391px"
 >&lt;br>
 把刚才申请的&lt;code>Personal access tokens&lt;/code>填写上。
 &lt;code>Name&lt;/code>必须和刚才申请&lt;code>Personal access tokens&lt;/code>时填写的一致，比如&lt;code>ACTION_ACCESS_TOKEN&lt;/code>&lt;br>
-&lt;img src="https://example.com/posts/95a48970/newtoken.png"
+&lt;img src="https://dnwzlx.com/posts/95a48970/newtoken.png"
 width="802"
 height="800"
-srcset="https://example.com/posts/95a48970/newtoken_hu8a16ab8eae3cf1e222e408bdc69e64a8_24669_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/newtoken_hu8a16ab8eae3cf1e222e408bdc69e64a8_24669_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/95a48970/newtoken_hu8a16ab8eae3cf1e222e408bdc69e64a8_24669_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/95a48970/newtoken_hu8a16ab8eae3cf1e222e408bdc69e64a8_24669_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="100"
@@ -314,10 +314,10 @@ data-flex-basis="240px"
 &lt;/div>&lt;p>&lt;strong>注意&lt;/strong>：&lt;code>git commit&lt;/code>后面的&lt;code>&amp;quot;Initial&amp;quot;&lt;/code>就是单次执行&lt;code>Github Action&lt;/code>的任务名称。&lt;/p>
 &lt;h2 id="查看运行情况">查看运行情况&lt;/h2>
 &lt;p>到私有仓库，点击&lt;code>Actions&lt;/code>，查看&lt;code>Github Action&lt;/code>的运行情况。
-&lt;img src="https://example.com/posts/95a48970/githubactionstatus.png"
+&lt;img src="https://dnwzlx.com/posts/95a48970/githubactionstatus.png"
 width="1432"
 height="532"
-srcset="https://example.com/posts/95a48970/githubactionstatus_hu1d4703f5b7aceffd02c295736663b001_61506_480x0_resize_box_3.png 480w, https://example.com/posts/95a48970/githubactionstatus_hu1d4703f5b7aceffd02c295736663b001_61506_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/95a48970/githubactionstatus_hu1d4703f5b7aceffd02c295736663b001_61506_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/95a48970/githubactionstatus_hu1d4703f5b7aceffd02c295736663b001_61506_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="269"

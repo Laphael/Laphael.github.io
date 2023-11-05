@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>显示器 on 寂静·流年</title><link>https://example.com/tags/%E6%98%BE%E7%A4%BA%E5%99%A8/</link><description>Recent content in 显示器 on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Thu, 03 Nov 2022 20:06:17 +0800</lastBuildDate><atom:link href="https://example.com/tags/%E6%98%BE%E7%A4%BA%E5%99%A8/index.xml" rel="self" type="application/rss+xml"/><item><title>Davinci在linux下的HiDPI分辨率的问题</title><link>https://example.com/posts/3d3eb7db/</link><pubDate>Thu, 03 Nov 2022 20:06:17 +0800</pubDate><guid>https://example.com/posts/3d3eb7db/</guid><description>&lt;p>我的显示器是27寸4K的分辨率。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>显示器 on 寂静·流年</title><link>https://dnwzlx.com/tags/%E6%98%BE%E7%A4%BA%E5%99%A8/</link><description>Recent content in 显示器 on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Thu, 03 Nov 2022 20:06:17 +0800</lastBuildDate><atom:link href="https://dnwzlx.com/tags/%E6%98%BE%E7%A4%BA%E5%99%A8/index.xml" rel="self" type="application/rss+xml"/><item><title>Davinci在linux下的HiDPI分辨率的问题</title><link>https://dnwzlx.com/posts/3d3eb7db/</link><pubDate>Thu, 03 Nov 2022 20:06:17 +0800</pubDate><guid>https://dnwzlx.com/posts/3d3eb7db/</guid><description>&lt;p>我的显示器是27寸4K的分辨率。&lt;/p>
 &lt;p>在ubuntu下安装完davinci resolve 18后，发现启动后界面字体变得非常小，除了&lt;code>鹰眼&lt;/code>我相信没人能看得清。&lt;/p>
 &lt;p>很明显，这是个Linux下的UI缩放的问题。&lt;/p>
 &lt;h2 id="解决方法">解决方法&lt;/h2>
@@ -50,15 +50,15 @@ QT_DEVICE_PIXEL_RATIO=&lt;code>3&lt;/code>，最后这个&lt;code>3&lt;/code>是
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>运行&lt;code>alacarte&lt;/code>，找到&lt;code>davinci&lt;/code>的菜单项，点击&lt;code>属性&lt;/code>&amp;ndash;&lt;code>Browser&lt;/code>，选中&lt;code>davinci.sh&lt;/code>，保存即可。
-&lt;img src="https://example.com/posts/3d3eb7db/alacarte-davinci.png"
+&lt;img src="https://dnwzlx.com/posts/3d3eb7db/alacarte-davinci.png"
 width="1334"
 height="1126"
-srcset="https://example.com/posts/3d3eb7db/alacarte-davinci_hub65d449f9756d25fddec17428214d090_285529_480x0_resize_box_3.png 480w, https://example.com/posts/3d3eb7db/alacarte-davinci_hub65d449f9756d25fddec17428214d090_285529_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/3d3eb7db/alacarte-davinci_hub65d449f9756d25fddec17428214d090_285529_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/3d3eb7db/alacarte-davinci_hub65d449f9756d25fddec17428214d090_285529_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="118"
 data-flex-basis="284px"
->&lt;/p></description></item><item><title>27寸4K显示器的缩放比例研究</title><link>https://example.com/posts/c609f2d7/</link><pubDate>Mon, 12 Sep 2022 00:51:01 +0800</pubDate><guid>https://example.com/posts/c609f2d7/</guid><description>&lt;blockquote>
+>&lt;/p></description></item><item><title>27寸4K显示器的缩放比例研究</title><link>https://dnwzlx.com/posts/c609f2d7/</link><pubDate>Mon, 12 Sep 2022 00:51:01 +0800</pubDate><guid>https://dnwzlx.com/posts/c609f2d7/</guid><description>&lt;blockquote>
 &lt;p>一直以来，对于27寸4K的显示，都是使用windows 10默认推荐的150%的缩放。
 直到今天才发现,这是错的。&lt;/p>
 &lt;/blockquote>

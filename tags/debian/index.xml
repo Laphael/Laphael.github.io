@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>debian on 寂静·流年</title><link>https://example.com/tags/debian/</link><description>Recent content in debian on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Thu, 12 Oct 2023 17:58:21 +0800</lastBuildDate><atom:link href="https://example.com/tags/debian/index.xml" rel="self" type="application/rss+xml"/><item><title>Debian常用软件清单</title><link>https://example.com/posts/f59f4dff/</link><pubDate>Thu, 12 Oct 2023 17:58:21 +0800</pubDate><guid>https://example.com/posts/f59f4dff/</guid><description>&lt;p>最近在把debian12（LMDE6）当成主力操作系统使用，记录一下必备的软件：&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>debian on 寂静·流年</title><link>https://dnwzlx.com/tags/debian/</link><description>Recent content in debian on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Thu, 12 Oct 2023 17:58:21 +0800</lastBuildDate><atom:link href="https://dnwzlx.com/tags/debian/index.xml" rel="self" type="application/rss+xml"/><item><title>Debian常用软件清单</title><link>https://dnwzlx.com/posts/f59f4dff/</link><pubDate>Thu, 12 Oct 2023 17:58:21 +0800</pubDate><guid>https://dnwzlx.com/posts/f59f4dff/</guid><description>&lt;p>最近在把debian12（LMDE6）当成主力操作系统使用，记录一下必备的软件：&lt;/p>
 &lt;ul>
 &lt;li>xmind 23.08.02122 字体漂亮、演讲模式非常好用&lt;/li>
 &lt;li>davinci resolve 18.6.2 UI缩放正确&lt;/li>
@@ -14,7 +14,7 @@
 &lt;li>Obstudio 和win下没区别&lt;/li>
 &lt;li>vmware 在debian12下表现非常好，睡眠唤醒后虚拟机没有黑屏、卡死现象&lt;/li>
 &lt;/ul>
-&lt;p>这些软件能够满足我日常应用场景了&lt;/p></description></item><item><title>手动编译vyos最新稳定版</title><link>https://example.com/posts/c5ea52a2/</link><pubDate>Wed, 14 Dec 2022 11:25:00 +0800</pubDate><guid>https://example.com/posts/c5ea52a2/</guid><description>&lt;p>vyos官方只有night-daily的镜像，没有稳定版的镜像。&lt;/p>
+&lt;p>这些软件能够满足我日常应用场景了&lt;/p></description></item><item><title>手动编译vyos最新稳定版</title><link>https://dnwzlx.com/posts/c5ea52a2/</link><pubDate>Wed, 14 Dec 2022 11:25:00 +0800</pubDate><guid>https://dnwzlx.com/posts/c5ea52a2/</guid><description>&lt;p>vyos官方只有night-daily的镜像，没有稳定版的镜像。&lt;/p>
 &lt;p>自己手动编译的话，vyos的官方文档又写的不明不白的，感觉有故意的成份。&lt;/p>
 &lt;p>于是网上找了篇文章，简单明了的介绍了如何编译安装最新稳定LTS版本。&lt;/p>
 &lt;h2 id="vyos不同版本对应的编译环境">vyos不同版本对应的编译环境&lt;/h2>
@@ -71,7 +71,7 @@
 &lt;/div>
 &lt;/div>&lt;h2 id="编译好的iso镜像下载">编译好的ISO镜像下载&lt;/h2>
 &lt;p>在github上找到了个repo，专门发布编译好的lts镜像，地址在&lt;a class="link" href="https://github.com/naa0yama/vyos-build-lts" target="_blank" rel="noopener"
->这里&lt;/a>。&lt;/p></description></item><item><title>手动安装Nextcloud</title><link>https://example.com/posts/b924a1ee/</link><pubDate>Wed, 12 Oct 2022 05:51:34 +0800</pubDate><guid>https://example.com/posts/b924a1ee/</guid><description>&lt;h2 id="这篇文章在office预览方面依然有些问题需要解决">这篇文章在office预览方面依然有些问题，需要解决&lt;/h2>
+>这里&lt;/a>。&lt;/p></description></item><item><title>手动安装Nextcloud</title><link>https://dnwzlx.com/posts/b924a1ee/</link><pubDate>Wed, 12 Oct 2022 05:51:34 +0800</pubDate><guid>https://dnwzlx.com/posts/b924a1ee/</guid><description>&lt;h2 id="这篇文章在office预览方面依然有些问题需要解决">这篇文章在office预览方面依然有些问题，需要解决&lt;/h2>
 &lt;p>试过docker、snpa等方式部署nextcloud，但是存在系统匹配、资源占用大等各种问题。而且配置都是写死的，看似安装部署简单，其实折腾起来更痛苦。&lt;/p>
 &lt;p>尤其是在内网环境里,不涉及升级的问题,手动安装是更好的选择，而且超级简单。&lt;/p>
 &lt;p>本文假设nextcloud的服务器地址是&lt;strong>192.168.8.14&lt;/strong>&lt;/p>

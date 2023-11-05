@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>windows on 寂静·流年</title><link>https://example.com/tags/windows/</link><description>Recent content in windows on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Fri, 15 Sep 2023 21:25:53 +0800</lastBuildDate><atom:link href="https://example.com/tags/windows/index.xml" rel="self" type="application/rss+xml"/><item><title>让windows 10完美支持Intel处理器的大小核调度</title><link>https://example.com/posts/7e5ceabf/</link><pubDate>Fri, 15 Sep 2023 21:25:53 +0800</pubDate><guid>https://example.com/posts/7e5ceabf/</guid><description>&lt;p>实在是不喜欢windows 11的各种设计，但是新买的13700K据说只能在windows 11下才能完美发挥性能。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>windows on 寂静·流年</title><link>https://dnwzlx.com/tags/windows/</link><description>Recent content in windows on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Fri, 15 Sep 2023 21:25:53 +0800</lastBuildDate><atom:link href="https://dnwzlx.com/tags/windows/index.xml" rel="self" type="application/rss+xml"/><item><title>让windows 10完美支持Intel处理器的大小核调度</title><link>https://dnwzlx.com/posts/7e5ceabf/</link><pubDate>Fri, 15 Sep 2023 21:25:53 +0800</pubDate><guid>https://dnwzlx.com/posts/7e5ceabf/</guid><description>&lt;p>实在是不喜欢windows 11的各种设计，但是新买的13700K据说只能在windows 11下才能完美发挥性能。&lt;/p>
 &lt;p>有没有让windows 10支持intel 13代cpu大小核调度的方法呢？&lt;/p>
 &lt;p>一番搜索，找到了完美的解决方案。&lt;/p>
 &lt;p>原文在&lt;a class="link" href="https://www.bilibili.com/video/BV1LK411B7ZS/?spm_id_from=333.1007.top_right_bar_window_default_collection.content.click&amp;amp;vd_source=f58c6359690424b3ca690f7d63a18318" target="_blank" rel="noopener"
@@ -59,7 +59,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">异类短线程调度策略：首选高性能处理器
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>以上设置是针对台式机的，笔记本电脑另有设置，可查看原文&lt;/p></description></item><item><title>Windows下调整GIMP的字体和图标的大小</title><link>https://example.com/posts/9251a95c/</link><pubDate>Mon, 12 Jun 2023 20:18:37 +0800</pubDate><guid>https://example.com/posts/9251a95c/</guid><description>&lt;p>在windows下，4K屏幕上,gimp默认显示的图标和字体太小了,字体也不好看,下面介绍如何调整字体类型和大小,以及图标的大小.&lt;/p>
+&lt;/div>&lt;p>以上设置是针对台式机的，笔记本电脑另有设置，可查看原文&lt;/p></description></item><item><title>Windows下调整GIMP的字体和图标的大小</title><link>https://dnwzlx.com/posts/9251a95c/</link><pubDate>Mon, 12 Jun 2023 20:18:37 +0800</pubDate><guid>https://dnwzlx.com/posts/9251a95c/</guid><description>&lt;p>在windows下，4K屏幕上,gimp默认显示的图标和字体太小了,字体也不好看,下面介绍如何调整字体类型和大小,以及图标的大小.&lt;/p>
 &lt;p>这里以gimp默认的Dark主题为例,其它主题类似&lt;/p>
 &lt;h2 id="调整字体类型和大小">调整字体类型和大小&lt;/h2>
 &lt;p>打开&lt;code>C:\Program Files\GIMP 2\share\gimp\2.0\themes\Dark&lt;/code>文件夹,编辑&lt;code>gtkrc&lt;/code>这个文件&lt;/p>
@@ -130,16 +130,16 @@
 &lt;p>以上这些参数都可以根据自己的屏幕大小和个人喜好，随意自己调整。&lt;/p>
 &lt;h2 id="实际效果">实际效果&lt;/h2>
 &lt;p>下面放一张27寸4K分辨率168%缩放下，使用文中提到的参数的显示效果：
-&lt;img src="https://example.com/posts/9251a95c/image.png"
+&lt;img src="https://dnwzlx.com/posts/9251a95c/image.png"
 width="2014"
 height="1278"
-srcset="https://example.com/posts/9251a95c/image_hu4d310c3495e8f9c1e950b11f8dfcee95_241438_480x0_resize_box_3.png 480w, https://example.com/posts/9251a95c/image_hu4d310c3495e8f9c1e950b11f8dfcee95_241438_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/9251a95c/image_hu4d310c3495e8f9c1e950b11f8dfcee95_241438_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/9251a95c/image_hu4d310c3495e8f9c1e950b11f8dfcee95_241438_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 alt="Alt text"
 class="gallery-image"
 data-flex-grow="157"
 data-flex-basis="378px"
->&lt;/p></description></item><item><title>Windows10关闭系统保留的7G空间</title><link>https://example.com/posts/7a83bb33/</link><pubDate>Sun, 07 May 2023 21:36:03 +0800</pubDate><guid>https://example.com/posts/7a83bb33/</guid><description>&lt;p>从windows 10 1903版本开始，微软为win10默认保留了大约7G左右的系统空间，用于防止因存储空间不足导致的更新失败问题。&lt;/p>
+>&lt;/p></description></item><item><title>Windows10关闭系统保留的7G空间</title><link>https://dnwzlx.com/posts/7a83bb33/</link><pubDate>Sun, 07 May 2023 21:36:03 +0800</pubDate><guid>https://dnwzlx.com/posts/7a83bb33/</guid><description>&lt;p>从windows 10 1903版本开始，微软为win10默认保留了大约7G左右的系统空间，用于防止因存储空间不足导致的更新失败问题。&lt;/p>
 &lt;p>通过下面几个命令，可以将这保留的7G空间释放出来：&lt;/p>
 &lt;p>以管理员打开powershell:&lt;/p>
 &lt;h2 id="一键入下条命令即可关闭立即生效">一、键入下条命令即可关闭，立即生效&lt;/h2>
@@ -169,7 +169,7 @@ data-flex-basis="378px"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">DISM.exe /Online /Get-ReservedStorageState
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>使用命令行删除windows Defender</title><link>https://example.com/posts/dfbed6b5/</link><pubDate>Thu, 16 Mar 2023 07:13:48 +0800</pubDate><guid>https://example.com/posts/dfbed6b5/</guid><description>&lt;p>在使用windows server的时候，可以使用命令行来删除windows defender.&lt;/p>
+&lt;/div></description></item><item><title>使用命令行删除windows Defender</title><link>https://dnwzlx.com/posts/dfbed6b5/</link><pubDate>Thu, 16 Mar 2023 07:13:48 +0800</pubDate><guid>https://dnwzlx.com/posts/dfbed6b5/</guid><description>&lt;p>在使用windows server的时候，可以使用命令行来删除windows defender.&lt;/p>
 &lt;h2 id="卸载-windows-server-2016-或-windows-server-2019-上的-microsoft-defender-防病毒">卸载 Windows Server 2016 或 Windows Server 2019 上的 Microsoft Defender 防病毒&lt;/h2>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -188,7 +188,7 @@ data-flex-basis="378px"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Uninstall-WindowsFeature -Name Windows-Defender-GUI
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>注意，上面这条关闭GUI的命令，在windows server 2022下无效。&lt;/p></description></item><item><title>Windows Terminal添加到右键菜单</title><link>https://example.com/posts/6ef25004/</link><pubDate>Sun, 01 Jan 2023 09:10:24 +0800</pubDate><guid>https://example.com/posts/6ef25004/</guid><description>&lt;h2 id="下载windows-terminal的图标">下载&lt;code>windows terminal&lt;/code>的图标&lt;/h2>
+&lt;/div>&lt;p>注意，上面这条关闭GUI的命令，在windows server 2022下无效。&lt;/p></description></item><item><title>Windows Terminal添加到右键菜单</title><link>https://dnwzlx.com/posts/6ef25004/</link><pubDate>Sun, 01 Jan 2023 09:10:24 +0800</pubDate><guid>https://dnwzlx.com/posts/6ef25004/</guid><description>&lt;h2 id="下载windows-terminal的图标">下载&lt;code>windows terminal&lt;/code>的图标&lt;/h2>
 &lt;p>在&lt;a class="link" href="https://github.com/microsoft/terminal/tree/main/res" target="_blank" rel="noopener"
 >这里&lt;/a>下载。&lt;/p>
 &lt;h2 id="创建文件夹">创建文件夹&lt;/h2>
@@ -243,7 +243,7 @@ data-flex-basis="378px"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>&lt;code>&amp;quot;startingDirectory&amp;quot;: null&lt;/code>这一行是新添加的。&lt;/p>
-&lt;p>完工。&lt;/p></description></item><item><title>修改Conda默认启动的Python环境</title><link>https://example.com/posts/0cab458e/</link><pubDate>Sun, 01 Jan 2023 06:59:55 +0800</pubDate><guid>https://example.com/posts/0cab458e/</guid><description>&lt;h2 id="问题描述">问题描述&lt;/h2>
+&lt;p>完工。&lt;/p></description></item><item><title>修改Conda默认启动的Python环境</title><link>https://dnwzlx.com/posts/0cab458e/</link><pubDate>Sun, 01 Jan 2023 06:59:55 +0800</pubDate><guid>https://dnwzlx.com/posts/0cab458e/</guid><description>&lt;h2 id="问题描述">问题描述&lt;/h2>
 &lt;p>安装完 Conda 之后，开启终端将默认进入 &lt;code>base&lt;/code> 环境。&lt;/p>
 &lt;p>但是，&lt;code>base&lt;/code> 经常不是我们所需要的环境。因此，每次进入终端都得 &lt;code>conda activate&lt;/code> 到想要的环境，很麻烦。&lt;/p>
 &lt;h2 id="解决方法">解决方法&lt;/h2>
@@ -293,7 +293,7 @@ data-flex-basis="378px"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">conda activate py3s
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>正确安装WSL2的方法</title><link>https://example.com/posts/f68b8b61/</link><pubDate>Sat, 08 Oct 2022 17:58:41 +0800</pubDate><guid>https://example.com/posts/f68b8b61/</guid><description>&lt;p>近期重装系统,在安装wsl的时候,由于方法不正确,导致安装的linux运行在wsl1版本,而不是我想要的wsl2。&lt;/p>
+&lt;/div></description></item><item><title>正确安装WSL2的方法</title><link>https://dnwzlx.com/posts/f68b8b61/</link><pubDate>Sat, 08 Oct 2022 17:58:41 +0800</pubDate><guid>https://dnwzlx.com/posts/f68b8b61/</guid><description>&lt;p>近期重装系统,在安装wsl的时候,由于方法不正确,导致安装的linux运行在wsl1版本,而不是我想要的wsl2。&lt;/p>
 &lt;p>下面介绍一下正确安装wsl2，并设置wsl2为默认版本的方法，抄自&lt;a class="link" href="https://www.kali.org/docs/wsl/win-kex/" target="_blank" rel="noopener"
 >kali官方文档&lt;/a>。&lt;/p>
 &lt;p>&lt;code>win&lt;/code>+&lt;code>x&lt;/code> &lt;code>a&lt;/code>，打开管理员的powershell&lt;/p>
@@ -352,7 +352,7 @@ data-flex-basis="378px"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">wsl --update
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>完工。&lt;/p></description></item><item><title>WSL修改linux发行版的主机名</title><link>https://example.com/posts/6b07178d/</link><pubDate>Sat, 08 Oct 2022 17:50:48 +0800</pubDate><guid>https://example.com/posts/6b07178d/</guid><description>&lt;p>wsl安装了多个linux发行版后，主机名统一都是windows的主机名，这导致各个发行版之间不是很好区分。&lt;/p>
+&lt;/div>&lt;p>完工。&lt;/p></description></item><item><title>WSL修改linux发行版的主机名</title><link>https://dnwzlx.com/posts/6b07178d/</link><pubDate>Sat, 08 Oct 2022 17:50:48 +0800</pubDate><guid>https://dnwzlx.com/posts/6b07178d/</guid><description>&lt;p>wsl安装了多个linux发行版后，主机名统一都是windows的主机名，这导致各个发行版之间不是很好区分。&lt;/p>
 &lt;p>下面提供一个方法，能够单独修改wsl里的各个linux发行版的主机名，而不必修改windows的主机名。&lt;/p>
 &lt;p>在&lt;code>/etc&lt;/code>目录下新建一个文件&lt;code>wsl.conf&lt;/code>，即&lt;code>/etc/wsl.conf&lt;/code>,内容如下:&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -377,12 +377,12 @@ data-flex-basis="378px"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">wsl --shutdown
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>再打开wsl里的linux，就能看到效果了。&lt;/p></description></item><item><title>解决Windows Server 2022里OneDrive的同步问题</title><link>https://example.com/posts/584fb855/</link><pubDate>Mon, 03 Oct 2022 09:11:03 +0800</pubDate><guid>https://example.com/posts/584fb855/</guid><description>&lt;h2 id="问题">问题&lt;/h2>
+&lt;/div>&lt;p>再打开wsl里的linux，就能看到效果了。&lt;/p></description></item><item><title>解决Windows Server 2022里OneDrive的同步问题</title><link>https://dnwzlx.com/posts/584fb855/</link><pubDate>Mon, 03 Oct 2022 09:11:03 +0800</pubDate><guid>https://dnwzlx.com/posts/584fb855/</guid><description>&lt;h2 id="问题">问题&lt;/h2>
 &lt;p>在windows server 2022里，OneDrive可以正常安装使用，但是缺少了一项功能：&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/584fb855/%E5%8A%9F%E8%83%BD1.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/584fb855/%E5%8A%9F%E8%83%BD1.png"
 width="747"
 height="381"
-srcset="https://example.com/posts/584fb855/%E5%8A%9F%E8%83%BD1_hu74008aa5849cb2387b684f2eac555c32_31623_480x0_resize_box_3.png 480w, https://example.com/posts/584fb855/%E5%8A%9F%E8%83%BD1_hu74008aa5849cb2387b684f2eac555c32_31623_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/584fb855/%E5%8A%9F%E8%83%BD1_hu74008aa5849cb2387b684f2eac555c32_31623_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/584fb855/%E5%8A%9F%E8%83%BD1_hu74008aa5849cb2387b684f2eac555c32_31623_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="196"
@@ -395,10 +395,10 @@ data-flex-basis="470px"
 &lt;li>修改安全配置&lt;/li>
 &lt;/ol>
 &lt;p>&lt;code>win&lt;/code>+&lt;code>R&lt;/code>，输入&lt;code>secpol.msc&lt;/code>，选择 本地策略&amp;raquo;安全选项&amp;raquo;右边策略栏拉至用户账户控制相关配置，修改3个选项如下图：&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/584fb855/%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/584fb855/%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE.png"
 width="1096"
 height="367"
-srcset="https://example.com/posts/584fb855/%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE_hu7071f231a9a675b7773250c38e000d7f_277565_480x0_resize_box_3.png 480w, https://example.com/posts/584fb855/%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE_hu7071f231a9a675b7773250c38e000d7f_277565_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/584fb855/%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE_hu7071f231a9a675b7773250c38e000d7f_277565_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/584fb855/%E5%AE%89%E5%85%A8%E8%AE%BE%E7%BD%AE_hu7071f231a9a675b7773250c38e000d7f_277565_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="298"
@@ -409,7 +409,7 @@ data-flex-basis="716px"
 &lt;/ol>
 &lt;p>打开&lt;code>CMD&lt;/code>，输入下面命令：&lt;/p>
 &lt;p>&lt;code>C：\Program Files\Microsoft OneDrive\onedrive.exe /reset&lt;/code>&lt;/p>
-&lt;p>重启之后，看到熟悉的&lt;code>始终(A)保留在此设备上&lt;/code>就回来了。&lt;/p></description></item><item><title>如何使用windows的资源管理器打开FTP</title><link>https://example.com/posts/1de5cb42/</link><pubDate>Fri, 07 Jan 2022 14:37:25 +0800</pubDate><guid>https://example.com/posts/1de5cb42/</guid><description>&lt;p>我是习惯用专用的FTP软件来连接FTP,比如&lt;code>FlashFXP&lt;/code>等,&lt;/p>
+&lt;p>重启之后，看到熟悉的&lt;code>始终(A)保留在此设备上&lt;/code>就回来了。&lt;/p></description></item><item><title>如何使用windows的资源管理器打开FTP</title><link>https://dnwzlx.com/posts/1de5cb42/</link><pubDate>Fri, 07 Jan 2022 14:37:25 +0800</pubDate><guid>https://dnwzlx.com/posts/1de5cb42/</guid><description>&lt;p>我是习惯用专用的FTP软件来连接FTP,比如&lt;code>FlashFXP&lt;/code>等,&lt;/p>
 &lt;p>但是也有人喜欢用windows资源管理器连接FTP服务器，且不用老输入用户名、密码&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。&lt;/p>
 &lt;p>最简单的实现方法如下：&lt;/p>
 &lt;p>在桌面右键－新建－快捷方式－在对象位置框中输入&lt;/p>

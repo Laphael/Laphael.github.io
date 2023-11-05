@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>键盘 on 寂静·流年</title><link>https://example.com/tags/%E9%94%AE%E7%9B%98/</link><description>Recent content in 键盘 on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Sat, 16 Jul 2022 19:28:53 +0800</lastBuildDate><atom:link href="https://example.com/tags/%E9%94%AE%E7%9B%98/index.xml" rel="self" type="application/rss+xml"/><item><title>Vmware在Linux作为Host下的键盘映射的问题</title><link>https://example.com/posts/846f01f3/</link><pubDate>Sat, 16 Jul 2022 19:28:53 +0800</pubDate><guid>https://example.com/posts/846f01f3/</guid><description>&lt;p>长久以来，在 Linux 使用 vmware 总是有个问题没有解决。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>键盘 on 寂静·流年</title><link>https://dnwzlx.com/tags/%E9%94%AE%E7%9B%98/</link><description>Recent content in 键盘 on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Sat, 16 Jul 2022 19:28:53 +0800</lastBuildDate><atom:link href="https://dnwzlx.com/tags/%E9%94%AE%E7%9B%98/index.xml" rel="self" type="application/rss+xml"/><item><title>Vmware在Linux作为Host下的键盘映射的问题</title><link>https://dnwzlx.com/posts/846f01f3/</link><pubDate>Sat, 16 Jul 2022 19:28:53 +0800</pubDate><guid>https://dnwzlx.com/posts/846f01f3/</guid><description>&lt;p>长久以来，在 Linux 使用 vmware 总是有个问题没有解决。&lt;/p>
 &lt;p>当在 Linux 里把 Ctrl 和 CapsLock 这两个键互换后，vmware 的虚拟机里并不会跟着一起换，而依旧是原来的键位。而同样的问题在 Windows 下就不存在。&lt;/p>
 &lt;p>vmware 的官方文档解释：&lt;/p>
 &lt;blockquote>
@@ -11,10 +11,10 @@
 &lt;p>官方给出的解决方案是：&lt;/p>
 &lt;h3 id="查看特定键位的值">查看特定键位的值&lt;/h3>
 &lt;p>使用xev或者xmodmap -pk查看 Ctrl 和 CapsLock 的键位值&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/846f01f3/keyboard.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/846f01f3/keyboard.png"
 width="1454"
 height="547"
-srcset="https://example.com/posts/846f01f3/keyboard_hu2f8781e41254bb5be0b5b653687b2689_848884_480x0_resize_box_3.png 480w, https://example.com/posts/846f01f3/keyboard_hu2f8781e41254bb5be0b5b653687b2689_848884_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/846f01f3/keyboard_hu2f8781e41254bb5be0b5b653687b2689_848884_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/846f01f3/keyboard_hu2f8781e41254bb5be0b5b653687b2689_848884_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="265"
@@ -47,7 +47,7 @@ data-flex-basis="637px"
 &lt;li>
 &lt;p>添加这两行配置后，必须重新启动系统，以便让修改生效。&lt;/p>
 &lt;/li>
-&lt;/ol></description></item><item><title>解决键盘上的Windows快捷键失灵的问题</title><link>https://example.com/posts/c0dac05c/</link><pubDate>Wed, 09 Mar 2022 17:30:08 +0800</pubDate><guid>https://example.com/posts/c0dac05c/</guid><description>&lt;p>键盘型号是IKBC W210无线机械键盘。&lt;/p>
+&lt;/ol></description></item><item><title>解决键盘上的Windows快捷键失灵的问题</title><link>https://dnwzlx.com/posts/c0dac05c/</link><pubDate>Wed, 09 Mar 2022 17:30:08 +0800</pubDate><guid>https://dnwzlx.com/posts/c0dac05c/</guid><description>&lt;p>键盘型号是IKBC W210无线机械键盘。&lt;/p>
 &lt;h2 id="问题">问题&lt;/h2>
 &lt;p>最近两天,忽然发现键盘上的Windows快捷键不起作用了。&lt;/p>
 &lt;p>Windows 10最让我满意的地方就是它的快捷键了，而这些快捷键大部分是以Win开头的。&lt;/p>

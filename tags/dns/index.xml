@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DNS on 寂静·流年</title><link>https://example.com/tags/dns/</link><description>Recent content in DNS on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Mon, 29 Aug 2022 18:28:40 +0800</lastBuildDate><atom:link href="https://example.com/tags/dns/index.xml" rel="self" type="application/rss+xml"/><item><title>IKuai的DNS设置</title><link>https://example.com/posts/f86cf3fe/</link><pubDate>Mon, 29 Aug 2022 18:28:40 +0800</pubDate><guid>https://example.com/posts/f86cf3fe/</guid><description>&lt;p>这几天黑苹果终于是折腾完美了，但是有一个问题：&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DNS on 寂静·流年</title><link>https://dnwzlx.com/tags/dns/</link><description>Recent content in DNS on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Mon, 29 Aug 2022 18:28:40 +0800</lastBuildDate><atom:link href="https://dnwzlx.com/tags/dns/index.xml" rel="self" type="application/rss+xml"/><item><title>IKuai的DNS设置</title><link>https://dnwzlx.com/posts/f86cf3fe/</link><pubDate>Mon, 29 Aug 2022 18:28:40 +0800</pubDate><guid>https://dnwzlx.com/posts/f86cf3fe/</guid><description>&lt;p>这几天黑苹果终于是折腾完美了，但是有一个问题：&lt;/p>
 &lt;p>在黑苹果里打开网页非常的慢，而且打开网站后，再点击网站里的链接也是非常慢。&lt;/p>
 &lt;p>切换到Windows系统里测试了一上，快了一点，但是也没有达到秒开的地步。&lt;/p>
 &lt;p>这是非常不应该的。我家里的是千兆宽带，打开的也是sohu、ifeng之类的大站，DNS用的也是114，怎么会打开个网页也慢呢？&lt;/p>
@@ -6,10 +6,10 @@
 &lt;p>家里用的是软路由，使用的是ikuai虚拟机。一番折腾后，找到了问题的答案。&lt;/p>
 &lt;p>在ikuai-网络设置-DNS设置里，有一个&lt;code>DNS加速模式&lt;/code>。&lt;/p>
 &lt;p>我原本的设置是&lt;code>代理模式（DoH:DNS Over Https）&lt;/code>,把它改成&lt;code>代理模式（UDP)&lt;/code>就可以了。
-&lt;img src="https://example.com/posts/f86cf3fe/ikuai-dns.png"
+&lt;img src="https://dnwzlx.com/posts/f86cf3fe/ikuai-dns.png"
 width="1924"
 height="1026"
-srcset="https://example.com/posts/f86cf3fe/ikuai-dns_huc3ff059f22820ba3d0c8d16cfa8bd26d_195768_480x0_resize_box_3.png 480w, https://example.com/posts/f86cf3fe/ikuai-dns_huc3ff059f22820ba3d0c8d16cfa8bd26d_195768_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/f86cf3fe/ikuai-dns_huc3ff059f22820ba3d0c8d16cfa8bd26d_195768_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/f86cf3fe/ikuai-dns_huc3ff059f22820ba3d0c8d16cfa8bd26d_195768_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="187"

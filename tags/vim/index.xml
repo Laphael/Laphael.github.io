@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>vim on 寂静·流年</title><link>https://example.com/tags/vim/</link><description>Recent content in vim on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Sat, 09 Jul 2022 09:23:45 +0800</lastBuildDate><atom:link href="https://example.com/tags/vim/index.xml" rel="self" type="application/rss+xml"/><item><title>让tmux和vim支持TrueColor</title><link>https://example.com/posts/4d263cb0/</link><pubDate>Sat, 09 Jul 2022 09:23:45 +0800</pubDate><guid>https://example.com/posts/4d263cb0/</guid><description>&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>vim on 寂静·流年</title><link>https://dnwzlx.com/tags/vim/</link><description>Recent content in vim on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Sat, 09 Jul 2022 09:23:45 +0800</lastBuildDate><atom:link href="https://dnwzlx.com/tags/vim/index.xml" rel="self" type="application/rss+xml"/><item><title>让tmux和vim支持TrueColor</title><link>https://dnwzlx.com/posts/4d263cb0/</link><pubDate>Sat, 09 Jul 2022 09:23:45 +0800</pubDate><guid>https://dnwzlx.com/posts/4d263cb0/</guid><description>&lt;blockquote>
 &lt;p>&lt;code>TrueColor&lt;/code>就是24位的真彩色&lt;/p>
 &lt;/blockquote>
 &lt;p>软件版本：&lt;/p>
@@ -48,10 +48,10 @@
 &lt;/ol>
 &lt;p>这样才能生效。&lt;/p>
 &lt;p>下面是在&lt;code>tmux&lt;/code>里使用&lt;code>vim&lt;/code>的截图，&lt;code>vim&lt;/code>主题使用的是&lt;code>gruvbox&lt;/code>:&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/4d263cb0/tmux&amp;#43;vim.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/4d263cb0/tmux&amp;#43;vim.png"
 width="1049"
 height="1235"
-srcset="https://example.com/posts/4d263cb0/tmux&amp;#43;vim_hubdd1da61e67c101a3864bf527c968bab_195378_480x0_resize_box_3.png 480w, https://example.com/posts/4d263cb0/tmux&amp;#43;vim_hubdd1da61e67c101a3864bf527c968bab_195378_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/4d263cb0/tmux&amp;#43;vim_hubdd1da61e67c101a3864bf527c968bab_195378_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/4d263cb0/tmux&amp;#43;vim_hubdd1da61e67c101a3864bf527c968bab_195378_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="84"

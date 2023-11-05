@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>zsh on 寂静·流年</title><link>https://example.com/tags/zsh/</link><description>Recent content in zsh on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Mon, 12 Dec 2022 02:04:54 +0800</lastBuildDate><atom:link href="https://example.com/tags/zsh/index.xml" rel="self" type="application/rss+xml"/><item><title>Linux下使用miniconda的一些设置</title><link>https://example.com/posts/d96c6166/</link><pubDate>Mon, 12 Dec 2022 02:04:54 +0800</pubDate><guid>https://example.com/posts/d96c6166/</guid><description>&lt;p>在&lt;code>kali&lt;/code>的&lt;code>zsh&lt;/code>环境中使用&lt;code>miniconda&lt;/code>，遇到一些问题，这里记录一下解决的过程。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>zsh on 寂静·流年</title><link>https://dnwzlx.com/tags/zsh/</link><description>Recent content in zsh on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Mon, 12 Dec 2022 02:04:54 +0800</lastBuildDate><atom:link href="https://dnwzlx.com/tags/zsh/index.xml" rel="self" type="application/rss+xml"/><item><title>Linux下使用miniconda的一些设置</title><link>https://dnwzlx.com/posts/d96c6166/</link><pubDate>Mon, 12 Dec 2022 02:04:54 +0800</pubDate><guid>https://dnwzlx.com/posts/d96c6166/</guid><description>&lt;p>在&lt;code>kali&lt;/code>的&lt;code>zsh&lt;/code>环境中使用&lt;code>miniconda&lt;/code>，遇到一些问题，这里记录一下解决的过程。&lt;/p>
 &lt;p>对于其它的linux来说，应该是通用的。&lt;/p>
 &lt;h2 id="使用命令行安装miniconda">使用命令行安装miniconda&lt;/h2>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -27,10 +27,10 @@
 &lt;/div>
 &lt;/div>&lt;h2 id="oh-my-zsh主题配置">oh-my-zsh主题配置&lt;/h2>
 &lt;p>默认情况下，使用双行显示的oh-my-zsh主题，会在第一行的前面显示&lt;code>(base)&lt;/code>的标志:
-&lt;img src="https://example.com/posts/d96c6166/default-base.png"
+&lt;img src="https://dnwzlx.com/posts/d96c6166/default-base.png"
 width="352"
 height="78"
-srcset="https://example.com/posts/d96c6166/default-base_hue7a70516c9bcb22154f0dd10772c86d9_4091_480x0_resize_box_3.png 480w, https://example.com/posts/d96c6166/default-base_hue7a70516c9bcb22154f0dd10772c86d9_4091_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/d96c6166/default-base_hue7a70516c9bcb22154f0dd10772c86d9_4091_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/d96c6166/default-base_hue7a70516c9bcb22154f0dd10772c86d9_4091_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="451"
@@ -129,7 +129,7 @@ data-flex-basis="1083px"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">conda config --set auto_activate_base true
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>Kali安装zsh及常用插件</title><link>https://example.com/posts/e9b31c18/</link><pubDate>Sat, 24 Sep 2022 07:26:39 +0800</pubDate><guid>https://example.com/posts/e9b31c18/</guid><description>&lt;blockquote>
+&lt;/div></description></item><item><title>Kali安装zsh及常用插件</title><link>https://dnwzlx.com/posts/e9b31c18/</link><pubDate>Sat, 24 Sep 2022 07:26:39 +0800</pubDate><guid>https://dnwzlx.com/posts/e9b31c18/</guid><description>&lt;blockquote>
 &lt;blockquote>
 &lt;p>kali在2020.4版本后,已经将zsh设置成了默认终端。
 但在一些特殊的环境下,比如wsl2里的kali,仍然使用的是bash&lt;/p>

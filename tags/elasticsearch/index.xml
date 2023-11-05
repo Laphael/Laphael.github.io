@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>elasticsearch on 寂静·流年</title><link>https://example.com/tags/elasticsearch/</link><description>Recent content in elasticsearch on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Fri, 28 Oct 2022 10:56:09 +0800</lastBuildDate><atom:link href="https://example.com/tags/elasticsearch/index.xml" rel="self" type="application/rss+xml"/><item><title>为nextcloud安装elasticsearch全文搜索</title><link>https://example.com/posts/f092b728/</link><pubDate>Fri, 28 Oct 2022 10:56:09 +0800</pubDate><guid>https://example.com/posts/f092b728/</guid><description>&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>elasticsearch on 寂静·流年</title><link>https://dnwzlx.com/tags/elasticsearch/</link><description>Recent content in elasticsearch on 寂静·流年</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Fri, 28 Oct 2022 10:56:09 +0800</lastBuildDate><atom:link href="https://dnwzlx.com/tags/elasticsearch/index.xml" rel="self" type="application/rss+xml"/><item><title>为nextcloud安装elasticsearch全文搜索</title><link>https://dnwzlx.com/posts/f092b728/</link><pubDate>Fri, 28 Oct 2022 10:56:09 +0800</pubDate><guid>https://dnwzlx.com/posts/f092b728/</guid><description>&lt;blockquote>
 &lt;p>写作本文时,elasticsearch 8.3.4版本已经发布，无奈此版本与nextcloud集成的文章太少，因此还是使用elastic7。实际使用效果非常好。&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="环境相关">环境相关&lt;/h2>
@@ -151,10 +151,10 @@
 &lt;/div>&lt;h2 id="nextcloud设置">nextcloud设置&lt;/h2>
 &lt;h3 id="安装搜索相关插件">安装搜索相关插件&lt;/h3>
 &lt;p>full text开头的那几个，如下图几个：
-&lt;img src="https://example.com/posts/f092b728/full-text-plugin.png"
+&lt;img src="https://dnwzlx.com/posts/f092b728/full-text-plugin.png"
 width="656"
 height="488"
-srcset="https://example.com/posts/f092b728/full-text-plugin_hu4fcabdb0f6fa28282198c600c974c6bc_29164_480x0_resize_box_3.png 480w, https://example.com/posts/f092b728/full-text-plugin_hu4fcabdb0f6fa28282198c600c974c6bc_29164_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/f092b728/full-text-plugin_hu4fcabdb0f6fa28282198c600c974c6bc_29164_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/f092b728/full-text-plugin_hu4fcabdb0f6fa28282198c600c974c6bc_29164_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="134"
@@ -162,19 +162,19 @@ data-flex-basis="322px"
 >&lt;/p>
 &lt;h3 id="设置插件">设置插件&lt;/h3>
 &lt;p>打开设置-全文搜索,如下图配置
-&lt;img src="https://example.com/posts/f092b728/search-config-1.png"
+&lt;img src="https://dnwzlx.com/posts/f092b728/search-config-1.png"
 width="1413"
 height="1753"
-srcset="https://example.com/posts/f092b728/search-config-1_hu1f1f053f78b41425a04c81a129758c6d_131388_480x0_resize_box_3.png 480w, https://example.com/posts/f092b728/search-config-1_hu1f1f053f78b41425a04c81a129758c6d_131388_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/f092b728/search-config-1_hu1f1f053f78b41425a04c81a129758c6d_131388_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/f092b728/search-config-1_hu1f1f053f78b41425a04c81a129758c6d_131388_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="80"
 data-flex-basis="193px"
 >&lt;/p>
-&lt;p>&lt;img src="https://example.com/posts/f092b728/search-config-2.png"
+&lt;p>&lt;img src="https://dnwzlx.com/posts/f092b728/search-config-2.png"
 width="1241"
 height="1421"
-srcset="https://example.com/posts/f092b728/search-config-2_hub7feb5fdc19ec56ac79a2f0f1319ba04_90610_480x0_resize_box_3.png 480w, https://example.com/posts/f092b728/search-config-2_hub7feb5fdc19ec56ac79a2f0f1319ba04_90610_1024x0_resize_box_3.png 1024w"
+srcset="https://dnwzlx.com/posts/f092b728/search-config-2_hub7feb5fdc19ec56ac79a2f0f1319ba04_90610_480x0_resize_box_3.png 480w, https://dnwzlx.com/posts/f092b728/search-config-2_hub7feb5fdc19ec56ac79a2f0f1319ba04_90610_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="87"
