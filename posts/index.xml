@@ -2781,7 +2781,7 @@ data-flex-basis="637px"
 &lt;/div>&lt;p>这里的144对应着150%的缩放,重启即可生效。&lt;/p></description></item><item><title>让tmux和vim支持TrueColor</title><link>https://dnwzlx.com/posts/4d263cb0/</link><pubDate>Sat, 09 Jul 2022 09:23:45 +0800</pubDate><guid>https://dnwzlx.com/posts/4d263cb0/</guid><description>&lt;blockquote>
 &lt;p>&lt;code>TrueColor&lt;/code>就是24位的真彩色&lt;/p>
 &lt;/blockquote>
-&lt;p>软件版本：&lt;/p>
+&lt;p>相关软件版本：&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>tmux&lt;/code>：3.2&lt;/li>
 &lt;li>&lt;code>vim&lt;/code> ：8.2&lt;/li>
